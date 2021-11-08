@@ -113,7 +113,7 @@
     "eth-block-tracker": "^4.1.0",
     "eth-contract-metadata": "github:MetaMask/eth-contract-metadata#master",
     "eth-ens-namehash": "^2.0.8",
-    "eth-json-rpc-filters": "github:poanetwork/eth-json-rpc-filters#3.0.2",
+    "eth-json-rpc-filters": "github:yodaplus/eth-json-rpc-filters#3.0.3",
     "eth-json-rpc-infura": "^3.0.0",
     "eth-keychain-controller": "github:vbaranov/KeyringController#simple-address",
     "eth-ledger-bridge-keyring": "github:vbaranov/eth-ledger-bridge-keyring#0.1.0-clear-accounts-flag",
