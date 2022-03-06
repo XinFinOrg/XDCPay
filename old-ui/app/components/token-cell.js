@@ -187,7 +187,8 @@ TokenCell.prototype.send = function (address, event) {
 }
 
 TokenCell.prototype.view = function (address, userAddress, network, event) {
-  const url = ethNetProps.explorerLinks.getExplorerTokenLinkFor(address, userAddress, network)
+  const {symbol} = this.props
+  const url = ethNetProps.explorerLinks.getExplorerTokenLinkFor(address.replace('0x', 'xdc'), userAddress, network,symbol)
   if (url) {
     navigateTo(url)
   }

@@ -21,7 +21,7 @@ class ContactDetails extends React.Component {
       conversionRate,
     } = this.props
     const transactionAddress = contactObj.address.replace("xdc","0x")
-    const currentContactTxn = transactions.filter((txnObj) => txnObj.txParams.to.trim() === transactionAddress.trim())
+    const currentContactTxn = transactions.filter((txnObj) => txnObj.txParams.to === transactionAddress)
 
     function shorten(b, amountL = 7, /*amountR = 4,*/ stars = 3) {
       return `${b.slice(0, amountL)}${'.'.repeat(stars)}${b.slice(

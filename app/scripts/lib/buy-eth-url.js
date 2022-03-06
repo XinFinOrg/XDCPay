@@ -118,10 +118,10 @@ function getExchanges ({network, amount, address}) {
       ]
     case XDC_CODE:
       return [
-        // {
-        //   name: 'Simplex',
-        //   link: 'https://simplex.bringtotheblock.net/',
-        // },
+        {
+          name: 'Simplex',
+          link: 'https://simplex.bringtotheblock.net/',
+        },
         {
           name: 'Indodax',
           link: 'https://indodax.com/market/XDCIDR',
