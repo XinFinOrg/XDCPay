@@ -1,10 +1,11 @@
-const ObservableStore = require('obs-store')
+import ObservableStore from 'obs-store'
 
 /**
  * An ObservableStore that can composes a flat
  * structure of child stores based on configuration
  */
-class ComposableObservableStore extends ObservableStore {
+export default class ComposableObservableStore extends ObservableStore {
+
   /**
    * Create a new store
    *
@@ -25,9 +26,11 @@ class ComposableObservableStore extends ObservableStore {
     this.config = config
     this.removeAllListeners()
     for (const key in config) {
-      config[key].subscribe((state) => {
-        this.updateState({ [key]: state })
-      })
+      if (Object.prototype.hasOwnProperty.call(config, key)) {
+        config[key].subscribe((state) => {
+          this.updateState({ [key]: state })
+        })
+      }
     }
   }
 
@@ -40,38 +43,12 @@ class ComposableObservableStore extends ObservableStore {
   getFlatState () {
     let flatState = {}
     for (const key in this.config) {
-      flatState = { ...flatState, ...this.config[key].getState() }
-    }
-    return flatState
-  }
-
-  /**
-   * Merges all child store state into a single object rather than
-   * returning an object keyed by child store class name
-   * Removes heavy objects that are not needed on UI
-   *
-   * @returns {Object} - Object containing merged child store state
-   */
-  getFilteredFlatState () {
-    let flatState = {}
-    for (const key in this.config) {
-      let nextState
-      if (key === 'RecentBlocksController') {
-        nextState = {}
-      } else if (key === 'TxController') {
-        const state = this.config[key].getState()
-        const txList = state.selectedAddressTxList.map(item => ({...item, history: null, nonceDetails: null}))
-        nextState = {
-          ...state,
-          selectedAddressTxList: txList,
-        }
-      } else {
-        nextState = this.config[key].getState()
+      if (Object.prototype.hasOwnProperty.call(this.config, key)) {
+        const controller = this.config[key]
+        const state = controller.getState ? controller.getState() : controller.state
+        flatState = { ...flatState, ...state }
       }
-      flatState = { ...flatState, ...nextState }
     }
     return flatState
   }
 }
-
-module.exports = ComposableObservableStore

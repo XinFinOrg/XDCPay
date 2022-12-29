@@ -1,6 +1,9 @@
 npm-debug.log
+yarn-error.log
 node_modules
-yarn.lock
+package-lock.json
+
+audit.json
 
 app/bower_components
 test/bower_components
@@ -10,6 +13,8 @@ package
 .idea
 .vscode
 .sublime-project
+
+*.bak
 
 # VIM
 *.swp
@@ -21,22 +26,16 @@ temp
 .DS_Store
 app/.DS_Store
 
+.out/
 coverage/
 dist
+dist/
 builds/
-disc/
 builds.zip
-docs/jsdocs
-
-development/bundle.js
-development/states.js
-test/integration/bundle.js
-test/background.js
-test/bundle.js
-test/test-bundle.js
 
 test-artifacts
 test-builds
+build-artifacts
 
 #ignore css output and sourcemaps
 ui/app/css/output/
@@ -45,3 +44,5 @@ notes.txt
 
 .coveralls.yml
 .nyc_output
+
+.metamaskrc

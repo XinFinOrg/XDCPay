@@ -1,8 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28">
-  <g id="CreateAccount" transform="translate(-44 -247)">
-    <rect id="Rectangle_335" data-name="Rectangle 335" width="28" height="28" transform="translate(44 247)" fill="none"/>
-    <g id="CreateAccount-2" data-name="CreateAccount" transform="translate(51 254)">
-      <path id="Path_791" data-name="Path 791" d="M28.182,21.5a.352.352,0,0,0-.352.352v5.979H21.852a.352.352,0,0,0,0,.7h5.979v5.979a.352.352,0,0,0,.7,0V28.534h5.979a.352.352,0,1,0,0-.7H28.534V21.852A.352.352,0,0,0,28.182,21.5Z" transform="translate(-21.5 -21.5)" stroke="#2a2a2a" stroke-width="0.4"/>
-    </g>
-  </g>
-</svg>

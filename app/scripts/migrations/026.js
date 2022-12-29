@@ -1,5 +1,3 @@
-const version = 26
-
 /*
 
 This migration moves the identities stored in the KeyringController
@@ -7,18 +5,20 @@ This migration moves the identities stored in the KeyringController
 
 */
 
-const clone = require('clone')
+import { cloneDeep } from 'lodash'
 
-module.exports = {
+const version = 26
+
+export default {
   version,
   migrate (originalVersionedData) {
-    const versionedData = clone(originalVersionedData)
+    const versionedData = cloneDeep(originalVersionedData)
     versionedData.meta.version = version
     try {
       const state = versionedData.data
       versionedData.data = transformState(state)
     } catch (err) {
-      console.warn(`MetaMask Migration #${version}` + err.stack)
+      console.warn(`MetaMask Migration #${version}${err.stack}`)
       return Promise.reject(err)
     }
     return Promise.resolve(versionedData)

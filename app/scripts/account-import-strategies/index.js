@@ -1,13 +1,14 @@
-const Wallet = require('ethereumjs-wallet')
-const importers = require('ethereumjs-wallet/thirdparty')
-const ethUtil = require('ethereumjs-util')
+import log from 'loglevel'
+import Wallet from 'ethereumjs-wallet'
+import importers from 'ethereumjs-wallet/thirdparty'
+import ethUtil from 'ethereumjs-util'
 
 const accountImporter = {
 
   importAccount (strategy, args) {
     try {
       const importer = this.strategies[strategy]
-      const privateKeyHex = importer.apply(null, args)
+      const privateKeyHex = importer(...args)
       return Promise.resolve(privateKeyHex)
     } catch (e) {
       return Promise.reject(e)
@@ -35,10 +36,7 @@ const accountImporter = {
       try {
         wallet = importers.fromEtherWallet(input, password)
       } catch (e) {
-        console.log('Attempt to import as EtherWallet format failed, trying V3...')
-      }
-
-      if (!wallet) {
+        log.debug('Attempt to import as EtherWallet format failed, trying V3')
         wallet = Wallet.fromV3(input, password, true)
       }
 
@@ -53,4 +51,4 @@ function walletToPrivateKey (wallet) {
   return ethUtil.bufferToHex(privateKeyBuffer)
 }
 
-module.exports = accountImporter
+export default accountImporter

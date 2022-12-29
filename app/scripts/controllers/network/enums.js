@@ -1,168 +1,88 @@
-const ethNetProps = require('../../../../xdc-net-props')
-const POA = 'poa'
-const DAI = 'dai'
-const POA_SOKOL = 'sokol'
-const MAINNET = 'mainnet'
-const ROPSTEN = 'ropsten'
-const RINKEBY = 'rinkeby'
-const KOVAN = 'kovan'
-const GOERLI_TESTNET = 'goerli_testnet'
-const CLASSIC = 'classic'
-const XDC = 'xdc'
-const XDC_TESTNET = 'xdc_testnet'
-const XDC_DEVNET = 'xdc_devnet'
-const LOCALHOST = 'localhost'
+export const ROPSTEN = 'ropsten'
+export const RINKEBY = 'rinkeby'
+export const KOVAN = 'kovan'
+export const MAINNET = 'mainnet'
+export const GOERLI = 'goerli'
+export const XDC = 'xdc'
+export const XDC_APOTHEM = 'xdcApothem'
 
-const POA_CODE = 99
-const DAI_CODE = 100
-const POA_SOKOL_CODE = 77
-const MAINNET_CODE = 1
-const ROPSTEN_CODE = 3
-const RINKEBY_CODE = 4
-const KOVAN_CODE = 42
-const GOERLI_TESTNET_CODE = 5
-const CLASSIC_CODE = 61
-const XDC_CODE = 50
-const XDC_TESTNET_CODE = 51
-const XDC_DEVNET_CODE = 551
+export const LOCALHOST = 'localhost'
 
-const POA_DISPLAY_NAME = 'POA Core'
-const DAI_DISPLAY_NAME = 'xDai Chain'
-const POA_SOKOL_DISPLAY_NAME = 'Sokol'
-const MAINNET_DISPLAY_NAME = 'Main Ethereum Network'
-const ROPSTEN_DISPLAY_NAME = 'Ropsten'
-const RINKEBY_DISPLAY_NAME = 'Rinkeby'
-const KOVAN_DISPLAY_NAME = 'Kovan'
-const GOERLI_TESTNET_DISPLAY_NAME = 'Görli Testnet'
-const CLASSIC_DISPLAY_NAME = 'Ethereum Classic'
-const XDC_DISPLAY_NAME = 'XDC Mainnet'
-const XDC_TESTNET_DISPLAY_NAME = 'XDC Apothem Testnet'
-const XDC_DEVNET_DISPLAY_NAME = 'XDC Devnet'
+export const MAINNET_NETWORK_ID = '1'
+export const ROPSTEN_NETWORK_ID = '3'
+export const RINKEBY_NETWORK_ID = '4'
+export const GOERLI_NETWORK_ID = '5'
+export const KOVAN_NETWORK_ID = '42'
+export const XDC_NETWORK_ID = '50'
+export const XDC_APOTHEM_NETWORK_ID = '51'
 
-const DROPDOWN_POA_DISPLAY_NAME = POA_DISPLAY_NAME
-const DROPDOWN_DAI_DISPLAY_NAME = DAI_DISPLAY_NAME
-const DROPDOWN_POA_SOKOL_DISPLAY_NAME = 'Sokol Network'
-const DROPDOWN_MAINNET_DISPLAY_NAME = 'Main Network'
-const DROPDOWN_ROPSTEN_DISPLAY_NAME = 'Ropsten Test Net'
-const DROPDOWN_RINKEBY_DISPLAY_NAME = 'Rinkeby Test Net'
-const DROPDOWN_KOVAN_DISPLAY_NAME = 'Kovan Test Net'
-const DROPDOWN_GOERLI_TESTNET_DISPLAY_NAME = 'Görli Test Net'
-const DROPDOWN_CLASSIC_DISPLAY_NAME = 'Ethereum Classic'
-const DROPDOWN_XDC_DISPLAY_NAME = 'XDC Mainnet'
-const DROPDOWN_XDC_TESTNET_DISPLAY_NAME = 'XDC Apothem Testnet'
-const DROPDOWN_XDC_DEVNET_DISPLAY_NAME = 'XDC Devnet'
 
-/* RPC Endpoints */
-// const XDC_RPC_ENDPOINT = 'https://rpc.xinfin.network'
-// const XDC_TESTNET_RPC_ENDPOINT = 'https://rpc.apothem.network'
-const XDC_RPC_ENDPOINT = 'https://xdcpayrpc.blocksscan.io/'
-const XDC_TESTNET_RPC_ENDPOINT = 'https://apothemxdcpayrpc.blocksscan.io/'
-const XDC_DEVNET_RPC_ENDPOINT = 'https://devnetrpc.apothem.network'
+export const MAINNET_CHAIN_ID = '0x1'
+export const ROPSTEN_CHAIN_ID = '0x3'
+export const RINKEBY_CHAIN_ID = '0x4'
+export const GOERLI_CHAIN_ID = '0x5'
+export const KOVAN_CHAIN_ID = '0x2a'
+export const XDC_CHAIN_ID = '0x32'
+export const XDC_APOTHEM_CHAIN_ID = '0x33'
 
-/* Block Explorer URLs */
-const XDC_BLOCK_EXPLORER_URL = 'https://observer.xdc.org'
-// const XDC_BLOCK_EXPLORER_URL = 'https://explorer.xdc.network'
-const XDC_TESTNET_BLOCK_EXPLORER_URL = 'https://explorer.apothem.network'
-const XDC_DEVNET_BLOCK_EXPLORER_URL = 'https://explorer.devnet.network'
 
-const chainTypes = {
-  TEST: 1,
-  PROD: 2,
-  TEST1: 3,
+export const ROPSTEN_DISPLAY_NAME = 'Ropsten'
+export const RINKEBY_DISPLAY_NAME = 'Rinkeby'
+export const KOVAN_DISPLAY_NAME = 'Kovan'
+export const MAINNET_DISPLAY_NAME = 'Main Ethereum Network'
+export const GOERLI_DISPLAY_NAME = 'Goerli'
+export const XDC_DISPLAY_NAME = 'XDC Network'
+export const XDC_APOTHEM_DISPLAY_NAME = 'XDC APOTHEM Network'
 
-}
-const permanentNetworks = [
-  {
-    name: XDC_DISPLAY_NAME,
-    rpcURL: XDC_RPC_ENDPOINT,
-    chainId: XDC_CODE,
-    currencySymbol: 'XDC',
-    blockExplorer: XDC_BLOCK_EXPLORER_URL,
-    providerType: XDC,
-    isPermanent: true,
-    colorCode: '#2049B9',
-  },
-  {
-    name: XDC_TESTNET_DISPLAY_NAME,
-    rpcURL: XDC_TESTNET_RPC_ENDPOINT,
-    chainId: XDC_TESTNET_CODE,
-    currencySymbol: 'XDC',
-    blockExplorer: XDC_TESTNET_BLOCK_EXPLORER_URL,
-    providerType: XDC_TESTNET,
-    isPermanent: true,
-    colorCode: '#2049B9',
-  },
-  {
-    name: XDC_DEVNET_DISPLAY_NAME,
-    rpcURL: XDC_DEVNET_RPC_ENDPOINT,
-    chainId: XDC_DEVNET_CODE,
-    currencySymbol: 'XDC',
-    blockExplorer: XDC_DEVNET_BLOCK_EXPLORER_URL,
-    providerType: XDC_DEVNET,
-    isPermanent: true,
-    colorCode: '#2049B9',
-  },
-  {
-    name: 'Localhost 8545',
-    rpcURL: 'https://localhost:8545',
-    chainId: '',
-    currencySymbol: '',
-    blockExplorer: '',
-    providerType: LOCALHOST,
-    isPermanent: false,
-    colorCode: '#0CB0BE',
-  }]
 
-module.exports = {
-  POA,
-  DAI,
-  POA_SOKOL,
-  MAINNET,
+export const INFURA_PROVIDER_TYPES = [
   ROPSTEN,
   RINKEBY,
   KOVAN,
-  GOERLI_TESTNET,
-  CLASSIC,
+  MAINNET,
+  GOERLI
+]
+
+export const RPC_PROVIDER_TYPES = [
   XDC,
-  XDC_TESTNET,
-  XDC_DEVNET,
-  LOCALHOST,
-  POA_CODE,
-  DAI_CODE,
-  POA_SOKOL_CODE,
-  MAINNET_CODE,
-  ROPSTEN_CODE,
-  RINKEBY_CODE,
-  KOVAN_CODE,
-  GOERLI_TESTNET_CODE,
-  CLASSIC_CODE,
-  XDC_CODE,
-  XDC_TESTNET_CODE,
-  XDC_DEVNET_CODE,
-  POA_DISPLAY_NAME,
-  DAI_DISPLAY_NAME,
-  POA_SOKOL_DISPLAY_NAME,
-  MAINNET_DISPLAY_NAME,
-  ROPSTEN_DISPLAY_NAME,
-  RINKEBY_DISPLAY_NAME,
-  KOVAN_DISPLAY_NAME,
-  GOERLI_TESTNET_DISPLAY_NAME,
-  CLASSIC_DISPLAY_NAME,
-  XDC_DISPLAY_NAME,
-  XDC_TESTNET_DISPLAY_NAME,
-  XDC_DEVNET_DISPLAY_NAME,
-  DROPDOWN_POA_DISPLAY_NAME,
-  DROPDOWN_DAI_DISPLAY_NAME,
-  DROPDOWN_POA_SOKOL_DISPLAY_NAME,
-  DROPDOWN_MAINNET_DISPLAY_NAME,
-  DROPDOWN_ROPSTEN_DISPLAY_NAME,
-  DROPDOWN_RINKEBY_DISPLAY_NAME,
-  DROPDOWN_KOVAN_DISPLAY_NAME,
-  DROPDOWN_GOERLI_TESTNET_DISPLAY_NAME,
-  DROPDOWN_CLASSIC_DISPLAY_NAME,
-  DROPDOWN_XDC_DISPLAY_NAME,
-  DROPDOWN_XDC_TESTNET_DISPLAY_NAME,
-  DROPDOWN_XDC_DEVNET_DISPLAY_NAME,
-  chainTypes,
-  permanentNetworks,
+  XDC_APOTHEM
+]
+
+export const NETWORK_TYPE_TO_ID_MAP = {
+  [ROPSTEN]: { networkId: ROPSTEN_NETWORK_ID, chainId: ROPSTEN_CHAIN_ID },
+  [RINKEBY]: { networkId: RINKEBY_NETWORK_ID, chainId: RINKEBY_CHAIN_ID },
+  [KOVAN]: { networkId: KOVAN_NETWORK_ID, chainId: KOVAN_CHAIN_ID },
+  [GOERLI]: { networkId: GOERLI_NETWORK_ID, chainId: GOERLI_CHAIN_ID },
+  [XDC]: { networkId: XDC_NETWORK_ID, chainId: XDC_CHAIN_ID },
+  [XDC_APOTHEM]: { networkId: XDC_APOTHEM_NETWORK_ID, chainId: XDC_APOTHEM_CHAIN_ID },
+
+  [MAINNET]: { networkId: MAINNET_NETWORK_ID, chainId: MAINNET_CHAIN_ID },
+}
+
+export const NETWORK_TO_NAME_MAP = {
+  [ROPSTEN]: ROPSTEN_DISPLAY_NAME,
+  [RINKEBY]: RINKEBY_DISPLAY_NAME,
+  [KOVAN]: KOVAN_DISPLAY_NAME,
+  [MAINNET]: MAINNET_DISPLAY_NAME,
+  [GOERLI]: GOERLI_DISPLAY_NAME,
+  [XDC]: XDC_DISPLAY_NAME,
+  [XDC_APOTHEM]: XDC_APOTHEM_DISPLAY_NAME,
+
+
+  [ROPSTEN_NETWORK_ID]: ROPSTEN_DISPLAY_NAME,
+  [RINKEBY_NETWORK_ID]: RINKEBY_DISPLAY_NAME,
+  [KOVAN_NETWORK_ID]: KOVAN_DISPLAY_NAME,
+  [GOERLI_NETWORK_ID]: GOERLI_DISPLAY_NAME,
+  [MAINNET_NETWORK_ID]: MAINNET_DISPLAY_NAME,
+  [XDC_NETWORK_ID]: XDC_DISPLAY_NAME,
+  [XDC_APOTHEM_NETWORK_ID]: XDC_APOTHEM_DISPLAY_NAME,
+
+
+  [ROPSTEN_CHAIN_ID]: ROPSTEN_DISPLAY_NAME,
+  [RINKEBY_CHAIN_ID]: RINKEBY_DISPLAY_NAME,
+  [KOVAN_CHAIN_ID]: KOVAN_DISPLAY_NAME,
+  [GOERLI_CHAIN_ID]: GOERLI_DISPLAY_NAME,
+  [XDC_CHAIN_ID]: XDC_DISPLAY_NAME,
+  [XDC_APOTHEM_CHAIN_ID]: XDC_APOTHEM_DISPLAY_NAME,
+  [MAINNET_CHAIN_ID]: MAINNET_DISPLAY_NAME,
 }

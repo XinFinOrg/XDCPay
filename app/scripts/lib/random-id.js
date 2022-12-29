@@ -1,9 +1,8 @@
 const MAX = Number.MAX_SAFE_INTEGER
 
 let idCounter = Math.round(Math.random() * MAX)
-function createRandomId () {
-  idCounter = idCounter % MAX
+export default function createRandomId () {
+  idCounter %= MAX
+  // eslint-disable-next-line no-plusplus
   return idCounter++
 }
-
-module.exports = createRandomId

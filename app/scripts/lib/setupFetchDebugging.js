@@ -1,25 +1,27 @@
-module.exports = setupFetchDebugging
-
 //
 // This is a utility to help resolve cases where `window.fetch` throws a
 // `TypeError: Failed to Fetch` without any stack or context for the request
 // https://github.com/getsentry/sentry-javascript/pull/1293
 //
 
-function setupFetchDebugging () {
-  if (!global.fetch) return
-  const originalFetch = global.fetch
+export default function setupFetchDebugging () {
+  if (!window.fetch) {
+    return
+  }
+  const originalFetch = window.fetch
 
-  global.fetch = wrappedFetch
+  window.fetch = wrappedFetch
 
   async function wrappedFetch (...args) {
     const initialStack = getCurrentStack()
     try {
       return await originalFetch.call(window, ...args)
     } catch (err) {
-      console.warn('FetchDebugger - fetch encountered an Error', err)
-      console.warn('FetchDebugger - overriding stack to point of original call')
-      err.stack = initialStack
+      if (!err.stack) {
+        console.warn('FetchDebugger - fetch encountered an Error without a stack', err)
+        console.warn('FetchDebugger - overriding stack to point of original call')
+        err.stack = initialStack
+      }
       throw err
     }
   }

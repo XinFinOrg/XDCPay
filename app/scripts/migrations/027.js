@@ -1,18 +1,18 @@
 // next version number
-const version = 27
-
 /*
 
 normalizes txParams on unconfirmed txs
 
 */
-const clone = require('clone')
+import { cloneDeep } from 'lodash'
 
-module.exports = {
+const version = 27
+
+export default {
   version,
 
-  migrate: async function (originalVersionedData) {
-    const versionedData = clone(originalVersionedData)
+  async migrate (originalVersionedData) {
+    const versionedData = cloneDeep(originalVersionedData)
     versionedData.meta.version = version
     const state = versionedData.data
     const newState = transformState(state)
@@ -26,7 +26,7 @@ function transformState (state) {
 
   if (newState.TransactionController) {
     if (newState.TransactionController.transactions) {
-      const transactions = newState.TransactionController.transactions
+      const { transactions } = newState.TransactionController
       newState.TransactionController.transactions = transactions.filter((txMeta) => txMeta.status !== 'rejected')
     }
   }

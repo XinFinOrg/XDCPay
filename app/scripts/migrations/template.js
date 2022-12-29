@@ -1,19 +1,19 @@
 // next version number
-const version = 0
-
 /*
 
 description of migration and what it does
 
 */
 
-const clone = require('clone')
+import { cloneDeep } from 'lodash'
 
-module.exports = {
+const version = 0
+
+export default {
   version,
 
-  migrate: async function (originalVersionedData) {
-    const versionedData = clone(originalVersionedData)
+  async migrate (originalVersionedData) {
+    const versionedData = cloneDeep(originalVersionedData)
     versionedData.meta.version = version
     const state = versionedData.data
     const newState = transformState(state)

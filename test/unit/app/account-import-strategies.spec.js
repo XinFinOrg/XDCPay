@@ -1,7 +1,6 @@
-const assert = require('assert')
-const ethUtil = require('ethereumjs-util')
-const accountImporter = require('../../../app/scripts/account-import-strategies/index')
-const { assertRejects } = require('../test-utils')
+import assert from 'assert'
+import ethUtil from 'ethereumjs-util'
+import accountImporter from '../../../app/scripts/account-import-strategies'
 
 describe('Account Import Strategies', function () {
   const privkey = '0x4cfd3e90fc78b0f86bf7524722150bb8da9c60cd532564d7ff43f5716514f553'
@@ -9,31 +8,29 @@ describe('Account Import Strategies', function () {
 
   describe('private key import', function () {
     it('imports a private key and strips 0x prefix', async function () {
-      const importPrivKey = await accountImporter.importAccount('Private Key', [ privkey ])
+      const importPrivKey = await accountImporter.importAccount('Private Key', [privkey])
       assert.equal(importPrivKey, ethUtil.stripHexPrefix(privkey))
     })
 
-    it('throws an error for empty string private key', async () => {
-      assertRejects(async function () {
-        await accountImporter.importAccount('Private Key', [ '' ])
+    it('throws an error for empty string private key', async function () {
+      await assert.rejects(async () => {
+        await accountImporter.importAccount('Private Key', [''])
       }, Error, 'no empty strings')
     })
 
-    it('throws an error for undefined string private key', async () => {
-      assertRejects(async function () {
-        await accountImporter.importAccount('Private Key', [ undefined ])
+    it('throws an error for undefined string private key', async function () {
+      await assert.rejects(async () => {
+        await accountImporter.importAccount('Private Key', [undefined])
       })
-    })
 
-    it('throws an error for undefined string private key', async () => {
-      assertRejects(async function () {
+      await assert.rejects(async () => {
         await accountImporter.importAccount('Private Key', [])
       })
     })
 
-    it('throws an error for invalid private key', async () => {
-      assertRejects(async function () {
-        await accountImporter.importAccount('Private Key', [ 'popcorn' ])
+    it('throws an error for invalid private key', async function () {
+      await assert.rejects(async () => {
+        await accountImporter.importAccount('Private Key', ['popcorn'])
       })
     })
   })
@@ -43,7 +40,7 @@ describe('Account Import Strategies', function () {
       const wrongPassword = 'password2'
 
       try {
-        await accountImporter.importAccount('JSON File', [ json, wrongPassword])
+        await accountImporter.importAccount('JSON File', [json, wrongPassword])
       } catch (error) {
         assert.equal(error.message, 'Key derivation failed - possibly wrong passphrase')
       }
@@ -51,7 +48,7 @@ describe('Account Import Strategies', function () {
 
     it('imports json string and password to return a private key', async function () {
       const fileContentsPassword = 'password1'
-      const importJson = await accountImporter.importAccount('JSON File', [ json, fileContentsPassword])
+      const importJson = await accountImporter.importAccount('JSON File', [json, fileContentsPassword])
       assert.equal(importJson, '0x5733876abe94146069ce8bcbabbde2677f2e35fa33e875e92041ed2ac87e5bc7')
     })
   })

@@ -1,6 +1,4 @@
 
-const version = 19
-
 /*
 
 This migration sets transactions as failed
@@ -8,20 +6,22 @@ whos nonce is too high
 
 */
 
-const clone = require('clone')
+import { cloneDeep } from 'lodash'
 
-module.exports = {
+const version = 19
+
+export default {
   version,
 
-  migrate: function (originalVersionedData) {
-    const versionedData = clone(originalVersionedData)
+  migrate (originalVersionedData) {
+    const versionedData = cloneDeep(originalVersionedData)
     versionedData.meta.version = version
     try {
       const state = versionedData.data
       const newState = transformState(state)
       versionedData.data = newState
     } catch (err) {
-      console.warn(`MetaMask Migration #${version}` + err.stack)
+      console.warn(`MetaMask Migration #${version}${err.stack}`)
     }
     return Promise.resolve(versionedData)
   },
@@ -32,19 +32,21 @@ function transformState (state) {
   const { TransactionController } = newState
   if (TransactionController && TransactionController.transactions) {
 
-    const transactions = newState.TransactionController.transactions
+    const { transactions } = newState.TransactionController
 
     newState.TransactionController.transactions = transactions.map((txMeta, _, txList) => {
-      if (txMeta.status !== 'submitted') return txMeta
+      if (txMeta.status !== 'submitted') {
+        return txMeta
+      }
 
       const confirmedTxs = txList.filter((tx) => tx.status === 'confirmed')
-      .filter((tx) => tx.txParams.from === txMeta.txParams.from)
-      .filter((tx) => tx.metamaskNetworkId.from === txMeta.metamaskNetworkId.from)
+        .filter((tx) => tx.txParams.from === txMeta.txParams.from)
+        .filter((tx) => tx.metamaskNetworkId.from === txMeta.metamaskNetworkId.from)
       const highestConfirmedNonce = getHighestNonce(confirmedTxs)
 
       const pendingTxs = txList.filter((tx) => tx.status === 'submitted')
-      .filter((tx) => tx.txParams.from === txMeta.txParams.from)
-      .filter((tx) => tx.metamaskNetworkId.from === txMeta.metamaskNetworkId.from)
+        .filter((tx) => tx.txParams.from === txMeta.txParams.from)
+        .filter((tx) => tx.metamaskNetworkId.from === txMeta.metamaskNetworkId.from)
       const highestContinuousNonce = getHighestContinuousFrom(pendingTxs, highestConfirmedNonce)
 
       const maxNonce = Math.max(highestContinuousNonce, highestConfirmedNonce)
@@ -64,13 +66,13 @@ function transformState (state) {
 
 function getHighestContinuousFrom (txList, startPoint) {
   const nonces = txList.map((txMeta) => {
-    const nonce = txMeta.txParams.nonce
+    const { nonce } = txMeta.txParams
     return parseInt(nonce, 16)
   })
 
   let highest = startPoint
   while (nonces.includes(highest)) {
-    highest++
+    highest += 1
   }
 
   return highest
@@ -78,7 +80,7 @@ function getHighestContinuousFrom (txList, startPoint) {
 
 function getHighestNonce (txList) {
   const nonces = txList.map((txMeta) => {
-  const nonce = txMeta.txParams.nonce
+    const { nonce } = txMeta.txParams
     return parseInt(nonce || '0x0', 16)
   })
   const highestNonce = Math.max.apply(null, nonces)

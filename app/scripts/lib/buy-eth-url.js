@@ -1,142 +1,55 @@
-module.exports = {
-  getBuyEthUrl,
-  getFaucets,
-  getExchanges,
-}
-const ethNetProps = require('xdc-net-props')
-
-const {
-  POA_CODE,
-  DAI_CODE,
-  POA_SOKOL_CODE,
-  MAINNET_CODE,
-  CLASSIC_CODE,
-  ROPSTEN_CODE,
-  RINKEBY_CODE,
-  KOVAN_CODE,
-  GOERLI_TESTNET_CODE,
-  XDC_CODE,
-  XDC_TESTNET_CODE,
-  XDC_DEVNET_CODE,
-} = require('../controllers/network/enums')
-
 /**
- * Gives the caller a url at which the user can acquire coin, depending on the network they are in
+ * Gives the caller a url at which the user can acquire eth, depending on the network they are in
  *
- * @param {object} opts Options required to determine the correct url
+ * @param {Object} opts - Options required to determine the correct url
  * @param {string} opts.network The network for which to return a url
- * @param {string} opts.amount The amount of ETH to buy on coinbase. Only relevant if network === '1'.
  * @param {string} opts.address The address the bought ETH should be sent to.  Only relevant if network === '1'.
- * @param {number} opts.ind The position of the link (to faucet, or exchange) in the array of links for selected network
- * @returns {string|undefined} The url at which the user can access ETH, while in the given network. If the passed
+ * @returns {string|undefined} - The url at which the user can access ETH, while in the given network. If the passed
  * network does not match any of the specified cases, or if no network is given, returns undefined.
  *
  */
-function getBuyEthUrl ({network, amount, address, ind}) {
-  let url
-  switch (Number(network)) {
-    case MAINNET_CODE:
-    case POA_CODE:
-    case DAI_CODE:
-    case CLASSIC_CODE:
-    case XDC_CODE:
-      url = getExchanges({network, amount, address})[ind].link
-      break
-    case ROPSTEN_CODE:
-    case RINKEBY_CODE:
-    case KOVAN_CODE:
-    case POA_SOKOL_CODE:
-    case XDC_TESTNET_CODE:
-    case XDC_DEVNET_CODE:
-    case GOERLI_TESTNET_CODE:
-      url = getFaucets(network)[ind]
-      break
+export default function getBuyEthUrl ({ network, address, service }) {
+  // default service by network if not specified
+  if (!service) {
+    // eslint-disable-next-line no-param-reassign
+    service = getDefaultServiceForNetwork(network)
   }
-  return url
-}
 
-/**
- * Retrieves the array of faucets for given network ID of testnet
- *
- * @param {string} The network ID
- * @returns {array} The array of faucets for given network ID
- */
-function getFaucets (network) {
-  return ethNetProps.faucetLinks(network)
-}
-
-/**
- * Retrieves the array of exchanges for given network ID of production chain
- *
- * @param {object} opts Options required to determine the correct exchange service url
- * @param {string} opts.network The network ID
- * @param {string} opts.amount The amount of ETH to buy on coinbase. Only relevant if network === '1'.
- * @param {string} opts.address The address the bought ETH should be sent to.  Only relevant if network === '1'.
- * @returns {array} The array of exchanges for given network ID
- */
-function getExchanges ({network, amount, address}) {
-  const networkID = Number(network)
-  switch (networkID) {
-    case 1:
-      return [
-        {
-          link: `https://buy.coinbase.com/?code=9ec56d01-7e81-5017-930c-513daa27bb6a&amount=${amount}&address=${address}&crypto_currency=ETH`,
-        },
-      ]
-    case CLASSIC_CODE:
-      return [
-        {
-          name: 'Binance',
-          link: 'https://www.binance.com/en/trade/ETC_ETH',
-        },
-      ]
-    case POA_CODE:
-      return [
-        {
-          name: 'Binance',
-          link: 'https://www.binance.com/en/trade/POA_ETH',
-        },
-        {
-          name: 'BiBox',
-          link: 'https://www.bibox.com/exchange?coinPair=POA_ETH',
-        },
-        {
-          name: 'CEX Plus',
-          link: 'http://cex.plus/market/poa_eth',
-        },
-        {
-          name: 'HitBTC',
-          link: 'https://hitbtc.com/POA-to-ETH',
-        },
-      ]
-    case DAI_CODE:
-      return [
-        {
-          name: 'xDai TokenBridge',
-          link: 'https://dai-bridge.poa.network/',
-        },
-      ]
-    case XDC_CODE:
-      return [
-        // {
-        //   name: 'Simplex',
-        //   link: 'https://simplex.bringtotheblock.net/',
-        // },
-        {
-          name: 'Indodax',
-          link: 'https://indodax.com/market/XDCIDR',
-        },
-        {
-          name: 'Kucoin',
-          link: ' https://trade.kucoin.com/trade/XDC-USDT',
-        },
-        {
-          name: 'Gate.io',
-          link: 'https://www.gate.io/trade/xdc_usdt',
-        },
-
-      ]
+  switch (service) {
+    case 'wyre':
+      return `https://pay.sendwyre.com/?dest=ethereum:${address}&destCurrency=ETH&accountId=AC-7AG3W4XH4N2&paymentMethod=debit-card`
+    case 'coinswitch':
+      return `https://metamask.coinswitch.co/?address=${address}&to=eth`
+    case 'metamask-faucet':
+      return 'https://faucet.metamask.io/'
+    case 'rinkeby-faucet':
+      return 'https://www.rinkeby.io/'
+    case 'kovan-faucet':
+      return 'https://github.com/kovan-testnet/faucet'
+    case 'xdcApothem':
+      return 'https://faucet.apothem.network/'
     default:
-      return []
+      throw new Error(`Unknown cryptocurrency exchange or faucet: "${service}"`)
+  }
+}
+
+function getDefaultServiceForNetwork (network) {
+  switch (network) {
+    case '1':
+      return 'wyre'
+    case '3':
+      return 'metamask-faucet'
+    case '4':
+      return 'rinkeby-faucet'
+    case '42':
+      return 'kovan-faucet'
+    case '5':
+      return 'goerli-faucet'
+    case '50':
+      return 'xdc'
+    case '51':
+      return 'xdcApothem'
+    default:
+      throw new Error(`No default cryptocurrency exchange or faucet for networkId: "${network}"`)
   }
 }

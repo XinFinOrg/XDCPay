@@ -433,7 +433,7 @@ window.LiveReloadOptions = { host: 'localhost' };
           liveImg: (_ref1 = message.liveImg) != null ? _ref1 : true,
           originalPath: message.originalPath || '',
           overrideURL: message.overrideURL || '',
-          serverURL: 'https://' + this.options.host + ':' + this.options.port,
+          serverURL: 'http://' + this.options.host + ':' + this.options.port,
         })
       }
 

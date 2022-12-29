@@ -46,7 +46,7 @@
             "read":true,
             "date":"Fri Dec 16 2016",
             "title":"Ending Morden Support",
-            "body":"Due to [recent events](https://blog.ethereum.org/2016/11/20/from-morden-to-ropsten/), MetaMask is now deprecating support for the Morden Test Network.\n\nUsers will still be able to access Morden through a locally hosted node, but we will no longer be providing hosted access to this network through [Infura](https://infura.io/).\n\nPlease use the new Ropsten Network as your new default test network.\n\nYou can fund your Ropsten account using the buy button on your account page.\n\nBest wishes!\nThe MetaMask Team\n\n",
+            "body":"Due to [recent events](https://blog.ethereum.org/2016/11/20/from-morden-to-ropsten/), MetaMask is now deprecating support for the Morden Test Network.\n\nUsers will still be able to access Morden through a locally hosted node, but we will no longer be providing hosted access to this network through [Infura](http://infura.io/).\n\nPlease use the new Ropsten Network as your new default test network.\n\nYou can fund your Ropsten account using the buy button on your account page.\n\nBest wishes!\nThe MetaMask Team\n\n",
             "id":0
          },
          {
@@ -88,8 +88,6 @@
                "nonce":"0x0",
                "gasLimit":"0x5209"
             },
-            "gasLimitSpecified":false,
-            "estimatedGas":"0x5209",
             "txFee":"17e0186e60800",
             "txValue":"de0b6b3a7640000",
             "maxCost":"de234b52e4a0800",
@@ -112,8 +110,6 @@
                "gasPrice":"0x04a817c800",
                "gasLimit":"0x5209"
             },
-            "gasLimitSpecified":false,
-            "estimatedGas":"0x5209",
             "txFee":"17e0186e60800",
             "txValue":"de0b6b3a7640000",
             "maxCost":"de234b52e4a0800",
@@ -133,8 +129,6 @@
                "metamaskNetworkId":"3",
                "gas":"0x5209"
             },
-            "gasLimitSpecified":false,
-            "estimatedGas":"0x5209",
             "txFee":"17e0186e60800",
             "txValue":"de0b6b3a7640000",
             "maxCost":"de234b52e4a0800"

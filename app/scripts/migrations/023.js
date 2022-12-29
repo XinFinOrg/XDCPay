@@ -1,26 +1,26 @@
 
-const version = 23
-
 /*
 
 This migration removes transactions that are no longer usefull down to 40 total
 
 */
 
-const clone = require('clone')
+import { cloneDeep } from 'lodash'
 
-module.exports = {
+const version = 23
+
+export default {
   version,
 
-  migrate: function (originalVersionedData) {
-    const versionedData = clone(originalVersionedData)
+  migrate (originalVersionedData) {
+    const versionedData = cloneDeep(originalVersionedData)
     versionedData.meta.version = version
     try {
       const state = versionedData.data
       const newState = transformState(state)
       versionedData.data = newState
     } catch (err) {
-      console.warn(`MetaMask Migration #${version}` + err.stack)
+      console.warn(`MetaMask Migration #${version}${err.stack}`)
     }
     return Promise.resolve(versionedData)
   },
@@ -31,9 +31,11 @@ function transformState (state) {
 
   const { TransactionController } = newState
   if (TransactionController && TransactionController.transactions) {
-    const transactions = newState.TransactionController.transactions
+    const { transactions } = newState.TransactionController
 
-    if (transactions.length <= 40) return newState
+    if (transactions.length <= 40) {
+      return newState
+    }
 
     const reverseTxList = transactions.reverse()
     let stripping = true
@@ -44,8 +46,11 @@ function transformState (state) {
         txMeta.status === 'confirmed' ||
         txMeta.status === 'dropped')
       })
-      if (txIndex < 0) stripping = false
-      else reverseTxList.splice(txIndex, 1)
+      if (txIndex < 0) {
+        stripping = false
+      } else {
+        reverseTxList.splice(txIndex, 1)
+      }
     }
 
     newState.TransactionController.transactions = reverseTxList.reverse()

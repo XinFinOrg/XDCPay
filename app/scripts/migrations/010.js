@@ -1,26 +1,25 @@
-const version = 10
-
 /*
 
 This migration breaks out the ShapeShiftController substate
 
 */
 
-const merge = require('deep-extend')
-const clone = require('clone')
+import { cloneDeep, merge } from 'lodash'
 
-module.exports = {
+const version = 10
+
+export default {
   version,
 
-  migrate: function (originalVersionedData) {
-    const versionedData = clone(originalVersionedData)
+  migrate (originalVersionedData) {
+    const versionedData = cloneDeep(originalVersionedData)
     versionedData.meta.version = version
     try {
       const state = versionedData.data
       const newState = transformState(state)
       versionedData.data = newState
     } catch (err) {
-      console.warn(`MetaMask Migration #${version}` + err.stack)
+      console.warn(`MetaMask Migration #${version}${err.stack}`)
     }
     return Promise.resolve(versionedData)
   },

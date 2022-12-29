@@ -1,49 +1,27 @@
-const assert = require('assert')
-const { getBuyEthUrl, getExchanges } = require('../../../app/scripts/lib/buy-eth-url')
+import assert from 'assert'
+import getBuyEthUrl from '../../../app/scripts/lib/buy-eth-url'
 
-describe('', function () {
+describe('buy-eth-url', function () {
   const mainnet = {
     network: '1',
     amount: 5,
     address: '0x0dcd5d886577d5081b0c52e242ef29e70be3e7bc',
-    ind: 0,
-  }
-  const sokol = {
-    network: '77',
-    ind: 0,
   }
   const ropsten = {
     network: '3',
-    ind: 0,
   }
   const rinkeby = {
     network: '4',
-    ind: 0,
   }
-  const kovan1 = {
+  const kovan = {
     network: '42',
-    ind: 0,
-  }
-  const kovan2 = {
-    network: '42',
-    ind: 1,
   }
 
-  it('returns coinbase url with amount and address for network 1', function () {
-    const coinbaseUrl = getBuyEthUrl(mainnet)
-    const coinbase = coinbaseUrl.match(/(https:\/\/buy.coinbase.com)/)
-    const amount = coinbaseUrl.match(/(amount)\D\d/)
-    const address = coinbaseUrl.match(/(address)(.*)(?=&)/)
+  it('returns wyre url with address for network 1', function () {
+    const wyreUrl = getBuyEthUrl(mainnet)
 
-    assert.equal(coinbase[0], 'https://buy.coinbase.com')
-    assert.equal(amount[0], 'amount=5')
-    assert.equal(address[0], 'address=0x0dcd5d886577d5081b0c52e242ef29e70be3e7bc')
+    assert.equal(wyreUrl, 'https://pay.sendwyre.com/?dest=ethereum:0x0dcd5d886577d5081b0c52e242ef29e70be3e7bc&destCurrency=ETH&accountId=AC-7AG3W4XH4N2&paymentMethod=debit-card')
 
-  })
-
-  it('returns POA Sokol faucet for network 77', function () {
-    const ropstenUrl = getBuyEthUrl(sokol)
-    assert.equal(ropstenUrl, 'https://faucet.poa.network/')
   })
 
   it('returns metamask ropsten faucet for network 3', function () {
@@ -53,57 +31,12 @@ describe('', function () {
 
   it('returns rinkeby dapp for network 4', function () {
     const rinkebyUrl = getBuyEthUrl(rinkeby)
-    assert.equal(rinkebyUrl, 'https://faucet.rinkeby.io/')
+    assert.equal(rinkebyUrl, 'https://www.rinkeby.io/')
   })
 
-  it('returns kovan github test faucet 1 for network 42', function () {
-    const kovanUrl = getBuyEthUrl(kovan1)
-    assert.equal(kovanUrl, 'https://faucet.kovan.network/')
+  it('returns kovan github test faucet for network 42', function () {
+    const kovanUrl = getBuyEthUrl(kovan)
+    assert.equal(kovanUrl, 'https://github.com/kovan-testnet/faucet')
   })
 
-  it('returns kovan github test faucet 2 for network 42', function () {
-    const kovanUrl = getBuyEthUrl(kovan2)
-    assert.equal(kovanUrl, 'https://gitter.im/kovan-testnet/faucet/')
-  })
-
-  it('returns exchanges for POA core network', function () {
-    const exchanges = getExchanges({network: 99})
-    assert.deepEqual(exchanges, [
-      {
-        name: 'Binance',
-        link: 'https://www.binance.com/en/trade/POA_ETH',
-      },
-      {
-        name: 'BiBox',
-        link: 'https://www.bibox.com/exchange?coinPair=POA_ETH',
-      },
-      {
-        name: 'CEX Plus',
-        link: 'http://cex.plus/market/poa_eth',
-      },
-      {
-        name: 'HitBTC',
-        link: 'https://hitbtc.com/POA-to-ETH',
-      },
-    ])
-  })
-
-  it('returns xDai bridge link for xDai network', function () {
-    const exchanges = getExchanges({network: 100})
-    assert.deepEqual(exchanges, [
-      {
-        name: 'xDai TokenBridge',
-        link: 'https://dai-bridge.poa.network/',
-      },
-    ])
-  })
-
-  it('returns xDai Coinbase link for Mainnet', function () {
-    const exchanges = getExchanges({network: 1, amount: 1, address: '0x0dcd5d886577d5081b0c52e242ef29e70be3e7bc'})
-    assert.deepEqual(exchanges, [
-      {
-        link: `https://buy.coinbase.com/?code=9ec56d01-7e81-5017-930c-513daa27bb6a&amount=1&address=0x0dcd5d886577d5081b0c52e242ef29e70be3e7bc&crypto_currency=ETH`,
-      },
-    ])
-  })
 })

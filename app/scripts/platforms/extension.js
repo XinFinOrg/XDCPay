@@ -1,8 +1,9 @@
-const extension = require('extensionizer')
-const explorerLinks = require('xdc-net-props').explorerLinks
-const { capitalizeFirstLetter } = require('../lib/util')
+import extension from 'extensionizer'
+import { createExplorerLink as explorerLink } from '@metamask/etherscan-link'
+import { getEnvironmentType, checkForError } from '../lib/util'
+import { ENVIRONMENT_TYPE_BACKGROUND } from '../lib/enums'
 
-class ExtensionPlatform {
+export default class ExtensionPlatform {
 
   //
   // Public
@@ -11,34 +12,69 @@ class ExtensionPlatform {
     extension.runtime.reload()
   }
 
-  openWindow ({ url }) {
-    extension.tabs.create({ url })
+  openTab (options) {
+    return new Promise((resolve, reject) => {
+      extension.tabs.create(options, (newTab) => {
+        const error = checkForError()
+        if (error) {
+          return reject(error)
+        }
+        return resolve(newTab)
+      })
+    })
+  }
+
+  openWindow (options) {
+    return new Promise((resolve, reject) => {
+      extension.windows.create(options, (newWindow) => {
+        const error = checkForError()
+        if (error) {
+          return reject(error)
+        }
+        return resolve(newWindow)
+      })
+    })
+  }
+
+  focusWindow (windowId) {
+    return new Promise((resolve, reject) => {
+      extension.windows.update(windowId, { focused: true }, () => {
+        const error = checkForError()
+        if (error) {
+          return reject(error)
+        }
+        return resolve()
+      })
+    })
+  }
+
+  updateWindowPosition (windowId, left, top) {
+    return new Promise((resolve, reject) => {
+      extension.windows.update(windowId, { left, top }, () => {
+        const error = checkForError()
+        if (error) {
+          return reject(error)
+        }
+        return resolve()
+      })
+    })
+  }
+
+  getLastFocusedWindow () {
+    return new Promise((resolve, reject) => {
+      extension.windows.getLastFocused((windowObject) => {
+        const error = checkForError()
+        if (error) {
+          return reject(error)
+        }
+        return resolve(windowObject)
+      })
+    })
   }
 
   closeCurrentWindow () {
     return extension.windows.getCurrent((windowDetails) => {
       return extension.windows.remove(windowDetails.id)
-    })
-  }
-
-  /**
-   * Closes all notifications windows, when action is confirmed in popup
-   * or closes notification window itself, when action is confirmed from it
-   */
-  closeNotificationWindow () {
-    return extension.windows.getCurrent((curWindowsDetails) => {
-      if (curWindowsDetails.type === 'popup') {
-        return extension.windows.remove(curWindowsDetails.id)
-      } else {
-        extension.windows.getAll((windowsDetails) => {
-          const windowsDetailsFiltered = windowsDetails.filter((windowDetails) => windowDetails.id !== curWindowsDetails.id)
-          return windowsDetailsFiltered.forEach((windowDetails) => {
-            if (windowDetails.type === 'popup') {
-              extension.windows.remove(windowDetails.id)
-            }
-          })
-        })
-      }
     })
   }
 
@@ -56,7 +92,10 @@ class ExtensionPlatform {
     if (route) {
       extensionURL += `#${route}`
     }
-    this.openWindow({ url: extensionURL })
+    this.openTab({ url: extensionURL })
+    if (getEnvironmentType() !== ENVIRONMENT_TYPE_BACKGROUND) {
+      window.close()
+    }
   }
 
   getPlatformInfo (cb) {
@@ -66,36 +105,104 @@ class ExtensionPlatform {
       })
     } catch (e) {
       cb(e)
+      // eslint-disable-next-line no-useless-return
+      return
     }
   }
 
   showTransactionNotification (txMeta) {
+    const { status, txReceipt: { status: receiptStatus } = {} } = txMeta
 
-    const status = txMeta.status
     if (status === 'confirmed') {
-      this._showConfirmedTransaction(txMeta)
+      // There was an on-chain failure
+      receiptStatus === '0x0'
+        ? this._showFailedTransaction(txMeta, 'Transaction encountered an error.')
+        : this._showConfirmedTransaction(txMeta)
     } else if (status === 'failed') {
       this._showFailedTransaction(txMeta)
     }
+  }
+
+  getAllWindows () {
+    return new Promise((resolve, reject) => {
+      extension.windows.getAll((windows) => {
+        const error = checkForError()
+        if (error) {
+          return reject(error)
+        }
+        return resolve(windows)
+      })
+    })
+  }
+
+  getActiveTabs () {
+    return new Promise((resolve, reject) => {
+      extension.tabs.query({ active: true }, (tabs) => {
+        const error = checkForError()
+        if (error) {
+          return reject(error)
+        }
+        return resolve(tabs)
+      })
+    })
+  }
+
+  currentTab () {
+    return new Promise((resolve, reject) => {
+      extension.tabs.getCurrent((tab) => {
+        const err = checkForError()
+        if (err) {
+          reject(err)
+        } else {
+          resolve(tab)
+        }
+      })
+    })
+  }
+
+  switchToTab (tabId) {
+    return new Promise((resolve, reject) => {
+      extension.tabs.update(tabId, { highlighted: true }, (tab) => {
+        const err = checkForError()
+        if (err) {
+          reject(err)
+        } else {
+          resolve(tab)
+        }
+      })
+    })
+  }
+
+  closeTab (tabId) {
+    return new Promise((resolve, reject) => {
+      extension.tabs.remove(tabId, () => {
+        const err = checkForError()
+        if (err) {
+          reject(err)
+        } else {
+          resolve()
+        }
+      })
+    })
   }
 
   _showConfirmedTransaction (txMeta) {
 
     this._subscribeToNotificationClicked()
 
-    const { url, explorerName } = this._getExplorer(txMeta.hash, parseInt(txMeta.metamaskNetworkId))
+    const url = explorerLink(txMeta.hash, txMeta.metamaskNetworkId)
     const nonce = parseInt(txMeta.txParams.nonce, 16)
 
     const title = 'Confirmed transaction'
-    const message = `Transaction ${nonce} confirmed! View on ${explorerName}`
+    const message = `Transaction ${nonce} confirmed! View on Blocksscan`
     this._showNotification(title, message, url)
   }
 
-  _showFailedTransaction (txMeta) {
+  _showFailedTransaction (txMeta, errorMessage) {
 
     const nonce = parseInt(txMeta.txParams.nonce, 16)
     const title = 'Failed transaction'
-    const message = `Transaction ${nonce} failed! ${capitalizeFirstLetter(txMeta.err.message)}`
+    const message = `Transaction ${nonce} failed! ${errorMessage || txMeta.err.message}`
     this._showNotification(title, message)
   }
 
@@ -103,35 +210,23 @@ class ExtensionPlatform {
     extension.notifications.create(
       url,
       {
-      'type': 'basic',
-      'title': title,
-      'iconUrl': extension.extension.getURL('../../images/icon-64.png'),
-      'message': message,
-      })
+        'type': 'basic',
+        title,
+        'iconUrl': extension.extension.getURL('../../images/icon-64.png'),
+        message,
+      },
+    )
   }
 
-  _subscribeToNotificationClicked = () => {
-    if (extension.notifications.onClicked.hasListener(this._viewOnExplorer)) {
-      extension.notifications.onClicked.removeListener(this._viewOnExplorer)
-    }
-    extension.notifications.onClicked.addListener(this._viewOnExplorer)
-  }
-
-  _viewOnExplorer (url) {
-    if (url.startsWith('http://') || url.startsWith('https://')) {
-      global.metamaskController.platform.openWindow({ url })
+  _subscribeToNotificationClicked () {
+    if (!extension.notifications.onClicked.hasListener(this._viewOnEtherscan)) {
+      extension.notifications.onClicked.addListener(this._viewOnEtherscan)
     }
   }
 
-  _getExplorer (hash, networkId) {
-    const explorerName = 'XDC BlocksScan'
-
-    return {
-      explorerName: explorerName,
-      url: explorerLinks.getExplorerTxLinkFor(hash, networkId),
+  _viewOnEtherscan (txId) {
+    if (txId.startsWith('https://')) {
+      extension.tabs.create({ url: txId })
     }
   }
-
 }
-
-module.exports = ExtensionPlatform
