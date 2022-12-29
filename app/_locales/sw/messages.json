@@ -372,7 +372,7 @@
     "message": "Ikiwa unataka kuhifadhi tena kwa njia mbadla kirai chako kianzio, unaweza kukipata kwenye Mipangilio -> Usalama."
   },
   "endOfFlowMessage7": {
-    "message": "Ikiwa una maswali au umeona kitu ambacho ni cha ulaghai, tuma barua pepe support@metamask.io."
+    "message": "Ikiwa una maswali au umeona kitu ambacho ni cha ulaghai, tuma barua pepe support@xinfin.org."
   },
   "endOfFlowMessage8": {
     "message": "XDCPay haiwezi kurejesha kirai chako kianzio. Pata maelezo ziadi."
@@ -698,7 +698,7 @@
     "message": "Kuwa mwangalifu na kirai kianzio chako - kumekuwa na taarifa za tovuti ambazo zinajaribu kuiga XDCPay. XDCPay kamwe haitakuomba kirai kianzio chako!"
   },
   "protectYourKeysMessage2": {
-    "message": "Weka salama kirai kianzio chako. Ikiwa unaona kitu cha kilaghai, au huna uhakika na tovuti fulani, tuma barua pepe kwenda support@metamask.io"
+    "message": "Weka salama kirai kianzio chako. Ikiwa unaona kitu cha kilaghai, au huna uhakika na tovuti fulani, tuma barua pepe kwenda support@xinfin.org"
   },
   "rpcUrl": {
     "message": "RPC URL mpya"

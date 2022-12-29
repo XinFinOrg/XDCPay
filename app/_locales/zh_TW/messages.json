@@ -375,7 +375,7 @@
     "message": "如你需要再次備份助記詞，可至設定 -> 安全。"
   },
   "endOfFlowMessage7": {
-    "message": "如你有任何問題或察覺有異，請寄信給 support@metamask.io"
+    "message": "如你有任何問題或察覺有異，請寄信給 support@xinfin.org"
   },
   "endOfFlowMessage8": {
     "message": "XDCPay 無法還原你的助記詞。暸解更多"
@@ -714,7 +714,7 @@
     "message": "小心保管你的註記詞—我們接到報告有網站嘗試模仿 XDCPay。XDCPay 永遠不會詢問你的助記詞！"
   },
   "protectYourKeysMessage2": {
-    "message": "安全存放你的助記詞。如你察覺有異，或你對某網站起疑，請寄信給 support@metamask.io"
+    "message": "安全存放你的助記詞。如你察覺有異，或你對某網站起疑，請寄信給 support@xinfin.org"
   },
   "rpcUrl": {
     "message": "新的 RPC URL"

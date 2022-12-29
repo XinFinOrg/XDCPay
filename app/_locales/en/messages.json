@@ -491,7 +491,7 @@
     "message": "Decimals of Precision"
   },
   "defaultNetwork": {
-    "message": "The default network for Ether transactions is Main Net."
+    "message": "The default network for XDC Network transactions is Main Net."
   },
   "delete": {
     "message": "Delete"
@@ -563,7 +563,7 @@
     "message": "If you need to back up your seed phrase again, you can find it in Settings -> Security."
   },
   "endOfFlowMessage7": {
-    "message": "If you ever have questions or see something fishy, email support@metamask.io."
+    "message": "If you ever have questions or see something fishy, email support@xinfin.org."
   },
   "endOfFlowMessage8": {
     "message": "XDCPay cannot recover your seedphrase."
@@ -620,11 +620,11 @@
     "description": "Title of generic error page"
   },
   "errorPageMessage": {
-    "message": "Try again by reloading the page, or contact support at support@metamask.io",
+    "message": "Try again by reloading the page, or contact support at support@xinfin.org",
     "description": "Message displayed on generic error page in the fullscreen or notification UI"
   },
   "errorPagePopupMessage": {
-    "message": "Try again by closing and reopening the popup, or contact support at support@metamask.io",
+    "message": "Try again by closing and reopening the popup, or contact support at support@xinfin.org",
     "description": "Message displayed on generic error page in the popup UI"
   },
   "errorStack": {
@@ -934,7 +934,7 @@
     "message": "Click it to manage your connected accounts."
   },
   "metamaskDescription": {
-    "message": "Connecting you to Ethereum and the Decentralized Web."
+    "message": "Connecting you to XDC Network and the Decentralized Web3."
   },
   "metamaskVersion": {
     "message": "XDCPay Version"
@@ -1011,7 +1011,7 @@
     "message": "Be careful with your seed phrase — there have been reports of websites that attempt to imitate XDCPay. XDCPay will never ask for your seed phrase!"
   },
   "protectYourKeysMessage2": {
-    "message": "Keep your phrase safe. If you see something fishy, or you’re uncertain about a website, email support@metamask.io"
+    "message": "Keep your phrase safe. If you see something fishy, or you’re uncertain about a website, email support@xinfin.org"
   },
   "rpcUrl": {
     "message": "New RPC URL"
@@ -1119,7 +1119,7 @@
     "message": "Primary Currency"
   },
   "primaryCurrencySettingDescription": {
-    "message": "Select native to prioritize displaying values in the native currency of the chain (e.g. ETH). Select Fiat to prioritize displaying values in your selected fiat currency."
+    "message": "Select native to prioritize displaying values in the native currency of the chain (e.g. XDC). Select Fiat to prioritize displaying values in your selected fiat currency."
   },
   "privacyMsg": {
     "message": "Privacy Policy"
@@ -1699,7 +1699,7 @@
     "message": "View at $1"
   },
   "viewOnEtherscan": {
-    "message": "View on Blocksscan"
+    "message": "View on BlocksScan"
   },
   "retryTransaction": {
     "message": "Retry Transaction"

@@ -378,7 +378,7 @@
     "message": "Ha ismét biztonsági másolatot kell készítenie a seed mondatról, megtalálja azt a Beállítások -> Biztonság menüben."
   },
   "endOfFlowMessage7": {
-    "message": "Ha bármilyen kérdése van, vagy valami gyanús dolgot tapasztal, írjon a support@metamask.io címre."
+    "message": "Ha bármilyen kérdése van, vagy valami gyanús dolgot tapasztal, írjon a support@xinfin.org címre."
   },
   "endOfFlowMessage8": {
     "message": "A XDCPay nem tudta helyreállítani a seed mondatot. Tudjon meg többet."
@@ -713,7 +713,7 @@
     "message": "Vigyázzod a gyarapítási fázissal - olyan oldalakat jelentettek, amelyek a XDCPay-ot utánozzák. A XDCPay soha nem kéri el a gyarapítási fázisát."
   },
   "protectYourKeysMessage2": {
-    "message": "Őrizze biztonságos helyen a mondatot. Ha bármilyen gyanús dolgot tapasztal, vagy bizonytalan egy weboldalt illetően, írjon a support@metamask.io címre."
+    "message": "Őrizze biztonságos helyen a mondatot. Ha bármilyen gyanús dolgot tapasztal, vagy bizonytalan egy weboldalt illetően, írjon a support@xinfin.org címre."
   },
   "rpcUrl": {
     "message": "Új RPC URL"

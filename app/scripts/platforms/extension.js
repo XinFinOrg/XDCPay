@@ -194,7 +194,7 @@ export default class ExtensionPlatform {
     const nonce = parseInt(txMeta.txParams.nonce, 16)
 
     const title = 'Confirmed transaction'
-    const message = `Transaction ${nonce} confirmed! View on Blocksscan`
+    const message = `Transaction ${nonce} confirmed! View on BlocksScan`
     this._showNotification(title, message, url)
   }
 

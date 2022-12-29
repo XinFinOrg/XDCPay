@@ -37,7 +37,7 @@ export default function AccountOptionsMenu ({ anchorElement, onClose }) {
     eventOpts: {
       category: 'Navigation',
       action: 'Account Options',
-      name: 'Clicked View on Blocksscan',
+      name: 'Clicked View on BlocksScan',
     },
   })
   const openConnectedSitesEvent = useMetricEvent({

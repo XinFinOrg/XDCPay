@@ -375,7 +375,7 @@
     "message": "Si necesitas otra copia de seguridad de tu frase de inicialización, puedes encontrarla en Configuración -> Seguridad."
   },
   "endOfFlowMessage7": {
-    "message": "Si tienes preguntas o ves algo sospechoso, envía un correo electrónico a support@metamask.io."
+    "message": "Si tienes preguntas o ves algo sospechoso, envía un correo electrónico a support@xinfin.org."
   },
   "endOfFlowMessage8": {
     "message": "XDCPay no puede recuperar tu frase de inicialización. Obtén más información."
@@ -705,7 +705,7 @@
     "message": "Ten cuidado con tu frase de inicialización: hay informes sobre sitios web que intentan hacerse pasar por XDCPay. ¡XDCPay no te pedirá nunca tu frase de inicialización!"
   },
   "protectYourKeysMessage2": {
-    "message": "Mantén tu frase segura. Si notas algo raro o si no está seguro sobre si usar algún sitio web en específico, envíanos un correo electrónico a support@metamask.io"
+    "message": "Mantén tu frase segura. Si notas algo raro o si no está seguro sobre si usar algún sitio web en específico, envíanos un correo electrónico a support@xinfin.org"
   },
   "rpcUrl": {
     "message": "Nueva URL de RPC"

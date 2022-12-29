@@ -57,7 +57,7 @@ class TransactionListItemDetails extends PureComponent {
       eventOpts: {
         category: 'Navigation',
         action: 'Activity Log',
-        name: 'Clicked "View on Blocksscan"',
+        name: 'Clicked "View on BlocksScan"',
       },
     })
 
