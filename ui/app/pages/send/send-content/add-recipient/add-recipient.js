@@ -1,5 +1,5 @@
 import ethUtil from 'ethereumjs-util'
-import contractMap from 'eth-contract-metadata'
+import contractMap from '../../../../helpers/utils/contract'
 import {
   REQUIRED_ERROR,
   INVALID_RECIPIENT_ADDRESS_ERROR,

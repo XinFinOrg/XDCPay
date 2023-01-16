@@ -1,6 +1,6 @@
 import log from 'loglevel'
 import BigNumber from 'bignumber.js'
-import contractMap from 'eth-contract-metadata'
+import contractMap from './contract'
 import * as util from './util'
 import { conversionUtil, multiplyCurrencies } from './conversion-util'
 import { formatCurrency } from './confirm-tx.util'
@@ -8,7 +8,7 @@ import { formatCurrency } from './confirm-tx.util'
 const casedContractMap = Object.keys(contractMap).reduce((acc, base) => {
   return {
     ...acc,
-    [base.toLowerCase()]: contractMap[base],
+    [base.toLowerCase()]: contractMap[base.toLowerCase()],
   }
 }, {})
 

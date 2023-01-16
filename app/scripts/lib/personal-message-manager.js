@@ -87,7 +87,7 @@ export default class PersonalMessageManager extends EventEmitter {
   addUnapprovedMessageAsync (msgParams, req) {
     return new Promise((resolve, reject) => {
       if (!msgParams.from) {
-        reject(new Error('MetaMask Message Signature: from field is required.'))
+        reject(new Error('XDCPay Message Signature: from field is required.'))
         return
       }
       const msgId = this.addUnapprovedMessage(msgParams, req)
@@ -97,10 +97,10 @@ export default class PersonalMessageManager extends EventEmitter {
             resolve(data.rawSig)
             return
           case 'rejected':
-            reject(ethErrors.provider.userRejectedRequest('MetaMask Message Signature: User denied message signature.'))
+            reject(ethErrors.provider.userRejectedRequest('XDCPay Message Signature: User denied message signature.'))
             return
           default:
-            reject(new Error(`MetaMask Message Signature: Unknown problem: ${JSON.stringify(msgParams)}`))
+            reject(new Error(`XDCPay Message Signature: Unknown problem: ${JSON.stringify(msgParams)}`))
         }
       })
     })

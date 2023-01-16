@@ -77,7 +77,7 @@ class TransactionListItemDetails extends PureComponent {
   }
 
   handleCopyTxId = () => {
-    const { transactionGroup, getXDCAddress } = this.props
+    const { transactionGroup } = this.props
     const { primaryTransaction: transaction } = transactionGroup
     const { hash } = transaction
 
@@ -90,7 +90,7 @@ class TransactionListItemDetails extends PureComponent {
     })
 
     this.setState({ justCopied: true }, () => {
-      copyToClipboard(getXDCAddress(hash))
+      copyToClipboard(hash)
       setTimeout(() => this.setState({ justCopied: false }), 1000)
     })
   }

@@ -1,0 +1,149 @@
+{
+  "0x5d5f074837f5d4618b3916ba74de1bf9662a3fed": {
+    "name": "StorX",
+    "logo": "SRX.png",
+    "erc20": true,
+    "symbol": "SRX",
+    "decimals": 18
+  },
+  "0xD4B5f10D61916Bd6E0860144a91Ac658dE8a1437": {
+    "name": "USDT@xinfin",
+    "logo": "xUSDT.png",
+    "erc20":true,
+    "symbol": "xUSDT",
+    "decimals": 6
+  },
+  "0x71f7f49ff81e9be77c9175611212ecb199ba0824": {
+    "name": "BTC@xinfin",
+    "logo": "xBTC.png",
+    "erc20": true,
+    "symbol": "xBTC",
+    "decimals": 8
+  },
+  "0xc6ae1db6c66d909f7bfeeeb24f9adb8620bf9dbf": {
+    "name": "USDC@xinfin",
+    "logo": "xUSDC.png",
+    "erc20": true,
+    "symbol": "xUSDC",
+    "decimals": 6
+  },
+  "0x4e35a02b12d7bd010e235da055b6d03e89601264": {
+    "name": "XRP@xinfin",
+    "logo": "xXRP.png",
+    "erc20": true,
+    "symbol": "xXRP",
+    "decimals": 6
+  },
+  "0x951857744785e80e2de051c32ee7b25f9c458c42": {
+    "name": "Wrapped XDC",
+    "logo": "WXDC.png",
+    "erc20": true,
+    "symbol": "WXDC",
+    "decimals": 18
+  },
+  "0x8a3cc832bb6b255622e92dc9d4611f2a94d200da": {
+    "name": "Wrapped XDC",
+    "logo": "WXDC.png",
+    "erc20": true,
+    "symbol": "WXDC",
+    "decimals": 18
+  },
+  "0x8f9920283470f52128bf11b0c14e798be704fd15": {
+    "name": "Comtech Gold",
+    "logo": "CGO.png",
+    "erc20": true,
+    "symbol": "CGO",
+    "decimals": 18
+  },
+  "0xf1080029db591c013f4177f9289c1d85d73f601d": {
+    "name": "OKT@xinfin",
+    "logo": "OKT.png",
+    "erc20": true,
+    "symbol": "OKT",
+    "decimals": 18
+  },
+  "0xb3f18b584263191a33169f6393487e43e9586329": {
+    "name": "WadzPay Token",
+    "logo": "WTK.png",
+    "erc20": true,
+    "symbol": "WTK",
+    "decimals": 18
+  },
+  "0xbe5187c2a7eb776c1caeed2c37e7599fb05000d3": {
+    "name": "WAN@xinfin",
+    "logo": "WAN.png",
+    "erc20": true,
+    "symbol": "WAN",
+    "decimals": 18
+  },
+  "0xff7412ea7c8445c46a8254dfb557ac1e48094391": {
+    "name": "Plugin",
+    "logo": "PLI.png",
+    "erc20": true,
+    "symbol": "PLI",
+    "decimals": 18
+  },
+  "0x34514748f86a8da01ef082306b6d6e738f777f5a": {
+    "name": "Globiance Exchange Token",
+    "logo": "GBEX.png",
+    "erc20": true,
+    "symbol": "GBEX",
+    "decimals": 18
+  },
+  "0x0e11710aad67e7427cfbc12c353284c2e335f62c": {
+    "name": "PrimeNumbers Token",
+    "logo": "PRNT.png",
+    "erc20": true,
+    "symbol": "PRNT",
+    "decimals": 18
+  },
+  "0x05940b2df33d6371201e7ae099ced4c363855dfe": {
+    "name": "Law Block token",
+    "logo": "LBT.png",
+    "erc20": true,
+    "symbol": "LBT",
+    "decimals": 18
+  },
+  "0xeccf20ec789d99357439647f43777a1b0bfa0e8a": {
+    "name": "Xswap",
+    "logo": "XSP2.png",
+    "erc20": true,
+    "symbol": "XSP2",
+    "decimals": 18
+  },
+  "0x36726235dadbdb4658d33e62a249dca7c4b2bc68": {
+    "name": "XSP Token",
+    "logo": "XSP.png",
+    "erc20": true,
+    "symbol": "XSP",
+    "decimals": 18
+  },
+  "0x4826634fe187ed3ffb64d77c5c1a67ba49cc03de": {
+    "name": "BlocksWorkz Token",
+    "logo": "BLKZ.png",
+    "erc20": true,
+    "symbol": "BLKZ",
+    "decimals": 18
+  },
+  "0x20b59e6c5deb7d7ced2ca823c6ca81dd3f7e9a3a": {
+    "name": "DATACHAIN FOUNDATION",
+    "logo": "DC.png",
+    "erc20": true,
+    "symbol": "DC",
+    "decimals": 18
+  },
+  "0xd04275e2fd2875beaade6a80b39a75d4fe267df6": {
+    "name": "NOTA",
+    "logo": "USNOTA.png",
+    "erc20": true,
+    "symbol": "USNOTA",
+    "decimals": 6
+  },
+  "0x536dd70445cea1e97f9bf1bada04cbda5199a2a1": {
+    "name": "ECOIN",
+    "logo": "ECOIN.png",
+    "erc20": true,
+    "symbol": "ECOIN",
+    "decimals": 10
+  }
+}

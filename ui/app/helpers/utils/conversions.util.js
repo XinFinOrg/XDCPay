@@ -36,7 +36,7 @@ export function getEthConversionFromWeiHex ({ value, fromCurrency = ETH, convers
     })
 
     if (convertedValue !== '0' || i === denominations.length - 1) {
-      nonZeroDenomination = `${convertedValue} ${denominations[i]}`
+      nonZeroDenomination = `${convertedValue} ${denominations[i] === 'ETH' ? 'XDC' : denominations[i]}`
       break
     }
   }

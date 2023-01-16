@@ -2,7 +2,6 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import { useDispatch, useSelector } from 'react-redux'
 import { useHistory } from 'react-router-dom'
-import { createAccountLink } from '@metamask/etherscan-link'
 
 import TransactionList from '../../../components/app/transaction-list'
 import { TokenOverview } from '../../../components/app/wallet-overview'
@@ -12,6 +11,7 @@ import { showModal } from '../../../store/actions'
 
 import AssetNavigation from './asset-navigation'
 import TokenOptions from './token-options'
+import { getBlockExplorerUrlForAddress } from '../../../helpers/utils/transactions.util'
 
 export default function TokenAsset ({ token }) {
   const dispatch = useDispatch()
@@ -29,8 +29,7 @@ export default function TokenAsset ({ token }) {
           <TokenOptions
             onRemove={() => dispatch(showModal({ name: 'HIDE_TOKEN_CONFIRMATION', token }))}
             onViewEtherscan={() => {
-              const url = createAccountLink(token.address, network)
-              global.platform.openTab({ url })
+              global.platform.openTab({ url: getBlockExplorerUrlForAddress(network, token.address) })
             }}
             tokenSymbol={token.symbol}
           />

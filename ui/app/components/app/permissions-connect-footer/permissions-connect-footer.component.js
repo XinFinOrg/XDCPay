@@ -14,9 +14,9 @@ export default class PermissionsConnectFooter extends Component {
           <div>{ t('onlyConnectTrust') }</div>
           <div
             className="permissions-connect-footer__text--link"
-            onClick={() => {
-              global.platform.openTab({ url: 'https://medium.com/metamask/privacy-mode-is-now-enabled-by-default-1c1c957f4d57' })
-            }}
+            // onClick={() => {
+            //   global.platform.openTab({ url: 'https://medium.com/metamask/privacy-mode-is-now-enabled-by-default-1c1c957f4d57' })
+            // }}
           >{ t('learnMore') }
           </div>
         </div>

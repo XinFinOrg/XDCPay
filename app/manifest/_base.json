@@ -42,7 +42,7 @@
       "128": "images/icon-128.png",
       "512": "images/icon-512.png"
     },
-    "default_title": "MetaMask",
+    "default_title": "XDCPay",
     "default_popup": "popup.html"
   },
   "content_scripts": [

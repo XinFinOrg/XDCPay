@@ -299,7 +299,7 @@ export default class Routes extends Component {
         return this.context.t('connectingToGoerli')
       case 'xdc':
         return this.context.t('connectingToXDC')
-      case 'xdcApothem':
+      case 'apothem':
         return this.context.t('connectingToXDCApothem')
       default:
         return this.context.t('connectingTo', [providerId])
@@ -322,8 +322,8 @@ export default class Routes extends Component {
         return this.context.t('goerli')
       case 'xdc':
         return this.context.t('xdc')
-      case 'xdcApothem':
-        return this.context.t('xdcApothem')
+      case 'apothem':
+        return this.context.t('apothem')
       default:
         return this.context.t('unknownNetwork')
     }

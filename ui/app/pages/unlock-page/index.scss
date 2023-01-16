@@ -29,7 +29,7 @@
 
   &__form {
     width: 100%;
-    margin: 56px 0 8px;
+    margin: 36px 0 8px;
   }
 
   &__links {
@@ -52,7 +52,7 @@
 
 .footer-section {
   display: flex;
-  background-color: $primary-blue;
+  background-color: $Grey-000;
   justify-content: space-between;
   width: 100%;
   margin-top: 24px;
@@ -63,7 +63,7 @@
   &-powered {
     p {
       font-size: 10px;
-      color: $white;
+      color: $black;
     }
   }
 }

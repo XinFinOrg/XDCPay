@@ -1,5 +1,6 @@
 import PropTypes from 'prop-types'
 import React from 'react'
+import Identicon from '../../../ui/identicon/identicon.component'
 
 function NetworkDropdownIcon (props) {
   const {
@@ -25,13 +26,9 @@ function NetworkDropdownIcon (props) {
     )
     : (
       <div className={`menu-icon-circle${isSelected ? '--active' : ''}`}>
-        <div
-          style={{
-            background: backgroundColor,
-            border: innerBorder,
-            height: `${diameter}px`,
-            width: `${diameter}px`,
-          }}
+        <Identicon
+          image="./images/xdc_logo.svg"
+          diameter={diameter}
         />
       </div>
     )
@@ -41,7 +38,7 @@ NetworkDropdownIcon.defaultProps = {
   backgroundColor: undefined,
   loading: false,
   innerBorder: 'none',
-  diameter: '12',
+  diameter: 16,
   isSelected: false,
 }
 
@@ -49,7 +46,7 @@ NetworkDropdownIcon.propTypes = {
   backgroundColor: PropTypes.string,
   loading: PropTypes.bool,
   innerBorder: PropTypes.string,
-  diameter: PropTypes.string,
+  diameter: PropTypes.number,
   isSelected: PropTypes.bool,
 }
 

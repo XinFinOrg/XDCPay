@@ -9,12 +9,13 @@ import Button from '../../../../components/ui/button/button.component'
 import Tooltip from '../../../../components/ui/tooltip'
 import { useI18nContext } from '../../../../hooks/useI18nContext'
 import { useCopyToClipboard } from '../../../../hooks/useCopyToClipboard'
+import usePrefix from '../../../../hooks/usePrefix'
 
 function quadSplit (address) {
   return (
-    `0x ${
+    `xdc ${
       address
-        .slice(2)
+        .slice(3)
         .match(/.{1,4}/ug)
         .join(' ')}`
   )
@@ -30,6 +31,7 @@ function ViewContact ({
   listRoute,
 }) {
   const t = useI18nContext()
+  const { getXDCAddress } = usePrefix()
   const [copied, handleCopy] = useCopyToClipboard()
 
   if (!address) {
@@ -59,7 +61,7 @@ function ViewContact ({
           </div>
           <div className="address-book__view-contact__group__value">
             <div className="address-book__view-contact__group__static-address">
-              {quadSplit(checkSummedAddress)}
+              {quadSplit(getXDCAddress(checkSummedAddress))}
             </div>
             <Tooltip
               position="bottom"
@@ -68,7 +70,7 @@ function ViewContact ({
               <button
                 className="address-book__view-contact__group__static-address--copy-icon"
                 onClick={() => {
-                  handleCopy(checkSummedAddress)
+                  handleCopy(getXDCAddress(checkSummedAddress))
                 }}
               >
                 <Copy size={20} color="#3098DC" />

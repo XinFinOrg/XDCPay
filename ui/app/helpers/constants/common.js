@@ -1,4 +1,4 @@
-export const ETH = 'XDC'
+export const ETH = 'ETH'
 export const GWEI = 'GWEI'
 export const WEI = 'WEI'
 
@@ -12,7 +12,7 @@ export const NETWORK_TYPES = {
   ROPSTEN: 'ropsten',
   GOERLI: 'goerli',
   XDC: 'xdc',
-  XDC_APOTHEM: 'xdcApothem',
+  XDC_APOTHEM: 'apothem',
 }
 
 export const GAS_ESTIMATE_TYPES = {

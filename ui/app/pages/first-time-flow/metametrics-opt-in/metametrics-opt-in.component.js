@@ -37,11 +37,11 @@ export default class MetaMetricsOptIn extends Component {
           <div className="metametrics-opt-in__title">Help Us Improve XDCPay</div>
           <div className="metametrics-opt-in__body">
             <div className="metametrics-opt-in__description">
-             MetaMask would like to gather usage data to better understand how our users interact with the extension. This data
-             will be used to continually improve the usability and user experience of our product and the Ethereum ecosystem.
+              XDCPay would like to gather usage data to better understand how our users interact with the extension. This data
+             will be used to continually improve the usability and user experience of our product and the XDC ecosystem.
             </div>
             <div className="metametrics-opt-in__description">
-             MetaMask will..
+              XDCPay will..
             </div>
 
             <div className="metametrics-opt-in__committments">
@@ -146,7 +146,7 @@ export default class MetaMetricsOptIn extends Component {
               { t('gdprMessage', [
                 <a
                   key="metametrics-bottom-text-wrapper"
-                  href="https://metamask.io/privacy.html"
+                  href="#"
                   target="_blank"
                   rel="noopener noreferrer"
                 >{ t('gdprMessagePrivacyPolicy') }

@@ -196,8 +196,8 @@ class NetworkDropdown extends Component {
       name = this.context.t('goerli')
     } else if (providerName === 'xdc') {
       name = this.context.t('xdc')
-    } else if (providerName === 'xdcApothem') {
-      name = this.context.t('xdcApothem')
+    } else if (providerName === 'apothem') {
+      name = this.context.t('apothem')
     } else {
       name = provider.nickname || this.context.t('unknownNetwork')
     }
@@ -412,24 +412,24 @@ class NetworkDropdown extends Component {
         <DropdownMenuItem
           key="main"
           closeMenu={() => this.props.hideNetworkDropdown()}
-          onClick={() => this.handleClick('xdcApothem')}
+          onClick={() => this.handleClick('apothem')}
           style={{ ...dropdownMenuItemStyle, borderColor: '#038789' }}
         >
           {
-            providerType === 'xdcApothem'
+            providerType === 'apothem'
               ? <i className="fa fa-check" />
               : <div className="network-check__transparent">✓</div>
           }
-          <NetworkDropdownIcon backgroundColor="#29B6AF" isSelected={providerType === 'xdcApothem'} />
+          <NetworkDropdownIcon backgroundColor="#29B6AF" isSelected={providerType === 'apothem'} />
           <span
             className="network-name-item"
             style={{
-              color: providerType === 'xdcApothem'
+              color: providerType === 'apothem'
                 ? '#ffffff'
                 : '#9b9b9b',
             }}
           >
-            {this.context.t('xdcApothem')}
+            {this.context.t('apothem')}
           </span>
         </DropdownMenuItem>
         {this.renderCustomOption(this.props.provider)}

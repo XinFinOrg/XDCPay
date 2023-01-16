@@ -17,9 +17,9 @@ export default function UserPreferencedCurrencyDisplay ({
   const { currency, numberOfDecimals } = useUserPreferencedCurrency(type, { ethNumberOfDecimals, fiatNumberOfDecimals, numberOfDecimals: propsNumberOfDecimals })
 
   const prefixComponent = useMemo(() => {
-    return currency === ETH && showEthLogo && (
+    return currency === 'XDC' && showEthLogo && (
       <img
-        src="/images/eth.svg"
+        src="/images/xdc_logo.svg"
         height={ethLogoHeight}
       />
     )

@@ -15,6 +15,14 @@ import {
   getSelectedAddress,
 } from '.'
 
+const convert = (address, prefix = '0x') => {
+  if (prefix === '0x') {
+    const start = address?.slice(0, 3)
+    return start.toLowerCase() === 'xdc' ? (`0x${address.substring(3)}`) : address
+  }
+  const start = address?.slice(0, 2)
+  return start.toLowerCase() === '0x' ? (`xdc${address.substring(2)}`) : address
+}
 export const incomingTxListSelector = (state) => {
   const { showIncomingTransactions } = state.metamask.featureFlags
   if (!showIncomingTransactions) {
@@ -23,10 +31,11 @@ export const incomingTxListSelector = (state) => {
 
   const { network } = state.metamask
   const selectedAddress = getSelectedAddress(state)
-  return Object.values(state.metamask.incomingTransactions)
-    .filter(({ metamaskNetworkId, txParams }) => (
-      txParams.to === selectedAddress && metamaskNetworkId === network
-    ))
+  const arr = Object.values(state.metamask.incomingTransactions)
+    .filter(({ metamaskNetworkId, txParams }) => {
+      return txParams.to === selectedAddress && metamaskNetworkId === network
+    })
+  return arr
 }
 export const unapprovedMsgsSelector = (state) => state.metamask.unapprovedMsgs
 export const currentNetworkTxListSelector = (state) => state.metamask.currentNetworkTxList
@@ -82,7 +91,6 @@ export const transactionsSelector = createSelector(
   selectedAddressTxListSelector,
   (subSelectorTxList = [], selectedAddressTxList = []) => {
     const txsToRender = selectedAddressTxList.concat(subSelectorTxList)
-
     return txsToRender
       .sort((a, b) => b.time - a.time)
   },

@@ -19,7 +19,7 @@ export function getEtherscanNetworkPrefix (networkId) {
     case networkEnums.XDC_NETWORK_ID:
       return 'xdc.'
     case networkEnums.XDC_APOTHEM_NETWORK_ID:
-      return 'xdcApothem.'
+      return 'apothem.'
     default: // also covers mainnet
       return ''
   }

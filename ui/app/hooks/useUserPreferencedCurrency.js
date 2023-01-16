@@ -40,7 +40,7 @@ export function useUserPreferencedCurrency (type, opts = {}) {
   if (!showFiat || (type === PRIMARY && useNativeCurrencyAsPrimaryCurrency) ||
     (type === SECONDARY && !useNativeCurrencyAsPrimaryCurrency)) {
     // Display ETH
-    currency = nativeCurrency || ETH
+    currency = nativeCurrency || 'XDC'
     numberOfDecimals = opts.numberOfDecimals || opts.ethNumberOfDecimals || 6
   } else if ((type === SECONDARY && useNativeCurrencyAsPrimaryCurrency) ||
     (type === PRIMARY && !useNativeCurrencyAsPrimaryCurrency)) {

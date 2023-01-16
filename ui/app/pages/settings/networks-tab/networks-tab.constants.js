@@ -62,9 +62,9 @@ const defaultNetworksData = [
     blockExplorerUrl: 'https://xdc.blocksscan.io',
   },
   {
-    labelKey: 'xdcApothem',
+    labelKey: 'apothem',
     iconColor: '#29B6AF',
-    providerType: 'xdcApothem',
+    providerType: 'apothem',
     rpcUrl: 'https://erpc.apothem.network/',
     chainId: '51',
     ticker: 'XDC',

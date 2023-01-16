@@ -195,7 +195,6 @@ export function getRenderableBasicEstimateData (state, gasLimit) {
   if (getBasicGasEstimateLoadingStatus(state)) {
     return []
   }
-
   const { showFiatInTestnets } = getPreferences(state)
   const isMainnet = getIsMainnet(state)
   const showFiat = (isMainnet || Boolean(showFiatInTestnets))

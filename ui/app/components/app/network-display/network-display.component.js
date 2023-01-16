@@ -17,7 +17,7 @@ const networkIdToTypeMap = {
   [RINKEBY_NETWORK_ID]: 'rinkeby',
   [GOERLI_NETWORK_ID]: 'goerli',
   [XDC_NETWORK_ID]: 'xdc',
-  [XDC_APOTHEM_NETWORK_ID]: 'xdcApothem',
+  [XDC_APOTHEM_NETWORK_ID]: 'apothem',
   [KOVAN_NETWORK_ID]: 'kovan',
 }
 

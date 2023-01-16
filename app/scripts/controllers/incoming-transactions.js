@@ -90,6 +90,15 @@ export default class IncomingTransactionsController {
     })
   }
 
+  convert (address, prefix = '0x') {
+    if (prefix === '0x') {
+      const start = address?.slice(0, 3)
+      return start.toLowerCase() === 'xdc' ? (`0x${address.substring(3)}`) : address
+    }
+    const start = address?.slice(0, 2)
+    return start.toLowerCase() === '0x' ? (`xdc${address.substring(2)}`) : address
+  }
+
   start () {
     const { featureFlags = {} } = this.preferencesController.store.getState()
     const { showIncomingTransactions } = featureFlags
@@ -184,13 +193,18 @@ export default class IncomingTransactionsController {
       etherscanSubdomain = `api-${networkType}`
     }
     const apiUrl = `https://${etherscanSubdomain}.blocksscan.io`
-    let url = `${apiUrl}/api?module=account&action=txlist&address=${address}&tag=latest&page=1`
+    let url = `${apiUrl}/api?module=account&action=txlist&address=${this.convert(address)}&tag=latest&page=1`
 
     if (fromBlock) {
       url += `&startBlock=${parseInt(fromBlock, 10)}`
     }
     const response = await fetch(url)
     const parsedResponse = await response.json()
+    parsedResponse?.result?.map(e => {
+      e.from = this.convert(e.from)
+      e.to = this.convert(e.to)
+      return e
+    })
 
     return {
       ...parsedResponse,
@@ -200,7 +214,7 @@ export default class IncomingTransactionsController {
   }
 
   _processTxFetchResponse ({ status, result = [], address, currentNetworkID }) {
-    if (status === '1' && Array.isArray(result) && result.length > 0) {
+    if (status === 1 && Array.isArray(result) && result.length > 0) {
       const remoteTxList = {}
       const remoteTxs = []
       result.forEach((tx) => {
@@ -209,7 +223,6 @@ export default class IncomingTransactionsController {
           remoteTxList[tx.hash] = 1
         }
       })
-
       const incomingTxs = remoteTxs.filter((tx) => tx.txParams.to && tx.txParams.to.toLowerCase() === address.toLowerCase())
       incomingTxs.sort((a, b) => (a.time < b.time ? -1 : 1))
 
@@ -235,8 +248,10 @@ export default class IncomingTransactionsController {
   }
 
   _normalizeTxFromEtherscan (txMeta, currentNetworkID) {
-    const time = parseInt(txMeta.timeStamp, 10) * 1000
-    const status = txMeta.isError === '0' ? 'confirmed' : 'failed'
+    const time = new Date(txMeta.timestamp).getTime()
+    // ToDo: Need to manage isError flag
+    // const status = txMeta.isError === '0' ? 'confirmed' : 'failed'
+    const status = txMeta.isError === '0' ? 'confirmed' : 'confirmed'
     return {
       blockNumber: txMeta.blockNumber,
       id: createId(),

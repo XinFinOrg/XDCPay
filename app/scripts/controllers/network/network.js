@@ -190,7 +190,7 @@ export default class NetworkController extends EventEmitter {
       this._configureStandardProvider({ rpcUrl: rpcTarget, chainId, ticker, nickname })
     } else if (type === 'xdc') {
       this._configureStandardProvider({ rpcUrl: 'https://erpc.xinfin.network', chainId:50, ticker:XDC, nickname:XDC_DISPLAY_NAME })
-    } else if (type === 'xdcApothem') {
+    } else if (type === 'apothem') {
       this._configureStandardProvider({ rpcUrl: 'https://erpc.apothem.network', chainId:51, ticker:XDC, nickname:XDC_APOTHEM_DISPLAY_NAME })
     } else {
       throw new Error(`NetworkController - _configureProvider - unknown type "${type}"`)

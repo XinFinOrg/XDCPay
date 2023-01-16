@@ -39,7 +39,7 @@ function injectScript (content) {
     container.insertBefore(scriptTag, container.children[0])
     container.removeChild(scriptTag)
   } catch (e) {
-    console.error('MetaMask provider injection failed.', e)
+    console.error('XDCPay provider injection failed.', e)
   }
 }
 
@@ -77,7 +77,8 @@ async function setupStreams () {
     pageMux,
     pageStream,
     pageMux,
-    (err) => logStreamDisconnectWarning('MetaMask Inpage Multiplex', err),
+    (err) => logStreamDisconnectWarning('' +
+      'MetaMask Inpage Multiplex', err),
   )
   pump(
     extensionMux,

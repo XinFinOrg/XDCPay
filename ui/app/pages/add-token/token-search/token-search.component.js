@@ -1,8 +1,8 @@
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
-import contractMap from 'eth-contract-metadata'
 import Fuse from 'fuse.js'
 import InputAdornment from '@material-ui/core/InputAdornment'
+import contractMap from '../../../helpers/utils/contract'
 import TextField from '../../../components/ui/text-field'
 
 const contractList = Object.entries(contractMap)

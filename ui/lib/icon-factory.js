@@ -1,5 +1,5 @@
 import { isValidAddress } from 'ethereumjs-util'
-import contractMap from 'eth-contract-metadata'
+import contractMap from '../app/helpers/utils/contract'
 import { checksumAddress } from '../app/helpers/utils/util'
 
 let iconFactory
@@ -45,11 +45,11 @@ IconFactory.prototype.generateNewIdenticon = function (address, diameter) {
 // util
 
 function iconExistsFor (address) {
-  return contractMap[address] && isValidAddress(address) && contractMap[address].logo
+  return contractMap[address.toLowerCase()] && isValidAddress(address) && contractMap[address.toLowerCase()].logo
 }
 
 function imageElFor (address) {
-  const contract = contractMap[address]
+  const contract = contractMap[address.toLowerCase()]
   const fileName = contract.logo
   const path = `images/contract/${fileName}`
   const img = document.createElement('img')

@@ -25,7 +25,7 @@ import TrezorKeyring from 'eth-trezor-keyring'
 import LedgerBridgeKeyring from '@metamask/eth-ledger-bridge-keyring'
 import EthQuery from 'eth-query'
 import nanoid from 'nanoid'
-import contractMap from 'eth-contract-metadata'
+import contractMap from '../../ui/app/helpers/utils/contract'
 import {
   AddressBookController,
   CurrencyRateController,
@@ -334,7 +334,7 @@ export default class MetamaskController extends EventEmitter {
     const providerOpts = {
       static: {
         eth_syncing: false,
-        web3_clientVersion: `MetaMask/v${version}`,
+        web3_clientVersion: `XDCPay/v${version}`,
       },
       version,
       // account mgmt
@@ -711,7 +711,7 @@ export default class MetamaskController extends EventEmitter {
           ? (
             accountTokens[address][networkType].filter(({ address: tokenAddress }) => {
               const checksumAddress = ethUtil.toChecksumAddress(tokenAddress)
-              return contractMap[checksumAddress] ? contractMap[checksumAddress].erc20 : true
+              return contractMap[checksumAddress.toLowerCase()] ? contractMap[checksumAddress.toLowerCase()].erc20 : true
             })
           )
           : accountTokens[address][networkType]
@@ -1461,7 +1461,7 @@ export default class MetamaskController extends EventEmitter {
     const { hostname } = new URL(sender.url)
     // Check if new connection is blocked if phishing detection is on
     if (usePhishDetect && this.phishingController.test(hostname)) {
-      log.debug('MetaMask - sending phishing warning for', hostname)
+      log.debug('XDCPay - sending phishing warning for', hostname)
       this.sendPhishingWarning(connectionStream, hostname)
       return
     }

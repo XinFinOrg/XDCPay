@@ -195,7 +195,7 @@ export default class SelectHardware extends Component {
         {this.renderButtons()}
         <p className="hw-connect__footer__msg">
           {this.context.t('havingTroubleConnecting')}
-          <a className="hw-connect__footer__link" href="https://support.metamask.io/" target="_blank" rel="noopener noreferrer">
+          <a className="hw-connect__footer__link" href="#" target="_blank" rel="noopener noreferrer">
             {this.context.t('getHelp')}
           </a>
         </p>

@@ -28,11 +28,11 @@ export default class MetaFoxLogo extends PureComponent {
           src="/images/logo/XDCPay-full.svg"
           className={classnames('app-header__metafox-logo', 'app-header__metafox-logo--horizontal')}
         />
-        <img
-          {...iconProps}
-          src="/images/logo/XDCPay.svg"
-          className={classnames('app-header__metafox-logo', 'app-header__metafox-logo--icon')}
-        />
+        {/*<img*/}
+        {/*  {...iconProps}*/}
+        {/*  src="/images/logo/XDCPay.svg"*/}
+        {/*  className={classnames('app-header__metafox-logo', 'app-header__metafox-logo--icon')}*/}
+        {/*/>*/}
       </div>
     )
   }

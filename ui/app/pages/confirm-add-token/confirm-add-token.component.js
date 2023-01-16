@@ -70,7 +70,7 @@ export default class ConfirmAddToken extends Component {
                           <Identicon
                             className="confirm-add-token__token-icon"
                             diameter={48}
-                            address={address}
+                            address={address.toLowerCase()}
                           />
                           <div className="confirm-add-token__name">
                             { this.getTokenName(name, symbol) }

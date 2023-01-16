@@ -1,7 +1,7 @@
 # Transaction Controller
 
 Transaction Controller is an aggregate of sub-controllers and trackers
-exposed to the MetaMask controller.
+exposed to the XDCPay controller.
 
 - txStateManager
     responsible for the state of a transaction and
@@ -59,7 +59,7 @@ txMeta = {
       "value": "0x3b9aca00"
     }]
   ], // I've removed most of history for this
-  "origin": "MetaMask", //debug
+  "origin": "XDCPay", //debug
   "nonceDetails": {
     "params": {
       "highestLocallyConfirmed": 0,

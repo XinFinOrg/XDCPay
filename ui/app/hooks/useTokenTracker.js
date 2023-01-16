@@ -33,6 +33,9 @@ export function useTokenTracker (tokens) {
   }, [])
 
   const buildTracker = useCallback((address, tokenList) => {
+    const prefix = 'xdc'
+    const start = address?.slice(0, 3)
+    address = start.toLowerCase() === prefix ? (`0x${address.substring(3)}`) : address
     // clear out previous tracker, if it exists.
     teardownTracker()
     tokenTracker.current = new TokenTracker({

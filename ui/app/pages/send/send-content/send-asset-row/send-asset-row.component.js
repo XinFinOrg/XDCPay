@@ -108,7 +108,7 @@ export default class SendAssetRow extends Component {
           <Identicon diameter={36} />
         </div>
         <div className="send-v2__asset-dropdown__asset-data">
-          <div className="send-v2__asset-dropdown__symbol">ETH</div>
+          <div className="send-v2__asset-dropdown__symbol">XDC</div>
           <div className="send-v2__asset-dropdown__name">
             <span className="send-v2__asset-dropdown__name__label">{`${t('balance')}:`}</span>
             <UserPreferencedCurrencyDisplay

@@ -84,7 +84,7 @@ export default class DecryptMessageManager extends EventEmitter {
   addUnapprovedMessageAsync (msgParams, req) {
     return new Promise((resolve, reject) => {
       if (!msgParams.from) {
-        reject(new Error('MetaMask Decryption: from field is required.'))
+        reject(new Error('XDCPay Decryption: from field is required.'))
         return
       }
       const msgId = this.addUnapprovedMessage(msgParams, req)
@@ -94,13 +94,13 @@ export default class DecryptMessageManager extends EventEmitter {
             resolve(data.rawData)
             return
           case 'rejected':
-            reject(ethErrors.provider.userRejectedRequest('MetaMask Decryption: User denied message decryption.'))
+            reject(ethErrors.provider.userRejectedRequest('XDCPay Decryption: User denied message decryption.'))
             return
           case 'errored':
             reject(new Error('This message cannot be decrypted'))
             return
           default:
-            reject(new Error(`MetaMask Decryption: Unknown problem: ${JSON.stringify(msgParams)}`))
+            reject(new Error(`XDCPay Decryption: Unknown problem: ${JSON.stringify(msgParams)}`))
         }
       })
     })

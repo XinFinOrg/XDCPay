@@ -7,8 +7,9 @@ import { CONTACT_LIST_ROUTE } from '../../../../helpers/constants/routes'
 import { isValidAddress, isValidDomainName } from '../../../../helpers/utils/util'
 import EnsInput from '../../../send/send-content/add-recipient/ens-input'
 import PageContainerFooter from '../../../../components/ui/page-container/page-container-footer'
+import withPrefix from '../../../../hoc/withPrefix'
 
-export default class AddContact extends PureComponent {
+class AddContact extends PureComponent {
 
   static contextTypes = {
     t: PropTypes.func,
@@ -20,6 +21,8 @@ export default class AddContact extends PureComponent {
     scanQrCode: PropTypes.func,
     qrCodeData: PropTypes.object, /* eslint-disable-line react/no-unused-prop-types */
     qrCodeDetected: PropTypes.func,
+    getXDCAddress: PropTypes.func,
+    get0xAddress: PropTypes.func,
   }
 
   state = {
@@ -133,3 +136,4 @@ export default class AddContact extends PureComponent {
     )
   }
 }
+export default withPrefix(AddContact)

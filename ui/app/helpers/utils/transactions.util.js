@@ -222,8 +222,8 @@ export function getStatusKey (transaction) {
   if (status === TRANSACTION_STATUS_CONFIRMED && type === TRANSACTION_TYPE_CANCEL) {
     return 'cancelled'
   }
-
-  return transaction.status
+  // ToDo: Need to manage transaction status
+  return 'confirmed' //transaction.status
 }
 
 /**
@@ -236,6 +236,16 @@ export function getBlockExplorerUrlForTx (networkId, hash, rpcPrefs = {}) {
   if (rpcPrefs.blockExplorerUrl) {
     return `${rpcPrefs.blockExplorerUrl.replace(/\/+$/u, '')}/tx/${hash}`
   }
-  const prefix = getEtherscanNetworkPrefix(networkId)
+  const prefix = getEtherscanNetworkPrefix(networkId) || 'xdc.'
   return `https://${prefix}blocksscan.io/txs/${hash}`
+}
+
+/**
+ * Returns an external block explorer URL at which a transaction can be viewed.
+ * @param {number} networkId
+ * @param {string} hash
+ */
+export function getBlockExplorerUrlForAddress (networkId, hash) {
+  const prefix = getEtherscanNetworkPrefix(networkId) || 'xdc.'
+  return `https://${prefix}blocksscan.io/address/${hash}`
 }

@@ -56,7 +56,7 @@ function createNetworkAndChainIdMiddleware ({ network }) {
       netId = networkEnums.XDC_NETWORK_ID
       chainId = networkEnums.XDC_CHAIN_ID
       break
-    case 'xdcApothem':
+    case 'apothem':
       netId = networkEnums.XDC_APOTHEM_NETWORK_ID
       chainId = networkEnums.XDC_APOTHEM_CHAIN_ID
       break

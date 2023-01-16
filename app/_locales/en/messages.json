@@ -503,16 +503,16 @@
     "message": "Deposit"
   },
   "depositEther": {
-    "message": "Deposit Ether"
+    "message": "Deposit XDC"
   },
   "details": {
     "message": "Details"
   },
   "directDepositEther": {
-    "message": "Directly Deposit Ether"
+    "message": "Directly Deposit XDC"
   },
   "directDepositEtherExplainer": {
-    "message": "If you already have some Ether, the quickest way to get Ether in your new wallet by direct deposit."
+    "message": "If you already have some XDC, the quickest way to get XDC in your new wallet by direct deposit."
   },
   "done": {
     "message": "Done"
@@ -632,7 +632,7 @@
     "description": "Title for error stack, which is displayed for debugging purposes"
   },
   "ethereumPublicAddress": {
-    "message": "Ethereum Public Address"
+    "message": "XDC Public Address"
   },
   "etherscanView": {
     "message": "View account on Blocksscan"
@@ -704,7 +704,7 @@
     "message": "Gas Price Extremely Low"
   },
   "gasPriceInfoModalContent": {
-    "message": "Gas price specifies the amount of Ether you are willing to pay for each unit of gas."
+    "message": "Gas price specifies the amount of XDC you are willing to pay for each unit of gas."
   },
   "gasPriceNoDenom": {
     "message": "Gas Price"
@@ -724,11 +724,11 @@
     "message": "Currency conversion, primary currency, language, blockies identicon"
   },
   "getEther": {
-    "message": "Get Ether"
+    "message": "Get XDC"
   },
   "getEtherFromFaucet": {
-    "message": "Get Ether from a faucet for the $1",
-    "description": "Displays network name for Ether faucet"
+    "message": "Get XDC from a faucet for the $1",
+    "description": "Displays network name for XDC faucet"
   },
   "getHelp": {
     "message": "Get Help."
@@ -831,7 +831,7 @@
     "message": "A token here reuses a symbol from another token you watch, this can be confusing or deceptive."
   },
   "invalidAddressRecipientNotEthNetwork": {
-    "message": "Not ETH network, set to lowercase"
+    "message": "Not XDC network, set to lowercase"
   },
   "invalidInput": {
     "message": "Invalid input."
@@ -909,7 +909,7 @@
   "xdc": {
     "message": "XDC Network"
   },
-  "xdcApothem": {
+  "apothem": {
     "message": "XDC Testnet Apothem"
   },
   "mainnet": {
@@ -1020,7 +1020,7 @@
     "message": "Only connect with sites you trust."
   },
   "onlyAddTrustedNetworks": {
-    "message": "A malicious Ethereum network provider can lie about the state of the blockchain and record your network activity. Only add custom networks you trust."
+    "message": "A malicious XDC network provider can lie about the state of the blockchain and record your network activity. Only add custom networks you trust."
   },
   "optionalChainId": {
     "message": "ChainID (optional)"
@@ -1328,13 +1328,13 @@
     "message": "Send Amount"
   },
   "sendETH": {
-    "message": "Send ETH"
+    "message": "Send XDC"
   },
   "sendTokens": {
     "message": "Send Tokens"
   },
   "sentEther": {
-    "message": "sent ether"
+    "message": "sent XDC"
   },
   "sentTokens": {
     "message": "sent tokens"
@@ -1474,7 +1474,7 @@
     "message": "3. Start using web3 sites and more!"
   },
   "step3HardwareWalletMsg": {
-    "message": "Use your hardware account like you would with any Ethereum account. Connect to web3 sites, send ETH, buy and store ERC20 tokens and non-fungible tokens like CryptoKitties."
+    "message": "Use your hardware account like you would with any XDC account. Connect to web3 sites, send XDC, buy and store XRC20 tokens and non-fungible tokens like CryptoKitties."
   },
   "storePhrase": {
     "message": "Store this phrase in a password manager like 1Password."

@@ -244,7 +244,7 @@ function getSuggestedTokenCount (state) {
 
 export function getIsMainnet (state) {
   const networkType = getNetworkIdentifier(state)
-  return networkType === NETWORK_TYPES.MAINNET
+  return networkType === NETWORK_TYPES.XDC
 }
 
 export function isEthereumNetwork (state) {
@@ -259,7 +259,7 @@ export function isEthereumNetwork (state) {
     XDC_APOTHEM,
   } = NETWORK_TYPES
 
-  return [KOVAN, MAINNET, RINKEBY, ROPSTEN, GOERLI, XD, XDC_APOTHEM].includes(networkType)
+  return [KOVAN, MAINNET, RINKEBY, ROPSTEN, GOERLI, XDC, XDC_APOTHEM].includes(networkType)
 }
 
 export function getPreferences ({ metamask }) {

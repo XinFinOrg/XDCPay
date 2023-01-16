@@ -1,7 +1,7 @@
 import { connect } from 'react-redux'
 import { compose } from 'redux'
 import { withRouter } from 'react-router-dom'
-import contractMap from 'eth-contract-metadata'
+import contractMap from '../../helpers/utils/contract'
 import {
   clearConfirmTransaction,
 } from '../../ducks/confirm-transaction/confirm-transaction.duck'
@@ -42,7 +42,7 @@ import ConfirmTransactionBase from './confirm-transaction-base.component'
 const casedContractMap = Object.keys(contractMap).reduce((acc, base) => {
   return {
     ...acc,
-    [base.toLowerCase()]: contractMap[base],
+    [base.toLowerCase()]: contractMap[base.toLowerCase()],
   }
 }, {})
 

@@ -117,7 +117,7 @@ class AddToken extends Component {
       return
     }
 
-    const { setPendingTokens, history } = this.props
+    const { setPendingTokens, history, get0xAddress } = this.props
     const {
       customAddress: address,
       customSymbol: symbol,
@@ -126,7 +126,7 @@ class AddToken extends Component {
     } = this.state
 
     const customToken = {
-      address,
+      address: get0xAddress(address),
       symbol,
       decimals,
     }

@@ -101,7 +101,7 @@ export default class SendAmountRow extends Component {
 
   renderInput () {
     const { amount, inError, sendToken } = this.props
-
+    console.log('amount========', amount)
     return sendToken ?
       (
         <UserPreferencedTokenInput

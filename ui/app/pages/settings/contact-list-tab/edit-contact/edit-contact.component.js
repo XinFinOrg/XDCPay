@@ -6,8 +6,9 @@ import Button from '../../../../components/ui/button/button.component'
 import TextField from '../../../../components/ui/text-field'
 import { isValidAddress } from '../../../../helpers/utils/util'
 import PageContainerFooter from '../../../../components/ui/page-container/page-container-footer'
+import withPrefix from '../../../../hoc/withPrefix'
 
-export default class EditContact extends PureComponent {
+class EditContact extends PureComponent {
 
   static contextTypes = {
     t: PropTypes.func,
@@ -25,6 +26,8 @@ export default class EditContact extends PureComponent {
     listRoute: PropTypes.string,
     setAccountLabel: PropTypes.func,
     showingMyAccounts: PropTypes.bool.isRequired,
+    getXDCAddress: PropTypes.func,
+    get0xAddress: PropTypes.func,
   }
 
   static defaultProps = {
@@ -34,7 +37,7 @@ export default class EditContact extends PureComponent {
 
   state = {
     newName: this.props.name,
-    newAddress: this.props.address,
+    newAddress: this.props.getXDCAddress(this.props.address),
     newMemo: this.props.memo,
     error: '',
   }
@@ -53,6 +56,7 @@ export default class EditContact extends PureComponent {
       setAccountLabel,
       showingMyAccounts,
       viewRoute,
+      get0xAddress,
     } = this.props
 
     if (!address) {
@@ -71,7 +75,7 @@ export default class EditContact extends PureComponent {
                   type="link"
                   className="settings-page__address-book-button"
                   onClick={async () => {
-                    await removeFromAddressBook(chainId, address)
+                    await removeFromAddressBook(chainId, get0xAddress(address))
                   }}
                 >
                   {t('deleteAccount')}
@@ -134,13 +138,13 @@ export default class EditContact extends PureComponent {
         <PageContainerFooter
           cancelText={this.context.t('cancel')}
           onSubmit={async () => {
-            if (this.state.newAddress !== '' && this.state.newAddress !== address) {
+            if (this.state.newAddress !== '' && get0xAddress(this.state.newAddress) !== get0xAddress(address)) {
               // if the user makes a valid change to the address field, remove the original address
-              if (isValidAddress(this.state.newAddress)) {
-                await removeFromAddressBook(chainId, address)
-                await addToAddressBook(this.state.newAddress, this.state.newName || name, this.state.newMemo || memo)
+              if (isValidAddress(get0xAddress(this.state.newAddress))) {
+                await removeFromAddressBook(chainId, get0xAddress(address))
+                await addToAddressBook(get0xAddress(this.state.newAddress), this.state.newName || name, this.state.newMemo || memo)
                 if (showingMyAccounts) {
-                  setAccountLabel(this.state.newAddress, this.state.newName || name)
+                  setAccountLabel(get0xAddress(this.state.newAddress), this.state.newName || name)
                 }
                 history.push(listRoute)
               } else {
@@ -148,15 +152,15 @@ export default class EditContact extends PureComponent {
               }
             } else {
               // update name
-              await addToAddressBook(address, this.state.newName || name, this.state.newMemo || memo)
+              await addToAddressBook(get0xAddress(address), this.state.newName || name, this.state.newMemo || memo)
               if (showingMyAccounts) {
-                setAccountLabel(address, this.state.newName || name)
+                setAccountLabel(get0xAddress(address), this.state.newName || name)
               }
               history.push(listRoute)
             }
           }}
           onCancel={() => {
-            history.push(`${viewRoute}/${address}`)
+            history.push(`${viewRoute}/${get0xAddress(address)}`)
           }}
           submitText={this.context.t('save')}
           submitButtonType="confirm"
@@ -165,3 +169,4 @@ export default class EditContact extends PureComponent {
     )
   }
 }
+export default withPrefix(EditContact)

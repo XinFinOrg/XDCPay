@@ -1,7 +1,7 @@
 import React, { PureComponent } from 'react'
 import PropTypes from 'prop-types'
 import classnames from 'classnames'
-import contractMap from 'eth-contract-metadata'
+import contractMap from '../../../helpers/utils/contract'
 
 import { checksumAddress } from '../../../helpers/utils/util'
 import Jazzicon from '../jazzicon'
@@ -84,8 +84,7 @@ export default class Identicon extends PureComponent {
 
     if (address) {
       const checksummedAddress = checksumAddress(address)
-
-      if (contractMap[checksummedAddress] && contractMap[checksummedAddress].logo) {
+      if (contractMap[checksummedAddress.toLowerCase()] && contractMap[checksummedAddress.toLowerCase()].logo) {
         return this.renderJazzicon()
       }
 

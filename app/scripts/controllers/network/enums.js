@@ -4,7 +4,7 @@ export const KOVAN = 'kovan'
 export const MAINNET = 'mainnet'
 export const GOERLI = 'goerli'
 export const XDC = 'xdc'
-export const XDC_APOTHEM = 'xdcApothem'
+export const XDC_APOTHEM = 'apothem'
 
 export const LOCALHOST = 'localhost'
 

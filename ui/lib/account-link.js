@@ -20,7 +20,7 @@ export default function getAccountLink (address, network, rpcPrefs) {
       return `https://goerli.etherscan.io/address/${address}`
     case 50: // xdc test net
       return `https://xdc.blocksscan.io/address/${address}`
-    case 51: // xdcApothem test net
+    case 51: // apothem test net
       return `https://apothem.blocksscan.io/address/${address}`
     default:
       return ''
