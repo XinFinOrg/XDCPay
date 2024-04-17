@@ -4,7 +4,7 @@ Steps,Test Steps,Preconditions,Test Data,Expected Result,Notes
 The wallet address is shown on the overview.",
 3,Switch networks to a test network.,,e. g. Sepolia,The Sepolia balance is shown on the overview. The wallet address is shown on the overview. The selected network is Sepolia.,
 4,Open the test dapp in another tab.,,https://metamask.github.io/test-dapp/,,
-5,"Click ""Connect"".",,,"The MetaMask popup is opened with the ""Connect with MetaMask"" screen displayed.
+5,"Click ""Connect"".",,,"The MetaMask popup is opened with the ""Connect with XDCPay"" screen displayed.
 Your wallet account is selected.",
 6,"Click ""Next"" and connect with the wallet account.",,,"The MetaMask popup is closed.
 You are connected to the test dapp.",

@@ -11,7 +11,7 @@ exports[`MetaFoxLogo does match snapshot with custodyImgSrc 1`] = `
       alt=""
       class="app-header__metafox-logo--icon"
       height="42"
-      src="./images/logo/metamask-fox.svg"
+      src="./images/logo/XDCPay-full.svg"
       width="42"
     />
   </button>
@@ -28,7 +28,7 @@ exports[`MetaFoxLogo does not set icon height and width when unsetIconHeight is 
     <img
       alt=""
       class="app-header__metafox-logo--icon"
-      src="./images/logo/metamask-fox.svg"
+      src="./images/logo/XDCPay-full.svg"
     />
   </button>
 </div>
@@ -45,7 +45,7 @@ exports[`MetaFoxLogo should match snapshot with img width and height default set
       alt=""
       class="app-header__metafox-logo--icon"
       height="42"
-      src="./images/logo/metamask-fox.svg"
+      src="./images/logo/XDCPay-full.svg"
       width="42"
     />
   </button>

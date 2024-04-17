@@ -34,7 +34,7 @@
     "message": "log ng aktibidad"
   },
   "addAcquiredTokens": {
-    "message": "Idagdag ang mga token na nakuha mo gamit ang MetaMask"
+    "message": "Idagdag ang mga token na nakuha mo gamit ang XDCPay"
   },
   "addAlias": {
     "message": "Magdagdag ng alias"
@@ -43,10 +43,10 @@
     "message": "Magdagdag ng contact"
   },
   "addEthereumChainConfirmationDescription": {
-    "message": "Bibigyang-daan nito na magamit ang network na ito sa MetaMask."
+    "message": "Bibigyang-daan nito na magamit ang network na ito sa XDCPay."
   },
   "addEthereumChainConfirmationRisks": {
-    "message": "Hindi vine-verify ng MetaMask ang mga custom na network."
+    "message": "Hindi vine-verify ng XDCPay ang mga custom na network."
   },
   "addEthereumChainConfirmationRisksLearnMore": {
     "message": "Matuto tungkol sa $1.",
@@ -114,15 +114,15 @@
     "description": "The description of the application"
   },
   "appName": {
-    "message": "MetaMask",
+    "message": "XDCPay",
     "description": "The name of the application"
   },
   "appNameBeta": {
-    "message": "MetaMask Beta",
+    "message": "XDCPay Beta",
     "description": "The name of the application (Beta)"
   },
   "appNameFlask": {
-    "message": "MetaMask Flask",
+    "message": "XDCPay Flask",
     "description": "The name of the application (Flask)"
   },
   "approve": {
@@ -153,7 +153,7 @@
     "message": "Timer sa Awtomatikong Pag-lock (minuto)"
   },
   "autoLockTimeLimitDescription": {
-    "message": "Itakda ang oras ng pag-idle sa ilang minuto bago ma-lock ang MetaMask."
+    "message": "Itakda ang oras ng pag-idle sa ilang minuto bago ma-lock ang XDCPay."
   },
   "average": {
     "message": "Average"
@@ -162,7 +162,7 @@
     "message": "Bumalik"
   },
   "backupApprovalInfo": {
-    "message": "Ang lihim na code na ito ay kinakailangan para ma-recover ang iyong wallet sakaling maiwala mo ang iyong device, makalimutan ang iyong password, kailanganin mong i-install ulit ang MetaMask, o gusto mong i-access ang iyong wallet sa ibang device."
+    "message": "Ang lihim na code na ito ay kinakailangan para ma-recover ang iyong wallet sakaling maiwala mo ang iyong device, makalimutan ang iyong password, kailanganin mong i-install ulit ang XDCPay, o gusto mong i-access ang iyong wallet sa ibang device."
   },
   "backupApprovalNotice": {
     "message": "I-back up ang iyong Lihim na Code sa Pag-recover para mapanatiling secure ang iyong wallet at mga pondo."
@@ -217,7 +217,7 @@
     "message": "Kasalukuyang ginagamit ng $1 network ang Chain ID na ito."
   },
   "chromeRequiredForHardwareWallets": {
-    "message": "Kailangan mong gamitin ang MetaMask sa Google Chrome para maikonekta sa iyong Hardware Wallet."
+    "message": "Kailangan mong gamitin ang XDCPay sa Google Chrome para maikonekta sa iyong Hardware Wallet."
   },
   "close": {
     "message": "Isara"
@@ -270,7 +270,7 @@
     "description": "$1 is the number of accounts to which the web3 site/application is asking to connect; this will substitute $1 in connectToMultiple"
   },
   "connectWithMetaMask": {
-    "message": "Kumonekta sa MetaMask"
+    "message": "Kumonekta sa XDCPay"
   },
   "connectedAccountsDescriptionPlural": {
     "message": "Mayroon kang $1 (na) account na nakakonekta sa site na ito.",
@@ -280,7 +280,7 @@
     "message": "Mayroon kang 1 account na nakakonekta sa site na ito."
   },
   "connectedAccountsEmptyDescription": {
-    "message": "Ang MetaMask ay hindi nakakonekta sa site na ito. Para kumonekta sa isang web3 site, hanapin ang button na kumonekta sa site nila."
+    "message": "Ang XDCPay ay hindi nakakonekta sa site na ito. Para kumonekta sa isang web3 site, hanapin ang button na kumonekta sa site nila."
   },
   "connectedSites": {
     "message": "Mga nakakonektang site"
@@ -508,7 +508,7 @@
     "description": "Message displayed on generic error page in the popup UI, $1 is a clickable link with text defined by the 'here' key. The link will open to a form where users can file support tickets."
   },
   "errorPageTitle": {
-    "message": "Nagkaroon ng error sa MetaMask",
+    "message": "Nagkaroon ng error sa XDCPay",
     "description": "Title of generic error page"
   },
   "errorStack": {
@@ -632,7 +632,7 @@
     "message": "Magkonekta ng hardware wallet"
   },
   "hardwareWalletsMsg": {
-    "message": "Pumili ng hardware wallet na gusto mong gamitin kasama ng MetaMask."
+    "message": "Pumili ng hardware wallet na gusto mong gamitin kasama ng XDCPay."
   },
   "here": {
     "message": "dito",
@@ -665,7 +665,7 @@
     "message": "Mag-import ng Account"
   },
   "importAccountMsg": {
-    "message": " Ang mga na-import na account ay hindi mauugnay sa orihinal mong nagawang Secret Recovery Phrase ng MetaMask account. Matuto pa tungkol sa mga na-import account "
+    "message": " Ang mga na-import na account ay hindi mauugnay sa orihinal mong nagawang Secret Recovery Phrase ng XDCPay account. Matuto pa tungkol sa mga na-import account "
   },
   "importTokenQuestion": {
     "message": "Mag-import ng token?"
@@ -678,7 +678,7 @@
     "description": "status showing that an account has been fully loaded into the keyring"
   },
   "infuraBlockedNotification": {
-    "message": "Hindi nakakonekta ang MetaMask sa blockchain host. Suriin ang mga posibleng dahilan na $1.",
+    "message": "Hindi nakakonekta ang XDCPay sa blockchain host. Suriin ang mga posibleng dahilan na $1.",
     "description": "$1 is a clickable link with with text defined by the 'here' key"
   },
   "initialTransactionConfirmed": {
@@ -811,7 +811,7 @@
     "message": "Mensahe"
   },
   "metaMaskConnectStatusParagraphOne": {
-    "message": "Mas may kontrol ka na ngayon sa mga koneksyon ng iyong account sa MetaMask."
+    "message": "Mas may kontrol ka na ngayon sa mga koneksyon ng iyong account sa XDCPay."
   },
   "metaMaskConnectStatusParagraphThree": {
     "message": "I-click ito para pamahalaan ang mga nakakonekta mong account."
@@ -820,10 +820,10 @@
     "message": "Makikita sa button ng status ng koneksyon kung nakakonekta ang website na binibisita mo sa kasalukuyan mong napiling account."
   },
   "metamaskSwapsOfflineDescription": {
-    "message": "Kasalukuyang minementina ang MetaMask Swaps. Bumalik sa ibang pagkakataon."
+    "message": "Kasalukuyang minementina ang XDCPay Swaps. Bumalik sa ibang pagkakataon."
   },
   "metamaskVersion": {
-    "message": "Bersyon ng MetaMask"
+    "message": "Bersyon ng XDCPay"
   },
   "mismatchedChainLinkText": {
     "message": "i-verify ang mga detalye ng network",
@@ -840,7 +840,7 @@
     "description": "$1 represents `needHelpLinkText`, the text which goes in the help link"
   },
   "needHelpLinkText": {
-    "message": "Suporta sa MetaMask"
+    "message": "Suporta sa XDCPay"
   },
   "needImportFile": {
     "message": "Dapat kang pumili ng file na ii-import.",
@@ -903,7 +903,7 @@
   },
   "nextNonceWarning": {
     "message": "Mas mataas ang nonce sa iminumungkahing nonce na $1",
-    "description": "The next nonce according to MetaMask's internal logic"
+    "description": "The next nonce according to XDCPay's internal logic"
   },
   "noAccountsFound": {
     "message": "Walang nakitang account para sa ibinigay na query sa paghahanap"
@@ -972,7 +972,7 @@
     "message": "Sumali sa MetaMetrics"
   },
   "participateInMetaMetricsDescription": {
-    "message": "Sumali sa MetaMetrics para mas mapahusay namin ang MetaMask"
+    "message": "Sumali sa MetaMetrics para mas mapahusay namin ang XDCPay"
   },
   "password": {
     "message": "Password"
@@ -1063,7 +1063,7 @@
     "message": "Huwag kailanman ipaalam sa iba ang iyong Secret Recovery Phrase"
   },
   "recoveryPhraseReminderItemTwo": {
-    "message": "Hindi kailanman hihingin ng MetaMask team ang iyong Secret Recovery Phrase"
+    "message": "Hindi kailanman hihingin ng XDCPay team ang iyong Secret Recovery Phrase"
   },
   "recoveryPhraseReminderSubText": {
     "message": "Kinokontrol ng iyong Secret Recovery Phrase ang lahat ng iyong account."
@@ -1160,7 +1160,7 @@
     "message": "Kung may manghihingi man ng iyong recovery phrase, malamang na sinusubukan ka niyang i-scam."
   },
   "seedPhraseIntroSidebarCopyTwo": {
-    "message": "Huwag kailanmang ibahagi ang iyong recovery phrase kahit na sa MetaMask!"
+    "message": "Huwag kailanmang ibahagi ang iyong recovery phrase kahit na sa XDCPay!"
   },
   "seedPhraseIntroSidebarTitleOne": {
     "message": "Ano ang recovery phrase?"
@@ -1190,7 +1190,7 @@
     "message": "Pumili ng Account"
   },
   "selectAnAccountAlreadyConnected": {
-    "message": "Nakakonekta na ang account na ito sa MetaMask"
+    "message": "Nakakonekta na ang account na ito sa XDCPay"
   },
   "selectHdPath": {
     "message": "Pumili ng HD Path"
@@ -1283,7 +1283,7 @@
     "message": "Error sa pagkuha ng mga log ng estado."
   },
   "stateLogFileName": {
-    "message": "Mga Log ng Estado ng MetaMask"
+    "message": "Mga Log ng Estado ng XDCPay"
   },
   "stateLogs": {
     "message": "Mga Log ng Estado"
@@ -1374,7 +1374,7 @@
     "message": "I-edit ang limitasyon"
   },
   "swapEnableDescription": {
-    "message": "Kinakailangan ito at nagbibigay ito ng pahintulot sa MetaMask na i-swap ang iyong $1.",
+    "message": "Kinakailangan ito at nagbibigay ito ng pahintulot sa XDCPay na i-swap ang iyong $1.",
     "description": "Gives the user info about the required approval transaction for swaps. $1 will be the symbol of a token being approved for swaps."
   },
   "swapEstimatedNetworkFees": {
@@ -1385,7 +1385,7 @@
   },
   "swapFailedErrorDescriptionWithSupportLink": {
     "message": "May mga hindi pagtatagumpay sa transaksyon na nangyayari at narito kami para tumulong. Kung magpapatuloy ang isyung ito, puwede kang makipag-ugnayan sa aming suporta sa customer sa $1 para sa karagdagang tulong.",
-    "description": "This message is shown to a user if their swap fails. The $1 will be replaced by support.metamask.io"
+    "description": "This message is shown to a user if their swap fails. The $1 will be replaced by support.XDCPay.io"
   },
   "swapFailedErrorTitle": {
     "message": "Hindi matagumpay ang pag-swap"
@@ -1416,11 +1416,11 @@
     "message": "Max na slippage"
   },
   "swapMetaMaskFee": {
-    "message": "Bayarin sa MetaMask"
+    "message": "Bayarin sa XDCPay"
   },
   "swapMetaMaskFeeDescription": {
     "message": "Hinahanap namin ang pinakasulit na presyo mula sa mga nangungunang pinagkukunan ng liquidity, sa lahat ng pagkakataon. Awtomatikong fina-factor ang bayaring $1% sa quote na ito.",
-    "description": "Provides information about the fee that metamask takes for swaps. $1 is a decimal number."
+    "description": "Provides information about the fee that XDCPay takes for swaps. $1 is a decimal number."
   },
   "swapNewQuoteIn": {
     "message": "Mga bagong quote sa $1",
@@ -1576,7 +1576,7 @@
     "message": "Tingnan sa aktibidad"
   },
   "switchEthereumChainConfirmationDescription": {
-    "message": "Papalitan nito ang napiling network sa MetaMask at gagamitin ang nakaraang idinagdag na network:"
+    "message": "Papalitan nito ang napiling network sa XDCPay at gagamitin ang nakaraang idinagdag na network:"
   },
   "switchEthereumChainConfirmationTitle": {
     "message": "Payagang palitan ng site na ito ang network?"
@@ -1769,7 +1769,7 @@
   },
   "whatsNew": {
     "message": "Ano'ng bago",
-    "description": "This is the title of a popup that gives users notifications about new features and updates to MetaMask."
+    "description": "This is the title of a popup that gives users notifications about new features and updates to XDCPay."
   },
   "whatsThis": {
     "message": "Ano ito?"

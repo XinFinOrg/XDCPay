@@ -22,7 +22,7 @@ const PageSet = ({ children }) => {
   const origin = text('Origin', 'https://metamask.github.io');
   const subjectIconUrl = text(
     'Icon URL',
-    'https://metamask.github.io/test-dapp/metamask-fox.svg',
+    'https://metamask.github.io/test-dapp/XDCPay-full.svg',
   );
   const state = store.getState();
   const currentNetworkTxList = useSelector(getCurrentNetworkTransactions);

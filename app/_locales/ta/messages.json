@@ -32,11 +32,11 @@
     "description": "The name of the application"
   },
   "appNameBeta": {
-    "message": "MetaMask Beta",
+    "message": "XDCPay Beta",
     "description": "The name of the application (Beta)"
   },
   "appNameFlask": {
-    "message": "MetaMask Flask",
+    "message": "XDCPay Flask",
     "description": "The name of the application (Flask)"
   },
   "approve": {

@@ -27,7 +27,7 @@
     "message": "log ng aktibidad"
   },
   "addAcquiredTokens": {
-    "message": "Idagdag ang mga token na nakuha mo gamit ang MetaMask"
+    "message": "Idagdag ang mga token na nakuha mo gamit ang XDCPay"
   },
   "addAlias": {
     "message": "Magdagdag ng alias"
@@ -49,15 +49,15 @@
     "description": "The description of the application"
   },
   "appName": {
-    "message": "MetaMask",
+    "message": "XDCPay",
     "description": "The name of the application"
   },
   "appNameBeta": {
-    "message": "MetaMask Beta",
+    "message": "XDCPay Beta",
     "description": "The name of the application (Beta)"
   },
   "appNameFlask": {
-    "message": "MetaMask Flask",
+    "message": "XDCPay Flask",
     "description": "The name of the application (Flask)"
   },
   "approve": {
@@ -76,13 +76,13 @@
     "message": "Auto-Logout Timer (minuto)"
   },
   "autoLockTimeLimitDescription": {
-    "message": "I-set ang idle time na minuto bago awtomatikong mag-log out ang MetaMask"
+    "message": "I-set ang idle time na minuto bago awtomatikong mag-log out ang XDCPay"
   },
   "back": {
     "message": "Bumalik"
   },
   "backupApprovalInfo": {
-    "message": "Ang secret code na ito ay kinakailangan para ma-recover ang iyong wallet kung sakaling mawawala mo ang iyong device, nakalimutan mo ang iyong password, kailangan mong i-install ulit ang MetaMask, o gusto mong i-access ang iyong wallet sa ibang device."
+    "message": "Ang secret code na ito ay kinakailangan para ma-recover ang iyong wallet kung sakaling mawawala mo ang iyong device, nakalimutan mo ang iyong password, kailangan mong i-install ulit ang XDCPay, o gusto mong i-access ang iyong wallet sa ibang device."
   },
   "backupApprovalNotice": {
     "message": "I-back up ang iyong Secret Recovery code para panatilihing secure ang iyong wallet at pondo."
@@ -113,7 +113,7 @@
     "message": "Nakansela"
   },
   "chromeRequiredForHardwareWallets": {
-    "message": "Kailangan mong gamitin ang MetaMask sa Google Chrome upang makakonekta sa iyong Hardware Wallet."
+    "message": "Kailangan mong gamitin ang XDCPay sa Google Chrome upang makakonekta sa iyong Hardware Wallet."
   },
   "close": {
     "message": "Isara"
@@ -270,7 +270,7 @@
     "message": "Magkonekta ng hardware wallet"
   },
   "hardwareWalletsMsg": {
-    "message": "Pumili ng hardware wallet na gusto mong gamitin sa MetaMask"
+    "message": "Pumili ng hardware wallet na gusto mong gamitin sa XDCPay"
   },
   "here": {
     "message": "dito",
@@ -290,7 +290,7 @@
     "message": "Mag-import ng Account"
   },
   "importAccountMsg": {
-    "message": " Ang mga na-import na account ay hindi iuugnay sa orihinal na seedphrase na ginawa ng iyong MetaMask account. Matuto pa tungkol sa mga na-import na account "
+    "message": " Ang mga na-import na account ay hindi iuugnay sa orihinal na seedphrase na ginawa ng iyong XDCPay account. Matuto pa tungkol sa mga na-import na account "
   },
   "imported": {
     "message": "Na-import",
@@ -360,7 +360,7 @@
     "message": "Mensahe"
   },
   "metamaskVersion": {
-    "message": "Bersyon ng MetaMask"
+    "message": "Bersyon ng XDCPay"
   },
   "mustSelectOne": {
     "message": "Dapat pumili ng kahit 1 token."
@@ -433,7 +433,7 @@
     "message": "Makilahok sa MetaMetrics"
   },
   "participateInMetaMetricsDescription": {
-    "message": "Makilahok sa MetaMetrics para tulungan kaming mas pagandahin ang MetaMask"
+    "message": "Makilahok sa MetaMetrics para tulungan kaming mas pagandahin ang XDCPay"
   },
   "passwordNotLongEnough": {
     "message": "Hindi sapat ang haba ng password"

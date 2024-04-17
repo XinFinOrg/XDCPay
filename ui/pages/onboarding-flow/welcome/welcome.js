@@ -125,70 +125,70 @@ export default function OnboardingWelcome() {
     <div className="onboarding-welcome" data-testid="onboarding-welcome">
       {
         ///: BEGIN:ONLY_INCLUDE_IF(build-main,build-beta,build-flask)
-        <Carousel showThumbs={false} showStatus={false} showArrows>
-          <div>
-            <Text
-              variant={TextVariant.headingLg}
-              as="h2"
-              textAlign={TextAlign.Center}
-              fontWeight={FontWeight.Bold}
-            >
-              {t('welcomeToMetaMask')}
-            </Text>
-            <Text textAlign={TextAlign.Center} marginLeft={6} marginRight={6}>
-              {t('welcomeToMetaMaskIntro')}
-            </Text>
-            <div className="onboarding-welcome__mascot">
-              <Mascot
-                animationEventEmitter={eventEmitter}
-                width="250"
-                height="250"
-              />
-            </div>
-          </div>
-          <div>
-            <Text
-              variant={TextVariant.headingLg}
-              as="h2"
-              textAlign={TextAlign.Center}
-              fontWeight={FontWeight.Bold}
-            >
-              {t('welcomeExploreTitle')}
-            </Text>
-            <Text textAlign={TextAlign.Center}>
-              {t('welcomeExploreDescription')}
-            </Text>
-            <div className="onboarding-welcome__image">
-              <img
-                src="/images/onboarding-welcome-say-hello.svg"
-                width="169"
-                height="237"
-                alt=""
-              />
-            </div>
-          </div>
-          <div>
-            <Text
-              variant={TextVariant.headingLg}
-              as="h2"
-              textAlign={TextAlign.Center}
-              fontWeight={FontWeight.Bold}
-            >
-              {t('welcomeLoginTitle')}
-            </Text>
-            <Text textAlign={TextAlign.Center}>
-              {t('welcomeLoginDescription')}
-            </Text>
-            <div className="onboarding-welcome__image">
-              <img
-                src="/images/onboarding-welcome-decentralised-apps.svg"
-                width="327"
-                height="256"
-                alt=""
-              />
-            </div>
-          </div>
-        </Carousel>
+        // <Carousel showThumbs={false} showStatus={false} showArrows>
+        //   <div>
+        //     <Text
+        //       variant={TextVariant.headingLg}
+        //       as="h2"
+        //       textAlign={TextAlign.Center}
+        //       fontWeight={FontWeight.Bold}
+        //     >
+        //       {t('welcomeToMetaMask')}
+        //     </Text>
+        //     <Text textAlign={TextAlign.Center} marginLeft={6} marginRight={6}>
+        //       {t('welcomeToMetaMaskIntro')}
+        //     </Text>
+        //     <div className="onboarding-welcome__mascot">
+        //       <Mascot
+        //         animationEventEmitter={eventEmitter}
+        //         width="250"
+        //         height="250"
+        //       />
+        //     </div>
+        //   </div>
+        //   <div>
+        //     <Text
+        //       variant={TextVariant.headingLg}
+        //       as="h2"
+        //       textAlign={TextAlign.Center}
+        //       fontWeight={FontWeight.Bold}
+        //     >
+        //       {t('welcomeExploreTitle')}
+        //     </Text>
+        //     <Text textAlign={TextAlign.Center}>
+        //       {t('welcomeExploreDescription')}
+        //     </Text>
+        //     <div className="onboarding-welcome__image">
+        //       <img
+        //         src="/images/onboarding-welcome-say-hello.svg"
+        //         width="169"
+        //         height="237"
+        //         alt=""
+        //       />
+        //     </div>
+        //   </div>
+        //   <div>
+        //     <Text
+        //       variant={TextVariant.headingLg}
+        //       as="h2"
+        //       textAlign={TextAlign.Center}
+        //       fontWeight={FontWeight.Bold}
+        //     >
+        //       {t('welcomeLoginTitle')}
+        //     </Text>
+        //     <Text textAlign={TextAlign.Center}>
+        //       {t('welcomeLoginDescription')}
+        //     </Text>
+        //     <div className="onboarding-welcome__image">
+        //       <img
+        //         src="/images/onboarding-welcome-decentralised-apps.svg"
+        //         width="327"
+        //         height="256"
+        //         alt=""
+        //       />
+        //     </div>
+        //   </div>
+        // </Carousel>
         ///: END:ONLY_INCLUDE_IF
       }
 

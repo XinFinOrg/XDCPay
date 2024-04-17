@@ -36,7 +36,7 @@ export default class MetaFoxLogo extends PureComponent {
     } = this.props;
     const iconProps = unsetIconHeight ? {} : { height: 42, width: 42 };
 
-    iconProps.src = './images/logo/metamask-fox.svg';
+    iconProps.src = './images/logo/XDCPay-full.svg';
 
     ///: BEGIN:ONLY_INCLUDE_IF(build-mmi)
     iconProps.src = './build-types/mmi/images/logo/mmi-logo-with-words.svg';
@@ -54,7 +54,7 @@ export default class MetaFoxLogo extends PureComponent {
       />
     );
 
-    let imageSrc = './images/logo/metamask-fox.svg';
+    let imageSrc = './images/logo/XDCPay-full.svg';
 
     ///: BEGIN:ONLY_INCLUDE_IF(build-flask)
     if (src) {

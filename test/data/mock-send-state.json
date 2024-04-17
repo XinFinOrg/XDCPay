@@ -470,13 +470,13 @@
             {
               "op": "add",
               "path": "/origin",
-              "value": "MetaMask",
+              "value": "XDCPay",
               "note": "#newUnapprovedTransaction - adding the origin",
               "timestamp": 1536268017686
             }
           ]
         ],
-        "origin": "MetaMask"
+        "origin": "XDCPay"
       },
       {
         "id": 3387511061307736,
@@ -519,7 +519,7 @@
             {
               "op": "add",
               "path": "/origin",
-              "value": "MetaMask",
+              "value": "XDCPay",
               "note": "#newUnapprovedTransaction - adding the origin",
               "timestamp": 1528133130667
             }
@@ -604,7 +604,7 @@
             }
           ]
         ],
-        "origin": "MetaMask",
+        "origin": "XDCPay",
         "rawTx": "0xf86c81b5843b9aca0082cf089492e659448c48fc926ec942d0da1459260d36bb33881bc16d674ec80000802ba03f879cd33a31180da38545d0f809822e00ddf35954d8b0ece83bacf22347ce54a06ad050487978e425ca6a014ed55ea8e9a190069863ed96a0eefa88d729ea1eda",
         "hash": "0x516b77569173a04c76fdb6545cf279ebd0c75f5d25d6e4ce019925205f0e3709",
         "submittedTime": 1528133131951,
@@ -651,7 +651,7 @@
             {
               "op": "add",
               "path": "/origin",
-              "value": "MetaMask",
+              "value": "XDCPay",
               "note": "#newUnapprovedTransaction - adding the origin",
               "timestamp": 1528133150013
             }
@@ -736,7 +736,7 @@
             }
           ]
         ],
-        "origin": "MetaMask",
+        "origin": "XDCPay",
         "rawTx": "0xf86c81b6843b9aca0082cf089492e659448c48fc926ec942d0da1459260d36bb33881bc16d674ec80000802ba0692deaabf0d79544d41e7c475ad43760679a4f25d0fee908b1da308db1a291a7a0384db85fc6c843ea25986a0760f3c50ab6504fc559fc71fc7f23f60950eb316d",
         "hash": "0x9271b266d05022cfa841362fae43763ebafcee540d84278b0157ef4a68d4e26f",
         "submittedTime": 1528133151347,
@@ -783,7 +783,7 @@
             {
               "op": "add",
               "path": "/origin",
-              "value": "MetaMask",
+              "value": "XDCPay",
               "note": "#newUnapprovedTransaction - adding the origin",
               "timestamp": 1528133180722
             }
@@ -868,7 +868,7 @@
             }
           ]
         ],
-        "origin": "MetaMask",
+        "origin": "XDCPay",
         "rawTx": "0xf86d81b785012a05f20082cf089492e659448c48fc926ec942d0da1459260d36bb33881bc16d674ec80000802ba086f9846798be6988c39a5cf85f0dbe267e59ca0b96a6a7077e92cba33e10a258a064ffa52ac90c238ce21e6f085283216191b185a1eccd7daae6e2ab66ba26ada0",
         "hash": "0x4e061e977c099735bc9e5203e717f7d9dccb3fcb2f82031a12a3ed326f95d43b",
         "submittedTime": 1528133181885,
@@ -1054,7 +1054,7 @@
             {
               "op": "add",
               "path": "/origin",
-              "value": "MetaMask",
+              "value": "XDCPay",
               "note": "#newUnapprovedTransaction - adding the origin",
               "timestamp": 1528133291486
             }
@@ -1139,7 +1139,7 @@
             }
           ]
         ],
-        "origin": "MetaMask",
+        "origin": "XDCPay",
         "rawTx": "0xf8a981b9843b9aca0082d50894108cf70c7d384c552f42c07c41c0e1e46d77ea0d80b844a9059cbb00000000000000000000000092e659448c48fc926ec942d0da1459260d36bb3300000000000000000000000000000000000000000000000000000000000000022ca04f05310490d3e3a9a159ae25f52cec9afb0a69527d30be832aaae12e64ff056ea075f81a5220bed481e764bab8830c57169c59fe528ca9cf3442f47f7618a9b4a9",
         "hash": "0x3680dc9815cd05b620b6dd0017d949604ca7d92f051d5542fc8a5ecaa876af09",
         "submittedTime": 1528133293859,

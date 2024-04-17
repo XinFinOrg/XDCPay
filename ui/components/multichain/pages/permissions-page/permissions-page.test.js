@@ -6,7 +6,7 @@ import { PermissionsPage } from './permissions-page';
 
 mockState.metamask.subjectMetadata = {
   'https://metamask.github.io': {
-    iconUrl: 'https://metamask.github.io/test-dapp/metamask-fox.svg',
+    iconUrl: 'https://metamask.github.io/test-dapp/XDCPay-full.svg',
     name: 'E2E Test Dapp',
     subjectType: 'website',
     origin: 'https://metamask.github.io',

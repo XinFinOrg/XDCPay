@@ -70,7 +70,7 @@ exports[`All Connections render renders correctly 1`] = `
                 <img
                   alt="avatar-favicon logo"
                   class="mm-avatar-favicon__image"
-                  src="https://metamask.github.io/test-dapp/metamask-fox.svg"
+                  src="https://metamask.github.io/test-dapp/XDCPay-full.svg"
                 />
               </div>
               <div

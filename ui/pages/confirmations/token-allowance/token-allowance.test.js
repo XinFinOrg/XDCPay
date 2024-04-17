@@ -187,7 +187,7 @@ jest.mock('react-router-dom', () => {
 describe('TokenAllowancePage', () => {
   const props = {
     origin: 'https://metamask.github.io',
-    siteImage: 'https://metamask.github.io/test-dapp/metamask-fox.svg',
+    siteImage: 'https://metamask.github.io/test-dapp/XDCPay-full.svg',
     useNonceField: false,
     currentCurrency: 'usd',
     nativeCurrency: 'GoerliETH',

@@ -17,7 +17,7 @@ exports[`ConfirmApproveContent Component should render Confirm approve page corr
           <img
             alt="https://metamask.github.io/test-dapp/"
             class="url-icon confirm-approve-content__siteimage-identicon"
-            src="https://metamask.github.io/test-dapp/metamask-fox.svg"
+            src="https://metamask.github.io/test-dapp/XDCPay-full.svg"
           />
         </div>
         <h6
@@ -32,16 +32,16 @@ exports[`ConfirmApproveContent Component should render Confirm approve page corr
       data-testid="confirm-approve-title"
     >
       <span>
-         
-        Allow access to and transfer of all your 
+
+        Allow access to and transfer of all your
         <span
           class="confirm-approve-content__approval-asset-title"
         >
           ZenAcademy
         </span>
-        
+
         ?
-         
+
       </span>
     </div>
     <div
@@ -187,7 +187,7 @@ exports[`ConfirmApproveContent Component should render Confirm approve page corr
           <img
             alt="https://metamask.github.io/test-dapp/"
             class="url-icon confirm-approve-content__siteimage-identicon"
-            src="https://metamask.github.io/test-dapp/metamask-fox.svg"
+            src="https://metamask.github.io/test-dapp/XDCPay-full.svg"
           />
         </div>
         <h6
@@ -202,32 +202,32 @@ exports[`ConfirmApproveContent Component should render Confirm approve page corr
       data-testid="confirm-approve-title"
     >
       <span>
-         
-        Revoke permission to access and transfer all of your 
+
+        Revoke permission to access and transfer all of your
         <span
           class="confirm-approve-content__approval-asset-title"
         >
           ZenAcademy
         </span>
-        
+
         ?
-         
+
       </span>
     </div>
     <div
       class="confirm-approve-content__description"
     >
       <span>
-         
-        This revokes the permission for a third party to access and transfer all of your 
+
+        This revokes the permission for a third party to access and transfer all of your
         <span
           class="confirm-approve-content__approval-asset-title"
         >
           ZenAcademy
         </span>
-        
+
          without further notice.
-         
+
       </span>
     </div>
     <div
@@ -368,7 +368,7 @@ exports[`ConfirmApproveContent Component should render Confirm approve page corr
           <img
             alt="https://metamask.github.io/test-dapp/"
             class="url-icon confirm-approve-content__siteimage-identicon"
-            src="https://metamask.github.io/test-dapp/metamask-fox.svg"
+            src="https://metamask.github.io/test-dapp/XDCPay-full.svg"
           />
         </div>
         <h6
@@ -383,32 +383,32 @@ exports[`ConfirmApproveContent Component should render Confirm approve page corr
       data-testid="confirm-approve-title"
     >
       <span>
-         
-        Allow access to and transfer all of your NFTs from 
+
+        Allow access to and transfer all of your NFTs from
         <span
           class="confirm-approve-content__approval-asset-title"
         >
           this collection
         </span>
-        
+
         ?
-         
+
       </span>
     </div>
     <div
       class="confirm-approve-content__description"
     >
       <span>
-         
-        This allows a third party to access and transfer all of your NFTs from 
+
+        This allows a third party to access and transfer all of your NFTs from
         <span
           class="confirm-approve-content__approval-asset-title"
         >
           this collection
         </span>
-        
+
          without further notice until you revoke its access.
-         
+
       </span>
     </div>
     <div
@@ -549,7 +549,7 @@ exports[`ConfirmApproveContent Component should render Confirm approve page corr
           <img
             alt="https://metamask.github.io/test-dapp/"
             class="url-icon confirm-approve-content__siteimage-identicon"
-            src="https://metamask.github.io/test-dapp/metamask-fox.svg"
+            src="https://metamask.github.io/test-dapp/XDCPay-full.svg"
           />
         </div>
         <h6
@@ -564,32 +564,32 @@ exports[`ConfirmApproveContent Component should render Confirm approve page corr
       data-testid="confirm-approve-title"
     >
       <span>
-         
-        Revoke permission to access and transfer all of your NFTs from 
+
+        Revoke permission to access and transfer all of your NFTs from
         <span
           class="confirm-approve-content__approval-asset-title"
         >
           this collection
         </span>
-        
+
         ?
-         
+
       </span>
     </div>
     <div
       class="confirm-approve-content__description"
     >
       <span>
-         
-        This revokes the permission for a third party to access and transfer all of your NFTs from 
+
+        This revokes the permission for a third party to access and transfer all of your NFTs from
         <span
           class="confirm-approve-content__approval-asset-title"
         >
           this collection
         </span>
-        
+
          without further notice.
-         
+
       </span>
     </div>
     <div

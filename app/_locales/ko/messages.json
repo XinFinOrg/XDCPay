@@ -121,7 +121,7 @@
     "message": "비밀복구구문으로 지갑에 액세스하세요"
   },
   "accessYourWalletWithSRPDescription": {
-    "message": "MetaMask는 사용자의 비밀번호를 복구할 수 없습니다. 사용자의 비밀복구구문을 이용하여 사용자의 소유권을 확인한 후, 지갑을 복구하고 새 비밀번호를 설정해 드립니다. 먼저 지갑을 생성할 때 받은 비밀복구구문을 입력하세요. $1",
+    "message": "XDCPay는 사용자의 비밀번호를 복구할 수 없습니다. 사용자의 비밀복구구문을 이용하여 사용자의 소유권을 확인한 후, 지갑을 복구하고 새 비밀번호를 설정해 드립니다. 먼저 지갑을 생성할 때 받은 비밀복구구문을 입력하세요. $1",
     "description": "$1 is the words 'Learn More' from key 'learnMore', separated here so that it can be added as a link"
   },
   "accessingYourCamera": {
@@ -178,7 +178,7 @@
     "message": "계정 추가"
   },
   "addAcquiredTokens": {
-    "message": "MetaMask를 이용해 얻은 토큰 추가"
+    "message": "XDCPay를 이용해 얻은 토큰 추가"
   },
   "addAlias": {
     "message": "별칭 추가"
@@ -193,10 +193,10 @@
     "message": "맞춤 네트워크 추가"
   },
   "addEthereumChainConfirmationDescription": {
-    "message": "이렇게 하면 MetaMask 내에서 이 네트워크를 사용할 수 있습니다."
+    "message": "이렇게 하면 XDCPay 내에서 이 네트워크를 사용할 수 있습니다."
   },
   "addEthereumChainConfirmationRisks": {
-    "message": "MetaMask는 맞춤 네트워크를 검증하지 않습니다."
+    "message": "XDCPay는 맞춤 네트워크를 검증하지 않습니다."
   },
   "addEthereumChainConfirmationRisksLearnMore": {
     "message": "$1에 대해 알아보기",
@@ -310,7 +310,7 @@
     "message": "우선 요금(일명 \"채굴자 팁\")이란 내 트랜잭션을 우선 거래한 것에 대한 인센티브로 채굴자에게 직접 전달되는 금액입니다."
   },
   "agreeTermsOfUse": {
-    "message": "MetaMask의 $1에 동의합니다",
+    "message": "XDCPay의 $1에 동의합니다",
     "description": "$1 is the `terms` link"
   },
   "airgapVault": {
@@ -335,7 +335,7 @@
     "message": "경고"
   },
   "allCustodianAccountsConnectedSubtitle": {
-    "message": "현재 모든 수탁 계정이 연결되어 있거나 MetaMask Institutional에 연결할 계정이 없습니다."
+    "message": "현재 모든 수탁 계정이 연결되어 있거나 XDCPay Institutional에 연결할 계정이 없습니다."
   },
   "allCustodianAccountsConnectedTitle": {
     "message": "연결할 계정 없음"
@@ -373,19 +373,19 @@
     "description": "The description of the application"
   },
   "appName": {
-    "message": "MetaMask",
+    "message": "XDCPay",
     "description": "The name of the application"
   },
   "appNameBeta": {
-    "message": "MetaMask Beta",
+    "message": "XDCPay Beta",
     "description": "The name of the application (Beta)"
   },
   "appNameFlask": {
-    "message": "MetaMask Flask",
+    "message": "XDCPay Flask",
     "description": "The name of the application (Flask)"
   },
   "appNameMmi": {
-    "message": "MetaMask Institutional",
+    "message": "XDCPay Institutional",
     "description": "The name of the application (MMI)"
   },
   "approve": {
@@ -459,7 +459,7 @@
     "message": "자동 잠금 타이머(분)"
   },
   "autoLockTimeLimitDescription": {
-    "message": "MetaMask가 잠길 때까지 걸리는 시간을 분 단위로 설정합니다."
+    "message": "XDCPay가 잠길 때까지 걸리는 시간을 분 단위로 설정합니다."
   },
   "average": {
     "message": "평균"
@@ -474,7 +474,7 @@
     "message": "백업"
   },
   "backupApprovalInfo": {
-    "message": "이 비밀 코드는 장치를 분실하여 지갑을 복구해야 하거나, 비밀번호를 잊은 경우, MetaMask를 다시 설치해야 하거나, 다른 장치에서 지갑에 액세스해야 할 때 필요합니다."
+    "message": "이 비밀 코드는 장치를 분실하여 지갑을 복구해야 하거나, 비밀번호를 잊은 경우,XDCPay를 다시 설치해야 하거나, 다른 장치에서 지갑에 액세스해야 할 때 필요합니다."
   },
   "backupApprovalNotice": {
     "message": "비밀복구구문을 백업하여 지갑과 자금을 안전하게 보호하세요."
@@ -511,19 +511,19 @@
     "description": "$1 represents the word 'here' in a hyperlink"
   },
   "betaMetamaskInstitutionalVersion": {
-    "message": "MetaMask Institutional 베타 버전"
+    "message": "XDCPay Institutional 베타 버전"
   },
   "betaMetamaskVersion": {
-    "message": "MetaMask 베타 버전"
+    "message": "XDCPay 베타 버전"
   },
   "betaTerms": {
     "message": "베타 이용약관"
   },
   "betaWalletCreationSuccessReminder1": {
-    "message": "MetaMask 베타는 비밀복구구문을 복구할 수 없습니다."
+    "message": "XDCPay 베타는 비밀복구구문을 복구할 수 없습니다."
   },
   "betaWalletCreationSuccessReminder2": {
-    "message": "MetaMask 베타는 비밀복구구문을 절대 묻지 않습니다."
+    "message": "XDCPay 베타는 비밀복구구문을 절대 묻지 않습니다."
   },
   "blockExplorerAccountAction": {
     "message": "계정",
@@ -593,7 +593,7 @@
     "message": "연락처 목록 작성하기"
   },
   "builtAroundTheWorld": {
-    "message": "MetaMask는 전 세계적으로 설계 및 구축되어 있습니다."
+    "message": "XDCPay는 전 세계적으로 설계 및 구축되어 있습니다."
   },
   "busy": {
     "message": "바쁨"
@@ -655,7 +655,7 @@
     "description": "$1 is a link to the privacy policy"
   },
   "chromeRequiredForHardwareWallets": {
-    "message": "하드웨어 지갑에 연결하려면 Google Chrome에서 MetaMask를 사용해야 합니다."
+    "message": "하드웨어 지갑에 연결하려면 Google Chrome에서XDCPay를 사용해야 합니다."
   },
   "clear": {
     "message": "지우기"
@@ -686,10 +686,10 @@
     "message": "CoinGecko"
   },
   "configureSnapPopupDescription": {
-    "message": "이제 이 스냅 구성을 위해 MetaMask 페이지를 떠나게 됩니다."
+    "message": "이제 이 스냅 구성을 위해 XDCPay 페이지를 떠나게 됩니다."
   },
   "configureSnapPopupInstallDescription": {
-    "message": "이제 이 스냅 설치를 위해 MetaMask 페이지를 떠나게 됩니다."
+    "message": "이제 이 스냅 설치를 위해 XDCPay 페이지를 떠나게 됩니다."
   },
   "configureSnapPopupInstallTitle": {
     "message": "스냅 설치"
@@ -764,7 +764,7 @@
     "description": "$1 is the number of accounts to which the web3 site/application is asking to connect; this will substitute $1 in connectToMultiple"
   },
   "connectWithMetaMask": {
-    "message": "MetaMask로 연결"
+    "message": "XDCPay로 연결"
   },
   "connectedAccountsDescriptionPlural": {
     "message": "이 사이트에 계정 $1개가 연결되어 있습니다.",
@@ -774,7 +774,7 @@
     "message": "이 사이트에 계정 1개가 연결되어 있습니다."
   },
   "connectedAccountsEmptyDescription": {
-    "message": "MetaMask가 이 사이트에 연결되어 있지 않습니다. web3 사이트를 연결하려면 사이트에서 연결 버튼을 찾아 클릭하세요."
+    "message": "XDCPay가 이 사이트에 연결되어 있지 않습니다. web3 사이트를 연결하려면 사이트에서 연결 버튼을 찾아 클릭하세요."
   },
   "connectedSites": {
     "message": "연결된 사이트"
@@ -950,7 +950,7 @@
     "message": "수탁자"
   },
   "custodianAccountAddedDesc": {
-    "message": "이제 MetaMask Institutional에서 수탁 계정을 사용할 수 있습니다."
+    "message": "이제 XDCPay Institutional에서 수탁 계정을 사용할 수 있습니다."
   },
   "custodianAccountAddedTitle": {
     "message": "선택한 수탁 계정을 추가했습니다."
@@ -959,7 +959,7 @@
     "message": "계정을 MMI에 다시 연결하려면 $1에서 해당 사용자 인터페이스를 찾아 'MMI로 연결' 버튼을 클릭하면 됩니다."
   },
   "custodianReplaceRefreshTokenChangedSubtitle": {
-    "message": "이제 MetaMask Institutional에서 수탁 계정을 사용할 수 있습니다."
+    "message": "이제 XDCPay Institutional에서 수탁 계정을 사용할 수 있습니다."
   },
   "custodianReplaceRefreshTokenChangedTitle": {
     "message": "수탁 토큰이 새로고침되었습니다"
@@ -977,7 +977,7 @@
     "message": "계정을 MMI에 다시 연결하려면 $1에서 해당 사용자 인터페이스를 찾아 'MMI로 연결' 버튼을 클릭하면 됩니다."
   },
   "custodyRefreshTokenModalDescription1": {
-    "message": "수탁자가 MetaMask Institutional 확장을 인증하는 토큰을 발행하면 계정을 연결할 수 있습니다."
+    "message": "수탁자가 XDCPay Institutional 확장을 인증하는 토큰을 발행하면 계정을 연결할 수 있습니다."
   },
   "custodyRefreshTokenModalDescription2": {
     "message": "이 토큰은 보안상의 이유로 일정 기간이 지나면 만료됩니다. 그러면 MMI에 다시 연결해야 합니다."
@@ -1119,22 +1119,22 @@
     "message": "데스크톱 앱"
   },
   "desktopConnectionCriticalErrorDescription": {
-    "message": "이는 간헐적인 오류일 수 있습니다. 확장 프로그램을 다시 시작하거나 MetaMask 데스크톱을 비활성화해 보세요."
+    "message": "이는 간헐적인 오류일 수 있습니다. 확장 프로그램을 다시 시작하거나 XDCPay 데스크톱을 비활성화해 보세요."
   },
   "desktopConnectionCriticalErrorTitle": {
-    "message": "MetaMask 시작 중 문제가 발생했습니다"
+    "message": "XDCPay 시작 중 문제가 발생했습니다"
   },
   "desktopConnectionLostErrorDescription": {
-    "message": "데스크톱 앱이 실행 중인지 확인하거나 MetaMask 데스크톱을 비활성화하세요."
+    "message": "데스크톱 앱이 실행 중인지 확인하거나 XDCPay 데스크톱을 비활성화하세요."
   },
   "desktopConnectionLostErrorTitle": {
-    "message": "MetaMask 데스크톱 연결이 끊어졌습니다"
+    "message": "XDCPay 데스크톱 연결이 끊어졌습니다"
   },
   "desktopDisableButton": {
     "message": "데스크톱 앱 비활성화"
   },
   "desktopDisableErrorCTA": {
-    "message": "MetaMask 데스크톱 앱 비활성화"
+    "message": "XDCPay 데스크톱 앱 비활성화"
   },
   "desktopEnableButton": {
     "message": "데스크톱 앱 활성화"
@@ -1146,52 +1146,52 @@
     "message": "설정 페이지로 돌아가기"
   },
   "desktopErrorRestartMMCTA": {
-    "message": "MetaMask 재시작"
+    "message": "XDCPay 재시작"
   },
   "desktopNotFoundErrorCTA": {
-    "message": "MetaMask 데스크톱 다운로드"
+    "message": "XDCPay 데스크톱 다운로드"
   },
   "desktopNotFoundErrorDescription1": {
     "message": "데스크톱 앱이 실행 중인지 확인하세요."
   },
   "desktopNotFoundErrorDescription2": {
-    "message": "데스크톱 앱이 설치되어 있지 않다면 MetaMask 웹사이트에서 다운로드하세요."
+    "message": "데스크톱 앱이 설치되어 있지 않다면 XDCPay 웹사이트에서 다운로드하세요."
   },
   "desktopNotFoundErrorTitle": {
-    "message": "MetaMask 데스크톱을 찾을 수 없습니다"
+    "message": "XDCPay 데스크톱을 찾을 수 없습니다"
   },
   "desktopOpenOrDownloadCTA": {
-    "message": "MetaMask 데스크톱 열기"
+    "message": "XDCPay 데스크톱 열기"
   },
   "desktopOutdatedErrorCTA": {
-    "message": "MetaMask 데스크톱 업데이트"
+    "message": "XDCPay 데스크톱 업데이트"
   },
   "desktopOutdatedErrorDescription": {
-    "message": "MetaMask 데스크톱 앱을 업그레이드해야 합니다."
+    "message": "XDCPay 데스크톱 앱을 업그레이드해야 합니다."
   },
   "desktopOutdatedErrorTitle": {
-    "message": "MetaMask 데스크톱이 최신 버전이 아닙니다"
+    "message": "XDCPay 데스크톱이 최신 버전이 아닙니다"
   },
   "desktopOutdatedExtensionErrorCTA": {
-    "message": "MetaMask 확장 프로그램 업데이트"
+    "message": "XDCPay 확장 프로그램 업데이트"
   },
   "desktopOutdatedExtensionErrorDescription": {
-    "message": "MetaMask 확장 프로그램을 업그레이드해야 합니다."
+    "message": "XDCPay 확장 프로그램을 업그레이드해야 합니다."
   },
   "desktopOutdatedExtensionErrorTitle": {
-    "message": "MetaMask 확장 프로그램이 최신 버전이 아닙니다"
+    "message": "XDCPay 확장 프로그램이 최신 버전이 아닙니다"
   },
   "desktopPageDescription": {
     "message": "페어링에 성공하면 확장 프로그램이 다시 시작되며 비밀번호를 다시 입력해야 합니다."
   },
   "desktopPageSubTitle": {
-    "message": "MetaMask 데스크톱을 열고 이 코드를 입력하세요"
+    "message": "XDCPay 데스크톱을 열고 이 코드를 입력하세요"
   },
   "desktopPageTitle": {
     "message": "데스크톱 페어링"
   },
   "desktopPairedWarningDeepLink": {
-    "message": "MetaMask 데스크톱 설정으로 이동하세요"
+    "message": "XDCPay 데스크톱 설정으로 이동하세요"
   },
   "desktopPairedWarningDescription": {
     "message": "새로 페어링하기 원하시면 현재 연결 상태를 해제하세요."
@@ -1209,10 +1209,10 @@
     "message": "desktopRouteNotFoundErrorTitle"
   },
   "desktopUnexpectedErrorCTA": {
-    "message": "MetaMask 홈으로 돌아가기"
+    "message": "XDCPay 홈으로 돌아가기"
   },
   "desktopUnexpectedErrorDescription": {
-    "message": "MetaMask 데스크톱을 확인하여 연결을 복구하세요"
+    "message": "XDCPay 데스크톱을 확인하여 연결을 복구하세요"
   },
   "desktopUnexpectedErrorTitle": {
     "message": "문제가 발생했습니다..."
@@ -1455,7 +1455,7 @@
     "description": "Message displayed on generic error page in the popup UI, $1 is a clickable link with text defined by the 'here' key. The link will open to a form where users can file support tickets."
   },
   "errorPageTitle": {
-    "message": "MetaMask 오류 발생",
+    "message": "XDCPay 오류 발생",
     "description": "Title of generic error page"
   },
   "errorStack": {
@@ -1537,15 +1537,15 @@
   },
   "flaskWelcomeWarning2": {
     "message": "이 확장 프로그램은 안전성이나 안정성을 보장하지 않습니다. Flask에서 제공하는 새로운 API는 피싱 공격에 대비한 강화 과정을 거치지 않았습니다. 즉, Flask가 필요한 모든 사이트나 스냅은 자산을 훔치려는 악의적 시도일 수 있습니다.",
-    "description": "This explains the risks of using MetaMask Flask"
+    "description": "This explains the risks of using XDCPay Flask"
   },
   "flaskWelcomeWarning3": {
-    "message": "모든 Flask의 API는 실험 단계입니다. 따라서 예고 없이 변경, 제거되거나 안정적인 MetaMask로 마이그레이션되지 않고 Flask에 무기한 남아 있을 수 있습니다. 사용 시 위험은 본인 책임입니다.",
+    "message": "모든 Flask의 API는 실험 단계입니다. 따라서 예고 없이 변경, 제거되거나 안정적인XDCPay로 마이그레이션되지 않고 Flask에 무기한 남아 있을 수 있습니다. 사용 시 위험은 본인 책임입니다.",
     "description": "This message warns developers about unstable Flask APIs"
   },
   "flaskWelcomeWarning4": {
-    "message": "Flask를 사용할 때는 정규 MetaMask 익스텐션을 비활성화하세요.",
-    "description": "This message calls to pay attention about multiple versions of MetaMask running on the same site (Flask + Prod)"
+    "message": "Flask를 사용할 때는 정규 XDCPay 익스텐션을 비활성화하세요.",
+    "description": "This message calls to pay attention about multiple versions of XDCPay running on the same site (Flask + Prod)"
   },
   "flaskWelcomeWarningAcceptButton": {
     "message": "본인은 이 위험을 감수합니다",
@@ -1691,7 +1691,7 @@
     "message": "하드웨어 지갑을 통합하면 외부 서버에 API 호출을 사용하며, 이 서버는 사용자의 IP 주소와 사용자와 인터렉션하는 스마트 계약의 주소를 볼 수 있습니다."
   },
   "hardwareWalletsMsg": {
-    "message": "MetaMask와 함께 사용할 하드웨어 지갑을 선택하세요."
+    "message": "XDCPay와 함께 사용할 하드웨어 지갑을 선택하세요."
   },
   "here": {
     "message": "여기",
@@ -1748,7 +1748,7 @@
     "description": "$1 is a message from 'holdToRevealContent4' and $2 is a text link with the message from 'holdToRevealContent5'"
   },
   "holdToRevealContent4": {
-    "message": "MetaMask 지원팀은 이러한 정보를 절대로 묻지 않습니다,",
+    "message": "XDCPay 지원팀은 이러한 정보를 절대로 묻지 않습니다,",
     "description": "Part of 'holdToRevealContent3'"
   },
   "holdToRevealContent5": {
@@ -1810,13 +1810,13 @@
     "message": "유효한 개인 키가 아닙니다. 반드시 64자의 16진수 문자열인 개인 키를 입력해야 합니다."
   },
   "importAccountJsonLoading1": {
-    "message": "이 JSON 파일을 가져오려면 몇 분 정도 걸리며 MetaMask가 정지됩니다."
+    "message": "이 JSON 파일을 가져오려면 몇 분 정도 걸리며XDCPay가 정지됩니다."
   },
   "importAccountJsonLoading2": {
     "message": "죄송합니다. 향후에는 더 빠르게 개선하겠습니다."
   },
   "importAccountMsg": {
-    "message": "가져온 계정은 MetaMask 계정 비밀복구구문과 연결하지 못합니다. 가져온 계정에 대해 자세히 알아보기"
+    "message": "가져온 계정은 XDCPay 계정 비밀복구구문과 연결하지 못합니다. 가져온 계정에 대해 자세히 알아보기"
   },
   "importMyWallet": {
     "message": "내 지갑 가져오기"
@@ -1860,7 +1860,7 @@
     "message": "설정에서"
   },
   "infuraBlockedNotification": {
-    "message": "MetaMask이 블록체인 호스트에 연결할 수 없습니다. $1 오류 가능성을 검토하세요.",
+    "message": "XDCPay이 블록체인 호스트에 연결할 수 없습니다. $1 오류 가능성을 검토하세요.",
     "description": "$1 is a clickable link with with text defined by the 'here' key"
   },
   "initialTransactionConfirmed": {
@@ -1974,7 +1974,7 @@
     "message": "IPFS 게이트웨이"
   },
   "ipfsGatewayDescription": {
-    "message": "MetaMask는 타사 서비스를 이용하여 IPFS에 저장된 NFT 이미지를 표시하고, 브라우저 주소창에 입력한 ENS 주소 관련 정보도 표시하며, 다른 토큰의 아이콘도 가져옵니다. 이 기능을 이용하면 IP 주소가 해당 서비스에 노출될 수 있습니다."
+    "message": "XDCPay는 타사 서비스를 이용하여 IPFS에 저장된 NFT 이미지를 표시하고, 브라우저 주소창에 입력한 ENS 주소 관련 정보도 표시하며, 다른 토큰의 아이콘도 가져옵니다. 이 기능을 이용하면 IP 주소가 해당 서비스에 노출될 수 있습니다."
   },
   "ipfsToggleModalDescriptionOne": {
     "message": "당사는 타사 서비스를 사용하여 IPFS에 저장된 NFT 이미지를 표시하고, 브라우저 주소창에 입력된 ENS 주소와 관련된 정보를 표시하며, 다양한 토큰의 아이콘을 가져옵니다. 이러한 서비스를 사용하면 귀하의 IP 주소가 해당 서비스에 노출될 수 있습니다."
@@ -2111,7 +2111,7 @@
     "message": "잠금"
   },
   "lockMetaMask": {
-    "message": "MetaMask 고정"
+    "message": "XDCPay 고정"
   },
   "lockTimeInvalid": {
     "message": "잠금 시간은 반드시 0에서 10080 사이여야 합니다"
@@ -2172,7 +2172,7 @@
     "message": "메시지"
   },
   "metaMaskConnectStatusParagraphOne": {
-    "message": "이제 MetaMask에서 계정 연결을 더 효과적으로 제어할 수 있습니다."
+    "message": "이제XDCPay에서 계정 연결을 더 효과적으로 제어할 수 있습니다."
   },
   "metaMaskConnectStatusParagraphThree": {
     "message": "클릭하여 연결된 계정을 관리하세요."
@@ -2181,13 +2181,13 @@
     "message": "방문 중인 웹사이트가 현재 선택한 계정에 연결되어 있다면 연결 상태 버튼이 표시됩니다."
   },
   "metamaskInstitutionalVersion": {
-    "message": "MetaMask Institutional 버전"
+    "message": "XDCPay Institutional 버전"
   },
   "metamaskSwapsOfflineDescription": {
-    "message": "MetaMask Swaps 점검 중입니다. 나중에 다시 확인하세요."
+    "message": "XDCPay Swaps 점검 중입니다. 나중에 다시 확인하세요."
   },
   "metamaskVersion": {
-    "message": "MetaMask 버전"
+    "message": "XDCPay 버전"
   },
   "metrics": {
     "message": "메트릭"
@@ -2222,7 +2222,7 @@
     "message": "여기에서 요청하세요"
   },
   "mmiBuiltAroundTheWorld": {
-    "message": "MetaMask Institutional은 전 세계적으로 설계 및 구축되었습니다."
+    "message": "XDCPay Institutional은 전 세계적으로 설계 및 구축되었습니다."
   },
   "more": {
     "message": "그 외"
@@ -2249,7 +2249,7 @@
     "message": "피드백 공유"
   },
   "needHelpLinkText": {
-    "message": "MetaMask 지원"
+    "message": "XDCPay 지원"
   },
   "needHelpSubmitTicket": {
     "message": "티켓 제출"
@@ -2379,7 +2379,7 @@
   },
   "nextNonceWarning": {
     "message": "논스가 권장 논스값인 $1보다 큽니다.",
-    "description": "The next nonce according to MetaMask's internal logic"
+    "description": "The next nonce according toXDCPay's internal logic"
   },
   "nftAddFailedMessage": {
     "message": "소유권 정보가 일치하지 않아 NFT를 추가할 수 없습니다. 올바른 정보를 입력했는지 확인하세요."
@@ -2389,7 +2389,7 @@
     "description": "$1 is a clickable link with text defined by the 'importNFTPage' key"
   },
   "nftDisclaimer": {
-    "message": "면책 조항: MetaMask는 소스 URL에서 미디어 파일을 가져옵니다. 이러한 URL은 때때로 NFT가 민팅된 마켓플레이스에서 변경되기도 합니다."
+    "message": "면책 조항:XDCPay는 소스 URL에서 미디어 파일을 가져옵니다. 이러한 URL은 때때로 NFT가 민팅된 마켓플레이스에서 변경되기도 합니다."
   },
   "nftOptions": {
     "message": "NFT 옵션"
@@ -2530,7 +2530,7 @@
     "description": "Description on an action button that appears in the What's New popup. Tells the user that if they click it, they will go to our Advanced settings page."
   },
   "notifications8DescriptionOne": {
-    "message": "MetaMask v10.4.0부터는 Ledger 장치를 MetaMask에 연결할 때 더 이상 Ledger Live를 사용하지 않아도 됩니다.",
+    "message": "XDCPay v10.4.0부터는 Ledger 장치를XDCPay에 연결할 때 더 이상 Ledger Live를 사용하지 않아도 됩니다.",
     "description": "Description of a notification in the 'See What's New' popup. Describes changes for how Ledger Live is no longer needed to connect the device."
   },
   "notifications8DescriptionTwo": {
@@ -2542,8 +2542,8 @@
     "description": "Title for a notification in the 'See What's New' popup. Notifies ledger users that there is an improvement in how they can connect their device."
   },
   "notificationsDropLedgerFirefoxDescription": {
-    "message": "Firefox에서 더 이상 U2F를 지원하지 않아 Firefox를 이용한 MetaMask에서 Ledger를 이용할 수 없습니다. 대신 Google Chrome에서 MetaMask를 이용해 보세요.",
-    "description": "Description of a notification in the 'See What's New' popup. Describes that ledger will not longer be supported for firefox users and they should use MetaMask on chrome for ledger support instead."
+    "message": "Firefox에서 더 이상 U2F를 지원하지 않아 Firefox를 이용한XDCPay에서 Ledger를 이용할 수 없습니다. 대신 Google Chrome에서XDCPay를 이용해 보세요.",
+    "description": "Description of a notification in the 'See What's New' popup. Describes that ledger will not longer be supported for firefox users and they should use XDCPay on chrome for ledger support instead."
   },
   "notificationsDropLedgerFirefoxTitle": {
     "message": "Firefox의 Ledger 지원 중단",
@@ -2621,16 +2621,16 @@
     "message": "이 데이터는 집계 처리된 정보이며 일반 데이터 보호 규정 (EU) 2016/679의 목적에 따라 익명으로 관리됩니다."
   },
   "onboardingMetametricsDescription": {
-    "message": "MetaMask는 사용자가 MetaMask를 어떻게 사용하는지 이해하기 위해 기본적인 사용 데이터를 수집하고자 합니다. 이 데이터는 사용자 경험을 통한 서비스 개선에 사용됩니다."
+    "message": "XDCPay는 사용자가XDCPay를 어떻게 사용하는지 이해하기 위해 기본적인 사용 데이터를 수집하고자 합니다. 이 데이터는 사용자 경험을 통한 서비스 개선에 사용됩니다."
   },
   "onboardingMetametricsDescription2": {
-    "message": "MetaMask에서는..."
+    "message": "XDCPay에서는..."
   },
   "onboardingMetametricsDisagree": {
     "message": "괜찮습니다"
   },
   "onboardingMetametricsInfuraTerms": {
-    "message": "* MetaMask에서 Infura를 기본 RPC 공급업체로 이용하는 경우, 트랜잭션 전송 시 Infura가 IP 주소와 이더리움 지갑 주소 정보를 수집합니다. MetaMask는 해당 두 정보를 연계할 수 있는 방식으로 정보를 저장하지 않습니다. 데이터 수집 관점에서 MetaMask와 Infura가 인터렉션하는 방법에 대한 자세한 내용은 $1 업데이트를 참조하세요. 일반적인 개인정보 처리방침에 대한 자세한 내용은 $2에서 확인하세요.",
+    "message": "*XDCPay에서 Infura를 기본 RPC 공급업체로 이용하는 경우, 트랜잭션 전송 시 Infura가 IP 주소와 이더리움 지갑 주소 정보를 수집합니다.XDCPay는 해당 두 정보를 연계할 수 있는 방식으로 정보를 저장하지 않습니다. 데이터 수집 관점에서XDCPay와 Infura가 인터렉션하는 방법에 대한 자세한 내용은 $1 업데이트를 참조하세요. 일반적인 개인정보 처리방침에 대한 자세한 내용은 $2에서 확인하세요.",
     "description": "$1 represents `onboardingMetametricsInfuraTermsPolicyLink`, $2 represents `onboardingMetametricsInfuraTermsPolicy`"
   },
   "onboardingMetametricsInfuraTermsPolicy": {
@@ -2661,7 +2661,7 @@
     "message": "익명 클릭 및 페이지뷰 이벤트 보내기"
   },
   "onboardingMetametricsTitle": {
-    "message": "MetaMask 개선에 도움을 주세요"
+    "message": "XDCPay 개선에 도움을 주세요"
   },
   "onboardingPinExtensionBillboardAccess": {
     "message": "전체 액세스"
@@ -2679,16 +2679,16 @@
     "message": "브라우저 확장 아이콘 클릭"
   },
   "onboardingPinExtensionDescription": {
-    "message": "쉽게 액세스하여 트랜잭션을 컨펌할 있도록 브라우저에 MetaMask를 고정해 놓으세요."
+    "message": "쉽게 액세스하여 트랜잭션을 컨펌할 있도록 브라우저에XDCPay를 고정해 놓으세요."
   },
   "onboardingPinExtensionDescription2": {
-    "message": "확장을 클릭하여 MetaMask를 열면 클릭 한 번으로 지갑에 액세스할 수 있습니다."
+    "message": "확장을 클릭하여XDCPay를 열면 클릭 한 번으로 지갑에 액세스할 수 있습니다."
   },
   "onboardingPinExtensionDescription3": {
     "message": "브라우저 확장 아이콘을 클릭하여 즉시 액세스하세요."
   },
   "onboardingPinExtensionLabel": {
-    "message": "MetaMask 고정"
+    "message": "XDCPay 고정"
   },
   "onboardingPinExtensionStep1": {
     "message": "1"
@@ -2697,7 +2697,7 @@
     "message": "2"
   },
   "onboardingPinExtensionTitle": {
-    "message": "MetaMask 설치가 완료되었습니다!"
+    "message": "XDCPay 설치가 완료되었습니다!"
   },
   "onboardingUsePhishingDetectionDescription": {
     "message": "피싱 감지 경고는 $1과(와)의 통신에 의존합니다. jsDeliver는 회원님의 IP 주소에 액세스할 수 있습니다. $2 보기.",
@@ -2711,7 +2711,7 @@
   },
   "openFullScreenForLedgerWebHid": {
     "message": "전체 화면으로 이동하여 Ledger를 연결하세요.",
-    "description": "Shown to the user on the confirm screen when they are viewing MetaMask in a popup window but need to connect their ledger via webhid."
+    "description": "Shown to the user on the confirm screen when they are viewing XDCPay in a popup window but need to connect their ledger via webhid."
   },
   "openInBlockExplorer": {
     "message": "블록 탐색기 열기"
@@ -2745,7 +2745,7 @@
     "description": "Used in the 'permission_rpc' message."
   },
   "outdatedBrowserNotification": {
-    "message": "현재 사용 중인 브라우저가 최신 버전이 아닙니다. 브라우저를 업데이트하지 않으면 보안 패치와 MetaMask의 새 기능을 이용할 수 없습니다."
+    "message": "현재 사용 중인 브라우저가 최신 버전이 아닙니다. 브라우저를 업데이트하지 않으면 보안 패치와XDCPay의 새 기능을 이용할 수 없습니다."
   },
   "padlock": {
     "message": "패드락"
@@ -2757,7 +2757,7 @@
     "message": "MetaMetrics에 참여"
   },
   "participateInMetaMetricsDescription": {
-    "message": "MetaMetrics에 참여하여 MetaMask 개선에 도움을 주세요."
+    "message": "MetaMetrics에 참여하여 XDCPay 개선에 도움을 주세요."
   },
   "password": {
     "message": "비밀번호"
@@ -2766,7 +2766,7 @@
     "message": "비밀번호가 짧습니다."
   },
   "passwordSetupDetails": {
-    "message": "이 비밀번호는 이 장치에서만 MetaMask 지갑의 잠금을 해제합니다. MetaMask는 이 비밀번호를 복구할 수 없습니다."
+    "message": "이 비밀번호는 이 장치에서만 XDCPay 지갑의 잠금을 해제합니다.XDCPay는 이 비밀번호를 복구할 수 없습니다."
   },
   "passwordStrength": {
     "message": "비밀번호 강도: $1",
@@ -2776,7 +2776,7 @@
     "message": "장치가 도난되거나 해킹되는 경우에 대비해 강력한 암호를 설정하면 지갑의 보안을 향상시킬 수 있습니다."
   },
   "passwordTermsWarning": {
-    "message": "MetaMask가 이 비밀번호를 복구할 수 없음을 이해합니다. $1"
+    "message": "XDCPay가 이 비밀번호를 복구할 수 없음을 이해합니다. $1"
   },
   "passwordsDontMatch": {
     "message": "비밀번호가 일치하지 않습니다."
@@ -2834,7 +2834,7 @@
     "description": "The description for the `snap_cronjob` permission"
   },
   "permission_dialog": {
-    "message": "MetaMask 대화창 표시",
+    "message": "XDCPay 대화창 표시",
     "description": "The description for the `snap_dialog` permission"
   },
   "permission_ethereumAccounts": {
@@ -3003,7 +3003,7 @@
     "message": "절대로 다른 사람과 비밀복구구문을 공유하지 마십시오"
   },
   "recoveryPhraseReminderItemTwo": {
-    "message": "MetaMask 팀에서는 절대로 비밀복구구문을 묻지 않습니다"
+    "message": "XDCPay 팀에서는 절대로 비밀복구구문을 묻지 않습니다"
   },
   "recoveryPhraseReminderSubText": {
     "message": "비밀복구구문은 모든 계정을 관리합니다."
@@ -3103,7 +3103,7 @@
     "message": "지갑 초기화"
   },
   "resetWalletSubHeader": {
-    "message": "MetaMask는 사용자의 비밀번호를 보관하지 않습니다. 계정 잠금을 해제하는 데 문제가 있는 경우, 지갑 설정 시 사용한 비밀복구구문을 이용하여 지갑을 초기화해야 합니다."
+    "message": "XDCPay는 사용자의 비밀번호를 보관하지 않습니다. 계정 잠금을 해제하는 데 문제가 있는 경우, 지갑 설정 시 사용한 비밀복구구문을 이용하여 지갑을 초기화해야 합니다."
   },
   "resetWalletUsingSRP": {
     "message": "이 작업을 하면 정리해둔 계정 목록과 함께 현재 지갑과 비밀복구구문이 이 기기에서 삭제됩니다. 비밀복구구문으로 초기화하면 해당 비밀복구구문과 연관된 계정 목록이 표시됩니다. 새 목록에는 잔액이 남아있는 계정이 자동으로 나타납니다. 이전에 생성한 $1도 가능합니다. 가져온 사용자 정의 계정은 $2이어야 하며 계정에 추가한 사용자 정의 토큰도 $3이어야 합니다."
@@ -3112,7 +3112,7 @@
     "message": "계속하기 전에 비밀복구구문이 정확한지 확인하세요. 이 작업은 취소할 수 없습니다."
   },
   "restartMetamask": {
-    "message": "MetaMask 재시작"
+    "message": "XDCPay 재시작"
   },
   "restore": {
     "message": "복구"
@@ -3155,7 +3155,7 @@
     "description": "This is a sentence consisting of link using 'revealSeedWordsSRPName' as $1 and bolded text using 'revealSeedWordsDescription3' as $2."
   },
   "revealSeedWordsDescription2": {
-    "message": "MetaMask는 $1입니다. 이는 회원님이 SRP의 소유자라는 의미입니다.",
+    "message": "XDCPay는 $1입니다. 이는 회원님이 SRP의 소유자라는 의미입니다.",
     "description": "$1 is text link with the message from 'revealSeedWordsNonCustodialWallet'"
   },
   "revealSeedWordsDescription3": {
@@ -3178,7 +3178,7 @@
     "description": "$1 is bolded text using the message from 'revealSeedWordsWarning2'"
   },
   "revealSeedWordsWarning2": {
-    "message": "MetaMask 지원팀은 이러한 정보를 절대로 묻지 않습니다,",
+    "message": "XDCPay 지원팀은 이러한 정보를 절대로 묻지 않습니다,",
     "description": "The bolded texted in the second part of 'revealSeedWordsWarning'"
   },
   "revealTheSeedPhrase": {
@@ -3287,7 +3287,7 @@
     "message": "복구 구문을 요청하는 사람은 사기를 치려는 것입니다."
   },
   "seedPhraseIntroSidebarCopyTwo": {
-    "message": "절대로, 누구와도, 심지어 MetaMask와도 비밀복구구문을 공유하면 안 됩니다!"
+    "message": "절대로, 누구와도, 심지어XDCPay와도 비밀복구구문을 공유하면 안 됩니다!"
   },
   "seedPhraseIntroSidebarTitleOne": {
     "message": "'비밀복구구문'이란 무엇인가요?"
@@ -3332,10 +3332,10 @@
     "message": "계정 선택"
   },
   "selectAnAccountAlreadyConnected": {
-    "message": "이 계정은 이미 MetaMask와 연결되어 있습니다."
+    "message": "이 계정은 이미XDCPay와 연결되어 있습니다."
   },
   "selectAnAccountHelp": {
-    "message": "MetaMask Institutional에서 사용할 수탁 계정을 선택하세요."
+    "message": "XDCPay Institutional에서 사용할 수탁 계정을 선택하세요."
   },
   "selectHdPath": {
     "message": "HD 경로 선택"
@@ -3386,7 +3386,7 @@
     "message": "Sepolia 테스트 네트워크"
   },
   "setAdvancedPrivacySettingsDetails": {
-    "message": "이와 같이 MetaMask는 신용있는 타사의 서비스를 사용하여 제품 가용성과 안전성을 향상합니다."
+    "message": "이와 같이XDCPay는 신용있는 타사의 서비스를 사용하여 제품 가용성과 안전성을 향상합니다."
   },
   "setApprovalForAll": {
     "message": "모두 승인 설정"
@@ -3639,7 +3639,7 @@
     "message": "비밀복구구문을 찾으려면 두 가지 질문에 올바르게 답해야 합니다"
   },
   "srpSecurityQuizQuestionOneQuestion": {
-    "message": "비밀복구구문을 분실하시면 MetaMask가..."
+    "message": "비밀복구구문을 분실하시면XDCPay가..."
   },
   "srpSecurityQuizQuestionOneRightAnswer": {
     "message": "도와드릴 수 없습니다"
@@ -3708,7 +3708,7 @@
     "message": "상태 로그를 가져오는 도중 오류가 발생했습니다."
   },
   "stateLogFileName": {
-    "message": "MetaMask 상태 로그"
+    "message": "XDCPay 상태 로그"
   },
   "stateLogs": {
     "message": "상태 로그"
@@ -3729,7 +3729,7 @@
     "message": "Lattice1을 연결하세요."
   },
   "step1LatticeWalletMsg": {
-    "message": "Lattice1이 장치 설정을 마치고 온라인 상태가 되면 MetaMask를 연결할 수 있습니다. 장치의 잠금을 해제하고 장치 ID를 준비하세요.",
+    "message": "Lattice1이 장치 설정을 마치고 온라인 상태가 되면XDCPay를 연결할 수 있습니다. 장치의 잠금을 해제하고 장치 ID를 준비하세요.",
     "description": "$1 represents the `hardwareWalletSupportLinkConversion` localization key"
   },
   "step1LedgerWallet": {
@@ -3773,7 +3773,7 @@
   },
   "stxFailureDescription": {
     "message": "시장 상황이 갑자기 변하면 실패할 수 있습니다. 문제가 지속되면 $1(으)로 문의하세요.",
-    "description": "This message is shown to a user if their swap fails. The $1 will be replaced by support.metamask.io"
+    "description": "This message is shown to a user if their swap fails. The $1 will be replaced by support.XDCPay.io"
   },
   "stxPendingPrivatelySubmittingSwap": {
     "message": "스왑을 비공개로 제출하는 중..."
@@ -3884,7 +3884,7 @@
     "message": "한도 편집"
   },
   "swapEnableDescription": {
-    "message": "이는 MetaMask에게 $1 스왑 권한을 부여하는 것으로, 필수 사항입니다.",
+    "message": "이는XDCPay에게 $1 스왑 권한을 부여하는 것으로, 필수 사항입니다.",
     "description": "Gives the user info about the required approval transaction for swaps. $1 will be the symbol of a token being approved for swaps."
   },
   "swapEnableTokenForSwapping": {
@@ -3902,7 +3902,7 @@
   },
   "swapFailedErrorDescriptionWithSupportLink": {
     "message": "트랜잭션이 실패할 경우 언제든 문의하세요. 오류가 해결되지 않는다면 고객 지원 $1에 문의하세요.",
-    "description": "This message is shown to a user if their swap fails. The $1 will be replaced by support.metamask.io"
+    "description": "This message is shown to a user if their swap fails. The $1 will be replaced by support.XDCPay.io"
   },
   "swapFailedErrorTitle": {
     "message": "스왑 실패"
@@ -3940,7 +3940,7 @@
     "message": "이전 화면의 가스비는 이 두 트랜잭션으로 나뉩니다."
   },
   "swapGasFeesSummary": {
-    "message": "가스비는 $1 네트워크에서 트랜잭션을 처리하는 암호화폐 채굴자에게 지급됩니다. MetaMask는 가스비로 수익을 창출하지 않습니다.",
+    "message": "가스비는 $1 네트워크에서 트랜잭션을 처리하는 암호화폐 채굴자에게 지급됩니다.XDCPay는 가스비로 수익을 창출하지 않습니다.",
     "description": "$1 is the selected network, e.g. Ethereum or BSC"
   },
   "swapHighSlippage": {
@@ -3950,12 +3950,12 @@
     "message": "슬리패지 금액이 아주 큽니다."
   },
   "swapIncludesMMFee": {
-    "message": "$1%의 MetaMask 요금이 포함됩니다.",
-    "description": "Provides information about the fee that metamask takes for swaps. $1 is a decimal number."
+    "message": "$1%의 XDCPay 요금이 포함됩니다.",
+    "description": "Provides information about the fee that XDCPay takes for swaps. $1 is a decimal number."
   },
   "swapIncludesMetaMaskFeeViewAllQuotes": {
-    "message": "$1% MetaMask 요금 - $2 포함",
-    "description": "Provides information about the fee that metamask takes for swaps. $1 is a decimal number and $2 is a link to view all quotes."
+    "message": "$1% XDCPay 요금 - $2 포함",
+    "description": "Provides information about the fee that XDCPay takes for swaps. $1 is a decimal number and $2 is a link to view all quotes."
   },
   "swapLearnMore": {
     "message": "스왑 자세히 알아보기"
@@ -3970,11 +3970,11 @@
     "message": "최대 슬리패지"
   },
   "swapMetaMaskFee": {
-    "message": "MetaMask 수수료"
+    "message": "XDCPay 수수료"
   },
   "swapMetaMaskFeeDescription": {
-    "message": "$1%의 수수료는 자동으로 각 견적에 반영됩니다. 이는 MetaMask의 유동성 공급자 정보 집계용 소프트웨어 사용 라이선스 비용입니다.",
-    "description": "Provides information about the fee that metamask takes for swaps. $1 is a decimal number."
+    "message": "$1%의 수수료는 자동으로 각 견적에 반영됩니다. 이는XDCPay의 유동성 공급자 정보 집계용 소프트웨어 사용 라이선스 비용입니다.",
+    "description": "Provides information about the fee that XDCPay takes for swaps. $1 is a decimal number."
   },
   "swapNQuotesWithDot": {
     "message": "$1 견적.",
@@ -4227,7 +4227,7 @@
     "message": "전환"
   },
   "switchEthereumChainConfirmationDescription": {
-    "message": "이는 MetaMask에서 선택한 네트워크를 이전에 추가한 다음 네트워크로 전환하게 됩니다:"
+    "message": "이는XDCPay에서 선택한 네트워크를 이전에 추가한 다음 네트워크로 전환하게 됩니다:"
   },
   "switchEthereumChainConfirmationTitle": {
     "message": "이 사이트가 네트워크를 전환하도록 허용하시겠습니까?"
@@ -4273,7 +4273,7 @@
     "message": "서비스 약관"
   },
   "termsOfUseAgreeText": {
-    "message": " 본인은 MetaMask의 사용 및 관련 모든 기능에 적용되는 이용약관에 동의합니다"
+    "message": " 본인은XDCPay의 사용 및 관련 모든 기능에 적용되는 이용약관에 동의합니다"
   },
   "termsOfUseFooterText": {
     "message": "스크롤하여 모든 섹션의 내용을 확인하세요"
@@ -4288,7 +4288,7 @@
     "message": "테마"
   },
   "themeDescription": {
-    "message": "원하는 MetaMask 테마를 선택하세요."
+    "message": "원하는 XDCPay 테마를 선택하세요."
   },
   "thingsToKeep": {
     "message": "유의 사항:"
@@ -4432,7 +4432,7 @@
     "message": "추천 사이트"
   },
   "transactionDetailDappGasTooltip": {
-    "message": "최신 블록을 기반으로 MetaMask의 권장 가스비를 사용하도록 편집합니다."
+    "message": "최신 블록을 기반으로XDCPay의 권장 가스비를 사용하도록 편집합니다."
   },
   "transactionDetailGasHeading": {
     "message": "예상 가스비"
@@ -4444,7 +4444,7 @@
     "message": "가스비는 네트워크에 의해 설정되며 네트워크 트래픽 및 트랜잭션의 복잡성에 따라 변동합니다."
   },
   "transactionDetailGasTooltipIntro": {
-    "message": "가스비는 $1 네트워크에서 트랜잭션을 처리하는 암호화폐 채굴자에게 지급됩니다. MetaMask는 가스 요금으로 수익을 창출하지 않습니다."
+    "message": "가스비는 $1 네트워크에서 트랜잭션을 처리하는 암호화폐 채굴자에게 지급됩니다.XDCPay는 가스 요금으로 수익을 창출하지 않습니다."
   },
   "transactionDetailGasTotalSubtitle": {
     "message": "금액 + 가스비"
@@ -4539,7 +4539,7 @@
     "description": "$1 is the wallet device name; $2 is a link to wallet connection guide"
   },
   "troubleStarting": {
-    "message": "MetaMask 실행 중 오류가 발생했습니다. 일시적인 오류일 수 있으니 확장 프로그램을 재시작해 보세요."
+    "message": "XDCPay 실행 중 오류가 발생했습니다. 일시적인 오류일 수 있으니 확장 프로그램을 재시작해 보세요."
   },
   "trustSiteApprovePermission": {
     "message": "권한을 부여하면 다음 $1에서 회원님의 자금에 액세스할 수 있습니다."
@@ -4561,7 +4561,7 @@
   },
   "u2f": {
     "message": "U2F",
-    "description": "A name on an API for the browser to interact with devices that support the U2F protocol. On some browsers we use it to connect MetaMask to Ledger devices."
+    "description": "A name on an API for the browser to interact with devices that support the U2F protocol. On some browsers we use it to connect XDCPay to Ledger devices."
   },
   "unapproved": {
     "message": "승인되지 않음"
@@ -4620,7 +4620,7 @@
     "message": "스마트 계약 디코딩"
   },
   "use4ByteResolutionDescription": {
-    "message": "인터렉션하는 스마트 계약에 따라 메시지를 이용하여 활동 탭을 사용자 맞춤하여 사용자 경험을 개선합니다. MetaMask는 4byte.directory라는 서비스를 통해 데이터를 디코딩하여 스마트 계약을 읽기 쉬운 버전으로 보여 줍니다. 이는 악의적인 스마트 계약을 승인할 가능성을 줄이는 데 도움이 되지만 IP 주소가 공유될 수 있습니다."
+    "message": "인터렉션하는 스마트 계약에 따라 메시지를 이용하여 활동 탭을 사용자 맞춤하여 사용자 경험을 개선합니다.XDCPay는 4byte.directory라는 서비스를 통해 데이터를 디코딩하여 스마트 계약을 읽기 쉬운 버전으로 보여 줍니다. 이는 악의적인 스마트 계약을 승인할 가능성을 줄이는 데 도움이 되지만 IP 주소가 공유될 수 있습니다."
   },
   "useMultiAccountBalanceChecker": {
     "message": "일괄 계정 잔액 요청"
@@ -4721,10 +4721,10 @@
     "message": "지갑을 성공적으로 보호했습니다. 비밀복구구문을 안전하게 비밀로 유지하세요. 이는 회원님의 책임입니다!"
   },
   "walletCreationSuccessReminder1": {
-    "message": "MetaMask는 비밀복구구문을 복구할 수 없습니다."
+    "message": "XDCPay는 비밀복구구문을 복구할 수 없습니다."
   },
   "walletCreationSuccessReminder2": {
-    "message": "MetaMask는 비밀복구구문을 절대 묻지 않습니다."
+    "message": "XDCPay는 비밀복구구문을 절대 묻지 않습니다."
   },
   "walletCreationSuccessReminder3": {
     "message": "누군가와 $1 또는 회원님의 자금을 도난당할 위험이 있습니다.",
@@ -4775,7 +4775,7 @@
     "message": "Explore 분산화 앱"
   },
   "welcomeLoginDescription": {
-    "message": "MetaMask를 사용하여 분산화 앱에 로그인하세요. 가입은 필요 없습니다."
+    "message": "XDCPay를 사용하여 분산화 앱에 로그인하세요. 가입은 필요 없습니다."
   },
   "welcomeLoginTitle": {
     "message": "내 지갑 처음 알아보기"
@@ -4784,11 +4784,11 @@
     "message": "시작하기"
   },
   "welcomeToMetaMaskIntro": {
-    "message": "수백만 명이 신뢰하는 MetaMask는 모든 사람이 web3의 세계에 접근할 수 있도록 하는 안전한 지갑입니다."
+    "message": "수백만 명이 신뢰하는XDCPay는 모든 사람이 web3의 세계에 접근할 수 있도록 하는 안전한 지갑입니다."
   },
   "whatsNew": {
     "message": "새로운 소식",
-    "description": "This is the title of a popup that gives users notifications about new features and updates to MetaMask."
+    "description": "This is the title of a popup that gives users notifications about new features and updates to XDCPay."
   },
   "whatsThis": {
     "message": "이것은 무엇인가요?"

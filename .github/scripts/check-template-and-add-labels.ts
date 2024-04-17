@@ -19,7 +19,7 @@ import {
 import { TemplateType, templates } from './shared/template';
 import { retrievePullRequest } from './shared/pull-request';
 
-const knownBots = ["metamaskbot", "dependabot", "github-actions", "sentry-io"];
+const knownBots = ['metamaskbot', 'dependabot', 'github-actions', 'sentry-io'];
 
 main().catch((error: Error): void => {
   console.error(error);
@@ -85,7 +85,11 @@ async function main(): Promise<void> {
 
   // If labelable's author is a bot we skip the template checks as bots don't use templates
   if (knownBots.includes(labelable.author)) {
-    console.log(`${labelable.type === LabelableType.PullRequest ? 'PR' : 'Issue'} was created by a bot (${labelable.author}). Skip template checks.`);
+    console.log(
+      `${
+        labelable.type === LabelableType.PullRequest ? 'PR' : 'Issue'
+      } was created by a bot (${labelable.author}). Skip template checks.`,
+    );
     process.exit(0); // Stop the process and exit with a success status code
   }
 
@@ -111,7 +115,7 @@ async function main(): Promise<void> {
       );
 
       // Add regression prod label to the bug report issue if release version was found in issue body
-      if(isReleaseCandidateIssue(labelable)) {
+      if (isReleaseCandidateIssue(labelable)) {
         console.log(
           `Issue ${labelable?.number} is not a production issue. Regression prod label is not needed.`,
         );
@@ -143,8 +147,7 @@ async function main(): Promise<void> {
         invalidPullRequestTemplateLabel,
       );
     } else {
-      const errorMessage =
-        `PR body does not match template ('pull-request-template.md').\n\nMake sure PR's body includes all section titles.\n\nSections titles are listed here: https://github.com/MetaMask/metamask-extension/blob/develop/.github/scripts/shared/template.ts#L40-L47`;
+      const errorMessage = `PR body does not match template ('pull-request-template.md').\n\nMake sure PR's body includes all section titles.\n\nSections titles are listed here: https://github.com/MetaMask/metamask-extension/blob/develop/.github/scripts/shared/template.ts#L40-L47`;
       console.log(errorMessage);
 
       // Add label to indicate PR body doesn't match template
@@ -276,7 +279,7 @@ async function userBelongsToMetaMaskOrg(
   const userBelongsToMetaMaskOrgQuery = `
     query UserBelongsToMetaMaskOrg($login: String!) {
       user(login: $login) {
-        organization(login: "MetaMask") {
+        organization(login: "XDCPay") {
           id
         }
       }
@@ -295,8 +298,6 @@ async function userBelongsToMetaMaskOrg(
 }
 
 // This function checks if issue is a release candidate (RC) issue, discovered during release regression testing phase. If so, it means it is not a production issue.
-function isReleaseCandidateIssue(
-  issue: Labelable,
-): boolean {
-  return Boolean(issue.labels.find(label => label.name === 'regression-RC'));
+function isReleaseCandidateIssue(issue: Labelable): boolean {
+  return Boolean(issue.labels.find((label) => label.name === 'regression-RC'));
 }

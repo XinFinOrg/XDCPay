@@ -6,7 +6,7 @@ const primaryAccount = Object.values(
   testData.metamask.internalAccounts.accounts,
 )[0];
 const subjectMetadata = {
-  iconUrl: '/images/logo/metamask-fox.svg',
+  iconUrl: '/images/logo/XDCPay-full.svg',
   name: 'MetaMask',
   origin: 'http://localhost:8080',
 };

@@ -75,7 +75,7 @@ export default {
   },
   args: {
     origin: 'https://metamask.github.io',
-    siteImage: 'https://metamask.github.io/test-dapp/metamask-fox.svg',
+    siteImage: 'https://metamask.github.io/test-dapp/XDCPay-full.svg',
     useNonceField: false,
     currentCurrency: 'usd',
     nativeCurrency: 'RopstenETH',

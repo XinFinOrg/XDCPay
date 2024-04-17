@@ -121,7 +121,7 @@
     "message": "अपने सीक्रेट रिकवरी फ्रेज़ का इस्तेमाल कर अपने वॉलेट का एक्सेस पाएं"
   },
   "accessYourWalletWithSRPDescription": {
-    "message": "MetaMask आपका पासवर्ड रिकवर नहीं कर सकता। हम आपकी ओनरशिप को वेलिडेट करने, आपके वॉलेट को रिस्टोर करने और एक नया पासवर्ड सेट करने के लिए आपके सीक्रेट रिकवरी फ्रेज़ का इस्तेमाल करेंगे। सबसे पहले, अपना वह सीक्रेट रिकवरी फ्रेज़ डालें जिसे आपको अपना वॉलेट बनाते समय दिया गया था। $1",
+    "message": "XDCPay आपका पासवर्ड रिकवर नहीं कर सकता। हम आपकी ओनरशिप को वेलिडेट करने, आपके वॉलेट को रिस्टोर करने और एक नया पासवर्ड सेट करने के लिए आपके सीक्रेट रिकवरी फ्रेज़ का इस्तेमाल करेंगे। सबसे पहले, अपना वह सीक्रेट रिकवरी फ्रेज़ डालें जिसे आपको अपना वॉलेट बनाते समय दिया गया था। $1",
     "description": "$1 is the words 'Learn More' from key 'learnMore', separated here so that it can be added as a link"
   },
   "accessingYourCamera": {
@@ -178,7 +178,7 @@
     "message": "अकाउंट जोड़ें"
   },
   "addAcquiredTokens": {
-    "message": "MetaMask का इस्तेमाल करके, आपके द्वारा प्राप्त किए गए टोकन जोड़ें"
+    "message": "XDCPay का इस्तेमाल करके, आपके द्वारा प्राप्त किए गए टोकन जोड़ें"
   },
   "addAlias": {
     "message": "उपनाम जोड़ें"
@@ -193,10 +193,10 @@
     "message": "कस्टम नेटवर्क जोड़ें"
   },
   "addEthereumChainConfirmationDescription": {
-    "message": "इससे इस नेटवर्क को MetaMask के अंदर इस्तेमाल करने की अनुमति मिलेगी।"
+    "message": "इससे इस नेटवर्क को XDCPay के अंदर इस्तेमाल करने की अनुमति मिलेगी।"
   },
   "addEthereumChainConfirmationRisks": {
-    "message": "MetaMask कस्टम नेटवर्क को वेरीफ़ाई नहीं करता है।"
+    "message": "XDCPay कस्टम नेटवर्क को वेरीफ़ाई नहीं करता है।"
   },
   "addEthereumChainConfirmationRisksLearnMore": {
     "message": "$1 के बारे में जानें।",
@@ -310,7 +310,7 @@
     "message": "प्रायोरिटी फ़ीस (उर्फ \"माइनर टिप\") सीधे माइनरों के पास जाती है और उन्हें आपके ट्रांसेक्शन को प्राथमिकता देने के लिए प्रोत्साहित करती है।"
   },
   "agreeTermsOfUse": {
-    "message": "मैं MetaMask के $1 से सहमत हूं",
+    "message": "मैं XDCPay के $1 से सहमत हूं",
     "description": "$1 is the `terms` link"
   },
   "airgapVault": {
@@ -335,7 +335,7 @@
     "message": "चेतावनियां"
   },
   "allCustodianAccountsConnectedSubtitle": {
-    "message": "आपने या तो अपने सभी कस्टोडियन एकाउंट्स को पहले ही जोड़ लिया है या MetaMask इंस्टीट्यूशनल से जुड़ने के लिए कोई अकाउंट नहीं है।"
+    "message": "आपने या तो अपने सभी कस्टोडियन एकाउंट्स को पहले ही जोड़ लिया है या XDCPay इंस्टीट्यूशनल से जुड़ने के लिए कोई अकाउंट नहीं है।"
   },
   "allCustodianAccountsConnectedTitle": {
     "message": "कनेक्ट करने के लिए कोई अकाउंट उपलब्ध नहीं हैं"
@@ -373,19 +373,19 @@
     "description": "The description of the application"
   },
   "appName": {
-    "message": "MetaMask",
+    "message": "XDCPay",
     "description": "The name of the application"
   },
   "appNameBeta": {
-    "message": "MetaMask Beta",
+    "message": "XDCPay Beta",
     "description": "The name of the application (Beta)"
   },
   "appNameFlask": {
-    "message": "MetaMask Flask",
+    "message": "XDCPay Flask",
     "description": "The name of the application (Flask)"
   },
   "appNameMmi": {
-    "message": "MetaMask Institutional",
+    "message": "XDCPay Institutional",
     "description": "The name of the application (MMI)"
   },
   "approve": {
@@ -459,7 +459,7 @@
     "message": "ऑटो-लॉक टाइमर (मिनट)"
   },
   "autoLockTimeLimitDescription": {
-    "message": "MetaMask लॉक होने से पहले खाली गए समय को मिनट में सेट करें।"
+    "message": "XDCPay लॉक होने से पहले खाली गए समय को मिनट में सेट करें।"
   },
   "average": {
     "message": "औसत"
@@ -474,7 +474,7 @@
     "message": "बैकअप"
   },
   "backupApprovalInfo": {
-    "message": "यदि आप अपना डिवाइस खो देते हैं, अपना पासवर्ड भूल जाते हैं, MetaMask को फिर से इनस्टॉल करना हो या दूसरे डिवाइस पर अपने वॉलेट को एक्सेस करना चाहते हों, तो आपके वॉलेट को रिकवर करने के लिए यह सीक्रेट कोड आवश्यक है।"
+    "message": "यदि आप अपना डिवाइस खो देते हैं, अपना पासवर्ड भूल जाते हैं, XDCPay को फिर से इनस्टॉल करना हो या दूसरे डिवाइस पर अपने वॉलेट को एक्सेस करना चाहते हों, तो आपके वॉलेट को रिकवर करने के लिए यह सीक्रेट कोड आवश्यक है।"
   },
   "backupApprovalNotice": {
     "message": "अपने वॉलेट और पैसे को सुरक्षित रखने के लिए अपने सीक्रेट रिकवरी फ्रेज़ का बैकअप लें।"
@@ -511,19 +511,19 @@
     "description": "$1 represents the word 'here' in a hyperlink"
   },
   "betaMetamaskInstitutionalVersion": {
-    "message": "MetaMask Institutional बीटा वर्शन"
+    "message": "XDCPay Institutional बीटा वर्शन"
   },
   "betaMetamaskVersion": {
-    "message": "MetaMask बीटा वर्शन"
+    "message": "XDCPay बीटा वर्शन"
   },
   "betaTerms": {
     "message": "बीटा के इस्तेमाल की शर्तें"
   },
   "betaWalletCreationSuccessReminder1": {
-    "message": "MetaMask बीटा आपका सीक्रेट रिकवरी फ्रेज़ रिकवर नहीं कर सकता।"
+    "message": "XDCPay बीटा आपका सीक्रेट रिकवरी फ्रेज़ रिकवर नहीं कर सकता।"
   },
   "betaWalletCreationSuccessReminder2": {
-    "message": "MetaMask बीटा आपसे आपका गुप्त रिकवरी वाक्यांश कभी नहीं मांगेगा।"
+    "message": "XDCPay बीटा आपसे आपका गुप्त रिकवरी वाक्यांश कभी नहीं मांगेगा।"
   },
   "blockExplorerAccountAction": {
     "message": "अकाउंट",
@@ -593,7 +593,7 @@
     "message": "अपनी कॉन्टेक्ट लिस्ट बनाएं"
   },
   "builtAroundTheWorld": {
-    "message": "MetaMask दुनिया भर में डिज़ाइन किया और बनाया गया है।"
+    "message": "XDCPay दुनिया भर में डिज़ाइन किया और बनाया गया है।"
   },
   "busy": {
     "message": "बिज़ी"
@@ -655,7 +655,7 @@
     "description": "$1 is a link to the privacy policy"
   },
   "chromeRequiredForHardwareWallets": {
-    "message": "अपने hardware wallet से कनेक्ट करने के लिए आपको Google Chrome पर MetaMask का इस्तेमाल करने की आवश्यकता है।"
+    "message": "अपने hardware wallet से कनेक्ट करने के लिए आपको Google Chrome पर XDCPay का इस्तेमाल करने की आवश्यकता है।"
   },
   "clear": {
     "message": "हटाएं"
@@ -686,10 +686,10 @@
     "message": "CoinGecko"
   },
   "configureSnapPopupDescription": {
-    "message": "अब आप इस Snap को कॉन्फिगर करने के लिए MetaMask से बाहर जा रहे हैं।"
+    "message": "अब आप इस Snap को कॉन्फिगर करने के लिए XDCPay से बाहर जा रहे हैं।"
   },
   "configureSnapPopupInstallDescription": {
-    "message": "अब आप इस Snap को इंस्टॉल करने के लिए MetaMask से बाहर जा रहे हैं।"
+    "message": "अब आप इस Snap को इंस्टॉल करने के लिए XDCPay से बाहर जा रहे हैं।"
   },
   "configureSnapPopupInstallTitle": {
     "message": "Snap इंस्टॉल करें"
@@ -764,7 +764,7 @@
     "description": "$1 is the number of accounts to which the web3 site/application is asking to connect; this will substitute $1 in connectToMultiple"
   },
   "connectWithMetaMask": {
-    "message": "MetaMask के साथ कनेक्ट करें"
+    "message": "XDCPay के साथ कनेक्ट करें"
   },
   "connectedAccountsDescriptionPlural": {
     "message": "आपके पास इस साइट से कनेक्ट किए गए $1 एकाउंट्स हैं।",
@@ -774,7 +774,7 @@
     "message": "इस साइट से आपका 1 अकाउंट कनेक्ट किया गया है।"
   },
   "connectedAccountsEmptyDescription": {
-    "message": "MetaMask इस साइट से कनेक्ट नहीं है। किसी web3 साइट से कनेक्ट करने के लिए, उनकी साइट पर कनेक्ट बटन खोजें।"
+    "message": "XDCPay इस साइट से कनेक्ट नहीं है। किसी web3 साइट से कनेक्ट करने के लिए, उनकी साइट पर कनेक्ट बटन खोजें।"
   },
   "connectedSites": {
     "message": "कनेक्ट की गई साइटें"
@@ -868,7 +868,7 @@
     "message": "टोकन कॉन्ट्रैक्ट"
   },
   "convertTokenToNFTDescription": {
-    "message": "हमने पाया है कि यह संपत्ति एक NFT है। MetaMask के पास अब NFT के लिए फुल नेटिव सपोर्ट है। क्या आप इसे अपनी टोकन लिस्ट से हटाना चाहते हैं और इसे NFT के रूप में जोड़ना चाहते हैं?"
+    "message": "हमने पाया है कि यह संपत्ति एक NFT है। XDCPay के पास अब NFT के लिए फुल नेटिव सपोर्ट है। क्या आप इसे अपनी टोकन लिस्ट से हटाना चाहते हैं और इसे NFT के रूप में जोड़ना चाहते हैं?"
   },
   "convertTokenToNFTExistDescription": {
     "message": "हमने पाया है कि इस एसेट को एक NFT के रूप में जोड़ा गया है। क्या आप इसे अपनी टोकन लिस्ट से हटाना चाहते हैं?"
@@ -950,7 +950,7 @@
     "message": "कस्टोडियन"
   },
   "custodianAccountAddedDesc": {
-    "message": "अब आप MetaMask Institutional में अपने कस्टोडियन एकाउंट्स का इस्तेमाल कर सकते हैं।"
+    "message": "अब आप XDCPay Institutional में अपने कस्टोडियन एकाउंट्स का इस्तेमाल कर सकते हैं।"
   },
   "custodianAccountAddedTitle": {
     "message": "चुने गए कस्टोडियन अकाउंट जोड़ दिए गए हैं।"
@@ -959,7 +959,7 @@
     "message": "कृपया $1 पर जाएं और अपने एकाउंट्स को फिर से MMI से जोड़ने के लिए उनके यूज़र इंटरफेस के भीतर 'MMI से कनेक्ट करें' बटन पर क्लिक करें।"
   },
   "custodianReplaceRefreshTokenChangedSubtitle": {
-    "message": "अब आप MetaMask Institutional में अपने कस्टोडियन एकाउंट्स का इस्तेमाल कर सकते हैं।"
+    "message": "अब आप XDCPay Institutional में अपने कस्टोडियन एकाउंट्स का इस्तेमाल कर सकते हैं।"
   },
   "custodianReplaceRefreshTokenChangedTitle": {
     "message": "आपका कस्टोडियन टोकन रीफ्रेश कर दिया गया है"
@@ -977,7 +977,7 @@
     "message": "कृपया $1 पर जाएं और अपने एकाउंट्स को फिर से MMI से जोड़ने के लिए उनके यूज़र इंटरफेस के भीतर 'MMI से कनेक्ट करें' बटन पर क्लिक करें।"
   },
   "custodyRefreshTokenModalDescription1": {
-    "message": "आपका कस्टोडियन एक टोकन जारी करता है जो MetaMask Institutional एक्सटेंशन को ऑथेंटिकेट करता है, जिससे आप अपने एकाउंट्स को कनेक्ट कर सकते हैं।"
+    "message": "आपका कस्टोडियन एक टोकन जारी करता है जो XDCPay Institutional एक्सटेंशन को ऑथेंटिकेट करता है, जिससे आप अपने एकाउंट्स को कनेक्ट कर सकते हैं।"
   },
   "custodyRefreshTokenModalDescription2": {
     "message": "यह टोकन सुरक्षा कारणों से एक निश्चित अवधि के बाद समाप्त हो जाता है। इसके लिए आपको MMI से फिर से कनेक्ट करना होगा।"
@@ -1119,22 +1119,22 @@
     "message": "डेस्कटॉप ऐप"
   },
   "desktopConnectionCriticalErrorDescription": {
-    "message": "यह गड़बड़ी रुक-रुक कर हो सकती है, इसलिए एक्सटेंशन को फिर से शुरू करने की कोशिश करें या MetaMask डेस्कटॉप को डिसेबल करें।"
+    "message": "यह गड़बड़ी रुक-रुक कर हो सकती है, इसलिए एक्सटेंशन को फिर से शुरू करने की कोशिश करें या XDCPay डेस्कटॉप को डिसेबल करें।"
   },
   "desktopConnectionCriticalErrorTitle": {
-    "message": "MetaMask को शुरू करने में परेशानी हुई"
+    "message": "XDCPay को शुरू करने में परेशानी हुई"
   },
   "desktopConnectionLostErrorDescription": {
-    "message": "कृपया पक्का करें कि आपके पास डेस्कटॉप ऐप चालू है और चल रहा है या MetaMask डेस्कटॉप को डिसेबल करें।"
+    "message": "कृपया पक्का करें कि आपके पास डेस्कटॉप ऐप चालू है और चल रहा है या XDCPay डेस्कटॉप को डिसेबल करें।"
   },
   "desktopConnectionLostErrorTitle": {
-    "message": "MetaMask डेस्कटॉप कनेक्शन टूट हो गया था"
+    "message": "XDCPay डेस्कटॉप कनेक्शन टूट हो गया था"
   },
   "desktopDisableButton": {
     "message": "डेस्कटॉप ऐप को डिसेबल करें"
   },
   "desktopDisableErrorCTA": {
-    "message": "MetaMask डेस्कटॉप को डिसेबल करें"
+    "message": "XDCPay डेस्कटॉप को डिसेबल करें"
   },
   "desktopEnableButton": {
     "message": "डेस्कटॉप ऐप को इनेबल करें"
@@ -1146,52 +1146,52 @@
     "message": "सेटिंग्स पेज पर वापस लौटें"
   },
   "desktopErrorRestartMMCTA": {
-    "message": "MetaMask को फिर से शुरू करें"
+    "message": "XDCPay को फिर से शुरू करें"
   },
   "desktopNotFoundErrorCTA": {
-    "message": "MetaMask डेस्कटॉप डाउनलोड करें"
+    "message": "XDCPay डेस्कटॉप डाउनलोड करें"
   },
   "desktopNotFoundErrorDescription1": {
     "message": "कृपया पक्का करें कि आपके पास डेस्कटॉप ऐप चालू है और चल रहा है।"
   },
   "desktopNotFoundErrorDescription2": {
-    "message": "अगर आपके पास कोई डेस्कटॉप ऐप इंस्टॉल नहीं है, तो कृपया इसे MetaMask वेबसाइट पर डाउनलोड करें।"
+    "message": "अगर आपके पास कोई डेस्कटॉप ऐप इंस्टॉल नहीं है, तो कृपया इसे XDCPay वेबसाइट पर डाउनलोड करें।"
   },
   "desktopNotFoundErrorTitle": {
-    "message": "MetaMask डेस्कटॉप नहीं पाया गया"
+    "message": "XDCPay डेस्कटॉप नहीं पाया गया"
   },
   "desktopOpenOrDownloadCTA": {
-    "message": "MetaMask डेस्कटॉप को खोलें"
+    "message": "XDCPay डेस्कटॉप को खोलें"
   },
   "desktopOutdatedErrorCTA": {
-    "message": "MetaMask डेस्कटॉप अपडेट करें"
+    "message": "XDCPay डेस्कटॉप अपडेट करें"
   },
   "desktopOutdatedErrorDescription": {
-    "message": "आपके MetaMask डेस्कटॉप ऐप को अपग्रेड करने की आवश्यकता है।"
+    "message": "आपके XDCPay डेस्कटॉप ऐप को अपग्रेड करने की आवश्यकता है।"
   },
   "desktopOutdatedErrorTitle": {
-    "message": "MetaMask डेस्कटॉप पुराना हो चुका है"
+    "message": "XDCPay डेस्कटॉप पुराना हो चुका है"
   },
   "desktopOutdatedExtensionErrorCTA": {
-    "message": "MetaMask एक्सटेंशन का अपडेट करें"
+    "message": "XDCPay एक्सटेंशन का अपडेट करें"
   },
   "desktopOutdatedExtensionErrorDescription": {
-    "message": "आपके MetaMask एक्सटेंशन को अपग्रेड करने की आवश्यकता है।"
+    "message": "आपके XDCPay एक्सटेंशन को अपग्रेड करने की आवश्यकता है।"
   },
   "desktopOutdatedExtensionErrorTitle": {
-    "message": "MetaMask एक्सटेंशन पुराना हो चुका है"
+    "message": "XDCPay एक्सटेंशन पुराना हो चुका है"
   },
   "desktopPageDescription": {
     "message": "यदि पेयरिंग सफल होती है, तो एक्सटेंशन फिर से शुरू हो जाएगा और आपको अपना पासवर्ड फिर से डालना होगा।"
   },
   "desktopPageSubTitle": {
-    "message": "अपना MetaMask डेस्कटॉप खोलें और इस कोड को टाइप करें"
+    "message": "अपना XDCPay डेस्कटॉप खोलें और इस कोड को टाइप करें"
   },
   "desktopPageTitle": {
     "message": "डेस्कटॉप के साथ पेयर करें"
   },
   "desktopPairedWarningDeepLink": {
-    "message": "MetaMask डेस्कटॉप में सेटिंग्स में जाएं"
+    "message": "XDCPay डेस्कटॉप में सेटिंग्स में जाएं"
   },
   "desktopPairedWarningDescription": {
     "message": "यदि आप एक नई पेयरिंग शुरू करना चाहते हैं, तो कृपया वर्तमान कनेक्शन को हटा दें।"
@@ -1209,10 +1209,10 @@
     "message": "desktopRouteNotFoundErrorTitle"
   },
   "desktopUnexpectedErrorCTA": {
-    "message": "MetaMask होम को लौटें"
+    "message": "XDCPay होम को लौटें"
   },
   "desktopUnexpectedErrorDescription": {
-    "message": "कनेक्शन को रीस्टोर करने के लिए अपने MetaMask डेस्कटॉप की जाँच करें"
+    "message": "कनेक्शन को रीस्टोर करने के लिए अपने XDCPay डेस्कटॉप की जाँच करें"
   },
   "desktopUnexpectedErrorTitle": {
     "message": "कुछ गलत हो गया..."
@@ -1455,7 +1455,7 @@
     "description": "Message displayed on generic error page in the popup UI, $1 is a clickable link with text defined by the 'here' key. The link will open to a form where users can file support tickets."
   },
   "errorPageTitle": {
-    "message": "MetaMask में कोई गड़बड़ी हुई",
+    "message": "XDCPay में कोई गड़बड़ी हुई",
     "description": "Title of generic error page"
   },
   "errorStack": {
@@ -1537,15 +1537,15 @@
   },
   "flaskWelcomeWarning2": {
     "message": "हम इस एक्सटेन्शन की सुरक्षा या स्टेबिलिटी की गारंटी नहीं देते हैं। Flask द्वारा पेश किए गए नए API, फिशिंग हमलों के विरुद्ध सुरक्षित नहीं हैं। इसका अर्थ है कि कोई भी साइट या Snap जो Flask की मांग करता है, वो आपके एसेट्स को चुराने का एक बुरी नीयत वाला प्रयास हो सकता है।",
-    "description": "This explains the risks of using MetaMask Flask"
+    "description": "This explains the risks of using XDCPay Flask"
   },
   "flaskWelcomeWarning3": {
-    "message": "सभी Flask के API एक्सपेरिमेंटल हैं। उन्हें बिना किसी सूचना के बदला या हटाया जा सकता है, या वो स्टेबल MetaMask में माइग्रेट किए बिना अनिश्चित काल तक Flask पर रह सकते हैं। अपने जोखिम पर उनका इस्तेमाल करें।",
+    "message": "सभी Flask के API एक्सपेरिमेंटल हैं। उन्हें बिना किसी सूचना के बदला या हटाया जा सकता है, या वो स्टेबल XDCPay में माइग्रेट किए बिना अनिश्चित काल तक Flask पर रह सकते हैं। अपने जोखिम पर उनका इस्तेमाल करें।",
     "description": "This message warns developers about unstable Flask APIs"
   },
   "flaskWelcomeWarning4": {
-    "message": "Flask का इस्तेमाल करते समय अपने नियमित MetaMask एक्सटेंशन को बंद ज़रूर कर दें।",
-    "description": "This message calls to pay attention about multiple versions of MetaMask running on the same site (Flask + Prod)"
+    "message": "Flask का इस्तेमाल करते समय अपने नियमित XDCPay एक्सटेंशन को बंद ज़रूर कर दें।",
+    "description": "This message calls to pay attention about multiple versions of XDCPay running on the same site (Flask + Prod)"
   },
   "flaskWelcomeWarningAcceptButton": {
     "message": "जोख़िमों को मैं स्वीकर करता हूं।",
@@ -1691,7 +1691,7 @@
     "message": "hardware wallet इंटीग्रेशन्स, एक्सटर्नल सर्वरों पर एपीआई कॉल्स की मदद लेते हैं, जो आपके आईपी एड्रेस और आपके द्वारा इंटरैक्ट किए गए स्मार्ट कॉन्ट्रैक्ट एड्रेस को देख सकता है।"
   },
   "hardwareWalletsMsg": {
-    "message": "किसी hardware wallet को चुनें, जिसे आप MetaMask के साथ इस्तेमाल करना चाहते हैं।"
+    "message": "किसी hardware wallet को चुनें, जिसे आप XDCPay के साथ इस्तेमाल करना चाहते हैं।"
   },
   "here": {
     "message": "यहां",
@@ -1748,7 +1748,7 @@
     "description": "$1 is a message from 'holdToRevealContent4' and $2 is a text link with the message from 'holdToRevealContent5'"
   },
   "holdToRevealContent4": {
-    "message": "MetaMask सपोर्ट इसका रिक्वेस्ट नहीं करेगा",
+    "message": "XDCPay सपोर्ट इसका रिक्वेस्ट नहीं करेगा",
     "description": "Part of 'holdToRevealContent3'"
   },
   "holdToRevealContent5": {
@@ -1810,13 +1810,13 @@
     "message": "यह वैलिड प्राइवेट की (key) नहीं है। आपको 64 कैरेक्टर की लंबाई की हेक्साडेसिमल स्ट्रिंग डालनी होगी।"
   },
   "importAccountJsonLoading1": {
-    "message": "इस JSON इंपोर्ट में कुछ मिनट लग सकते हैं और MetaMask को फ्रीज करें।"
+    "message": "इस JSON इंपोर्ट में कुछ मिनट लग सकते हैं और XDCPay को फ्रीज करें।"
   },
   "importAccountJsonLoading2": {
     "message": "हम क्षमा चाहते हैं, और भविष्य में हम इसे और तेज़ करेंगे।"
   },
   "importAccountMsg": {
-    "message": "इम्पोर्ट किए एकाउंट्स आपके MetaMask सीक्रेट रिकवरी फ्रेज़ से जुड़े नहीं होंगे। इम्पोर्ट किए एकाउंट्स के बारे में अधिक जानें"
+    "message": "इम्पोर्ट किए एकाउंट्स आपके XDCPay सीक्रेट रिकवरी फ्रेज़ से जुड़े नहीं होंगे। इम्पोर्ट किए एकाउंट्स के बारे में अधिक जानें"
   },
   "importMyWallet": {
     "message": "मेरा वॉलेट इम्पोर्ट करें"
@@ -1860,7 +1860,7 @@
     "message": "आपके सेटिंग्स में"
   },
   "infuraBlockedNotification": {
-    "message": "MetaMask ब्लॉकचेन होस्ट से कनेक्ट करने में असमर्थ है। संभावित कारणों की समीक्षा करें $1।",
+    "message": "XDCPay ब्लॉकचेन होस्ट से कनेक्ट करने में असमर्थ है। संभावित कारणों की समीक्षा करें $1।",
     "description": "$1 is a clickable link with with text defined by the 'here' key"
   },
   "initialTransactionConfirmed": {
@@ -1974,7 +1974,7 @@
     "message": "IPFS गेटवे"
   },
   "ipfsGatewayDescription": {
-    "message": "IPFS पर स्टोर किए गए आपके NFT की इमेज दिखाने, आपके ब्राउज़़र के एड्रेस बार में एंटर किए गए ENS एड्रेस से संबंधित जानकारी दिखाने और अलग-अलग टोकनों के लिए आइकन लाने के लिए MetaMask थर्ड-पार्टी सर्विसेज़ का इस्तेमाल करता है। जब आप इन सेवाओं का इस्तेमाल कर रहे हों तो आपका IP एड्रेस इन सेवाओं को भी दिख सकता है।"
+    "message": "IPFS पर स्टोर किए गए आपके NFT की इमेज दिखाने, आपके ब्राउज़़र के एड्रेस बार में एंटर किए गए ENS एड्रेस से संबंधित जानकारी दिखाने और अलग-अलग टोकनों के लिए आइकन लाने के लिए XDCPay थर्ड-पार्टी सर्विसेज़ का इस्तेमाल करता है। जब आप इन सेवाओं का इस्तेमाल कर रहे हों तो आपका IP एड्रेस इन सेवाओं को भी दिख सकता है।"
   },
   "ipfsToggleModalDescriptionOne": {
     "message": "हम IPFS पर स्टोर किए गए आपके NFT की इमेज दिखाने, आपके ब्राउज़़र के एड्रेस बार में एंटर किए गए ENS एड्रेस से संबंधित जानकारी दिखाने और अलग-अलग टोकनों के लिए आइकन लाने के लिए थर्ड-पार्टी सर्विसेज़ का इस्तेमाल करते हैं। जब आप इन सेवाओं का इस्तेमाल कर रहे हों तो आपका IP एड्रेस इन सेवाओं को भी दिख सकता है।"
@@ -2111,7 +2111,7 @@
     "message": "लॉक"
   },
   "lockMetaMask": {
-    "message": "MetaMask लॉक करें"
+    "message": "XDCPay लॉक करें"
   },
   "lockTimeInvalid": {
     "message": "लॉक का समय 0 और 10080 के बीच की कोई संख्या होनी चाहिए"
@@ -2172,7 +2172,7 @@
     "message": "मैसेज"
   },
   "metaMaskConnectStatusParagraphOne": {
-    "message": "अब MetaMask में आपके अकाउंट के कनेक्शन पर आपका अधिक नियंत्रण है।"
+    "message": "अब XDCPay में आपके अकाउंट के कनेक्शन पर आपका अधिक नियंत्रण है।"
   },
   "metaMaskConnectStatusParagraphThree": {
     "message": "अपने कनेक्ट किए गए एकाउंट्स को प्रबंधित करने के लिए इसे क्लिक करें।"
@@ -2181,13 +2181,13 @@
     "message": "कनेक्शन स्थिति बटन दिखाता है कि आप जिस वेबसाइट पर जा रहे हैं, वह आपके वर्तमान में चुना गया अकाउंट से कनेक्ट है।"
   },
   "metamaskInstitutionalVersion": {
-    "message": "MetaMask Institutional वर्शन"
+    "message": "XDCPay Institutional वर्शन"
   },
   "metamaskSwapsOfflineDescription": {
-    "message": "MetaMask स्वैप का रखरखाव किया जा रहा है। कृपया बाद में वापस देखें।"
+    "message": "XDCPay स्वैप का रखरखाव किया जा रहा है। कृपया बाद में वापस देखें।"
   },
   "metamaskVersion": {
-    "message": "MetaMask वर्शन"
+    "message": "XDCPay वर्शन"
   },
   "metrics": {
     "message": "मेट्रिक्स"
@@ -2222,7 +2222,7 @@
     "message": "यहां रिक्वेस्ट करें"
   },
   "mmiBuiltAroundTheWorld": {
-    "message": "MetaMask Institutional को दुनिया भर में डिजाइन किया और बनाया गया है।"
+    "message": "XDCPay Institutional को दुनिया भर में डिजाइन किया और बनाया गया है।"
   },
   "more": {
     "message": "अधिक"
@@ -2249,7 +2249,7 @@
     "message": "अपनी प्रतिक्रिया शेयर करें"
   },
   "needHelpLinkText": {
-    "message": "MetaMask सपोर्ट"
+    "message": "XDCPay सपोर्ट"
   },
   "needHelpSubmitTicket": {
     "message": "टिकट जमा करें"
@@ -2379,7 +2379,7 @@
   },
   "nextNonceWarning": {
     "message": "Nonce $1 के सुझाए गए Nonce से अधिक है",
-    "description": "The next nonce according to MetaMask's internal logic"
+    "description": "The next nonce according to XDCPay's internal logic"
   },
   "nftAddFailedMessage": {
     "message": "NFT जोड़ा नहीं जा सकता क्योंकि ओनरशिप की जानकारी मेल नहीं खा रही है। पक्का करें कि आपने सही जानकारी दर्ज की है।"
@@ -2389,7 +2389,7 @@
     "description": "$1 is a clickable link with text defined by the 'importNFTPage' key"
   },
   "nftDisclaimer": {
-    "message": "अस्वीकरण: MetaMask मीडिया फ़ाइल को स्रोत url से खींचता है। यह url कभी-कभी मार्केटप्लेस द्वारा बदल दिया जाता है जिस पर NFT को मिंट किया गया था।"
+    "message": "अस्वीकरण: XDCPay मीडिया फ़ाइल को स्रोत url से खींचता है। यह url कभी-कभी मार्केटप्लेस द्वारा बदल दिया जाता है जिस पर NFT को मिंट किया गया था।"
   },
   "nftOptions": {
     "message": "NFT विकल्प"
@@ -2530,7 +2530,7 @@
     "description": "Description on an action button that appears in the What's New popup. Tells the user that if they click it, they will go to our Advanced settings page."
   },
   "notifications8DescriptionOne": {
-    "message": "MetaMask v10.4.0 के अनुसार, अब आपको अपने Ledger डिवाइस को MetaMask से कनेक्ट करने के लिए Ledger लाइव की आवश्यकता नहीं है।",
+    "message": "XDCPay v10.4.0 के अनुसार, अब आपको अपने Ledger डिवाइस को XDCPay से कनेक्ट करने के लिए Ledger लाइव की आवश्यकता नहीं है।",
     "description": "Description of a notification in the 'See What's New' popup. Describes changes for how Ledger Live is no longer needed to connect the device."
   },
   "notifications8DescriptionTwo": {
@@ -2542,8 +2542,8 @@
     "description": "Title for a notification in the 'See What's New' popup. Notifies ledger users that there is an improvement in how they can connect their device."
   },
   "notificationsDropLedgerFirefoxDescription": {
-    "message": "Firefox अब U2F का सपोर्ट नहीं करता है, इसलिए Firefox पर MetaMask के साथ Ledger काम नहीं करेगा। इसके बजाय, Google Chrome पर MetaMask इस्तेमाल करके देखें।",
-    "description": "Description of a notification in the 'See What's New' popup. Describes that ledger will not longer be supported for firefox users and they should use MetaMask on chrome for ledger support instead."
+    "message": "Firefox अब U2F का सपोर्ट नहीं करता है, इसलिए Firefox पर XDCPay के साथ Ledger काम नहीं करेगा। इसके बजाय, Google Chrome पर XDCPay इस्तेमाल करके देखें।",
+    "description": "Description of a notification in the 'See What's New' popup. Describes that ledger will not longer be supported for firefox users and they should use XDCPay on chrome for ledger support instead."
   },
   "notificationsDropLedgerFirefoxTitle": {
     "message": "Firefox के लिए Ledger को मिलने वाला सपोर्ट खत्म किया जा रहा है",
@@ -2621,16 +2621,16 @@
     "message": "यह डेटा एकत्र किया गया है और इसलिए सामान्य डेटा संरक्षण विनियम (EU) 2016/679 के उद्देश्यों के लिए अज्ञात है।"
   },
   "onboardingMetametricsDescription": {
-    "message": "MetaMask यह समझने के लिए इस्तेमाल डेटा एकत्र करना चाहता है कि हमारे यूज़र MetaMask से कैसे इंटरैक्ट करते हैं। इस डेटा का इस्तेमाल सर्विस प्रदान करने के लिए किया जाएगा, जिसमें आपके इस्तेमाल के आधार पर सर्विस में सुधार करना शामिल है।"
+    "message": "XDCPay यह समझने के लिए इस्तेमाल डेटा एकत्र करना चाहता है कि हमारे यूज़र XDCPay से कैसे इंटरैक्ट करते हैं। इस डेटा का इस्तेमाल सर्विस प्रदान करने के लिए किया जाएगा, जिसमें आपके इस्तेमाल के आधार पर सर्विस में सुधार करना शामिल है।"
   },
   "onboardingMetametricsDescription2": {
-    "message": "MetaMask करेगा..."
+    "message": "XDCPay करेगा..."
   },
   "onboardingMetametricsDisagree": {
     "message": "जी नहीं, धन्यवाद"
   },
   "onboardingMetametricsInfuraTerms": {
-    "message": "* जब आप MetaMask में अपने डिफॉल्ट RPC प्रोवाइडर के रूप में Infura का इस्तेमाल करते हैं, तो जब आप ट्रांसेक्शन भेजते हैं तो Infura आपका IP एड्रेस और आपके Ethereum वॉलेट का एड्रेस एकत्र कर लेगा। हम इस जानकारी को इस तरह से संगृहीत नहीं करते हैं जिससे हमारे सिस्टम डेटा के उन दो टुकड़ों को जोड़ सकें। डेटा संग्रह के दृष्टिकोण से MetaMask और Infura कैसे इंटरैक्ट करते हैं, इस बारे में अधिक जानकारी के लिए, हमारा अपडेट $1 देखें। सामान्य तौर पर हमारे गोपनीयता के कार्यप्रणाली के बारे में अधिक जानकारी के लिए, हमारा $2 देखें।",
+    "message": "* जब आप XDCPay में अपने डिफॉल्ट RPC प्रोवाइडर के रूप में Infura का इस्तेमाल करते हैं, तो जब आप ट्रांसेक्शन भेजते हैं तो Infura आपका IP एड्रेस और आपके Ethereum वॉलेट का एड्रेस एकत्र कर लेगा। हम इस जानकारी को इस तरह से संगृहीत नहीं करते हैं जिससे हमारे सिस्टम डेटा के उन दो टुकड़ों को जोड़ सकें। डेटा संग्रह के दृष्टिकोण से XDCPay और Infura कैसे इंटरैक्ट करते हैं, इस बारे में अधिक जानकारी के लिए, हमारा अपडेट $1 देखें। सामान्य तौर पर हमारे गोपनीयता के कार्यप्रणाली के बारे में अधिक जानकारी के लिए, हमारा $2 देखें।",
     "description": "$1 represents `onboardingMetametricsInfuraTermsPolicyLink`, $2 represents `onboardingMetametricsInfuraTermsPolicy`"
   },
   "onboardingMetametricsInfuraTermsPolicy": {
@@ -2661,7 +2661,7 @@
     "message": "अज्ञात क्लिक और पेजव्यू इवेंट भेजें"
   },
   "onboardingMetametricsTitle": {
-    "message": "MetaMask को बेहतर बनाने में हमारी मदद करें"
+    "message": "XDCPay को बेहतर बनाने में हमारी मदद करें"
   },
   "onboardingPinExtensionBillboardAccess": {
     "message": "पूरी एक्सेस"
@@ -2679,16 +2679,16 @@
     "message": "ब्राउज़र एक्सटेंशन आइकन पर क्लिक करें"
   },
   "onboardingPinExtensionDescription": {
-    "message": "अपने ब्राउज़र पर MetaMask को पिन करें ताकि यह सुलभ हो और ट्रांसेक्शन के कन्फर्मेशन को देखना आसान हो सके।"
+    "message": "अपने ब्राउज़र पर XDCPay को पिन करें ताकि यह सुलभ हो और ट्रांसेक्शन के कन्फर्मेशन को देखना आसान हो सके।"
   },
   "onboardingPinExtensionDescription2": {
-    "message": "आप एक्सटेंशन पर क्लिक करके MetaMask खोल सकते हैं और 1 क्लिक से अपने वॉलेट तक पहुंच सकते हैं।"
+    "message": "आप एक्सटेंशन पर क्लिक करके XDCPay खोल सकते हैं और 1 क्लिक से अपने वॉलेट तक पहुंच सकते हैं।"
   },
   "onboardingPinExtensionDescription3": {
     "message": "ब्राउज़र एक्सटेंशन आइकन पर क्लिक करें ताकि इस तक तुरंत पहुंच सकें"
   },
   "onboardingPinExtensionLabel": {
-    "message": "MetaMask को पिन करें"
+    "message": "XDCPay को पिन करें"
   },
   "onboardingPinExtensionStep1": {
     "message": "1"
@@ -2697,7 +2697,7 @@
     "message": "2"
   },
   "onboardingPinExtensionTitle": {
-    "message": "आपका MetaMask इंस्टॉल पूरा हो गया है!"
+    "message": "आपका XDCPay इंस्टॉल पूरा हो गया है!"
   },
   "onboardingUsePhishingDetectionDescription": {
     "message": "फिशिंग डिटेक्शन अलर्ट $1 के साथ संचार पर निर्भर करते हैं। jsDeliver की पहुंच आपके IP एड्रेस तक होगी। $2 देखें।",
@@ -2711,7 +2711,7 @@
   },
   "openFullScreenForLedgerWebHid": {
     "message": "अपने Ledger को कनेक्ट करने के लिए फुल स्क्रीन पर जाएं।",
-    "description": "Shown to the user on the confirm screen when they are viewing MetaMask in a popup window but need to connect their ledger via webhid."
+    "description": "Shown to the user on the confirm screen when they are viewing XDCPay in a popup window but need to connect their ledger via webhid."
   },
   "openInBlockExplorer": {
     "message": "ब्लॉक एक्सप्लोरर में खोलें"
@@ -2745,7 +2745,7 @@
     "description": "Used in the 'permission_rpc' message."
   },
   "outdatedBrowserNotification": {
-    "message": "आपका ब्राउज़़र पुराना हो चुका है। यदि आप अपने ब्राउज़़र को अपडेट नहीं करते हैं, तो आप MetaMask से सुरक्षा पैच और नई फीचर्स प्राप्त नहीं कर पाएंगे।"
+    "message": "आपका ब्राउज़़र पुराना हो चुका है। यदि आप अपने ब्राउज़़र को अपडेट नहीं करते हैं, तो आप XDCPay से सुरक्षा पैच और नई फीचर्स प्राप्त नहीं कर पाएंगे।"
   },
   "padlock": {
     "message": "पैडलॉक"
@@ -2757,7 +2757,7 @@
     "message": "MetaMetrics में भाग लें"
   },
   "participateInMetaMetricsDescription": {
-    "message": "MetaMetrics में भाग लें, जिससे हमें MetaMask को बेहतर बनाने में मदद मिल सके"
+    "message": "MetaMetrics में भाग लें, जिससे हमें XDCPay को बेहतर बनाने में मदद मिल सके"
   },
   "password": {
     "message": "पासवर्ड"
@@ -2766,7 +2766,7 @@
     "message": "पासवर्ड की लंबाई पर्याप्त नहीं है"
   },
   "passwordSetupDetails": {
-    "message": "यह पासवर्ड आपके MetaMask वॉलेट को केवल इसी डिवाइस पर अनलॉक करेगा। MetaMask इस पासवर्ड को फिर से प्राप्त नहीं कर सकता है।"
+    "message": "यह पासवर्ड आपके XDCPay वॉलेट को केवल इसी डिवाइस पर अनलॉक करेगा। XDCPay इस पासवर्ड को फिर से प्राप्त नहीं कर सकता है।"
   },
   "passwordStrength": {
     "message": "पासवर्ड की मजबूती: $1",
@@ -2776,7 +2776,7 @@
     "message": "अगर आपका डिवाइस चोरी हो गया हो या उसके साथ छेड़छाड़ की गई है, तब एक मजबूत पासवर्ड आपके वॉलेट की सुरक्षा को बेहतर बना सकता है।"
   },
   "passwordTermsWarning": {
-    "message": "मैं समझता हूं कि MetaMask मेरे लिए यह पासवर्ड फिर से प्राप्त नहीं कर सकता। $1"
+    "message": "मैं समझता हूं कि XDCPay मेरे लिए यह पासवर्ड फिर से प्राप्त नहीं कर सकता। $1"
   },
   "passwordsDontMatch": {
     "message": "पासवर्ड मेल नहीं खाता"
@@ -2834,7 +2834,7 @@
     "description": "The description for the `snap_cronjob` permission"
   },
   "permission_dialog": {
-    "message": "MetaMask में डायलॉग विंडो प्रदर्शित करें।",
+    "message": "XDCPay में डायलॉग विंडो प्रदर्शित करें।",
     "description": "The description for the `snap_dialog` permission"
   },
   "permission_ethereumAccounts": {
@@ -3003,7 +3003,7 @@
     "message": "कभी भी अपना सीक्रेट रिकवरी फ्रेज किसी के साथ शेयर न करें"
   },
   "recoveryPhraseReminderItemTwo": {
-    "message": "MetaMask टीम कभी भी आपके सीक्रेट रिकवरी फ्रेज के बारे में नहीं पूछेगी"
+    "message": "XDCPay टीम कभी भी आपके सीक्रेट रिकवरी फ्रेज के बारे में नहीं पूछेगी"
   },
   "recoveryPhraseReminderSubText": {
     "message": "आपका सीक्रेट रिकवरी फ्रेज आपके सभी एकाउंट्स को नियंत्रित करता है।"
@@ -3103,7 +3103,7 @@
     "message": "वॉलेट रीसेट करें"
   },
   "resetWalletSubHeader": {
-    "message": "MetaMask आपके पासवर्ड की कॉपी नहीं रखता है। अगर आपको अपना अकाउंट अनलॉक करने में दिक्कत हो रही है, तो आपको अपना वॉलेट रीसेट करना होगा। सीक्रेट रिकवरी फ़्रेज़ प्रदान करके आप ऐसा कर सकते हैं जिसका इस्तेमाल आपने अपना वॉलेट सेट करते समय किया था।"
+    "message": "XDCPay आपके पासवर्ड की कॉपी नहीं रखता है। अगर आपको अपना अकाउंट अनलॉक करने में दिक्कत हो रही है, तो आपको अपना वॉलेट रीसेट करना होगा। सीक्रेट रिकवरी फ़्रेज़ प्रदान करके आप ऐसा कर सकते हैं जिसका इस्तेमाल आपने अपना वॉलेट सेट करते समय किया था।"
   },
   "resetWalletUsingSRP": {
     "message": "इस कदम से इस डिवाइस से आपके वर्तमान वॉलेट और सीक्रेट रिकवरी फ़्रेज़ मिट जाएंगे, साथ ही, आपके द्वारा चुने गए अकाउंटों की लिस्ट भी हट जाएगी। सीक्रेट रिकवरी फ़्रेज़ के साथ रीसेट करने के बाद, आपको सीक्रेट रिकवरी फ़्रेज़ के आधार पर आकाउंटों की एक लिस्ट दिखाई देगी जिसका इस्तेमाल आप रीसेट करने के लिए करते हैं। इस नई लिस्ट में ऑटोमेटिक तरीके से उन अकाउंटों को शामिल किया जाएगा जिनके अंदर बैलेंस है। आप पहले बनाए गए को भी $1 कर पाएंगे। आपके द्वारा इंपोर्ट किए गए कस्टम अकाउंट्स का $2 होना जरूरी होगा, और आपके द्वारा किसी अकाउंट में जोड़े गए किसी भी कस्टम टोकन के लिए $3 होना भी जरूरी होगा।"
@@ -3112,7 +3112,7 @@
     "message": "आगे बढ़ने से पहले ये पक्का करें कि आप सही सीक्रेट रिकवरी फ़्रेज़ का इस्तेमाल कर रहे हैं। इसे आप अनडू नहीं कर पाएंगे।"
   },
   "restartMetamask": {
-    "message": "MetaMask को फिर से शुरू करें"
+    "message": "XDCPay को फिर से शुरू करें"
   },
   "restore": {
     "message": "रीस्टोर करें"
@@ -3155,7 +3155,7 @@
     "description": "This is a sentence consisting of link using 'revealSeedWordsSRPName' as $1 and bolded text using 'revealSeedWordsDescription3' as $2."
   },
   "revealSeedWordsDescription2": {
-    "message": "MetaMask एक $1 है। इसका मतलब आप आपने SRP के मालिक हैं।",
+    "message": "XDCPay एक $1 है। इसका मतलब आप आपने SRP के मालिक हैं।",
     "description": "$1 is text link with the message from 'revealSeedWordsNonCustodialWallet'"
   },
   "revealSeedWordsDescription3": {
@@ -3178,7 +3178,7 @@
     "description": "$1 is bolded text using the message from 'revealSeedWordsWarning2'"
   },
   "revealSeedWordsWarning2": {
-    "message": "MetaMask सपोर्ट कभी इसका रिक्वेस्ट नहीं करेगा।",
+    "message": "XDCPay सपोर्ट कभी इसका रिक्वेस्ट नहीं करेगा।",
     "description": "The bolded texted in the second part of 'revealSeedWordsWarning'"
   },
   "revealTheSeedPhrase": {
@@ -3287,7 +3287,7 @@
     "message": "यदि कोई व्यक्ति आपका रिकवरी फ्रेज मांगता है, तो संभावना है कि वे आपको धोखा देने की कोशिश कर रहे हैं।"
   },
   "seedPhraseIntroSidebarCopyTwo": {
-    "message": "कभी भी अपना सीक्रेट रिकवरी फ्रेज शेयर न करें, MetaMask के साथ भी नहीं!"
+    "message": "कभी भी अपना सीक्रेट रिकवरी फ्रेज शेयर न करें, XDCPay के साथ भी नहीं!"
   },
   "seedPhraseIntroSidebarTitleOne": {
     "message": "सीक्रेट रिकवरी फ्रेज क्या है?"
@@ -3332,10 +3332,10 @@
     "message": "किसी अकाउंट को चुनें"
   },
   "selectAnAccountAlreadyConnected": {
-    "message": "यह अकाउंट पहले ही MetaMask से जुड़ा हुआ है"
+    "message": "यह अकाउंट पहले ही XDCPay से जुड़ा हुआ है"
   },
   "selectAnAccountHelp": {
-    "message": "MetaMask Institutional में इस्तेमाल करने के लिए कस्टोडियन एकाउंट्स को चुनें।"
+    "message": "XDCPay Institutional में इस्तेमाल करने के लिए कस्टोडियन एकाउंट्स को चुनें।"
   },
   "selectHdPath": {
     "message": "HD पथ को चुनें"
@@ -3386,7 +3386,7 @@
     "message": "Sepolia टेस्ट नेटवर्क"
   },
   "setAdvancedPrivacySettingsDetails": {
-    "message": "MetaMask उत्पाद की उपयोगिता और सुरक्षा को बढ़ाने के लिए इन विश्वसनीय तीसरे-पक्ष की सेवाओं का इस्तेमाल करता है।"
+    "message": "XDCPay उत्पाद की उपयोगिता और सुरक्षा को बढ़ाने के लिए इन विश्वसनीय तीसरे-पक्ष की सेवाओं का इस्तेमाल करता है।"
   },
   "setApprovalForAll": {
     "message": "सभी के लिए स्वीकृति सेट करें"
@@ -3639,7 +3639,7 @@
     "message": "अपना सीक्रेट रिकवरी फ्रेज़ प्रकट करने के लिए, आपको दो प्रश्नों का सही उत्तर देना होगा"
   },
   "srpSecurityQuizQuestionOneQuestion": {
-    "message": "यदि आप अपना सीक्रेट रिकवरी फ्रेज़ खो देते हैं, तो MetaMask..."
+    "message": "यदि आप अपना सीक्रेट रिकवरी फ्रेज़ खो देते हैं, तो XDCPay..."
   },
   "srpSecurityQuizQuestionOneRightAnswer": {
     "message": "आपकी मदद नहीं कर सकता"
@@ -3708,7 +3708,7 @@
     "message": "स्टेट लॉग को पुनर्प्राप्त करने में गड़बड़ी।"
   },
   "stateLogFileName": {
-    "message": "MetaMask स्टेट लॉग"
+    "message": "XDCPay स्टेट लॉग"
   },
   "stateLogs": {
     "message": "स्टेट लॉग"
@@ -3729,7 +3729,7 @@
     "message": "अपना Lattice1 कनेक्ट करें"
   },
   "step1LatticeWalletMsg": {
-    "message": "MetaMask के सेट अप और ऑनलाइन होने के बाद आप उसे अपने Lattice1 डिवाइस से कनेक्ट कर सकते हैं। अपना डिवाइस अनलॉक करें और अपनी डिवाइस ID तैयार रखें।",
+    "message": "XDCPay के सेट अप और ऑनलाइन होने के बाद आप उसे अपने Lattice1 डिवाइस से कनेक्ट कर सकते हैं। अपना डिवाइस अनलॉक करें और अपनी डिवाइस ID तैयार रखें।",
     "description": "$1 represents the `hardwareWalletSupportLinkConversion` localization key"
   },
   "step1LedgerWallet": {
@@ -3773,7 +3773,7 @@
   },
   "stxFailureDescription": {
     "message": "मार्केट के आकस्मिक बदलावों के कारण विफलताएं हो सकती हैं। अगर समस्या जारी रहती है, तो कृपया $1 से कॉन्टेक्ट करें।",
-    "description": "This message is shown to a user if their swap fails. The $1 will be replaced by support.metamask.io"
+    "description": "This message is shown to a user if their swap fails. The $1 will be replaced by support.XDCPay.io"
   },
   "stxPendingPrivatelySubmittingSwap": {
     "message": "आपका स्वैप निजी रूप से सबमिट किया जा रहा है..."
@@ -3884,7 +3884,7 @@
     "message": "सीमा बदलें"
   },
   "swapEnableDescription": {
-    "message": "यह आवश्यक है और MetaMask को आपके $1 को स्वैप करने की अनुमति देता है।",
+    "message": "यह आवश्यक है और XDCPay को आपके $1 को स्वैप करने की अनुमति देता है।",
     "description": "Gives the user info about the required approval transaction for swaps. $1 will be the symbol of a token being approved for swaps."
   },
   "swapEnableTokenForSwapping": {
@@ -3902,7 +3902,7 @@
   },
   "swapFailedErrorDescriptionWithSupportLink": {
     "message": "ट्रांसेक्शन विफल हो जाता है और हम मदद करने के लिए उपलब्ध हैं। यदि यह समस्या बनी रहती है, तो आप आगे की सहायता के लिए $1 पर हमारे ग्राहक सहायता से कॉन्टेक्ट कर सकते हैं।",
-    "description": "This message is shown to a user if their swap fails. The $1 will be replaced by support.metamask.io"
+    "description": "This message is shown to a user if their swap fails. The $1 will be replaced by support.XDCPay.io"
   },
   "swapFailedErrorTitle": {
     "message": "स्वैप नहीं हो पाया"
@@ -3940,7 +3940,7 @@
     "message": "पिछली स्क्रीन पर गैस फ़ीस इन दो ट्रांसेक्शन के बीच विभाजित हैं।"
   },
   "swapGasFeesSummary": {
-    "message": "क्रिप्टो माइनरों को गैस फ़ीस का पेमेंट किया जाता है जो $1 नेटवर्क पर ट्रांसेक्शन की प्रक्रिया करते हैं। MetaMask को गैस फ़ीस से लाभ नहीं होता है।",
+    "message": "क्रिप्टो माइनरों को गैस फ़ीस का पेमेंट किया जाता है जो $1 नेटवर्क पर ट्रांसेक्शन की प्रक्रिया करते हैं। XDCPay को गैस फ़ीस से लाभ नहीं होता है।",
     "description": "$1 is the selected network, e.g. Ethereum or BSC"
   },
   "swapHighSlippage": {
@@ -3950,12 +3950,12 @@
     "message": "स्लिपेज अमाउंट बहुत अधिक है।"
   },
   "swapIncludesMMFee": {
-    "message": "$1% MetaMask फ़ीस शामिल है।",
-    "description": "Provides information about the fee that metamask takes for swaps. $1 is a decimal number."
+    "message": "$1% XDCPay फ़ीस शामिल है।",
+    "description": "Provides information about the fee that XDCPay takes for swaps. $1 is a decimal number."
   },
   "swapIncludesMetaMaskFeeViewAllQuotes": {
-    "message": "$1% MetaMask फ़ीस शामिल है - $2",
-    "description": "Provides information about the fee that metamask takes for swaps. $1 is a decimal number and $2 is a link to view all quotes."
+    "message": "$1% XDCPay फ़ीस शामिल है - $2",
+    "description": "Provides information about the fee that XDCPay takes for swaps. $1 is a decimal number and $2 is a link to view all quotes."
   },
   "swapLearnMore": {
     "message": "स्वैप के बारे में ज्यादा जानें"
@@ -3970,11 +3970,11 @@
     "message": "अधिकतम स्लिपेज"
   },
   "swapMetaMaskFee": {
-    "message": "MetaMask फ़ीस"
+    "message": "XDCPay फ़ीस"
   },
   "swapMetaMaskFeeDescription": {
-    "message": "$1% का फ़ीस ऑटोमेटिक तरीके से इस उद्धरण में समाविष्ट हो जाता है। आप इसे MetaMask's के तरलता प्रोवाइडर सूचना एकत्रीकरण सॉफ़्टवेयर का इस्तेमाल करने के लिए लाइसेंस के बदले में पेमेंट करते हैं।",
-    "description": "Provides information about the fee that metamask takes for swaps. $1 is a decimal number."
+    "message": "$1% का फ़ीस ऑटोमेटिक तरीके से इस उद्धरण में समाविष्ट हो जाता है। आप इसे XDCPay's के तरलता प्रोवाइडर सूचना एकत्रीकरण सॉफ़्टवेयर का इस्तेमाल करने के लिए लाइसेंस के बदले में पेमेंट करते हैं।",
+    "description": "Provides information about the fee that XDCPay takes for swaps. $1 is a decimal number."
   },
   "swapNQuotesWithDot": {
     "message": "$ 1 उद्धरण।",
@@ -4227,7 +4227,7 @@
     "message": "बदलें"
   },
   "switchEthereumChainConfirmationDescription": {
-    "message": "इससे चुना गया नेटवर्क को MetaMask के भीतर पहले से जोड़े गए नेटवर्क में बदल दिया जाएगा:"
+    "message": "इससे चुना गया नेटवर्क को XDCPay के भीतर पहले से जोड़े गए नेटवर्क में बदल दिया जाएगा:"
   },
   "switchEthereumChainConfirmationTitle": {
     "message": "इस साइट को नेटवर्क स्विच करने की अनुमति दें?"
@@ -4273,7 +4273,7 @@
     "message": "सेवा की शर्तें"
   },
   "termsOfUseAgreeText": {
-    "message": " मैं इस्तेमाल की शर्तों से सहमत हूं, जो MetaMask और इसकी सभी फीचर्स के मेरे इस्तेमाल पर लागू होती हैं"
+    "message": " मैं इस्तेमाल की शर्तों से सहमत हूं, जो XDCPay और इसकी सभी फीचर्स के मेरे इस्तेमाल पर लागू होती हैं"
   },
   "termsOfUseFooterText": {
     "message": "सभी वर्गों को पढ़ने के लिए कृपया स्क्रॉल करें"
@@ -4288,7 +4288,7 @@
     "message": "थीम"
   },
   "themeDescription": {
-    "message": "अपनी पसंदीदा MetaMask थीम चुन लें"
+    "message": "अपनी पसंदीदा XDCPay थीम चुन लें"
   },
   "thingsToKeep": {
     "message": "ध्यान रखने योग्य बातें"
@@ -4432,7 +4432,7 @@
     "message": "साइट का सुझाव दिया गया"
   },
   "transactionDetailDappGasTooltip": {
-    "message": "लेटेस्ट ब्लॉक के आधार पर MetaMask द्वारा अनुशंसित गैस फ़ीस का इस्तेमाल करने के लिए बदलें।"
+    "message": "लेटेस्ट ब्लॉक के आधार पर XDCPay द्वारा अनुशंसित गैस फ़ीस का इस्तेमाल करने के लिए बदलें।"
   },
   "transactionDetailGasHeading": {
     "message": "अनुमानित गैस फ़ीस"
@@ -4444,7 +4444,7 @@
     "message": "गैस फ़ीस नेटवर्क द्वारा निर्धारित किया जाता है और नेटवर्क ट्रैफिक और ट्रांसेक्शन की जटिलता के आधार पर उतार-चढ़ाव होता है।"
   },
   "transactionDetailGasTooltipIntro": {
-    "message": "क्रिप्टो माइनरों को गैस फ़ीस का पेमेंट किया जाता है जो $1 नेटवर्क पर ट्रांसेक्शन की प्रक्रिया करते हैं। MetaMask को गैस फ़ीस से लाभ नहीं होता है।"
+    "message": "क्रिप्टो माइनरों को गैस फ़ीस का पेमेंट किया जाता है जो $1 नेटवर्क पर ट्रांसेक्शन की प्रक्रिया करते हैं। XDCPay को गैस फ़ीस से लाभ नहीं होता है।"
   },
   "transactionDetailGasTotalSubtitle": {
     "message": "अमाउंट + गैस फ़ीस"
@@ -4539,7 +4539,7 @@
     "description": "$1 is the wallet device name; $2 is a link to wallet connection guide"
   },
   "troubleStarting": {
-    "message": "MetaMask को शुरू करने में परेशानी आई। यह गड़बड़ी रुक-रुक कर हो सकती है, इसलिए एक्सटेंशन को फिर से शुरू करके देखें।"
+    "message": "XDCPay को शुरू करने में परेशानी आई। यह गड़बड़ी रुक-रुक कर हो सकती है, इसलिए एक्सटेंशन को फिर से शुरू करके देखें।"
   },
   "trustSiteApprovePermission": {
     "message": "अनुमति प्रदान करके, आप निम्नलिखित $1 को अपने फंड तक पहुंचने की इजाजत दे रहे हैं"
@@ -4561,7 +4561,7 @@
   },
   "u2f": {
     "message": "U2F",
-    "description": "A name on an API for the browser to interact with devices that support the U2F protocol. On some browsers we use it to connect MetaMask to Ledger devices."
+    "description": "A name on an API for the browser to interact with devices that support the U2F protocol. On some browsers we use it to connect XDCPay to Ledger devices."
   },
   "unapproved": {
     "message": "रिजेक्ट"
@@ -4620,7 +4620,7 @@
     "message": "स्मार्ट कॉन्ट्रैक्ट्स को डीकोड करें"
   },
   "use4ByteResolutionDescription": {
-    "message": "यूज़र के अनुभव को बेहतर बनाने के लिए, आपके द्वारा इंटरैक्ट किए गए स्मार्ट कॉन्ट्रैक्ट्स के आधार पर हम एक्टिविटी टैब को मैसेज के साथ कस्टमाइज़ करते हैं। डेटा को डीकोड करने और आसानी से पढ़े जा सकने वाले स्मार्ट कॉन्ट्रैक्ट्स का एक वर्शन आपको दिखाने के लिए MetaMask एक सर्विस इस्तेमाल करता है जिसका नाम 4byte.directory है। इससे आपके द्वारा बुरी नीयत वाले स्मार्ट कॉन्ट्रैक्ट एक्शन को मंजूरी देने की संभावनाओं को कम करने में मदद मिलती है। हालांकि, इसमें आपका IP एड्रेस शेयर होने का खतरा हो सकता है।"
+    "message": "यूज़र के अनुभव को बेहतर बनाने के लिए, आपके द्वारा इंटरैक्ट किए गए स्मार्ट कॉन्ट्रैक्ट्स के आधार पर हम एक्टिविटी टैब को मैसेज के साथ कस्टमाइज़ करते हैं। डेटा को डीकोड करने और आसानी से पढ़े जा सकने वाले स्मार्ट कॉन्ट्रैक्ट्स का एक वर्शन आपको दिखाने के लिए XDCPay एक सर्विस इस्तेमाल करता है जिसका नाम 4byte.directory है। इससे आपके द्वारा बुरी नीयत वाले स्मार्ट कॉन्ट्रैक्ट एक्शन को मंजूरी देने की संभावनाओं को कम करने में मदद मिलती है। हालांकि, इसमें आपका IP एड्रेस शेयर होने का खतरा हो सकता है।"
   },
   "useMultiAccountBalanceChecker": {
     "message": "अकाउंट के बैलेंस के रिक्वेस्ट्स को बैच करें"
@@ -4721,10 +4721,10 @@
     "message": "आपने अपने वॉलेट को सफलतापूर्वक सुरक्षित कर लिया है। अपने सीक्रेट रिकवरी फ्रेज को सुरक्षित और गुप्त रखें -- यह आपकी जिम्मेदारी है!"
   },
   "walletCreationSuccessReminder1": {
-    "message": "MetaMask आपके सीक्रेट रिकवरी फ्रेज को फिर से प्राप्त नहीं कर सकता है।"
+    "message": "XDCPay आपके सीक्रेट रिकवरी फ्रेज को फिर से प्राप्त नहीं कर सकता है।"
   },
   "walletCreationSuccessReminder2": {
-    "message": "MetaMask कभी भी आपके सीक्रेट रिकवरी फ्रेज के बारे में नहीं पूछेगा।"
+    "message": "XDCPay कभी भी आपके सीक्रेट रिकवरी फ्रेज के बारे में नहीं पूछेगा।"
   },
   "walletCreationSuccessReminder3": {
     "message": "$1 किसी के साथ या आपके फंड के चोरी होने का खतरा",
@@ -4775,7 +4775,7 @@
     "message": "विकेन्द्रीकृत ऐप को एक्सप्लोर करें"
   },
   "welcomeLoginDescription": {
-    "message": "विकेंद्रीकृत ऐप में लॉगिन करने के लिए अपने MetaMask का इस्तेमाल करें - किसी साइनअप की जरूरत नहीं है।"
+    "message": "विकेंद्रीकृत ऐप में लॉगिन करने के लिए अपने XDCPay का इस्तेमाल करें - किसी साइनअप की जरूरत नहीं है।"
   },
   "welcomeLoginTitle": {
     "message": "अपने वॉलेट को हैलो कहें"
@@ -4784,11 +4784,11 @@
     "message": "चलिए शुरु करते हैं"
   },
   "welcomeToMetaMaskIntro": {
-    "message": "लाखों लोगों का भरोसेमंद, MetaMask एक सुरक्षित वॉलेट है जो वेब3 की दुनिया को सबके लिए सुलभ बनाता है।"
+    "message": "लाखों लोगों का भरोसेमंद, XDCPay एक सुरक्षित वॉलेट है जो वेब3 की दुनिया को सबके लिए सुलभ बनाता है।"
   },
   "whatsNew": {
     "message": "नया क्या है",
-    "description": "This is the title of a popup that gives users notifications about new features and updates to MetaMask."
+    "description": "This is the title of a popup that gives users notifications about new features and updates to XDCPay."
   },
   "whatsThis": {
     "message": "यह क्या है?"

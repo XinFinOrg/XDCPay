@@ -121,7 +121,7 @@
     "message": "使用账户私钥助记词访问钱包"
   },
   "accessYourWalletWithSRPDescription": {
-    "message": "MetaMask无法恢复您的密码。我们将使用您的私钥助记词来验证您的所有权、恢复您的钱包并设置新密码。首先，请输入创建钱包时获得的私钥助记词。$1",
+    "message": "XDCPay无法恢复您的密码。我们将使用您的私钥助记词来验证您的所有权、恢复您的钱包并设置新密码。首先，请输入创建钱包时获得的私钥助记词。$1",
     "description": "$1 is the words 'Learn More' from key 'learnMore', separated here so that it can be added as a link"
   },
   "accessingYourCamera": {
@@ -178,7 +178,7 @@
     "message": "添加账户"
   },
   "addAcquiredTokens": {
-    "message": "添加您通过MetaMask获得的代币"
+    "message": "添加您通过XDCPay获得的代币"
   },
   "addAlias": {
     "message": "添加别名"
@@ -193,10 +193,10 @@
     "message": "添加自定义网络"
   },
   "addEthereumChainConfirmationDescription": {
-    "message": "这将允许在 MetaMask 中使用此网络。"
+    "message": "这将允许在 XDCPay 中使用此网络。"
   },
   "addEthereumChainConfirmationRisks": {
-    "message": "MetaMask 不验证自定义网络。"
+    "message": "XDCPay 不验证自定义网络。"
   },
   "addEthereumChainConfirmationRisksLearnMore": {
     "message": "了解 $1。",
@@ -207,7 +207,7 @@
     "description": "Link text for the 'addEthereumChainConfirmationRisksLearnMore' translation key"
   },
   "addEthereumChainConfirmationTitle": {
-    "message": "允许此网站添加一个网络到MetaMask上？"
+    "message": "允许此网站添加一个网络到XDCPay上？"
   },
   "addEthereumChainWarningModalHeader": {
     "message": "仅当您确定可以信任此 RPC 提供商时才能添加它。$1",
@@ -310,7 +310,7 @@
     "message": "优先费用（又称“矿工费”）直接向矿工支付，激励他们优先处理您的交易。"
   },
   "agreeTermsOfUse": {
-    "message": "我同意MetaMask的$1",
+    "message": "我同意XDCPay的$1",
     "description": "$1 is the `terms` link"
   },
   "airgapVault": {
@@ -335,7 +335,7 @@
     "message": "提醒"
   },
   "allCustodianAccountsConnectedSubtitle": {
-    "message": "您或者已连接所有托管账户，或者没有任何账户可连接到 MetaMask Institutional。"
+    "message": "您或者已连接所有托管账户，或者没有任何账户可连接到 XDCPay Institutional。"
   },
   "allCustodianAccountsConnectedTitle": {
     "message": "没有可连接的账户"
@@ -373,19 +373,19 @@
     "description": "The description of the application"
   },
   "appName": {
-    "message": "MetaMask",
+    "message": "XDCPay",
     "description": "The name of the application"
   },
   "appNameBeta": {
-    "message": "MetaMask Beta",
+    "message": "XDCPay Beta",
     "description": "The name of the application (Beta)"
   },
   "appNameFlask": {
-    "message": "MetaMask Flask",
+    "message": "XDCPay Flask",
     "description": "The name of the application (Flask)"
   },
   "appNameMmi": {
-    "message": "MetaMask Institutional",
+    "message": "XDCPay Institutional",
     "description": "The name of the application (MMI)"
   },
   "approve": {
@@ -459,7 +459,7 @@
     "message": "自动锁定计时器（分钟）"
   },
   "autoLockTimeLimitDescription": {
-    "message": "设置 MetaMask 将被锁定前的空闲时间（单位：分钟）。"
+    "message": "设置 XDCPay 将被锁定前的空闲时间（单位：分钟）。"
   },
   "average": {
     "message": "平均值"
@@ -474,7 +474,7 @@
     "message": "备份"
   },
   "backupApprovalInfo": {
-    "message": "如果不慎丢失个人设备，忘记密码，需要重新安装 MetaMask，或者需在另一台设备上访问钱包，使用此助记词才能恢复您的钱包。"
+    "message": "如果不慎丢失个人设备，忘记密码，需要重新安装 XDCPay，或者需在另一台设备上访问钱包，使用此助记词才能恢复您的钱包。"
   },
   "backupApprovalNotice": {
     "message": "请备份您的账户私钥助记词，保证您的钱包和资金安全。"
@@ -511,19 +511,19 @@
     "description": "$1 represents the word 'here' in a hyperlink"
   },
   "betaMetamaskInstitutionalVersion": {
-    "message": "MetaMask Institutional 测试版本"
+    "message": "XDCPay Institutional 测试版本"
   },
   "betaMetamaskVersion": {
-    "message": "MetaMask 测试版本"
+    "message": "XDCPay 测试版本"
   },
   "betaTerms": {
     "message": "测试版使用条款"
   },
   "betaWalletCreationSuccessReminder1": {
-    "message": "MetaMask 测试版无法恢复您的账户私钥助记词。"
+    "message": "XDCPay 测试版无法恢复您的账户私钥助记词。"
   },
   "betaWalletCreationSuccessReminder2": {
-    "message": "MetaMask 测试版绝对不会向您索要账户私钥助记词。"
+    "message": "XDCPay 测试版绝对不会向您索要账户私钥助记词。"
   },
   "blockExplorerAccountAction": {
     "message": "账户",
@@ -593,7 +593,7 @@
     "message": "建立您的联系人列表"
   },
   "builtAroundTheWorld": {
-    "message": "MetaMask 是在世界各地设计和建造的。"
+    "message": "XDCPay 是在世界各地设计和建造的。"
   },
   "busy": {
     "message": "忙碌中"
@@ -655,7 +655,7 @@
     "description": "$1 is a link to the privacy policy"
   },
   "chromeRequiredForHardwareWallets": {
-    "message": "您需要在 Google Chrome 上使用 MetaMask 以连接到您的硬件钱包。"
+    "message": "您需要在 Google Chrome 上使用 XDCPay 以连接到您的硬件钱包。"
   },
   "clear": {
     "message": "清除"
@@ -686,10 +686,10 @@
     "message": "CoinGecko"
   },
   "configureSnapPopupDescription": {
-    "message": "您现在要离开MetaMask来配置此snap。"
+    "message": "您现在要离开XDCPay来配置此snap。"
   },
   "configureSnapPopupInstallDescription": {
-    "message": "您现在要离开MetaMask来安装此snap。"
+    "message": "您现在要离开XDCPay来安装此snap。"
   },
   "configureSnapPopupInstallTitle": {
     "message": "安装snap"
@@ -763,8 +763,8 @@
     "message": "$1 个账户",
     "description": "$1 is the number of accounts to which the web3 site/application is asking to connect; this will substitute $1 in connectToMultiple"
   },
-  "connectWithMetaMask": {
-    "message": "与 MetaMask 连接"
+  "connectWithXDCPay": {
+    "message": "与 XDCPay 连接"
   },
   "connectedAccountsDescriptionPlural": {
     "message": "您有 $1 个账户连接到了该网站。",
@@ -774,7 +774,7 @@
     "message": "您有1个账户连接到了该网站。"
   },
   "connectedAccountsEmptyDescription": {
-    "message": "MetaMask 没有连接到该网站。要连接到 web3 网站，请找到并点击连接按钮。"
+    "message": "XDCPay 没有连接到该网站。要连接到 web3 网站，请找到并点击连接按钮。"
   },
   "connectedSites": {
     "message": "已连接的网站"
@@ -868,7 +868,7 @@
     "message": "代币合约"
   },
   "convertTokenToNFTDescription": {
-    "message": "我们检测到该资产是NFT。MetaMask现在完全原生支持NFT。您想将它从您的代币列表中删除并将它添加为NFT吗？"
+    "message": "我们检测到该资产是NFT。XDCPay现在完全原生支持NFT。您想将它从您的代币列表中删除并将它添加为NFT吗？"
   },
   "convertTokenToNFTExistDescription": {
     "message": "我们检测到该资产已作为NFT添加。是否要将其从代币列表中删除？"
@@ -950,7 +950,7 @@
     "message": "托管人"
   },
   "custodianAccountAddedDesc": {
-    "message": "您现在可以在 MetaMask Institutional 使用您的托管账户。 "
+    "message": "您现在可以在 XDCPay Institutional 使用您的托管账户。 "
   },
   "custodianAccountAddedTitle": {
     "message": "已添加所选托管账户。"
@@ -959,7 +959,7 @@
     "message": "请转到 $1，点击其用户界面内的“连接到 MMI”按钮，再次将您的账户连接到 MMI。"
   },
   "custodianReplaceRefreshTokenChangedSubtitle": {
-    "message": "您现在可以在 MetaMask Institutional 使用您的托管账户。"
+    "message": "您现在可以在 XDCPay Institutional 使用您的托管账户。"
   },
   "custodianReplaceRefreshTokenChangedTitle": {
     "message": "您的托管代币已刷新"
@@ -977,7 +977,7 @@
     "message": "请转到$1，然后点击用户界面中的“连接到MMI”按钮，将您的账户再次连接到MMI。"
   },
   "custodyRefreshTokenModalDescription1": {
-    "message": "您的托管人会发出一个令牌来验证 MetaMask Institutional 扩展，使您可以连接您的账户。"
+    "message": "您的托管人会发出一个令牌来验证 XDCPay Institutional 扩展，使您可以连接您的账户。"
   },
   "custodyRefreshTokenModalDescription2": {
     "message": "由于安全原因，此令牌会在一段时间后过期。这使您需要重新连接到MMI。"
@@ -1119,22 +1119,22 @@
     "message": "桌面应用程序"
   },
   "desktopConnectionCriticalErrorDescription": {
-    "message": "此错误可能是间歇性的，因此，请尝试重新启动此扩展程序或禁用 MetaMask 桌面应用程序。"
+    "message": "此错误可能是间歇性的，因此，请尝试重新启动此扩展程序或禁用 XDCPay 桌面应用程序。"
   },
   "desktopConnectionCriticalErrorTitle": {
-    "message": "MetaMask启动时出现问题"
+    "message": "XDCPay启动时出现问题"
   },
   "desktopConnectionLostErrorDescription": {
-    "message": "请确保您已启动并运行桌面应用程序，或禁用MetaMask桌面应用程序。"
+    "message": "请确保您已启动并运行桌面应用程序，或禁用XDCPay桌面应用程序。"
   },
   "desktopConnectionLostErrorTitle": {
-    "message": "MetaMask桌面应用程序连接已断开"
+    "message": "XDCPay桌面应用程序连接已断开"
   },
   "desktopDisableButton": {
     "message": "禁用桌面应用程序"
   },
   "desktopDisableErrorCTA": {
-    "message": "禁用MetaMask桌面应用程序"
+    "message": "禁用XDCPay桌面应用程序"
   },
   "desktopEnableButton": {
     "message": "启用桌面应用程序"
@@ -1146,52 +1146,52 @@
     "message": "返回设置页面"
   },
   "desktopErrorRestartMMCTA": {
-    "message": "重新启动MetaMask"
+    "message": "重新启动XDCPay"
   },
   "desktopNotFoundErrorCTA": {
-    "message": "下载MetaMask桌面应用程序"
+    "message": "下载XDCPay桌面应用程序"
   },
   "desktopNotFoundErrorDescription1": {
     "message": "请确保您已启动并运行桌面应用程序。"
   },
   "desktopNotFoundErrorDescription2": {
-    "message": "如果您没有安装桌面应用程序，请到MetaMask网站下载。"
+    "message": "如果您没有安装桌面应用程序，请到XDCPay网站下载。"
   },
   "desktopNotFoundErrorTitle": {
-    "message": "找不到MetaMask桌面应用程序"
+    "message": "找不到XDCPay桌面应用程序"
   },
   "desktopOpenOrDownloadCTA": {
-    "message": "打开MetaMask桌面应用程序"
+    "message": "打开XDCPay桌面应用程序"
   },
   "desktopOutdatedErrorCTA": {
-    "message": "更新MetaMask桌面应用程序"
+    "message": "更新XDCPay桌面应用程序"
   },
   "desktopOutdatedErrorDescription": {
-    "message": "您的MetaMask桌面应用程序需要升级。"
+    "message": "您的XDCPay桌面应用程序需要升级。"
   },
   "desktopOutdatedErrorTitle": {
-    "message": "MetaMask桌面应用程序已过时"
+    "message": "XDCPay桌面应用程序已过时"
   },
   "desktopOutdatedExtensionErrorCTA": {
-    "message": "更新 MetaMask Extension"
+    "message": "更新 XDCPay Extension"
   },
   "desktopOutdatedExtensionErrorDescription": {
-    "message": "您的 MetaMask Extension 需要升级。"
+    "message": "您的 XDCPay Extension 需要升级。"
   },
   "desktopOutdatedExtensionErrorTitle": {
-    "message": "MetaMask Extension 已过时"
+    "message": "XDCPay Extension 已过时"
   },
   "desktopPageDescription": {
     "message": "如果配对成功，扩展程序将重新启动，您必须重新输入密码。"
   },
   "desktopPageSubTitle": {
-    "message": "请打开MetaMask桌面应用程序并输入此代码"
+    "message": "请打开XDCPay桌面应用程序并输入此代码"
   },
   "desktopPageTitle": {
     "message": "与桌面配对"
   },
   "desktopPairedWarningDeepLink": {
-    "message": "转到MetaMask桌面应用程序中的设置"
+    "message": "转到XDCPay桌面应用程序中的设置"
   },
   "desktopPairedWarningDescription": {
     "message": "如果要开始新的配对，请移除当前连接。"
@@ -1209,10 +1209,10 @@
     "message": "desktopRouteNotFoundErrorTitle"
   },
   "desktopUnexpectedErrorCTA": {
-    "message": "返回MetaMask主页"
+    "message": "返回XDCPay主页"
   },
   "desktopUnexpectedErrorDescription": {
-    "message": "请检查MetaMask桌面应用程序以恢复连接"
+    "message": "请检查XDCPay桌面应用程序以恢复连接"
   },
   "desktopUnexpectedErrorTitle": {
     "message": "出错了......"
@@ -1455,7 +1455,7 @@
     "description": "Message displayed on generic error page in the popup UI, $1 is a clickable link with text defined by the 'here' key. The link will open to a form where users can file support tickets."
   },
   "errorPageTitle": {
-    "message": "MetaMask 遇到了一个错误",
+    "message": "XDCPay 遇到了一个错误",
     "description": "Title of generic error page"
   },
   "errorStack": {
@@ -1537,15 +1537,15 @@
   },
   "flaskWelcomeWarning2": {
     "message": "我们不保证此扩展程序的安全性或稳定性。Flask 提供的新API并未针对网络钓鱼攻击进行强化，这意味着任何需要 Flask 的站点或快取都可能是窃取您资产的恶意企图。",
-    "description": "This explains the risks of using MetaMask Flask"
+    "description": "This explains the risks of using XDCPay Flask"
   },
   "flaskWelcomeWarning3": {
-    "message": "所有Flask API都是实验性的。它们可能会在未事先通知的情况下被更改或删除，它们也可能会无限期地留在 Flask 上而不会迁移到稳定的 MetaMask。您需要自行承担使用它们的风险。",
+    "message": "所有Flask API都是实验性的。它们可能会在未事先通知的情况下被更改或删除，它们也可能会无限期地留在 Flask 上而不会迁移到稳定的 XDCPay。您需要自行承担使用它们的风险。",
     "description": "This message warns developers about unstable Flask APIs"
   },
   "flaskWelcomeWarning4": {
-    "message": "确保在使用Flask时禁用常规 MetaMask 扩展程序。",
-    "description": "This message calls to pay attention about multiple versions of MetaMask running on the same site (Flask + Prod)"
+    "message": "确保在使用Flask时禁用常规 XDCPay 扩展程序。",
+    "description": "This message calls to pay attention about multiple versions of XDCPay running on the same site (Flask + Prod)"
   },
   "flaskWelcomeWarningAcceptButton": {
     "message": "我接受风险",
@@ -1691,7 +1691,7 @@
     "message": "硬件钱包集成使用API调用外部服务器，这些外部服务器可以看到您的IP地址和您与之交互的智能合约地址。"
   },
   "hardwareWalletsMsg": {
-    "message": "选择希望用于 MetaMask 的硬件钱包。"
+    "message": "选择希望用于 XDCPay 的硬件钱包。"
   },
   "here": {
     "message": "此处",
@@ -1748,7 +1748,7 @@
     "description": "$1 is a message from 'holdToRevealContent4' and $2 is a text link with the message from 'holdToRevealContent5'"
   },
   "holdToRevealContent4": {
-    "message": "MetaMask 支持团队不会要求提供此项信息，",
+    "message": "XDCPay 支持团队不会要求提供此项信息，",
     "description": "Part of 'holdToRevealContent3'"
   },
   "holdToRevealContent5": {
@@ -1810,13 +1810,13 @@
     "message": "这不是有效的私钥。必须输入长度为 64 个字符的十六进制字符串。"
   },
   "importAccountJsonLoading1": {
-    "message": "预计此 JSON 导入需要几分钟时间并暂停 MetaMask。"
+    "message": "预计此 JSON 导入需要几分钟时间并暂停 XDCPay。"
   },
   "importAccountJsonLoading2": {
     "message": "很抱歉，在未来我们将会加快此流程。"
   },
   "importAccountMsg": {
-    "message": "导入的账户将不会与最初创建的 MetaMask 账户私钥助记词相关联。了解更多有关导入账户的信息"
+    "message": "导入的账户将不会与最初创建的 XDCPay 账户私钥助记词相关联。了解更多有关导入账户的信息"
   },
   "importMyWallet": {
     "message": "导入我的钱包"
@@ -1860,7 +1860,7 @@
     "message": "在设置中"
   },
   "infuraBlockedNotification": {
-    "message": "MetaMask 无法连接到区块链主机。请检查可能的原因 $1。",
+    "message": "XDCPay 无法连接到区块链主机。请检查可能的原因 $1。",
     "description": "$1 is a clickable link with with text defined by the 'here' key"
   },
   "initialTransactionConfirmed": {
@@ -1974,7 +1974,7 @@
     "message": "IPFS网关"
   },
   "ipfsGatewayDescription": {
-    "message": "MetaMask使用第三方服务来显示您存储在IPFS上的NFT图像，显示与您输入到浏览器地址栏中的ENS地址相关信息，并获取不同代币的图标。当您使用这些服务时，这些服务可能会获悉您的IP地址。"
+    "message": "XDCPay使用第三方服务来显示您存储在IPFS上的NFT图像，显示与您输入到浏览器地址栏中的ENS地址相关信息，并获取不同代币的图标。当您使用这些服务时，这些服务可能会获悉您的IP地址。"
   },
   "ipfsToggleModalDescriptionOne": {
     "message": "我们使用第三方服务来显示存储在 IPFS 中的 NFT 图像，显示与在浏览器地址栏中输入的 ENS 地址相关的信息，并获取不同代币的图标。当您使用这些服务时，您的 IP 地址可能会被其获悉。"
@@ -2111,7 +2111,7 @@
     "message": "注销"
   },
   "lockMetaMask": {
-    "message": "锁定 MetaMask"
+    "message": "锁定 XDCPay"
   },
   "lockTimeInvalid": {
     "message": "锁定时间必须是 0 到 10080 之间的数字"
@@ -2172,7 +2172,7 @@
     "message": "消息"
   },
   "metaMaskConnectStatusParagraphOne": {
-    "message": "现在您可以更好地控制 MetaMask 中的账户连接。"
+    "message": "现在您可以更好地控制 XDCPay 中的账户连接。"
   },
   "metaMaskConnectStatusParagraphThree": {
     "message": "点击它以管理您的连接账户。"
@@ -2181,13 +2181,13 @@
     "message": "连接状态按钮显示所访问的网站是否与您当前选择的账户连接。"
   },
   "metamaskInstitutionalVersion": {
-    "message": "MetaMask Institutional 版本"
+    "message": "XDCPay Institutional 版本"
   },
   "metamaskSwapsOfflineDescription": {
-    "message": "MetaMask Swaps 正在进行维护。请稍后再查看。"
+    "message": "XDCPay Swaps 正在进行维护。请稍后再查看。"
   },
   "metamaskVersion": {
-    "message": "MetaMask 版本"
+    "message": "XDCPay 版本"
   },
   "metrics": {
     "message": "指标"
@@ -2222,7 +2222,7 @@
     "message": "在这里请求"
   },
   "mmiBuiltAroundTheWorld": {
-    "message": "MetaMask Institutional 面向全球各地设计并建立。"
+    "message": "XDCPay Institutional 面向全球各地设计并建立。"
   },
   "more": {
     "message": "更多"
@@ -2249,7 +2249,7 @@
     "message": "分享您的反馈"
   },
   "needHelpLinkText": {
-    "message": "MetaMask 支持"
+    "message": "XDCPay 支持"
   },
   "needHelpSubmitTicket": {
     "message": "提交工单"
@@ -2379,7 +2379,7 @@
   },
   "nextNonceWarning": {
     "message": "Nonce 高于所指出的 Nonce: $1",
-    "description": "The next nonce according to MetaMask's internal logic"
+    "description": "The next nonce according to XDCPay's internal logic"
   },
   "nftAddFailedMessage": {
     "message": "由于所有权信息不匹配，无法添加NFT。请确保所输入的信息正确无误。"
@@ -2389,7 +2389,7 @@
     "description": "$1 is a clickable link with text defined by the 'importNFTPage' key"
   },
   "nftDisclaimer": {
-    "message": "免责声明：MetaMask 从源网址中提取媒体文件。该网址有时会因铸造 NFT 的市场而改变。"
+    "message": "免责声明：XDCPay 从源网址中提取媒体文件。该网址有时会因铸造 NFT 的市场而改变。"
   },
   "nftOptions": {
     "message": "NFT 期权"
@@ -2530,7 +2530,7 @@
     "description": "Description on an action button that appears in the What's New popup. Tells the user that if they click it, they will go to our Advanced settings page."
   },
   "notifications8DescriptionOne": {
-    "message": "从 MetaMask v10.4.0 开始，您不再需要 Ledger Live 即可将您的 Ledger 设备连接到 MetaMask。",
+    "message": "从 XDCPay v10.4.0 开始，您不再需要 Ledger Live 即可将您的 Ledger 设备连接到 XDCPay。",
     "description": "Description of a notification in the 'See What's New' popup. Describes changes for how Ledger Live is no longer needed to connect the device."
   },
   "notifications8DescriptionTwo": {
@@ -2542,8 +2542,8 @@
     "description": "Title for a notification in the 'See What's New' popup. Notifies ledger users that there is an improvement in how they can connect their device."
   },
   "notificationsDropLedgerFirefoxDescription": {
-    "message": "Firefox 不再支持 U2F，因此在 Firefox 上，MetaMask 无法使用 Ledger。请尝试在 Google Chrome 上使用 MetaMask。",
-    "description": "Description of a notification in the 'See What's New' popup. Describes that ledger will not longer be supported for firefox users and they should use MetaMask on chrome for ledger support instead."
+    "message": "Firefox 不再支持 U2F，因此在 Firefox 上，XDCPay 无法使用 Ledger。请尝试在 Google Chrome 上使用 XDCPay。",
+    "description": "Description of a notification in the 'See What's New' popup. Describes that ledger will not longer be supported for firefox users and they should use XDCPay on chrome for ledger support instead."
   },
   "notificationsDropLedgerFirefoxTitle": {
     "message": "放弃在 Firefox 上支持 Ledger",
@@ -2621,16 +2621,16 @@
     "message": "此数据是汇总数据，因而可以保持匿名，以遵守《通用数据保护条例》（欧盟）2016/679。"
   },
   "onboardingMetametricsDescription": {
-    "message": "MetaMask 希望收集使用数据，以更好地了解我们的用户如何与 MetaMask 交互。这些数据将用于提供服务，包括根据您的使用情况改进服务。"
+    "message": "XDCPay 希望收集使用数据，以更好地了解我们的用户如何与 XDCPay 交互。这些数据将用于提供服务，包括根据您的使用情况改进服务。"
   },
   "onboardingMetametricsDescription2": {
-    "message": "MetaMask 将会......"
+    "message": "XDCPay 将会......"
   },
   "onboardingMetametricsDisagree": {
     "message": "不，谢谢"
   },
   "onboardingMetametricsInfuraTerms": {
-    "message": "* 如您在 MetaMask中 使用 Infura 作为默认的 RPC 提供商，Infura 将在您发送交易时收集您的 IP 地址和以太坊钱包地址。我们不会以允许系统将这两项数据关联起来的方式存储这些信息。如需从数据收集角度进一步了解 MetaMask 和 Infura 如何进行交互，请参阅我们的更新版 $1。如需进一步了解我们的一般隐私准则，请参阅我们的 $2。",
+    "message": "* 如您在 XDCPay中 使用 Infura 作为默认的 RPC 提供商，Infura 将在您发送交易时收集您的 IP 地址和以太坊钱包地址。我们不会以允许系统将这两项数据关联起来的方式存储这些信息。如需从数据收集角度进一步了解 XDCPay 和 Infura 如何进行交互，请参阅我们的更新版 $1。如需进一步了解我们的一般隐私准则，请参阅我们的 $2。",
     "description": "$1 represents `onboardingMetametricsInfuraTermsPolicyLink`, $2 represents `onboardingMetametricsInfuraTermsPolicy`"
   },
   "onboardingMetametricsInfuraTermsPolicy": {
@@ -2661,7 +2661,7 @@
     "message": "发送匿名的点击和页面浏览事件"
   },
   "onboardingMetametricsTitle": {
-    "message": "请帮助我们改进 MetaMask"
+    "message": "请帮助我们改进 XDCPay"
   },
   "onboardingPinExtensionBillboardAccess": {
     "message": "完全访问权限"
@@ -2679,16 +2679,16 @@
     "message": "点击浏览器扩展程序图标"
   },
   "onboardingPinExtensionDescription": {
-    "message": "在您的浏览器上固定 MetaMask，以便访问并轻松查看交易确认。"
+    "message": "在您的浏览器上固定 XDCPay，以便访问并轻松查看交易确认。"
   },
   "onboardingPinExtensionDescription2": {
-    "message": "您可以通过点击扩展程序打开 MetaMask，并一键访问您的钱包。"
+    "message": "您可以通过点击扩展程序打开 XDCPay，并一键访问您的钱包。"
   },
   "onboardingPinExtensionDescription3": {
     "message": "点击浏览器扩展程序图标即可即时访问它"
   },
   "onboardingPinExtensionLabel": {
-    "message": "固定 MetaMask"
+    "message": "固定 XDCPay"
   },
   "onboardingPinExtensionStep1": {
     "message": "1"
@@ -2697,7 +2697,7 @@
     "message": "2"
   },
   "onboardingPinExtensionTitle": {
-    "message": "您的 MetaMask 安装完成！"
+    "message": "您的 XDCPay 安装完成！"
   },
   "onboardingUsePhishingDetectionDescription": {
     "message": "网络钓鱼检测提醒依赖于与 $1 的通信。jsDeliver 将有权访问您的 IP 地址。查看 $2。",
@@ -2711,7 +2711,7 @@
   },
   "openFullScreenForLedgerWebHid": {
     "message": "全屏打开以连接您的 Ledger。",
-    "description": "Shown to the user on the confirm screen when they are viewing MetaMask in a popup window but need to connect their ledger via webhid."
+    "description": "Shown to the user on the confirm screen when they are viewing XDCPay in a popup window but need to connect their ledger via webhid."
   },
   "openInBlockExplorer": {
     "message": "在区块浏览器上打开"
@@ -2745,7 +2745,7 @@
     "description": "Used in the 'permission_rpc' message."
   },
   "outdatedBrowserNotification": {
-    "message": "您的浏览器已过期。如果不更新浏览器，您将无法获取MetaMask的安全补丁和新功能。"
+    "message": "您的浏览器已过期。如果不更新浏览器，您将无法获取XDCPay的安全补丁和新功能。"
   },
   "padlock": {
     "message": "挂锁"
@@ -2757,7 +2757,7 @@
     "message": "参加 MetaMetrics"
   },
   "participateInMetaMetricsDescription": {
-    "message": "加入 MetaMetrics ，帮助我们改进 MetaMask"
+    "message": "加入 MetaMetrics ，帮助我们改进 XDCPay"
   },
   "password": {
     "message": "密码"
@@ -2766,7 +2766,7 @@
     "message": "密码长度不足"
   },
   "passwordSetupDetails": {
-    "message": "此密码只会在此设备上解锁您的 MetaMask 钱包。MetaMask 无法恢复此密码。"
+    "message": "此密码只会在此设备上解锁您的 XDCPay 钱包。XDCPay 无法恢复此密码。"
   },
   "passwordStrength": {
     "message": "密码强度：$1",
@@ -2776,7 +2776,7 @@
     "message": "强密码可以提高钱包的安全性，以防设备被盗或被入侵。"
   },
   "passwordTermsWarning": {
-    "message": "我明白 MetaMask 无法为我恢复此密码。$1"
+    "message": "我明白 XDCPay 无法为我恢复此密码。$1"
   },
   "passwordsDontMatch": {
     "message": "密码不匹配"
@@ -2834,7 +2834,7 @@
     "description": "The description for the `snap_cronjob` permission"
   },
   "permission_dialog": {
-    "message": "在 MetaMask 中显示对话框窗口。",
+    "message": "在 XDCPay 中显示对话框窗口。",
     "description": "The description for the `snap_dialog` permission"
   },
   "permission_ethereumAccounts": {
@@ -3003,7 +3003,7 @@
     "message": "切勿与任何人分享您的账户私钥助记词"
   },
   "recoveryPhraseReminderItemTwo": {
-    "message": "MetaMask 团队绝对不会索要您的账户私钥助记词"
+    "message": "XDCPay 团队绝对不会索要您的账户私钥助记词"
   },
   "recoveryPhraseReminderSubText": {
     "message": "您的账户私钥助记词控制您的所有账户。"
@@ -3103,7 +3103,7 @@
     "message": "重置钱包"
   },
   "resetWalletSubHeader": {
-    "message": "MetaMask不会保留密码的副本。如果您在解锁账户时遇到问题，需要重置您的钱包。您可以提供设置钱包时使用的私钥助记词，以进行重置。"
+    "message": "XDCPay不会保留密码的副本。如果您在解锁账户时遇到问题，需要重置您的钱包。您可以提供设置钱包时使用的私钥助记词，以进行重置。"
   },
   "resetWalletUsingSRP": {
     "message": "此操作将从此设备中删除您当前的钱包和私钥助记词，以及您编制的账户列表。使用助记词进行重置后，您将会看到一个账户列表（基于用于重置的助记词）。这个新列表将自动包括有余额的账户。您还可以使用之前创建的$1。您导入的自定义账户需要是$2，添加到账户中的任何自定义代币也需要是$3。"
@@ -3112,7 +3112,7 @@
     "message": "在继续之前，请确保您所使用的私钥助记词正确无误。您将无法撤消此操作。"
   },
   "restartMetamask": {
-    "message": "重新启动MetaMask"
+    "message": "重新启动XDCPay"
   },
   "restore": {
     "message": "恢复"
@@ -3155,7 +3155,7 @@
     "description": "This is a sentence consisting of link using 'revealSeedWordsSRPName' as $1 and bolded text using 'revealSeedWordsDescription3' as $2."
   },
   "revealSeedWordsDescription2": {
-    "message": "MetaMask 是$1。这意味着您是自己的 SRP 的所有者。",
+    "message": "XDCPay 是$1。这意味着您是自己的 SRP 的所有者。",
     "description": "$1 is text link with the message from 'revealSeedWordsNonCustodialWallet'"
   },
   "revealSeedWordsDescription3": {
@@ -3178,7 +3178,7 @@
     "description": "$1 is bolded text using the message from 'revealSeedWordsWarning2'"
   },
   "revealSeedWordsWarning2": {
-    "message": "MetaMask 支持团队绝对不会要求提供此项信息。",
+    "message": "XDCPay 支持团队绝对不会要求提供此项信息。",
     "description": "The bolded texted in the second part of 'revealSeedWordsWarning'"
   },
   "revealTheSeedPhrase": {
@@ -3287,7 +3287,7 @@
     "message": "如果有人要求您的恢复短语，他们可能会试图欺诈您并偷窃您的钱包资金"
   },
   "seedPhraseIntroSidebarCopyTwo": {
-    "message": "切勿分享您的账户私钥助记词，包括也不能与 MetaMask 分享！"
+    "message": "切勿分享您的账户私钥助记词，包括也不能与 XDCPay 分享！"
   },
   "seedPhraseIntroSidebarTitleOne": {
     "message": "什么是账户私钥助记词？"
@@ -3332,10 +3332,10 @@
     "message": "选择一个账户"
   },
   "selectAnAccountAlreadyConnected": {
-    "message": "此账户已连接到 MetaMask"
+    "message": "此账户已连接到 XDCPay"
   },
   "selectAnAccountHelp": {
-    "message": "选择要在 MetaMask Institutional 使用的托管账户。"
+    "message": "选择要在 XDCPay Institutional 使用的托管账户。"
   },
   "selectHdPath": {
     "message": "选择 HD 路径"
@@ -3386,7 +3386,7 @@
     "message": "Sepolia测试网络"
   },
   "setAdvancedPrivacySettingsDetails": {
-    "message": "MetaMask 使用这些可信的第三方服务来提高产品可用性和安全性。"
+    "message": "XDCPay 使用这些可信的第三方服务来提高产品可用性和安全性。"
   },
   "setApprovalForAll": {
     "message": "设置批准所有"
@@ -3639,7 +3639,7 @@
     "message": "要查看私钥助记词，您需要答对两个问题"
   },
   "srpSecurityQuizQuestionOneQuestion": {
-    "message": "如果您丢失了私钥助记词，MetaMask..."
+    "message": "如果您丢失了私钥助记词，XDCPay..."
   },
   "srpSecurityQuizQuestionOneRightAnswer": {
     "message": "无法帮助您"
@@ -3708,7 +3708,7 @@
     "message": "检索状态日志时出错。"
   },
   "stateLogFileName": {
-    "message": "MetaMask 状态日志"
+    "message": "XDCPay 状态日志"
   },
   "stateLogs": {
     "message": "状态日志"
@@ -3729,7 +3729,7 @@
     "message": "关联您的 Lattice1"
   },
   "step1LatticeWalletMsg": {
-    "message": "当您的 Lattice1 设备设置好并在线时，您可以将 MetaMask 与其相关联。解锁您的设备并准备好您的设备 ID。",
+    "message": "当您的 Lattice1 设备设置好并在线时，您可以将 XDCPay 与其相关联。解锁您的设备并准备好您的设备 ID。",
     "description": "$1 represents the `hardwareWalletSupportLinkConversion` localization key"
   },
   "step1LedgerWallet": {
@@ -3773,7 +3773,7 @@
   },
   "stxFailureDescription": {
     "message": "突然的市场变化可能导致失败。如果问题仍然存在，请联系$1。",
-    "description": "This message is shown to a user if their swap fails. The $1 will be replaced by support.metamask.io"
+    "description": "This message is shown to a user if their swap fails. The $1 will be replaced by support.XDCPay.io"
   },
   "stxPendingPrivatelySubmittingSwap": {
     "message": "正在秘密提交您的Swap..."
@@ -3884,7 +3884,7 @@
     "message": "编辑限制"
   },
   "swapEnableDescription": {
-    "message": "这是必须的，并且允许 MetaMask 兑换您的 $1。",
+    "message": "这是必须的，并且允许 XDCPay 兑换您的 $1。",
     "description": "Gives the user info about the required approval transaction for swaps. $1 will be the symbol of a token being approved for swaps."
   },
   "swapEnableTokenForSwapping": {
@@ -3902,7 +3902,7 @@
   },
   "swapFailedErrorDescriptionWithSupportLink": {
     "message": "交易有时会失败，我们随时为您提供帮助。如果此问题仍然存在，您可以在 $1 联系我们的客服，以获得进一步的帮助。",
-    "description": "This message is shown to a user if their swap fails. The $1 will be replaced by support.metamask.io"
+    "description": "This message is shown to a user if their swap fails. The $1 will be replaced by support.XDCPay.io"
   },
   "swapFailedErrorTitle": {
     "message": "交换失败"
@@ -3940,7 +3940,7 @@
     "message": "上一个屏幕上的燃料费用在这两笔交易之间分摊。"
   },
   "swapGasFeesSummary": {
-    "message": "燃料费用支付给在 $1 网络上处理交易的加密矿工。MetaMask 不会从燃料费用中获利。",
+    "message": "燃料费用支付给在 $1 网络上处理交易的加密矿工。XDCPay 不会从燃料费用中获利。",
     "description": "$1 is the selected network, e.g. Ethereum or BSC"
   },
   "swapHighSlippage": {
@@ -3950,12 +3950,12 @@
     "message": "滑点金额非常高。"
   },
   "swapIncludesMMFee": {
-    "message": "包括 $1% 的 MetaMask 费用。",
-    "description": "Provides information about the fee that metamask takes for swaps. $1 is a decimal number."
+    "message": "包括 $1% 的 XDCPay 费用。",
+    "description": "Provides information about the fee that XDCPay takes for swaps. $1 is a decimal number."
   },
-  "swapIncludesMetaMaskFeeViewAllQuotes": {
-    "message": "包含$1%的MetaMask费用 – $2",
-    "description": "Provides information about the fee that metamask takes for swaps. $1 is a decimal number and $2 is a link to view all quotes."
+  "swapIncludesXDCPayFeeViewAllQuotes": {
+    "message": "包含$1%的XDCPay费用 – $2",
+    "description": "Provides information about the fee that XDCPay takes for swaps. $1 is a decimal number and $2 is a link to view all quotes."
   },
   "swapLearnMore": {
     "message": "了解有关 Swaps 的更多信息"
@@ -3968,13 +3968,6 @@
   },
   "swapMaxSlippage": {
     "message": "最大滑点"
-  },
-  "swapMetaMaskFee": {
-    "message": "MetaMask 费用"
-  },
-  "swapMetaMaskFeeDescription": {
-    "message": "该报价中会自动计入一笔 $1% 的费用。您支付该费用以换取使用 MetaMask 流动性提供商信息聚合软件的许可证。",
-    "description": "Provides information about the fee that metamask takes for swaps. $1 is a decimal number."
   },
   "swapNQuotesWithDot": {
     "message": "$1 报价。",
@@ -4196,6 +4189,13 @@
     "message": "多个代币可以使用相同的名称和符号。检查 $1 以确认这是您正在寻找的代币。",
     "description": "This appears in a tooltip next to the verifyThisTokenOn message. It gives the user more information about why they should check the token on a block explorer. $1 will be the name or url of the block explorer, which will be the translation of 'etherscan' or a block explorer url specified for a custom network."
   },
+  "swapXDCPayFee": {
+    "message": "XDCPay 费用"
+  },
+  "swapXDCPayFeeDescription": {
+    "message": "该报价中会自动计入一笔 $1% 的费用。您支付该费用以换取使用 XDCPay 流动性提供商信息聚合软件的许可证。",
+    "description": "Provides information about the fee that XDCPay takes for swaps. $1 is a decimal number."
+  },
   "swapYourTokenBalance": {
     "message": "$1 $2 可用于交换",
     "description": "Tells the user how much of a token they have in their balance. $1 is a decimal number amount of tokens, and $2 is a token symbol"
@@ -4227,7 +4227,7 @@
     "message": "切换"
   },
   "switchEthereumChainConfirmationDescription": {
-    "message": "这将切换 MetaMask 中选定的网络到以前添加的网络："
+    "message": "这将切换 XDCPay 中选定的网络到以前添加的网络："
   },
   "switchEthereumChainConfirmationTitle": {
     "message": "允许此网站切换网络？"
@@ -4273,7 +4273,7 @@
     "message": "服务条款"
   },
   "termsOfUseAgreeText": {
-    "message": "我同意适用于我使用MetaMask及其所有功能的使用条款"
+    "message": "我同意适用于我使用XDCPay及其所有功能的使用条款"
   },
   "termsOfUseFooterText": {
     "message": "请滚动以阅读所有章节"
@@ -4288,7 +4288,7 @@
     "message": "主题"
   },
   "themeDescription": {
-    "message": "选择您喜欢的MetaMask主题。"
+    "message": "选择您喜欢的XDCPay主题。"
   },
   "thingsToKeep": {
     "message": "注意事项:"
@@ -4432,7 +4432,7 @@
     "message": "建议的网站"
   },
   "transactionDetailDappGasTooltip": {
-    "message": "编辑以使用 MetaMask 建议的基于最新区块的燃料费用。"
+    "message": "编辑以使用 XDCPay 建议的基于最新区块的燃料费用。"
   },
   "transactionDetailGasHeading": {
     "message": "估算的燃料费"
@@ -4444,7 +4444,7 @@
     "message": "燃料费由网络设定，并根据网络流量和交易的复杂性而波动。"
   },
   "transactionDetailGasTooltipIntro": {
-    "message": "燃料费用支付给在 $1 网络上处理交易的加密矿工。MetaMask 不会从燃料费用中获利。"
+    "message": "燃料费用支付给在 $1 网络上处理交易的加密矿工。XDCPay 不会从燃料费用中获利。"
   },
   "transactionDetailGasTotalSubtitle": {
     "message": "金额 + 燃料费"
@@ -4539,7 +4539,7 @@
     "description": "$1 is the wallet device name; $2 is a link to wallet connection guide"
   },
   "troubleStarting": {
-    "message": "MetaMask无法启动。可能发生间歇性错误，因此请尝试重新启动扩展程序。"
+    "message": "XDCPay无法启动。可能发生间歇性错误，因此请尝试重新启动扩展程序。"
   },
   "trustSiteApprovePermission": {
     "message": "通过授予权限，您允许以下 $1 访问您的资金"
@@ -4561,7 +4561,7 @@
   },
   "u2f": {
     "message": "U2F",
-    "description": "A name on an API for the browser to interact with devices that support the U2F protocol. On some browsers we use it to connect MetaMask to Ledger devices."
+    "description": "A name on an API for the browser to interact with devices that support the U2F protocol. On some browsers we use it to connect XDCPay to Ledger devices."
   },
   "unapproved": {
     "message": "未批准"
@@ -4620,7 +4620,7 @@
     "message": "对智能合约进行解码"
   },
   "use4ByteResolutionDescription": {
-    "message": "为了改善用户体验，我们根据与您交互的智能合约消息，自定义活动选项卡。MetaMask 使用名为 4byte.directory 的服务来对数据进行解码，并向您显示更方便阅读的智能合约版本。这有助于减少您批准恶意智能合约操作的机会，但可能导致您的 IP 地址被共享。"
+    "message": "为了改善用户体验，我们根据与您交互的智能合约消息，自定义活动选项卡。XDCPay 使用名为 4byte.directory 的服务来对数据进行解码，并向您显示更方便阅读的智能合约版本。这有助于减少您批准恶意智能合约操作的机会，但可能导致您的 IP 地址被共享。"
   },
   "useMultiAccountBalanceChecker": {
     "message": "账户余额分批请求"
@@ -4721,10 +4721,10 @@
     "message": "您已经成功地保护了您的钱包。请确保您的账户私钥助记词安全和秘密——这是您的责任！"
   },
   "walletCreationSuccessReminder1": {
-    "message": "MetaMask 无法恢复您的账户私钥助记词。"
+    "message": "XDCPay 无法恢复您的账户私钥助记词。"
   },
   "walletCreationSuccessReminder2": {
-    "message": "MetaMask 绝对不会索要您的账户私钥助记词。"
+    "message": "XDCPay 绝对不会索要您的账户私钥助记词。"
   },
   "walletCreationSuccessReminder3": {
     "message": "对任何人 $1，否则您的资金有被盗风险",
@@ -4775,20 +4775,20 @@
     "message": "探索去中心化应用"
   },
   "welcomeLoginDescription": {
-    "message": "使用您的 MetaMask 登录去中心化应用 - 无需注册。"
+    "message": "使用您的 XDCPay 登录去中心化应用 - 无需注册。"
   },
   "welcomeLoginTitle": {
     "message": "迎接您的钱包"
   },
-  "welcomeToMetaMask": {
+  "welcomeToXDCPay": {
     "message": "让我们开始吧"
   },
-  "welcomeToMetaMaskIntro": {
-    "message": "MetaMask 深受数百万人信任，是一款可以让所有人进入 web3 世界的安全钱包。"
+  "welcomeToXDCPayIntro": {
+    "message": "XDCPay 深受数百万人信任，是一款可以让所有人进入 web3 世界的安全钱包。"
   },
   "whatsNew": {
     "message": "最新动态",
-    "description": "This is the title of a popup that gives users notifications about new features and updates to MetaMask."
+    "description": "This is the title of a popup that gives users notifications about new features and updates to XDCPay."
   },
   "whatsThis": {
     "message": "这是什么？"

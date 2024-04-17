@@ -89,7 +89,7 @@ export const Src: StoryFn<typeof TagUrl> = (args) => (
     <TagUrl
       {...args}
       label="metamask.github.io"
-      src="https://metamask.github.io/test-dapp/metamask-fox.svg"
+      src="https://metamask.github.io/test-dapp/XDCPay-full.svg"
     />
     <TagUrl
       {...args}
@@ -106,7 +106,7 @@ export const Label: StoryFn<typeof TagUrl> = (args) => (
     <TagUrl
       {...args}
       label="metamask.github.io"
-      src="https://metamask.github.io/test-dapp/metamask-fox.svg"
+      src="https://metamask.github.io/test-dapp/XDCPay-full.svg"
     />
     <TagUrl {...args} src="" label="metamask.github.io" />
   </Box>

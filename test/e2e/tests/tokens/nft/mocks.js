@@ -9,7 +9,7 @@ function setupAutoDetectMocking(server) {
         token_standard: 'erc721',
         name: 'peteryinusa.eth',
         description: 'peteryinusa.eth, an ENS name.',
-        image_url: 'https://metamask.github.io/test-dapp/metamask-fox.svg',
+        image_url: 'https://metamask.github.io/test-dapp/XDCPay-full.svg',
         metadata_url:
           'https://metadata.ens.domains/mainnet/0x57f1887a8bf19b14fc0df6fd9b2acc9af147ea85/86818186862637897590416402377730948900221574858925543698968316530334305793541',
         opensea_url:
@@ -36,7 +36,7 @@ function setupAutoDetectMocking(server) {
     name: 'ENS: Ethereum Name Service',
     description:
       'Ethereum Name Service (ENS) domains are secure domain names for the decentralized world. ENS domains provide a way for users to map human readable names to blockchain and non-blockchain resources, like Ethereum addresses, IPFS hashes, or website URLs. ENS domains can be bought and sold on secondary markets.',
-    image_url: 'https://metamask.github.io/test-dapp/metamask-fox.svg',
+    image_url: 'https://metamask.github.io/test-dapp/XDCPay-full.svg',
     banner_image_url: '',
     owner: '0xfe89cc7abb2c4183683ab71653c4cdc9b02d44b7',
     safelist_status: 'verified',

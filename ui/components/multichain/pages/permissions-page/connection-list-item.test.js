@@ -34,8 +34,8 @@ describe('ConnectionListItem', () => {
       id: 'https://metamask.github.io',
       origin: 'https://metamask.github.io',
       subjectType: 'website',
-      iconUrl: 'https://metamask.github.io/test-dapp/metamask-fox.svg',
-      networkIconUrl: 'https://metamask.github.io/test-dapp/metamask-fox.svg',
+      iconUrl: 'https://metamask.github.io/test-dapp/XDCPay-full.svg',
+      networkIconUrl: 'https://metamask.github.io/test-dapp/XDCPay-full.svg',
       networkName: 'Test Dapp Network',
     };
 
@@ -75,7 +75,7 @@ describe('ConnectionListItem', () => {
     const onClickMock = jest.fn();
     const mockConnection2 = {
       extensionId: null,
-      iconUrl: 'https://metamask.github.io/test-dapp/metamask-fox.svg',
+      iconUrl: 'https://metamask.github.io/test-dapp/XDCPay-full.svg',
       name: 'MM Test Dapp',
       origin: 'https://metamask.github.io',
       subjectType: 'website',

@@ -98,7 +98,7 @@ export default function App() {
   return (
     <>
       <h1 className="page-header">
-        <img src="images/metamask-fox.svg" className="page-header__icon" />
+        <img src="images/XDCPay-full.svg" className="page-header__icon" />
         Extension TypeScript Migration Status
       </h1>
       <h2

@@ -61,11 +61,11 @@ module.exports.setEnvironmentVariables = function setEnvironmentVariables({
 };
 
 const BUILD_TYPES_TO_SVG_LOGO_PATH = {
-  main: './app/images/logo/metamask-fox.svg',
-  beta: './app/build-types/beta/images/logo/metamask-fox.svg',
-  flask: './app/build-types/flask/images/logo/metamask-fox.svg',
+  main: './app/images/logo/XDCPay-full.svg',
+  beta: './app/build-types/beta/images/logo/XDCPay-full.svg',
+  flask: './app/build-types/flask/images/logo/XDCPay-full.svg',
   mmi: './app/build-types/mmi/images/logo/mmi-logo.svg',
-  desktop: './app/build-types/desktop/images/logo/metamask-fox.svg',
+  desktop: './app/build-types/desktop/images/logo/XDCPay-full.svg',
 };
 
 /**

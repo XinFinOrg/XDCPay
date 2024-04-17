@@ -54,7 +54,7 @@ export default function ConfigureSnapPopup({
           alignItems={AlignItems.center}
         >
           <img
-            src="images/logo/metamask-fox.svg"
+            src="images/logo/XDCPay-full.svg"
             width="54x"
             height="50px"
             style={{ marginBottom: '16px' }}

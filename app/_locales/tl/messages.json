@@ -121,7 +121,7 @@
     "message": "I-access ang iyong wallet gamit ang iyong Lihim na Parirala sa Pagbawi"
   },
   "accessYourWalletWithSRPDescription": {
-    "message": "Hindi mababawi ng MetaMask ang iyong password. Gagamitin namin ang iyong Lihim na Parirala sa Pagbawi upang patunayan ang iyong pagmamay-ari, ibalik ang iyong wallet at mag-set up ng bagong password. Una, ilagay ang Lihim na Parirala sa Pagbawi na ibinigay sa iyo noong ginawa mo ang iyong wallet. $1",
+    "message": "Hindi mababawi ng XDCPay ang iyong password. Gagamitin namin ang iyong Lihim na Parirala sa Pagbawi upang patunayan ang iyong pagmamay-ari, ibalik ang iyong wallet at mag-set up ng bagong password. Una, ilagay ang Lihim na Parirala sa Pagbawi na ibinigay sa iyo noong ginawa mo ang iyong wallet. $1",
     "description": "$1 is the words 'Learn More' from key 'learnMore', separated here so that it can be added as a link"
   },
   "accessingYourCamera": {
@@ -178,7 +178,7 @@
     "message": "Magdagdag ng account"
   },
   "addAcquiredTokens": {
-    "message": "Idagdag ang mga token na nakuha mo gamit ang MetaMask"
+    "message": "Idagdag ang mga token na nakuha mo gamit ang XDCPay"
   },
   "addAlias": {
     "message": "Magdagdag ng alias"
@@ -193,10 +193,10 @@
     "message": "Magdagdag ng custom na network"
   },
   "addEthereumChainConfirmationDescription": {
-    "message": "Magpapahintulot ito sa network na ito na gamitin sa loob ng MetaMask."
+    "message": "Magpapahintulot ito sa network na ito na gamitin sa loob ng XDCPay."
   },
   "addEthereumChainConfirmationRisks": {
-    "message": "Ang MetaMask ay hindi nagve-verify ng mga custom na network."
+    "message": "Ang XDCPay ay hindi nagve-verify ng mga custom na network."
   },
   "addEthereumChainConfirmationRisksLearnMore": {
     "message": "Alamin ang tungkol sa $1.",
@@ -310,7 +310,7 @@
     "message": "Ang bayad sa priyoridad (kilala rin bilang “tip ng minero”) ay direktang napupunta sa mga minero at ginagawang insentibo ang mga ito upang unahin ang iyong mga transaksyon."
   },
   "agreeTermsOfUse": {
-    "message": "Sumasang-ayon ako sa $1 ng MetaMask",
+    "message": "Sumasang-ayon ako sa $1 ng XDCPay",
     "description": "$1 is the `terms` link"
   },
   "airgapVault": {
@@ -335,7 +335,7 @@
     "message": "Mga Alerto"
   },
   "allCustodianAccountsConnectedSubtitle": {
-    "message": "Alinman sa nakakonekta na ang lahat ng iyong custodian account o wala kang anumang account na nakakonekta sa MetaMask Institutional."
+    "message": "Alinman sa nakakonekta na ang lahat ng iyong custodian account o wala kang anumang account na nakakonekta sa XDCPay Institutional."
   },
   "allCustodianAccountsConnectedTitle": {
     "message": "Walang mga account na available para ikonekta"
@@ -373,19 +373,19 @@
     "description": "The description of the application"
   },
   "appName": {
-    "message": "MetaMask",
+    "message": "XDCPay",
     "description": "The name of the application"
   },
   "appNameBeta": {
-    "message": "MetaMask Beta",
+    "message": "XDCPay Beta",
     "description": "The name of the application (Beta)"
   },
   "appNameFlask": {
-    "message": "MetaMask Flask",
+    "message": "XDCPay Flask",
     "description": "The name of the application (Flask)"
   },
   "appNameMmi": {
-    "message": "MetaMask Institutional",
+    "message": "XDCPay Institutional",
     "description": "The name of the application (MMI)"
   },
   "approve": {
@@ -459,7 +459,7 @@
     "message": "Timer sa Awtomatikong Pag-lock (minuto)"
   },
   "autoLockTimeLimitDescription": {
-    "message": "Itakda ang oras ng pag-idle sa ilang minuto bago ma-lock ang MetaMask."
+    "message": "Itakda ang oras ng pag-idle sa ilang minuto bago ma-lock ang XDCPay."
   },
   "average": {
     "message": "Average"
@@ -474,7 +474,7 @@
     "message": "I-backup"
   },
   "backupApprovalInfo": {
-    "message": "Ang lihim na code na ito ay kinakailangan para ma-recover ang iyong wallet sakaling maiwala mo ang iyong device, makalimutan ang iyong password, kailanganin mong i-install ulit ang MetaMask, o gusto mong i-access ang iyong wallet sa ibang device."
+    "message": "Ang lihim na code na ito ay kinakailangan para ma-recover ang iyong wallet sakaling maiwala mo ang iyong device, makalimutan ang iyong password, kailanganin mong i-install ulit ang XDCPay, o gusto mong i-access ang iyong wallet sa ibang device."
   },
   "backupApprovalNotice": {
     "message": "I-back up ang iyong Lihim na Parirala sa Pagbawi para mapanatiling secure ang iyong wallet at mga pondo."
@@ -511,19 +511,19 @@
     "description": "$1 represents the word 'here' in a hyperlink"
   },
   "betaMetamaskInstitutionalVersion": {
-    "message": "Bersyong Beta ng MetaMask Institutional"
+    "message": "Bersyong Beta ng XDCPay Institutional"
   },
   "betaMetamaskVersion": {
-    "message": "Bersyon ng MetaMask Beta"
+    "message": "Bersyon ng XDCPay Beta"
   },
   "betaTerms": {
     "message": "Mga tuntunin sa paggamit ng Beta"
   },
   "betaWalletCreationSuccessReminder1": {
-    "message": "Hindi mabawi ng MetaMask Beta ang iyong Lihim na Parirala sa Pagbawi."
+    "message": "Hindi mabawi ng XDCPay Beta ang iyong Lihim na Parirala sa Pagbawi."
   },
   "betaWalletCreationSuccessReminder2": {
-    "message": "Hindi kailanman hihingiin sa iyo ng MetaMask Beta ang iyong Lihim na Parirala sa Pagbawi."
+    "message": "Hindi kailanman hihingiin sa iyo ng XDCPay Beta ang iyong Lihim na Parirala sa Pagbawi."
   },
   "blockExplorerAccountAction": {
     "message": "Account",
@@ -593,7 +593,7 @@
     "message": "Buuin ang iyong listahan ng contact"
   },
   "builtAroundTheWorld": {
-    "message": "Ang MetaMask ay dinisenyo at itinatag sa buong mundo."
+    "message": "Ang XDCPay ay dinisenyo at itinatag sa buong mundo."
   },
   "busy": {
     "message": "Busy"
@@ -655,7 +655,7 @@
     "description": "$1 is a link to the privacy policy"
   },
   "chromeRequiredForHardwareWallets": {
-    "message": "Kailangan mong gamitin ang MetaMask sa Google Chrome para maikonekta sa iyong Wallet na Hardware."
+    "message": "Kailangan mong gamitin ang XDCPay sa Google Chrome para maikonekta sa iyong Wallet na Hardware."
   },
   "clear": {
     "message": "I-clear"
@@ -686,10 +686,10 @@
     "message": "CoinGecko"
   },
   "configureSnapPopupDescription": {
-    "message": "Papaalis ka na ngayon sa MetaMask para ma-configure ang snap na ito."
+    "message": "Papaalis ka na ngayon sa XDCPay para ma-configure ang snap na ito."
   },
   "configureSnapPopupInstallDescription": {
-    "message": "Papaalis ka na ngayon sa MetaMask para ma-install ang snap na ito."
+    "message": "Papaalis ka na ngayon sa XDCPay para ma-install ang snap na ito."
   },
   "configureSnapPopupInstallTitle": {
     "message": "I-install ang snap"
@@ -764,7 +764,7 @@
     "description": "$1 is the number of accounts to which the web3 site/application is asking to connect; this will substitute $1 in connectToMultiple"
   },
   "connectWithMetaMask": {
-    "message": "Kumonekta sa MetaMask"
+    "message": "Kumonekta sa XDCPay"
   },
   "connectedAccountsDescriptionPlural": {
     "message": "Mayroon kang $1 account na nakakonekta sa site na ito.",
@@ -774,7 +774,7 @@
     "message": "Mayroon kang 1 account na nakakonekta sa site na ito."
   },
   "connectedAccountsEmptyDescription": {
-    "message": "Ang MetaMask ay hindi konektado sa site na ito. Upang kumonekta sa isang web3 site, hanapin at i-click ang button na kumonekta."
+    "message": "Ang XDCPay ay hindi konektado sa site na ito. Upang kumonekta sa isang web3 site, hanapin at i-click ang button na kumonekta."
   },
   "connectedSites": {
     "message": "Mga konektadong site"
@@ -868,7 +868,7 @@
     "message": "Kontrata ng token"
   },
   "convertTokenToNFTDescription": {
-    "message": "Natukoy namin na ang asset na ito ay isang NFT. Ang MetaMask ay mayroon na ngayong ganap na native support para sa mga NFT. Gusto mo bang alisin ito sa iyong listahan ng token at idagdag ito bilang isang NFT?"
+    "message": "Natukoy namin na ang asset na ito ay isang NFT. Ang XDCPay ay mayroon na ngayong ganap na native support para sa mga NFT. Gusto mo bang alisin ito sa iyong listahan ng token at idagdag ito bilang isang NFT?"
   },
   "convertTokenToNFTExistDescription": {
     "message": "Napansin namin na naidagdag ang asset na ito bilang NFT. Gusto mo ba itong alisin mula sa listahan ng iyong token?"
@@ -950,7 +950,7 @@
     "message": "Tagapangalaga"
   },
   "custodianAccountAddedDesc": {
-    "message": "Maaari mo na ngayong gamitin ang iyong mga custodian account sa MetaMask Institutional."
+    "message": "Maaari mo na ngayong gamitin ang iyong mga custodian account sa XDCPay Institutional."
   },
   "custodianAccountAddedTitle": {
     "message": "Naidagdag na ang mga napiling custodian account."
@@ -959,7 +959,7 @@
     "message": "Magpunta sa $1 at i-click ang button na 'Ikonekta sa MMI' sa loob ng kanilang user interface para ikonektang muli ang iyong mga account sa MMI."
   },
   "custodianReplaceRefreshTokenChangedSubtitle": {
-    "message": "Maaari mo na ngayong gamitin ang mga custodian account mo sa MetaMask Institutional."
+    "message": "Maaari mo na ngayong gamitin ang mga custodian account mo sa XDCPay Institutional."
   },
   "custodianReplaceRefreshTokenChangedTitle": {
     "message": "Na-refresh na ang iyong custodian token"
@@ -977,7 +977,7 @@
     "message": "Mangyaring pumunta sa $1 at i-click ang button na 'Kumonekta sa MMI' sa loob ng kanilang user interface upang ikonekta muli ang iyong mga account sa MMI."
   },
   "custodyRefreshTokenModalDescription1": {
-    "message": "Nag-isyu ng token ang iyong custodian na nagpapatotoo sa extension ng MetaMask Institutional, na nagbibigay-daan sa iyong ikonekta ang iyong mga account."
+    "message": "Nag-isyu ng token ang iyong custodian na nagpapatotoo sa extension ng XDCPay Institutional, na nagbibigay-daan sa iyong ikonekta ang iyong mga account."
   },
   "custodyRefreshTokenModalDescription2": {
     "message": "Mapapaso ang token na ito pagkatapos ng isang partikular na panahon sa mga kadahilanang pangseguridad. Kinakailangan nitong kumonekta muli sa MMI."
@@ -1119,22 +1119,22 @@
     "message": "Desktop App"
   },
   "desktopConnectionCriticalErrorDescription": {
-    "message": "Maaaring paulit-ulit ang error na ito, kaya subukang i-restart ang extension o huwag paganahin ang MetaMask Desktop."
+    "message": "Maaaring paulit-ulit ang error na ito, kaya subukang i-restart ang extension o huwag paganahin ang XDCPay Desktop."
   },
   "desktopConnectionCriticalErrorTitle": {
-    "message": "Nagkaroon ng problema sa pagsisimula ang MetaMask"
+    "message": "Nagkaroon ng problema sa pagsisimula ang XDCPay"
   },
   "desktopConnectionLostErrorDescription": {
-    "message": "Siguraduhing mayroon kang desktop app at gumagana ito o huwag paganahin ang MetaMask Desktop."
+    "message": "Siguraduhing mayroon kang desktop app at gumagana ito o huwag paganahin ang XDCPay Desktop."
   },
   "desktopConnectionLostErrorTitle": {
-    "message": "Nawala ang koneksyon sa MetaMask Desktop"
+    "message": "Nawala ang koneksyon sa XDCPay Desktop"
   },
   "desktopDisableButton": {
     "message": "Huwag paganahin ang Desktop App"
   },
   "desktopDisableErrorCTA": {
-    "message": "Huwag paganahin ang MetaMask Desktop"
+    "message": "Huwag paganahin ang XDCPay Desktop"
   },
   "desktopEnableButton": {
     "message": "Paganahin ang Desktop App"
@@ -1146,52 +1146,52 @@
     "message": "Bumalik sa Pahina ng Mga Setting"
   },
   "desktopErrorRestartMMCTA": {
-    "message": "I-restart ang MetaMask"
+    "message": "I-restart ang XDCPay"
   },
   "desktopNotFoundErrorCTA": {
-    "message": "I-download ang MetaMask Desktop"
+    "message": "I-download ang XDCPay Desktop"
   },
   "desktopNotFoundErrorDescription1": {
     "message": "Siguraduhing nakabukas at gumagana ang iyong desktop app."
   },
   "desktopNotFoundErrorDescription2": {
-    "message": "Kung wala kang naka-install na desktop app, mangyaring i-download ito sa website ng MetaMask."
+    "message": "Kung wala kang naka-install na desktop app, mangyaring i-download ito sa website ng XDCPay."
   },
   "desktopNotFoundErrorTitle": {
-    "message": "Ang MetaMask Desktop ay hindi natagpuan"
+    "message": "Ang XDCPay Desktop ay hindi natagpuan"
   },
   "desktopOpenOrDownloadCTA": {
-    "message": "Buksan ang MetaMask Desktop"
+    "message": "Buksan ang XDCPay Desktop"
   },
   "desktopOutdatedErrorCTA": {
-    "message": "I-update ang MetaMask Desktop"
+    "message": "I-update ang XDCPay Desktop"
   },
   "desktopOutdatedErrorDescription": {
-    "message": "Kailangang i-upgrade ang iyong MetaMask desktop app."
+    "message": "Kailangang i-upgrade ang iyong XDCPay desktop app."
   },
   "desktopOutdatedErrorTitle": {
-    "message": "Luma na ang MetaMask Desktop"
+    "message": "Luma na ang XDCPay Desktop"
   },
   "desktopOutdatedExtensionErrorCTA": {
-    "message": "I-update ang Extension ng MetaMask"
+    "message": "I-update ang Extension ng XDCPay"
   },
   "desktopOutdatedExtensionErrorDescription": {
-    "message": "Kailangang i-upgrade ang iyong extension ng MetaMask."
+    "message": "Kailangang i-upgrade ang iyong extension ng XDCPay."
   },
   "desktopOutdatedExtensionErrorTitle": {
-    "message": "Luma na ang Extension ng MetaMask"
+    "message": "Luma na ang Extension ng XDCPay"
   },
   "desktopPageDescription": {
     "message": "Kapag matagumpay ang pagpapares, magre-restart ang extension at kailangan mong ilagay muli ang iyong password."
   },
   "desktopPageSubTitle": {
-    "message": "Buksan ang iyong MetaMask Desktop at i-type ang code na ito"
+    "message": "Buksan ang iyong XDCPay Desktop at i-type ang code na ito"
   },
   "desktopPageTitle": {
     "message": "Ipares sa Desktop"
   },
   "desktopPairedWarningDeepLink": {
-    "message": "Pumunta sa Mga Setting sa MetaMask Desktop"
+    "message": "Pumunta sa Mga Setting sa XDCPay Desktop"
   },
   "desktopPairedWarningDescription": {
     "message": "Kung gusto mong magsimula ng bagong pairing, alisin ang kasalukuyang koneksyon."
@@ -1209,10 +1209,10 @@
     "message": "desktopRouteNotFoundErrorTitle"
   },
   "desktopUnexpectedErrorCTA": {
-    "message": "Bumalik sa MetaMask Home"
+    "message": "Bumalik sa XDCPay Home"
   },
   "desktopUnexpectedErrorDescription": {
-    "message": "Suriin ang iyong MetaMask Desktop para maibalik ang koneksyon"
+    "message": "Suriin ang iyong XDCPay Desktop para maibalik ang koneksyon"
   },
   "desktopUnexpectedErrorTitle": {
     "message": "Nagkaproblema..."
@@ -1455,7 +1455,7 @@
     "description": "Message displayed on generic error page in the popup UI, $1 is a clickable link with text defined by the 'here' key. The link will open to a form where users can file support tickets."
   },
   "errorPageTitle": {
-    "message": "Nagkaroon ng error sa MetaMask",
+    "message": "Nagkaroon ng error sa XDCPay",
     "description": "Title of generic error page"
   },
   "errorStack": {
@@ -1537,15 +1537,15 @@
   },
   "flaskWelcomeWarning2": {
     "message": "Hindi namin ginagarantiya ang kaligtasan o katatagan ng extension na ito. Ang mga bagong API na inaalok ng Flask ay hindi pinatigtibay laban sa mga pag-atake ng phishing, ibig sabihin, ang anumang site o snap na nangangailangan ng Flask ay maaaring isang masamang pagtatangka na nakawin ang iyong mga asset.",
-    "description": "This explains the risks of using MetaMask Flask"
+    "description": "This explains the risks of using XDCPay Flask"
   },
   "flaskWelcomeWarning3": {
-    "message": "Ang lahat ng API ng Flask ay eksperimental. Maaaring baguhin o alisin ang mga ito nang walang abiso, o maaari silang manatili sa Flask nang walang katapusan nang hindi nalilipat sa matatag na MetaMask. Gamitin ang mga ito sa iyong sariling pananagutan.",
+    "message": "Ang lahat ng API ng Flask ay eksperimental. Maaaring baguhin o alisin ang mga ito nang walang abiso, o maaari silang manatili sa Flask nang walang katapusan nang hindi nalilipat sa matatag na XDCPay. Gamitin ang mga ito sa iyong sariling pananagutan.",
     "description": "This message warns developers about unstable Flask APIs"
   },
   "flaskWelcomeWarning4": {
-    "message": "Siguraduhing hindi mo pagaganahin ang iyong regular na extension ng MetaMask kapag ginagamit ang Flask.",
-    "description": "This message calls to pay attention about multiple versions of MetaMask running on the same site (Flask + Prod)"
+    "message": "Siguraduhing hindi mo pagaganahin ang iyong regular na extension ng XDCPay kapag ginagamit ang Flask.",
+    "description": "This message calls to pay attention about multiple versions of XDCPay running on the same site (Flask + Prod)"
   },
   "flaskWelcomeWarningAcceptButton": {
     "message": "Tinatanggap ko ang mga panganib",
@@ -1691,7 +1691,7 @@
     "message": "Gumagamit ng mga API call ang mga integration ng wallet na hardware sa mga external server, na nakakakita sa IP address mo at sa mga address ng smart na kontrata kung saan ka nakikipag-ugnayan."
   },
   "hardwareWalletsMsg": {
-    "message": "Pumili ng wallet na hardware na gusto mong gamitin kasama ng MetaMask."
+    "message": "Pumili ng wallet na hardware na gusto mong gamitin kasama ng XDCPay."
   },
   "here": {
     "message": "dito",
@@ -1748,7 +1748,7 @@
     "description": "$1 is a message from 'holdToRevealContent4' and $2 is a text link with the message from 'holdToRevealContent5'"
   },
   "holdToRevealContent4": {
-    "message": "Hindi ito hihilingin ng Suporta sa MetaMask,",
+    "message": "Hindi ito hihilingin ng Suporta sa XDCPay",
     "description": "Part of 'holdToRevealContent3'"
   },
   "holdToRevealContent5": {
@@ -1810,13 +1810,13 @@
     "message": "Ito ay hindi wastong pribadong key. Dapat kang maglagay ng hexadecimal string na 64 ang haba."
   },
   "importAccountJsonLoading1": {
-    "message": "Asahan ang pag-import ng JSON na ito ay tatagal ng ilang minuto at i-freeze ang MetaMask."
+    "message": "Asahan ang pag-import ng JSON na ito ay tatagal ng ilang minuto at i-freeze ang XDCPay."
   },
   "importAccountJsonLoading2": {
     "message": "Humihingi kami ng paumanhin, at gagawin namin itong mas mabilis sa hinaharap."
   },
   "importAccountMsg": {
-    "message": "Ang mga na-import na account ay hindi mauugnay sa iyong Lihim na Parirala sa Pagbawi ng MetaMask. Matuto pa tungkol sa mga na-import na account"
+    "message": "Ang mga na-import na account ay hindi mauugnay sa iyong Lihim na Parirala sa Pagbawi ng XDCPay. Matuto pa tungkol sa mga na-import na account"
   },
   "importMyWallet": {
     "message": "I-import ang Wallet Ko"
@@ -1860,7 +1860,7 @@
     "message": "sa iyong Mga Setting"
   },
   "infuraBlockedNotification": {
-    "message": "Hindi makakonekta ang MetaMask sa blockchain host. I-review ang posibleng mga dahilan $1.",
+    "message": "Hindi makakonekta ang XDCPay sa blockchain host. I-review ang posibleng mga dahilan $1.",
     "description": "$1 is a clickable link with with text defined by the 'here' key"
   },
   "initialTransactionConfirmed": {
@@ -1974,7 +1974,7 @@
     "message": "IPFS gateway"
   },
   "ipfsGatewayDescription": {
-    "message": "Ang MetaMask ay gumagamit ng mga serbisyo ng third-party para ipakita ang mga imahe ng iyong mga NFT na nakaimbak sa IPFS, nagpapakita ng impormasyong nauugnay sa mga ENS address na ipinakita sa address bar ng iyong browser, at kinukuha ang mga icon para sa iba't ibang token. Ang iyong IP address ay maaaring ipakita sa mga serbisyong ito kapag ginagamit mo ang mga iyon."
+    "message": "Ang XDCPay ay gumagamit ng mga serbisyo ng third-party para ipakita ang mga imahe ng iyong mga NFT na nakaimbak sa IPFS, nagpapakita ng impormasyong nauugnay sa mga ENS address na ipinakita sa address bar ng iyong browser, at kinukuha ang mga icon para sa iba't ibang token. Ang iyong IP address ay maaaring ipakita sa mga serbisyong ito kapag ginagamit mo ang mga iyon."
   },
   "ipfsToggleModalDescriptionOne": {
     "message": "Gumagamit kami ng mga serbisyo ng third-party para ipakita ang imahe ng mga NFT na inimbak mo sa IPFS, nagpapakita ng impormasyong nauugnay sa mga ENS address na inilagay sa address bar ng browser mo, at kinukuha ang mga icon para sa iba't ibang token. Ang Iyong IP address ay maaaring makita ng iba sa mga serbisyong ito kapag ginagamit mo ang mga ito."
@@ -2111,7 +2111,7 @@
     "message": "I-lock"
   },
   "lockMetaMask": {
-    "message": "I-lock ang MetaMask"
+    "message": "I-lock ang XDCPay"
   },
   "lockTimeInvalid": {
     "message": "Ang lock time ay dapat na isang numero sa pagitan ng 0 at 10080"
@@ -2172,7 +2172,7 @@
     "message": "Mensahe"
   },
   "metaMaskConnectStatusParagraphOne": {
-    "message": "Mas may kontrol ka na ngayon sa mga koneksyon ng iyong account sa MetaMask."
+    "message": "Mas may kontrol ka na ngayon sa mga koneksyon ng iyong account sa XDCPay."
   },
   "metaMaskConnectStatusParagraphThree": {
     "message": "I-click ito para pamahalaan ang mga nakakonekta mong account."
@@ -2181,13 +2181,13 @@
     "message": "Makikita sa button ng katayuan ng koneksyon kung nakakonekta ang website na binibisita mo sa kasalukuyan mong napiling account."
   },
   "metamaskInstitutionalVersion": {
-    "message": "Bersyon ng MetaMask Institutional"
+    "message": "Bersyon ng XDCPay Institutional"
   },
   "metamaskSwapsOfflineDescription": {
-    "message": "Kasalukuyang minementina ang MetaMask Swaps. Bumalik sa ibang pagkakataon."
+    "message": "Kasalukuyang minementina ang XDCPay Swaps. Bumalik sa ibang pagkakataon."
   },
   "metamaskVersion": {
-    "message": "Bersyon ng MetaMask"
+    "message": "Bersyon ng XDCPay"
   },
   "metrics": {
     "message": "Metrics"
@@ -2222,7 +2222,7 @@
     "message": "Humiling dito"
   },
   "mmiBuiltAroundTheWorld": {
-    "message": "Ang MetaMask Institutional ay dinisenyo at binuo sa buong mundo."
+    "message": "Ang XDCPay Institutional ay dinisenyo at binuo sa buong mundo."
   },
   "more": {
     "message": "higit pa"
@@ -2249,7 +2249,7 @@
     "message": "Ibahagi ang iyong Feedback"
   },
   "needHelpLinkText": {
-    "message": "Suporta sa MetaMask"
+    "message": "Suporta sa XDCPay"
   },
   "needHelpSubmitTicket": {
     "message": "Magsumite ng ticket"
@@ -2379,7 +2379,7 @@
   },
   "nextNonceWarning": {
     "message": "Mas mataas ang noncesa iminumungkahing nonce na $1",
-    "description": "The next nonce according to MetaMask's internal logic"
+    "description": "The next nonce according to XDCPay's internal logic"
   },
   "nftAddFailedMessage": {
     "message": "Hindi maidaragdag ang NFT dahil hindi tumutugma ang mga detalye ng pagmamay-ari. Siguraduhing tamang impormasyon ang iyong nailagay."
@@ -2389,7 +2389,7 @@
     "description": "$1 is a clickable link with text defined by the 'importNFTPage' key"
   },
   "nftDisclaimer": {
-    "message": "Disclaimer: Kinukuha ng MetaMask ang media file mula sa pinagmulang url. Ang url na ito kung minsan ay pinapalitan ng marketplace kung saan naka-mint ang NFT."
+    "message": "Disclaimer: Kinukuha ng XDCPay ang media file mula sa pinagmulang url. Ang url na ito kung minsan ay pinapalitan ng marketplace kung saan naka-mint ang NFT."
   },
   "nftOptions": {
     "message": "Mga Pagpipilian sa NFT"
@@ -2530,7 +2530,7 @@
     "description": "Description on an action button that appears in the What's New popup. Tells the user that if they click it, they will go to our Advanced settings page."
   },
   "notifications8DescriptionOne": {
-    "message": "Para sa MetaMask v10.4.0, hindi mo na kailangang ikonekta ang Ledger Live sa iyong Ledger device sa MetaMask.",
+    "message": "Para sa XDCPay v10.4.0, hindi mo na kailangang ikonekta ang Ledger Live sa iyong Ledger device sa XDCPay.",
     "description": "Description of a notification in the 'See What's New' popup. Describes changes for how Ledger Live is no longer needed to connect the device."
   },
   "notifications8DescriptionTwo": {
@@ -2542,8 +2542,8 @@
     "description": "Title for a notification in the 'See What's New' popup. Notifies ledger users that there is an improvement in how they can connect their device."
   },
   "notificationsDropLedgerFirefoxDescription": {
-    "message": "Hindi na sinusuportahan ng Firefox ang U2F, kaya ang Ledger ay hindi gagana sa MetaMask sa Firefox. Subukan ang MetaMask sa Google Chrome.",
-    "description": "Description of a notification in the 'See What's New' popup. Describes that ledger will not longer be supported for firefox users and they should use MetaMask on chrome for ledger support instead."
+    "message": "Hindi na sinusuportahan ng Firefox ang U2F, kaya ang Ledger ay hindi gagana sa XDCPay sa Firefox. Subukan ang XDCPay sa Google Chrome.",
+    "description": "Description of a notification in the 'See What's New' popup. Describes that ledger will not longer be supported for firefox users and they should use XDCPay on chrome for ledger support instead."
   },
   "notificationsDropLedgerFirefoxTitle": {
     "message": "Hindi na ipagpapatuloy ang Ledger Support para s Firefox",
@@ -2621,16 +2621,16 @@
     "message": "Ang datos na ito ay pinagsama-sama at samakatuwid ay hindi nagpapakilala para sa mga layunin ng General Data Protection Regulation (EU) 2016/679."
   },
   "onboardingMetametricsDescription": {
-    "message": "Nais ng MetaMask na mangalap ng datos ng paggamit upang mas maunawaan kung paano nakikipag-ugnayan ang aming mga user sa MetaMask. Gagamitin ang datos na ito upang ibigay ang serbisyo, na kinabibilangan ng pagpapabuti ng serbisyo batay sa iyong paggamit."
+    "message": "Nais ng XDCPay na mangalap ng datos ng paggamit upang mas maunawaan kung paano nakikipag-ugnayan ang aming mga user sa XDCPay. Gagamitin ang datos na ito upang ibigay ang serbisyo, na kinabibilangan ng pagpapabuti ng serbisyo batay sa iyong paggamit."
   },
   "onboardingMetametricsDescription2": {
-    "message": "Ang MetaMask ay..."
+    "message": "Ang XDCPay ay..."
   },
   "onboardingMetametricsDisagree": {
     "message": "Salamat nalang"
   },
   "onboardingMetametricsInfuraTerms": {
-    "message": "* Kapag ginamit mo ang Infura bilang iyong default na provider ng RPC sa MetaMask, kukunin ng Infura ang iyong IP address at ang iyong Ethereum wallet address kapag nagpadala ka ng transaksyon. Hindi namin iniimbak ang impormasyong ito sa paraan na nagpapahintulot sa aming mga system na iugnay ang dalawang piraso ng data na iyon. Para sa higit pang impormasyon kung paano nakikipag-ugnayan ang MetaMask at Infura mula sa pananaw ng pagkolekta ng data, tingnan ang aming update na $1. Para sa higit pang impormasyon sa aming mga kasanayan sa pagkapribado sa pangkalahatan, tingnan ang aming $2.",
+    "message": "* Kapag ginamit mo ang Infura bilang iyong default na provider ng RPC sa XDCPay kukunin ng Infura ang iyong IP address at ang iyong Ethereum wallet address kapag nagpadala ka ng transaksyon. Hindi namin iniimbak ang impormasyong ito sa paraan na nagpapahintulot sa aming mga system na iugnay ang dalawang piraso ng data na iyon. Para sa higit pang impormasyon kung paano nakikipag-ugnayan ang XDCPay at Infura mula sa pananaw ng pagkolekta ng data, tingnan ang aming update na $1. Para sa higit pang impormasyon sa aming mga kasanayan sa pagkapribado sa pangkalahatan, tingnan ang aming $2.",
     "description": "$1 represents `onboardingMetametricsInfuraTermsPolicyLink`, $2 represents `onboardingMetametricsInfuraTermsPolicy`"
   },
   "onboardingMetametricsInfuraTermsPolicy": {
@@ -2661,7 +2661,7 @@
     "message": "Magpapadala ng mga anonymous na kaganapang pag-click at pagtingin sa page"
   },
   "onboardingMetametricsTitle": {
-    "message": "Tulungan kaming mapahusay ang MetaMask"
+    "message": "Tulungan kaming mapahusay ang XDCPay"
   },
   "onboardingPinExtensionBillboardAccess": {
     "message": "Buong Access"
@@ -2679,16 +2679,16 @@
     "message": "Mag-click sa con ng browser extension"
   },
   "onboardingPinExtensionDescription": {
-    "message": "I-pin ang MetaMask sa iyong browser para madali itong ma-access at madaling makita ang mga kumpirmasyon ng transaksyon."
+    "message": "I-pin ang XDCPay sa iyong browser para madali itong ma-access at madaling makita ang mga kumpirmasyon ng transaksyon."
   },
   "onboardingPinExtensionDescription2": {
-    "message": "Maaari mong buksan ang MetaMask sa pamamagitan ng pag-click sa extension at pag-accesss sa wallet mo sa 1 click lang."
+    "message": "Maaari mong buksan ang XDCPay sa pamamagitan ng pag-click sa extension at pag-accesss sa wallet mo sa 1 click lang."
   },
   "onboardingPinExtensionDescription3": {
     "message": "Mag-click sa icon ng browser extension para agad itong ma-access"
   },
   "onboardingPinExtensionLabel": {
-    "message": "I-pin ang MetaMask"
+    "message": "I-pin ang XDCPay"
   },
   "onboardingPinExtensionStep1": {
     "message": "1"
@@ -2697,7 +2697,7 @@
     "message": "2"
   },
   "onboardingPinExtensionTitle": {
-    "message": "Ang pag-install ng iyong MetaMask ay kumpleto na!"
+    "message": "Ang pag-install ng iyong XDCPay ay kumpleto na!"
   },
   "onboardingUsePhishingDetectionDescription": {
     "message": "Ang mga alerto sa pagtuklas ng phishing ay umaasa sa komunikasyon sa $1. Ang jsDeliver ay magkakaroon ng access sa iyong IP address. Tingnan ang $2.",
@@ -2711,7 +2711,7 @@
   },
   "openFullScreenForLedgerWebHid": {
     "message": "Pumunta sa full screen para ikonekta ang iyong Ledger.",
-    "description": "Shown to the user on the confirm screen when they are viewing MetaMask in a popup window but need to connect their ledger via webhid."
+    "description": "Shown to the user on the confirm screen when they are viewing XDCPay in a popup window but need to connect their ledger via webhid."
   },
   "openInBlockExplorer": {
     "message": "Buksan sa block explorer"
@@ -2745,7 +2745,7 @@
     "description": "Used in the 'permission_rpc' message."
   },
   "outdatedBrowserNotification": {
-    "message": "Hindi na updated ang iyong browser. Kapag hindi mo inupdate ang iyong browser, hindi ka makakakuha ng mga security patch at bagong feature mula sa MetaMask."
+    "message": "Hindi na updated ang iyong browser. Kapag hindi mo inupdate ang iyong browser, hindi ka makakakuha ng mga security patch at bagong feature mula sa XDCPay."
   },
   "padlock": {
     "message": "Padlock"
@@ -2757,7 +2757,7 @@
     "message": "Sumali sa MetaMetrics"
   },
   "participateInMetaMetricsDescription": {
-    "message": "Sumali sa MetaMetrics para mas mapahusay namin ang MetaMask"
+    "message": "Sumali sa MetaMetrics para mas mapahusay namin ang XDCPay"
   },
   "password": {
     "message": "Password"
@@ -2766,7 +2766,7 @@
     "message": "Hindi sapat ang haba ng password"
   },
   "passwordSetupDetails": {
-    "message": "Ang password na ito ay magbubukas lamang ng iyong MetaMask wallet sa device na ito. Hindi matatakpan ng MetaMask ang password na ito."
+    "message": "Ang password na ito ay magbubukas lamang ng iyong XDCPay wallet sa device na ito. Hindi matatakpan ng XDCPay ang password na ito."
   },
   "passwordStrength": {
     "message": "Tibay ng password: $1",
@@ -2776,7 +2776,7 @@
     "message": "Mapapabuti ng matibay na password ang seguridad ng iyong wallet kung sakaling manakaw o makompromiso ang iyong device."
   },
   "passwordTermsWarning": {
-    "message": "Nauunawaan ko na hindi matatakpan ng MetaMask ang password na ito para sa akin. $1"
+    "message": "Nauunawaan ko na hindi matatakpan ng XDCPay ang password na ito para sa akin. $1"
   },
   "passwordsDontMatch": {
     "message": "Hindi Magkatugma ang Mga Password"
@@ -2834,7 +2834,7 @@
     "description": "The description for the `snap_cronjob` permission"
   },
   "permission_dialog": {
-    "message": "Ipakita ang mga dialog window sa MetaMask.",
+    "message": "Ipakita ang mga dialog window sa XDCPay.",
     "description": "The description for the `snap_dialog` permission"
   },
   "permission_ethereumAccounts": {
@@ -3003,7 +3003,7 @@
     "message": "Huwag kailanman ibahagi ang iyong Lihim na Parirala sa Pagbawi sa sinuman"
   },
   "recoveryPhraseReminderItemTwo": {
-    "message": "Hindi kailanman hihingin ng MetaMask team ang iyong Lihim na Parirala sa Pagbawi"
+    "message": "Hindi kailanman hihingin ng XDCPay team ang iyong Lihim na Parirala sa Pagbawi"
   },
   "recoveryPhraseReminderSubText": {
     "message": "Kinokontrol ng iyong Lihim na Parirala sa Pagbawi ang lahat ng iyong account."
@@ -3103,7 +3103,7 @@
     "message": "I-reset ang wallet"
   },
   "resetWalletSubHeader": {
-    "message": "Hindi nagpapanatili ang MetaMask ng kopya ng iyong password. Kung nagkakaproblema ka sa pag-unlock ng iyong account, kakailanganin mong i-reset ang iyong wallet. Magagawa mo ito sa pamamagitan ng pagbibigay ng Lihim na Parirala sa Pagbawi na ginamit mo noong mag-set up ka ng iyong wallet."
+    "message": "Hindi nagpapanatili ang XDCPay ng kopya ng iyong password. Kung nagkakaproblema ka sa pag-unlock ng iyong account, kakailanganin mong i-reset ang iyong wallet. Magagawa mo ito sa pamamagitan ng pagbibigay ng Lihim na Parirala sa Pagbawi na ginamit mo noong mag-set up ka ng iyong wallet."
   },
   "resetWalletUsingSRP": {
     "message": "Tatanggalin ng aksyong ito mula sa iyong device ang iyong kasalukuyang wallet at Lihim na Parirala sa Pagbawi, kasama ang listahan ng mga account na isinaayos mo. Pagkatapos i-reset ang Lihim na Parirala sa Pagbawi, makikita mo ang listahan ng mga account batay sa Lihim na Parirala sa Pagbawi na ginamit mo para mag-reset. Awtomatikong kasama sa bagong listahan na ito ang mga account na may balanse. Magagawa mo ring $1 na ginawa dati. Ang mga custom account na iyong na-import ay kinakailangang $2, at ang alinmang mga custom token na idinagdag mo sa account ay kailangang $3 din."
@@ -3112,7 +3112,7 @@
     "message": "Tiyakin na ginagamit mo ang tamang Lihim na Parirala sa Pagbawi bago magpatuloy. Hindi mo na ito maaaring bawiin."
   },
   "restartMetamask": {
-    "message": "I-restart ang MetaMask"
+    "message": "I-restart ang XDCPay"
   },
   "restore": {
     "message": "Ibalik"
@@ -3155,7 +3155,7 @@
     "description": "This is a sentence consisting of link using 'revealSeedWordsSRPName' as $1 and bolded text using 'revealSeedWordsDescription3' as $2."
   },
   "revealSeedWordsDescription2": {
-    "message": "Ang MetaMask ay isang $1. Nangangahulugan iyon na ikaw ang may-ari ng iyong SRP.",
+    "message": "Ang XDCPay ay isang $1. Nangangahulugan iyon na ikaw ang may-ari ng iyong SRP.",
     "description": "$1 is text link with the message from 'revealSeedWordsNonCustodialWallet'"
   },
   "revealSeedWordsDescription3": {
@@ -3178,7 +3178,7 @@
     "description": "$1 is bolded text using the message from 'revealSeedWordsWarning2'"
   },
   "revealSeedWordsWarning2": {
-    "message": "Hindi ito kailanman hihilingin ng Suporta sa MetaMask.",
+    "message": "Hindi ito kailanman hihilingin ng Suporta sa XDCPay.",
     "description": "The bolded texted in the second part of 'revealSeedWordsWarning'"
   },
   "revealTheSeedPhrase": {
@@ -3287,7 +3287,7 @@
     "message": "Kung may humingi ng iyong parirala sa pagbawi, malamang na sinusubukan ka nilang lokohin at nakawan ng mga pondo sa iyong wallet."
   },
   "seedPhraseIntroSidebarCopyTwo": {
-    "message": "Huwag kailanman ibahagi ang iyong Lihim na Parirala sa Pagbawi, kahit sa MetaMask!"
+    "message": "Huwag kailanman ibahagi ang iyong Lihim na Parirala sa Pagbawi, kahit sa XDCPay!"
   },
   "seedPhraseIntroSidebarTitleOne": {
     "message": "Ano ang Lihim na Parirala sa Pagbawi?"
@@ -3332,10 +3332,10 @@
     "message": "Pumili ng Account"
   },
   "selectAnAccountAlreadyConnected": {
-    "message": "Ang acount na ito ay nakakonekta na sa MetaMask"
+    "message": "Ang acount na ito ay nakakonekta na sa XDCPay"
   },
   "selectAnAccountHelp": {
-    "message": "Piliin ang mga custodian account para gamitin sa MetaMask Institutional."
+    "message": "Piliin ang mga custodian account para gamitin sa XDCPay Institutional."
   },
   "selectHdPath": {
     "message": "Pumili ng HD Path"
@@ -3386,7 +3386,7 @@
     "message": "Sepolia test network"
   },
   "setAdvancedPrivacySettingsDetails": {
-    "message": "Ginagamit ng MetaMask ang mga pinagkakatiwalaang serbisyo ng third-party na ito para mapahusay ang kakayahang magamit at kaligtasan ng produkto."
+    "message": "Ginagamit ng XDCPay ang mga pinagkakatiwalaang serbisyo ng third-party na ito para mapahusay ang kakayahang magamit at kaligtasan ng produkto."
   },
   "setApprovalForAll": {
     "message": "Itakda ang Pag-apruba para sa Lahat"
@@ -3639,7 +3639,7 @@
     "message": "Upang ibunyag ang iyong Lihim na Parirala sa Pagbawi, kailangan mong sagutin nang tama ang dalawang tanong"
   },
   "srpSecurityQuizQuestionOneQuestion": {
-    "message": "Kung mawala mo ang iyong Lihim na Parirala sa Pagbawi, ang MetaMask ay..."
+    "message": "Kung mawala mo ang iyong Lihim na Parirala sa Pagbawi, ang XDCPay ay..."
   },
   "srpSecurityQuizQuestionOneRightAnswer": {
     "message": "Hindi ka matutulungan"
@@ -3708,7 +3708,7 @@
     "message": "Error sa pagkuha ng mga log ng estado."
   },
   "stateLogFileName": {
-    "message": "Mga log ng estado ng MetaMask"
+    "message": "Mga log ng estado ng XDCPay"
   },
   "stateLogs": {
     "message": "Mga log ng estado"
@@ -3729,7 +3729,7 @@
     "message": "Ikonekta ang iyong Lattice1"
   },
   "step1LatticeWalletMsg": {
-    "message": "Maaari mong ikonekta ang MetaMask sa iyong Lattice1 device kapag na-set up na ito at online. I-unlock ang iyong device at ihanda ang iyong Device ID.",
+    "message": "Maaari mong ikonekta ang XDCPay sa iyong Lattice1 device kapag na-set up na ito at online. I-unlock ang iyong device at ihanda ang iyong Device ID.",
     "description": "$1 represents the `hardwareWalletSupportLinkConversion` localization key"
   },
   "step1LedgerWallet": {
@@ -3773,7 +3773,7 @@
   },
   "stxFailureDescription": {
     "message": "Ang biglaang pagbabago sa merkado ay maaaring maging sanhi ng pagkabigo. Kung magpatuloy ang problema, makipag-ugnyan sa $1.",
-    "description": "This message is shown to a user if their swap fails. The $1 will be replaced by support.metamask.io"
+    "description": "This message is shown to a user if their swap fails. The $1 will be replaced by support.XDCPay.io"
   },
   "stxPendingPrivatelySubmittingSwap": {
     "message": "Pribadong isinusumite ang iyong Swap..."
@@ -3884,7 +3884,7 @@
     "message": "I-edit ang limitasyon"
   },
   "swapEnableDescription": {
-    "message": "Kinakailangan ito at nagbibigay ito ng pahintulot sa MetaMask na i-swap ang iyong $1.",
+    "message": "Kinakailangan ito at nagbibigay ito ng pahintulot sa XDCPay na i-swap ang iyong $1.",
     "description": "Gives the user info about the required approval transaction for swaps. $1 will be the symbol of a token being approved for swaps."
   },
   "swapEnableTokenForSwapping": {
@@ -3902,7 +3902,7 @@
   },
   "swapFailedErrorDescriptionWithSupportLink": {
     "message": "Nangyayari ang mga pagkabigo sa transaksyon at narito kami upang tumulong. Kung magpapatuloy ang isyung ito, maaari kapag makipag-ugnay sa aming suporta sa customer sa $1 para sa karagdagang tulong.",
-    "description": "This message is shown to a user if their swap fails. The $1 will be replaced by support.metamask.io"
+    "description": "This message is shown to a user if their swap fails. The $1 will be replaced by support.XDCPay.io"
   },
   "swapFailedErrorTitle": {
     "message": "Nabigo ang pag-swap"
@@ -3940,7 +3940,7 @@
     "message": "Ang mga bayad sa gas sa nakaraang screen ay hinati sa dalawang transaksyon."
   },
   "swapGasFeesSummary": {
-    "message": "Ang mga bayad sa gas ay binabayaran sa mga minero ng crypto na nagpoproseso ng mga transaksyon sa $1 na network. Ang MetaMask ay hindi kumikita mula sa mga bayad sa gas.",
+    "message": "Ang mga bayad sa gas ay binabayaran sa mga minero ng crypto na nagpoproseso ng mga transaksyon sa $1 na network. Ang XDCPay ay hindi kumikita mula sa mga bayad sa gas.",
     "description": "$1 is the selected network, e.g. Ethereum or BSC"
   },
   "swapHighSlippage": {
@@ -3950,12 +3950,12 @@
     "message": "Napakataas ng halaga ng slippage."
   },
   "swapIncludesMMFee": {
-    "message": "Kasama ang $1% MetaMask fee.",
-    "description": "Provides information about the fee that metamask takes for swaps. $1 is a decimal number."
+    "message": "Kasama ang $1% XDCPay fee.",
+    "description": "Provides information about the fee that XDCPay takes for swaps. $1 is a decimal number."
   },
   "swapIncludesMetaMaskFeeViewAllQuotes": {
-    "message": "Kabilang ang $1% na bayad sa MetaMask – $2",
-    "description": "Provides information about the fee that metamask takes for swaps. $1 is a decimal number and $2 is a link to view all quotes."
+    "message": "Kabilang ang $1% na bayad sa XDCPay – $2",
+    "description": "Provides information about the fee that XDCPay takes for swaps. $1 is a decimal number and $2 is a link to view all quotes."
   },
   "swapLearnMore": {
     "message": "Alamin pa ang tungkol sa mga Swap"
@@ -3970,11 +3970,11 @@
     "message": "Max na slippage"
   },
   "swapMetaMaskFee": {
-    "message": "Bayarin sa MetaMask"
+    "message": "Bayarin sa XDCPay"
   },
   "swapMetaMaskFeeDescription": {
-    "message": "Ang bayad na $1% ay awtomatikong isinasali sa quote na ito. Babayaran mo ito bilang kapalit ng isang lisensya para gamitin ang software ng pagsasama-sama ng impormasyon ng tagapagbigay ng liquidity ng MetaMask.",
-    "description": "Provides information about the fee that metamask takes for swaps. $1 is a decimal number."
+    "message": "Ang bayad na $1% ay awtomatikong isinasali sa quote na ito. Babayaran mo ito bilang kapalit ng isang lisensya para gamitin ang software ng pagsasama-sama ng impormasyon ng tagapagbigay ng liquidity ng XDCPay.",
+    "description": "Provides information about the fee that XDCPay takes for swaps. $1 is a decimal number."
   },
   "swapNQuotesWithDot": {
     "message": "$1 quote.",
@@ -4227,7 +4227,7 @@
     "message": "Lumipat"
   },
   "switchEthereumChainConfirmationDescription": {
-    "message": "Dahil dito, lilipat sa dating idinagdag na network ang napiling network sa loob ng MetaMask:"
+    "message": "Dahil dito, lilipat sa dating idinagdag na network ang napiling network sa loob ng XDCPay:"
   },
   "switchEthereumChainConfirmationTitle": {
     "message": "Payagan ang site na ito para lumipat ng network?"
@@ -4273,7 +4273,7 @@
     "message": "Mga Tuntunin ng Serbisyo"
   },
   "termsOfUseAgreeText": {
-    "message": " Sumasang-ayon ako sa Mga Tuntunin sa Paggamit, na nalalapat sa aking paggamit ng MetaMask at lahat ng feature nito"
+    "message": " Sumasang-ayon ako sa Mga Tuntunin sa Paggamit, na nalalapat sa aking paggamit ng XDCPay at lahat ng feature nito"
   },
   "termsOfUseFooterText": {
     "message": "Mag-scroll upang basahin ang lahat ng seksyon"
@@ -4288,7 +4288,7 @@
     "message": "Tema"
   },
   "themeDescription": {
-    "message": "Piliin ang mas gusto mong tema ng MetaMask."
+    "message": "Piliin ang mas gusto mong tema ng XDCPay."
   },
   "thingsToKeep": {
     "message": "Mga bagay na dapat tandaan:"
@@ -4432,7 +4432,7 @@
     "message": "Minungkahing site"
   },
   "transactionDetailDappGasTooltip": {
-    "message": "I-edit upang magamit ang inirerekomendang bayad sa gas ng MetaMask batay sa pinakabagong block."
+    "message": "I-edit upang magamit ang inirerekomendang bayad sa gas ng XDCPay batay sa pinakabagong block."
   },
   "transactionDetailGasHeading": {
     "message": "Tinantyang bayad sa gas"
@@ -4444,7 +4444,7 @@
     "message": "Ang mga bayad sa gas ay itinakda ng network at nagbabago-bago batay sa network traffic at pagiging kumplikado ng transaksyon."
   },
   "transactionDetailGasTooltipIntro": {
-    "message": "Ang mga bayad sa gas ay binabayaran sa mga minero ng crypto na nagpoproseso ng mga transaksyon sa $1 na network. Ang MetaMask ay hindi kumikita mula sa mga bayad sa gas."
+    "message": "Ang mga bayad sa gas ay binabayaran sa mga minero ng crypto na nagpoproseso ng mga transaksyon sa $1 na network. Ang XDCPay ay hindi kumikita mula sa mga bayad sa gas."
   },
   "transactionDetailGasTotalSubtitle": {
     "message": "Halaga + bayad sa gas"
@@ -4539,7 +4539,7 @@
     "description": "$1 is the wallet device name; $2 is a link to wallet connection guide"
   },
   "troubleStarting": {
-    "message": "Nagkaproblema ang MetaMask sa pagsisimula. Maaaring paulit-ulit ang error na ito, kaya subukang i-restart ang extension."
+    "message": "Nagkaproblema ang XDCPay sa pagsisimula. Maaaring paulit-ulit ang error na ito, kaya subukang i-restart ang extension."
   },
   "trustSiteApprovePermission": {
     "message": "Sa pamamagitan ng pagbibigay ng pahintulot, pinapayagan mo ang sumusunod na $1 para ma-access ang pondo mo"
@@ -4561,7 +4561,7 @@
   },
   "u2f": {
     "message": "U2F",
-    "description": "A name on an API for the browser to interact with devices that support the U2F protocol. On some browsers we use it to connect MetaMask to Ledger devices."
+    "description": "A name on an API for the browser to interact with devices that support the U2F protocol. On some browsers we use it to connect XDCPay to Ledger devices."
   },
   "unapproved": {
     "message": "Hindi inaprubahan"
@@ -4620,7 +4620,7 @@
     "message": "I-decode ang mga smart na kontrata"
   },
   "use4ByteResolutionDescription": {
-    "message": "Upang mapabuti ang karanasan ng user, kino-customize namin ang tab ng mga aktibidad gamit ang mga mensahe ayon sa mga smart na kontrata kung saan ka nakikipag-ugnayan. Gumagamit ang MetaMask ng serbisyong tinatawag na 4byte.directory para i-decode ang datos at ipakita sa iyo ang bersyon ng smart na kontrata na mas madaling basahin. Tumutulong ito na bawasan ang pagkakataon na aprubahan mo ang mga mapaminsalang aksyon sa smart na kontrata, ngunit maaaring magresulta sa pagbabahagi ng iyong IP address."
+    "message": "Upang mapabuti ang karanasan ng user, kino-customize namin ang tab ng mga aktibidad gamit ang mga mensahe ayon sa mga smart na kontrata kung saan ka nakikipag-ugnayan. Gumagamit ang XDCPay ng serbisyong tinatawag na 4byte.directory para i-decode ang datos at ipakita sa iyo ang bersyon ng smart na kontrata na mas madaling basahin. Tumutulong ito na bawasan ang pagkakataon na aprubahan mo ang mga mapaminsalang aksyon sa smart na kontrata, ngunit maaaring magresulta sa pagbabahagi ng iyong IP address."
   },
   "useMultiAccountBalanceChecker": {
     "message": "Maramihang kahilingan sa balanse ng account"
@@ -4721,10 +4721,10 @@
     "message": "Matagumpay mong naprotektahan ang iyong wallet. Panatilihing ligtas at sikreto ang iyong Lihim na Parirala sa Pagbawi - pananagutan mo ito!"
   },
   "walletCreationSuccessReminder1": {
-    "message": "Di mababawi ng MetaMask ang iyong Lihim na Parirala sa Pagbawi."
+    "message": "Di mababawi ng XDCPay ang iyong Lihim na Parirala sa Pagbawi."
   },
   "walletCreationSuccessReminder2": {
-    "message": "Kailanman ay hindi hihingin ng MetaMask ang iyong Lihim na Parirala sa Pagbawi."
+    "message": "Kailanman ay hindi hihingin ng XDCPay ang iyong Lihim na Parirala sa Pagbawi."
   },
   "walletCreationSuccessReminder3": {
     "message": "$1 sa sinuman o panganib na manakaw ang iyong pondo",
@@ -4775,7 +4775,7 @@
     "message": "Magsaliksik sa mga decentralized app"
   },
   "welcomeLoginDescription": {
-    "message": "Gamitin ang iyong MetaMask para mag-log in sa mga decentralized app, hindi na kailangang mag-sign up."
+    "message": "Gamitin ang iyong XDCPay para mag-log in sa mga decentralized app, hindi na kailangang mag-sign up."
   },
   "welcomeLoginTitle": {
     "message": "Mag-hello sa iyong wallet"
@@ -4784,11 +4784,11 @@
     "message": "Magsimula na tayo"
   },
   "welcomeToMetaMaskIntro": {
-    "message": "Ang MetaMask na pinagkakatiwalaan ng milyun-milyon ay isang ligtas na wallet na ginagawang accessible ang mundo ng web3 para sa lahat."
+    "message": "Ang XDCPay na pinagkakatiwalaan ng milyun-milyon ay isang ligtas na wallet na ginagawang accessible ang mundo ng web3 para sa lahat."
   },
   "whatsNew": {
     "message": "Ano'ng bago",
-    "description": "This is the title of a popup that gives users notifications about new features and updates to MetaMask."
+    "description": "This is the title of a popup that gives users notifications about new features and updates to XDCPay."
   },
   "whatsThis": {
     "message": "Ano ito?"

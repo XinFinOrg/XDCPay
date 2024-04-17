@@ -121,7 +121,7 @@
     "message": "Αποκτήστε πρόσβαση στο πορτοφόλι σας με τη Μυστική σας Φράση Ανάκτησης"
   },
   "accessYourWalletWithSRPDescription": {
-    "message": "Το MetaMask δεν μπορεί να ανακτήσει τον κωδικό σας. Θα χρησιμοποιήσουμε τη Μυστική σας Φράση Ανάκτησης για να επιβεβαιώσουμε την κυριότητά σας, να ανακτήσουμε το πορτοφόλι σας και να ορίσουμε ένα νέο κωδικό. Πρώτα, εισάγετε τη Μυστική Φράση σας Ανάκτησης που σας δόθηκε όταν δημιουργήσατε το πορτοφόλι σας. $1",
+    "message": "Το XDCPay δεν μπορεί να ανακτήσει τον κωδικό σας. Θα χρησιμοποιήσουμε τη Μυστική σας Φράση Ανάκτησης για να επιβεβαιώσουμε την κυριότητά σας, να ανακτήσουμε το πορτοφόλι σας και να ορίσουμε ένα νέο κωδικό. Πρώτα, εισάγετε τη Μυστική Φράση σας Ανάκτησης που σας δόθηκε όταν δημιουργήσατε το πορτοφόλι σας. $1",
     "description": "$1 is the words 'Learn More' from key 'learnMore', separated here so that it can be added as a link"
   },
   "accessingYourCamera": {
@@ -178,7 +178,7 @@
     "message": "Προσθήκη λογαριασμού"
   },
   "addAcquiredTokens": {
-    "message": "Προσθέστε τα tokens που αποκτήσατε χρησιμοποιώντας το MetaMask"
+    "message": "Προσθέστε τα tokens που αποκτήσατε χρησιμοποιώντας το XDCPay"
   },
   "addAlias": {
     "message": "Προσθήκη ψευδωνύμου"
@@ -193,10 +193,10 @@
     "message": "Προσθήκη προσαρμοσμένου δικτύου"
   },
   "addEthereumChainConfirmationDescription": {
-    "message": "Αυτό θα επιτρέψει σε αυτό το δίκτυο να χρησιμοποιηθεί στο MetaMask."
+    "message": "Αυτό θα επιτρέψει σε αυτό το δίκτυο να χρησιμοποιηθεί στο XDCPay."
   },
   "addEthereumChainConfirmationRisks": {
-    "message": "Το MetaMask δεν επαληθεύει τα προσαρμοσμένα δίκτυα."
+    "message": "Το XDCPay δεν επαληθεύει τα προσαρμοσμένα δίκτυα."
   },
   "addEthereumChainConfirmationRisksLearnMore": {
     "message": "Μάθετε για το $1.",
@@ -310,7 +310,7 @@
     "message": "Το τέλος προτεραιότητας (γνωστό και ως “miner tip”) πηγαίνει άμεσα στους miner και τους ενθαρρύνει να δώσουν προτεραιότητα στη συναλλαγή σας."
   },
   "agreeTermsOfUse": {
-    "message": "Συμφωνώ με το $1 του MetaMask",
+    "message": "Συμφωνώ με το $1 του XDCPay",
     "description": "$1 is the `terms` link"
   },
   "airgapVault": {
@@ -335,7 +335,7 @@
     "message": "Ειδοποιήσεις"
   },
   "allCustodianAccountsConnectedSubtitle": {
-    "message": "Είτε έχετε ήδη συνδέσει όλους τους λογαριασμούς θεματοφύλακα είτε δεν έχετε κανέναν λογαριασμό να συνδέσετε με το MetaMask Institutional."
+    "message": "Είτε έχετε ήδη συνδέσει όλους τους λογαριασμούς θεματοφύλακα είτε δεν έχετε κανέναν λογαριασμό να συνδέσετε με το XDCPay Institutional."
   },
   "allCustodianAccountsConnectedTitle": {
     "message": "Δεν υπάρχουν διαθέσιμοι λογαριασμοί για σύνδεση"
@@ -373,19 +373,19 @@
     "description": "The description of the application"
   },
   "appName": {
-    "message": "MetaMask",
+    "message": "XDCPay",
     "description": "The name of the application"
   },
   "appNameBeta": {
-    "message": "MetaMask Beta",
+    "message": "XDCPay Beta",
     "description": "The name of the application (Beta)"
   },
   "appNameFlask": {
-    "message": "MetaMask Flask",
+    "message": "XDCPay Flask",
     "description": "The name of the application (Flask)"
   },
   "appNameMmi": {
-    "message": "MetaMask Institutional",
+    "message": "XDCPay Institutional",
     "description": "The name of the application (MMI)"
   },
   "approve": {
@@ -459,7 +459,7 @@
     "message": "Χρονόμετρο Αυτόματης Αποσύνδεσης (λεπτά)"
   },
   "autoLockTimeLimitDescription": {
-    "message": "Ρυθμίστε τον χρόνο αδράνειας σε λεπτά πριν αποσυνδεθεί αυτόματα το MetaMask."
+    "message": "Ρυθμίστε τον χρόνο αδράνειας σε λεπτά πριν αποσυνδεθεί αυτόματα το XDCPay."
   },
   "average": {
     "message": "Μέσος Όρος"
@@ -474,7 +474,7 @@
     "message": "Αντίγραφο ασφαλείας"
   },
   "backupApprovalInfo": {
-    "message": "Αυτός ο μυστικός κωδικός απαιτείται για ανάκτηση του πορτοφολιού σας σε περίπτωση που χάσετε τη συσκευή σας, ξεχάσετε τον κωδικό πρόσβασης, πρέπει να κάνετε επανεγκατάσταση του MetaMask, ή θέλετε να έχετε πρόσβαση στο πορτοφόλι σας από μια άλλη συσκευή."
+    "message": "Αυτός ο μυστικός κωδικός απαιτείται για ανάκτηση του πορτοφολιού σας σε περίπτωση που χάσετε τη συσκευή σας, ξεχάσετε τον κωδικό πρόσβασης, πρέπει να κάνετε επανεγκατάσταση του XDCPay, ή θέλετε να έχετε πρόσβαση στο πορτοφόλι σας από μια άλλη συσκευή."
   },
   "backupApprovalNotice": {
     "message": "Δημιουργήστε αντίγραφο ασφαλείας της Μυστικής σας Φράσης Ανάκτησης για να διατηρήσετε το πορτοφόλι και τα χρήματά σας ασφαλή."
@@ -511,19 +511,19 @@
     "description": "$1 represents the word 'here' in a hyperlink"
   },
   "betaMetamaskInstitutionalVersion": {
-    "message": "Δοκιμαστική Έκδοση του MetaMask Institutional"
+    "message": "Δοκιμαστική Έκδοση του XDCPay Institutional"
   },
   "betaMetamaskVersion": {
-    "message": "Δοκιμαστική έκδοση MetaMask"
+    "message": "Δοκιμαστική έκδοση XDCPay"
   },
   "betaTerms": {
     "message": "Όροι Χρήσης της Δοκιμαστικής Έκδοσης"
   },
   "betaWalletCreationSuccessReminder1": {
-    "message": "Η δοκιμαστική έκδοση του MetaMask δεν μπορεί να ανακτήσει τη Μυστική Φράση Ανάκτησής σας."
+    "message": "Η δοκιμαστική έκδοση του XDCPay δεν μπορεί να ανακτήσει τη Μυστική Φράση Ανάκτησής σας."
   },
   "betaWalletCreationSuccessReminder2": {
-    "message": "Η δοκιμαστική έκδοση του MetaMask δεν θα σας ζητήσει ποτέ τη Μυστική Φράση Ανάκτησής σας."
+    "message": "Η δοκιμαστική έκδοση του XDCPay δεν θα σας ζητήσει ποτέ τη Μυστική Φράση Ανάκτησής σας."
   },
   "blockExplorerAccountAction": {
     "message": "Λογαριασμός",
@@ -593,7 +593,7 @@
     "message": "Δημιουργήστε τη λίστα επαφών σας"
   },
   "builtAroundTheWorld": {
-    "message": "Το MetaMask έχει σχεδιαστεί και λειτουργεί σε όλο τον κόσμο."
+    "message": "Το XDCPay έχει σχεδιαστεί και λειτουργεί σε όλο τον κόσμο."
   },
   "busy": {
     "message": "Απασχολημένο"
@@ -655,7 +655,7 @@
     "description": "$1 is a link to the privacy policy"
   },
   "chromeRequiredForHardwareWallets": {
-    "message": "Θα πρέπει να χρησιμοποιήσετε το MetaMask στο Google Chrome για να συνδεθείτε στο Πορτοφόλι Υλικού."
+    "message": "Θα πρέπει να χρησιμοποιήσετε το XDCPay στο Google Chrome για να συνδεθείτε στο Πορτοφόλι Υλικού."
   },
   "clear": {
     "message": "Εκκαθάριση"
@@ -686,10 +686,10 @@
     "message": "CoinGecko"
   },
   "configureSnapPopupDescription": {
-    "message": "Τώρα αποχωρείτε από το MetaMask για να ρυθμίσετε αυτό το snap."
+    "message": "Τώρα αποχωρείτε από το XDCPay για να ρυθμίσετε αυτό το snap."
   },
   "configureSnapPopupInstallDescription": {
-    "message": "Τώρα αποχωρείτε από το MetaMask για να εγκαταστήσετε αυτό το snap."
+    "message": "Τώρα αποχωρείτε από το XDCPay για να εγκαταστήσετε αυτό το snap."
   },
   "configureSnapPopupInstallTitle": {
     "message": "Εγκατάσταση του snap"
@@ -764,7 +764,7 @@
     "description": "$1 is the number of accounts to which the web3 site/application is asking to connect; this will substitute $1 in connectToMultiple"
   },
   "connectWithMetaMask": {
-    "message": "Σύνδεση με το MetaMask"
+    "message": "Σύνδεση με το XDCPay"
   },
   "connectedAccountsDescriptionPlural": {
     "message": "Έχετε $1 λογαριασμούς συνδεδεμένους με αυτόν τον ιστότοπο.",
@@ -774,7 +774,7 @@
     "message": "Έχετε 1 λογαριασμό συνδεδεμένο σε αυτόν τον ιστότοπο."
   },
   "connectedAccountsEmptyDescription": {
-    "message": "To MetaMask δεν είναι συνδεδεμένo σε αυτόν τον ιστότοπο. Για να συνδεθείτε σε έναν ιστότοπο web3, βρείτε και κάντε κλικ στο κουμπί σύνδεσης."
+    "message": "To XDCPay δεν είναι συνδεδεμένo σε αυτόν τον ιστότοπο. Για να συνδεθείτε σε έναν ιστότοπο web3, βρείτε και κάντε κλικ στο κουμπί σύνδεσης."
   },
   "connectedSites": {
     "message": "Συνδεδεμένοι ιστότοποι"
@@ -868,7 +868,7 @@
     "message": "Token του συμβαλλόμενου"
   },
   "convertTokenToNFTDescription": {
-    "message": "Εντοπίσαμε ότι αυτό το περιουσιακό στοιχείο είναι NFT. Το MetaMask υποστηρίζει πλέον εξ'ορισμού πλήρως τα NFT. Θέλετε να το αφαιρέσετε από τη λίστα των token σας και να το προσθέσετε ως NFT;"
+    "message": "Εντοπίσαμε ότι αυτό το περιουσιακό στοιχείο είναι NFT. Το XDCPay υποστηρίζει πλέον εξ'ορισμού πλήρως τα NFT. Θέλετε να το αφαιρέσετε από τη λίστα των token σας και να το προσθέσετε ως NFT;"
   },
   "convertTokenToNFTExistDescription": {
     "message": "Εντοπίσαμε ότι αυτό το περιουσιακό στοιχείο προστέθηκε ως NFT. Θέλετε να το αφαιρέσετε από τη λίστα των token σας;"
@@ -950,7 +950,7 @@
     "message": "Θεματοφύλακας"
   },
   "custodianAccountAddedDesc": {
-    "message": "Μπορείτε τώρα να χρησιμοποιήσετε τους λογαριασμούς θεματοφύλακά σας στο MetaMask Institutional."
+    "message": "Μπορείτε τώρα να χρησιμοποιήσετε τους λογαριασμούς θεματοφύλακά σας στο XDCPay Institutional."
   },
   "custodianAccountAddedTitle": {
     "message": "Έχουν προστεθεί επιλεγμένοι λογαριασμοί θεματοφύλακα."
@@ -959,7 +959,7 @@
     "message": "Παρακαλούμε μεταβείτε στο $1 και κάντε κλικ στο κουμπί «Σύνδεση με το MMI» στο περιβάλλον εργασίας χρήστη για να συνδέσετε ξανά τους λογαριασμούς σας με το MMI."
   },
   "custodianReplaceRefreshTokenChangedSubtitle": {
-    "message": "Τώρα μπορείτε να χρησιμοποιήσετε τους λογαριασμούς θεματοφύλακα στο MetaMask Institutional."
+    "message": "Τώρα μπορείτε να χρησιμοποιήσετε τους λογαριασμούς θεματοφύλακα στο XDCPay Institutional."
   },
   "custodianReplaceRefreshTokenChangedTitle": {
     "message": "Το token θεματοφύλακα ανανεώθηκε"
@@ -977,7 +977,7 @@
     "message": "Παρακαλούμε μεταβείτε στο $1 και κάντε κλικ στο κουμπί \"Σύνδεση με το MMI\" στο περιβάλλον εργασίας χρήστη για να συνδέσετε ξανά τους λογαριασμούς σας με το MMI."
   },
   "custodyRefreshTokenModalDescription1": {
-    "message": "Ο θεματοφύλακάς σας εκδίδει ένα token που πιστοποιεί την επέκταση του MetaMask Institutional, επιτρέποντάς σας να συνδέσετε τους λογαριασμούς σας."
+    "message": "Ο θεματοφύλακάς σας εκδίδει ένα token που πιστοποιεί την επέκταση του XDCPay Institutional, επιτρέποντάς σας να συνδέσετε τους λογαριασμούς σας."
   },
   "custodyRefreshTokenModalDescription2": {
     "message": "Αυτό το token λήγει μετά από ένα ορισμένο χρονικό διάστημα για λόγους ασφαλείας. Αυτό απαιτεί την επανασύνδεσή σας στο MMI."
@@ -1119,22 +1119,22 @@
     "message": "Εφαρμογή για υπολογιστές"
   },
   "desktopConnectionCriticalErrorDescription": {
-    "message": "Αυτό το σφάλμα μπορεί να είναι περιστασιακό, οπότε δοκιμάστε να επανεκκινήσετε την επέκταση ή απενεργοποιήστε το MetaMask Desktop."
+    "message": "Αυτό το σφάλμα μπορεί να είναι περιστασιακό, οπότε δοκιμάστε να επανεκκινήσετε την επέκταση ή απενεργοποιήστε το XDCPay Desktop."
   },
   "desktopConnectionCriticalErrorTitle": {
-    "message": "Το MetaMask είχε πρόβλημα κατά την εκκίνηση"
+    "message": "Το XDCPay είχε πρόβλημα κατά την εκκίνηση"
   },
   "desktopConnectionLostErrorDescription": {
-    "message": "Βεβαιωθείτε ότι έχετε την εφαρμογή για την επιφάνεια εργασίας σε λειτουργία ή απενεργοποιήστε το MetaMask Desktop."
+    "message": "Βεβαιωθείτε ότι έχετε την εφαρμογή για την επιφάνεια εργασίας σε λειτουργία ή απενεργοποιήστε το XDCPay Desktop."
   },
   "desktopConnectionLostErrorTitle": {
-    "message": "Η σύνδεση με το MetaMask Desktop χάθηκε"
+    "message": "Η σύνδεση με το XDCPay Desktop χάθηκε"
   },
   "desktopDisableButton": {
     "message": "Απενεργοποιήστε την εφαρμογή για την επιφάνεια εργασίας"
   },
   "desktopDisableErrorCTA": {
-    "message": "Απενεργοποιήστε το MetaMask Desktop"
+    "message": "Απενεργοποιήστε το XDCPay Desktop"
   },
   "desktopEnableButton": {
     "message": "Ενεργοποιήστε την εφαρμογή για την επιφάνεια εργασίας"
@@ -1146,52 +1146,52 @@
     "message": "Επιστροφή στη σελίδα Ρυθμίσεις"
   },
   "desktopErrorRestartMMCTA": {
-    "message": "Επανεκκίνηση του MetaMask"
+    "message": "Επανεκκίνηση του XDCPay"
   },
   "desktopNotFoundErrorCTA": {
-    "message": "Λήψη του MetaMask Desktop"
+    "message": "Λήψη του XDCPay Desktop"
   },
   "desktopNotFoundErrorDescription1": {
     "message": "Βεβαιωθείτε ότι έχετε ενεργοποιήσει και εκτελείτε την εφαρμογή για την επιφάνεια εργασίας."
   },
   "desktopNotFoundErrorDescription2": {
-    "message": "Αν δεν έχετε εγκαταστήσει την εφαρμογή για την επιφάνεια εργασίας, κατεβάστε την από τον ιστότοπο του MetaMask."
+    "message": "Αν δεν έχετε εγκαταστήσει την εφαρμογή για την επιφάνεια εργασίας, κατεβάστε την από τον ιστότοπο του XDCPay."
   },
   "desktopNotFoundErrorTitle": {
-    "message": "Το MetaMask Desktop δεν βρέθηκε"
+    "message": "Το XDCPay Desktop δεν βρέθηκε"
   },
   "desktopOpenOrDownloadCTA": {
-    "message": "Άνοιγμα του MetaMask Desktop"
+    "message": "Άνοιγμα του XDCPay Desktop"
   },
   "desktopOutdatedErrorCTA": {
-    "message": "Ενημέρωση του MetaMask Desktop"
+    "message": "Ενημέρωση του XDCPay Desktop"
   },
   "desktopOutdatedErrorDescription": {
-    "message": "Η εφαρμογή MetaMask Desktop πρέπει να αναβαθμιστεί."
+    "message": "Η εφαρμογή XDCPay Desktop πρέπει να αναβαθμιστεί."
   },
   "desktopOutdatedErrorTitle": {
-    "message": "Το MetaMask Desktop είναι ξεπερασμένο"
+    "message": "Το XDCPay Desktop είναι ξεπερασμένο"
   },
   "desktopOutdatedExtensionErrorCTA": {
-    "message": "Ενημέρωση της επέκτασης MetaMask"
+    "message": "Ενημέρωση της επέκτασης XDCPay"
   },
   "desktopOutdatedExtensionErrorDescription": {
-    "message": "Η επέκταση του MetaMask πρέπει να αναβαθμιστεί."
+    "message": "Η επέκταση του XDCPay πρέπει να αναβαθμιστεί."
   },
   "desktopOutdatedExtensionErrorTitle": {
-    "message": "Η επέκταση του MetaMask είναι ξεπερασμένη"
+    "message": "Η επέκταση του XDCPay είναι ξεπερασμένη"
   },
   "desktopPageDescription": {
     "message": "Εάν η ζεύξη είναι επιτυχής, η επέκταση θα επανεκκινηθεί και θα πρέπει να εισαγάγετε εκ νέου τον κωδικό πρόσβασής σας."
   },
   "desktopPageSubTitle": {
-    "message": "Ανοίξτε το MetaMask Desktop και πληκτρολογήστε αυτόν τον κωδικό"
+    "message": "Ανοίξτε το XDCPay Desktop και πληκτρολογήστε αυτόν τον κωδικό"
   },
   "desktopPageTitle": {
     "message": "Ζεύξη με το Desktop"
   },
   "desktopPairedWarningDeepLink": {
-    "message": "Μεταβείτε στις Ρυθμίσεις στο MetaMask Desktop"
+    "message": "Μεταβείτε στις Ρυθμίσεις στο XDCPay Desktop"
   },
   "desktopPairedWarningDescription": {
     "message": "Αν θέλετε να ξεκινήσετε μια νέα ζεύξη, αφαιρέστε την τρέχουσα σύνδεση."
@@ -1209,10 +1209,10 @@
     "message": "desktopRouteNotFoundErrorTitle"
   },
   "desktopUnexpectedErrorCTA": {
-    "message": "Επιστροφή στην αρχική σελίδα του MetaMask"
+    "message": "Επιστροφή στην αρχική σελίδα του XDCPay"
   },
   "desktopUnexpectedErrorDescription": {
-    "message": "Ελέγξτε το MetaMask Desktop για να επαναφέρετε τη σύνδεση"
+    "message": "Ελέγξτε το XDCPay Desktop για να επαναφέρετε τη σύνδεση"
   },
   "desktopUnexpectedErrorTitle": {
     "message": "Κάτι πήγε στραβά..."
@@ -1455,7 +1455,7 @@
     "description": "Message displayed on generic error page in the popup UI, $1 is a clickable link with text defined by the 'here' key. The link will open to a form where users can file support tickets."
   },
   "errorPageTitle": {
-    "message": "Το MetaMask αντιμετώπισε ένα σφάλμα",
+    "message": "Το XDCPay αντιμετώπισε ένα σφάλμα",
     "description": "Title of generic error page"
   },
   "errorStack": {
@@ -1537,15 +1537,15 @@
   },
   "flaskWelcomeWarning2": {
     "message": "Δεν εγγυόμαστε την ασφάλεια ή τη σταθερότητα αυτής της επέκτασης. Τα νέα API που προσφέρει το Flask δεν παρέχουν ισχυρή προστασία κατά των επιθέσεων phishing, πράγμα που σημαίνει ότι οποιοσδήποτε ιστότοπος ή snap που απαιτεί το Flask, ενδέχεται να είναι μια κακόβουλη απόπειρα κλοπής των περιουσιακών στοιχείων σας.",
-    "description": "This explains the risks of using MetaMask Flask"
+    "description": "This explains the risks of using XDCPay Flask"
   },
   "flaskWelcomeWarning3": {
-    "message": "Όλα τα API του Flask είναι πειραματικά. Μπορεί να αλλάξουν ή να αφαιρεθούν χωρίς προειδοποίηση ή μπορεί να παραμείνουν στο Flask επ' αόριστον, χωρίς ποτέ να μεταφερθούν στο σταθερό MetaMask. Χρησιμοποιήστε τα με δική σας ευθύνη.",
+    "message": "Όλα τα API του Flask είναι πειραματικά. Μπορεί να αλλάξουν ή να αφαιρεθούν χωρίς προειδοποίηση ή μπορεί να παραμείνουν στο Flask επ' αόριστον, χωρίς ποτέ να μεταφερθούν στο σταθερό XDCPay. Χρησιμοποιήστε τα με δική σας ευθύνη.",
     "description": "This message warns developers about unstable Flask APIs"
   },
   "flaskWelcomeWarning4": {
-    "message": "Βεβαιωθείτε ότι έχετε απενεργοποιήσει την κανονική σας επέκταση MetaMask όταν χρησιμοποιείτε το Flask.",
-    "description": "This message calls to pay attention about multiple versions of MetaMask running on the same site (Flask + Prod)"
+    "message": "Βεβαιωθείτε ότι έχετε απενεργοποιήσει την κανονική σας επέκταση XDCPay όταν χρησιμοποιείτε το Flask.",
+    "description": "This message calls to pay attention about multiple versions of XDCPay running on the same site (Flask + Prod)"
   },
   "flaskWelcomeWarningAcceptButton": {
     "message": "Αποδέχομαι τον κίνδυνο",
@@ -1691,7 +1691,7 @@
     "message": "Οι ενσωματώσεις πορτοφολιών υλικού χρησιμοποιούν κλήσεις API σε εξωτερικούς διακομιστές, οι οποίοι μπορούν να δουν τη διεύθυνση IP σας και τις διευθύνσεις έξυπνων συμβολαίων με τις οποίες αλληλεπιδράτε."
   },
   "hardwareWalletsMsg": {
-    "message": "Επιλέξτε ένα πορτοφόλι υλικού το οποίο θέλετε να χρησιμοποιήσετε με το MetaMask."
+    "message": "Επιλέξτε ένα πορτοφόλι υλικού το οποίο θέλετε να χρησιμοποιήσετε με το XDCPay."
   },
   "here": {
     "message": "εδώ",
@@ -1748,7 +1748,7 @@
     "description": "$1 is a message from 'holdToRevealContent4' and $2 is a text link with the message from 'holdToRevealContent5'"
   },
   "holdToRevealContent4": {
-    "message": "Η Υποστήριξη του MetaMask δεν θα τη ζητήσει ποτέ,",
+    "message": "Η Υποστήριξη του XDCPay δεν θα τη ζητήσει ποτέ,",
     "description": "Part of 'holdToRevealContent3'"
   },
   "holdToRevealContent5": {
@@ -1810,7 +1810,7 @@
     "message": "Αυτό δεν είναι ένα έγκυρο ιδιωτικό κλειδί. Πρέπει να πληκτρολογήσετε μια δεκαεξαδική συμβολοσειρά μήκους 64 χαρακτήρων."
   },
   "importAccountJsonLoading1": {
-    "message": "Υπολογίστε ότι αυτή η εισαγωγή JSON θα διαρκέσει μερικά λεπτά και το MetaMask θα «παγώσει»."
+    "message": "Υπολογίστε ότι αυτή η εισαγωγή JSON θα διαρκέσει μερικά λεπτά και το XDCPay θα «παγώσει»."
   },
   "importAccountJsonLoading2": {
     "message": "Ζητάμε συγγνώμη και θα το κάνουμε πιο γρήγορα στο μέλλον."
@@ -1860,7 +1860,7 @@
     "message": "στις Ρυθμίσεις σας"
   },
   "infuraBlockedNotification": {
-    "message": "Το MetaMask δεν μπορεί να συνδεθεί με τον διακομιστή του blockchain. Εξετάστε τους πιθανούς λόγους $1.",
+    "message": "Το XDCPay δεν μπορεί να συνδεθεί με τον διακομιστή του blockchain. Εξετάστε τους πιθανούς λόγους $1.",
     "description": "$1 is a clickable link with with text defined by the 'here' key"
   },
   "initialTransactionConfirmed": {
@@ -1974,7 +1974,7 @@
     "message": "Πύλη IPFS"
   },
   "ipfsGatewayDescription": {
-    "message": "Το MetaMask χρησιμοποιεί υπηρεσίες τρίτων για να προβάλει εικόνες των NFT που είναι αποθηκευμένα στο IPFS, να εμφανίζει πληροφορίες σχετικά με τις διευθύνσεις ENS που έχουν εισαχθεί στη γραμμή διευθύνσεων του προγράμματος περιήγησης και να αντλεί εικονίδια για διαφορετικά tokens. Η διεύθυνση IP σας ενδέχεται να εκτεθεί σε αυτές τις υπηρεσίες όταν τις χρησιμοποιείτε."
+    "message": "Το XDCPay χρησιμοποιεί υπηρεσίες τρίτων για να προβάλει εικόνες των NFT που είναι αποθηκευμένα στο IPFS, να εμφανίζει πληροφορίες σχετικά με τις διευθύνσεις ENS που έχουν εισαχθεί στη γραμμή διευθύνσεων του προγράμματος περιήγησης και να αντλεί εικονίδια για διαφορετικά tokens. Η διεύθυνση IP σας ενδέχεται να εκτεθεί σε αυτές τις υπηρεσίες όταν τις χρησιμοποιείτε."
   },
   "ipfsToggleModalDescriptionOne": {
     "message": "Χρησιμοποιούμε υπηρεσίες τρίτων για την προβολή εικόνων των NFT σας που είναι αποθηκευμένα στο IPFS, την εμφάνιση πληροφοριών σχετικά με τις διευθύνσεις ENS που έχουν εισαχθεί στη γραμμή διευθύνσεων του προγράμματος περιήγησής σας και την ανάκτηση εικονιδίων για διαφορετικά tokens. Η διεύθυνση IP σας ενδέχεται να εκτεθεί σε αυτές τις υπηρεσίες όταν τις χρησιμοποιείτε."
@@ -2111,7 +2111,7 @@
     "message": "Κλείδωμα"
   },
   "lockMetaMask": {
-    "message": "Κλείδωμα του MetaMask"
+    "message": "Κλείδωμα του XDCPay"
   },
   "lockTimeInvalid": {
     "message": "Ο χρόνος κλειδώματος πρέπει να είναι ένας αριθμός μεταξύ 0 και 10080"
@@ -2172,7 +2172,7 @@
     "message": "Μήνυμα"
   },
   "metaMaskConnectStatusParagraphOne": {
-    "message": "Έχετε τώρα περισσότερο έλεγχο των συνδέσεων του λογαριασμού σας στο MetaMask."
+    "message": "Έχετε τώρα περισσότερο έλεγχο των συνδέσεων του λογαριασμού σας στο XDCPay."
   },
   "metaMaskConnectStatusParagraphThree": {
     "message": "Κάντε κλικ για να διαχειριστείτε τους συνδεδεμένους λογαριασμούς σας."
@@ -2181,13 +2181,13 @@
     "message": "Το κουμπί Κατάστασης Σύνδεσης δείχνει αν ο ιστότοπος που επισκέπτεστε είναι συνδεδεμένος με τον τρέχοντα επιλεγμένο λογαριασμό σας."
   },
   "metamaskInstitutionalVersion": {
-    "message": "Έκδοση του MetaMask Institutional"
+    "message": "Έκδοση του XDCPay Institutional"
   },
   "metamaskSwapsOfflineDescription": {
-    "message": "Το MetaMask Swaps είναι υπό συντήρηση. Παρακαλείστε να επιστρέψετε αργότερα."
+    "message": "Το XDCPay Swaps είναι υπό συντήρηση. Παρακαλείστε να επιστρέψετε αργότερα."
   },
   "metamaskVersion": {
-    "message": "Έκδοση του MetaMask"
+    "message": "Έκδοση του XDCPay"
   },
   "metrics": {
     "message": "Μετρήσεις"
@@ -2222,7 +2222,7 @@
     "message": "Υποβάλετε αίτημα εδώ"
   },
   "mmiBuiltAroundTheWorld": {
-    "message": "Το MetaMask Institutional έχει σχεδιαστεί και λειτουργεί σε όλο τον κόσμο."
+    "message": "Το XDCPay Institutional έχει σχεδιαστεί και λειτουργεί σε όλο τον κόσμο."
   },
   "more": {
     "message": "περισσότερα"
@@ -2249,7 +2249,7 @@
     "message": "Μοιραστείτε τα σχόλιά σας"
   },
   "needHelpLinkText": {
-    "message": "Υποστήριξη του MetaMask"
+    "message": "Υποστήριξη του XDCPay"
   },
   "needHelpSubmitTicket": {
     "message": "Υποβολή αιτήματος"
@@ -2379,7 +2379,7 @@
   },
   "nextNonceWarning": {
     "message": "Το Nonce είναι υψηλότερο από το προτεινόμενο nonce του $1",
-    "description": "The next nonce according to MetaMask's internal logic"
+    "description": "The next nonce according to XDCPay's internal logic"
   },
   "nftAddFailedMessage": {
     "message": "Το NFT δεν μπορεί να προστεθεί καθώς τα στοιχεία ιδιοκτησίας δεν ταιριάζουν. Βεβαιωθείτε ότι έχετε εισαγάγει τα σωστά στοιχεία."
@@ -2389,7 +2389,7 @@
     "description": "$1 is a clickable link with text defined by the 'importNFTPage' key"
   },
   "nftDisclaimer": {
-    "message": "Αποποίηση ευθυνών: Το MetaMask αντλεί το αρχείο πολυμέσων από το url της πηγής. Αυτό το url μερικές φορές αλλάζει ανάλογα με την αγορά στην οποία εκδόθηκε το NFT."
+    "message": "Αποποίηση ευθυνών: Το XDCPay αντλεί το αρχείο πολυμέσων από το url της πηγής. Αυτό το url μερικές φορές αλλάζει ανάλογα με την αγορά στην οποία εκδόθηκε το NFT."
   },
   "nftOptions": {
     "message": "Επιλογές για NFT"
@@ -2530,7 +2530,7 @@
     "description": "Description on an action button that appears in the What's New popup. Tells the user that if they click it, they will go to our Advanced settings page."
   },
   "notifications8DescriptionOne": {
-    "message": "Από το MetaMask v10.4.0, δεν χρειάζεστε πλέον το Ledger Live για να συνδέσετε τη συσκευή Ledger με το MetaMask.",
+    "message": "Από το XDCPay v10.4.0, δεν χρειάζεστε πλέον το Ledger Live για να συνδέσετε τη συσκευή Ledger με το XDCPay.",
     "description": "Description of a notification in the 'See What's New' popup. Describes changes for how Ledger Live is no longer needed to connect the device."
   },
   "notifications8DescriptionTwo": {
@@ -2542,8 +2542,8 @@
     "description": "Title for a notification in the 'See What's New' popup. Notifies ledger users that there is an improvement in how they can connect their device."
   },
   "notificationsDropLedgerFirefoxDescription": {
-    "message": "Ο Firefox δεν υποστηρίζει πλέον το U2F, οπότε το Ledger δεν θα λειτουργεί με το MetaMask στον Firefox. Δοκιμάστε αντ' αυτού το MetaMask στο Google Chrome.",
-    "description": "Description of a notification in the 'See What's New' popup. Describes that ledger will not longer be supported for firefox users and they should use MetaMask on chrome for ledger support instead."
+    "message": "Ο Firefox δεν υποστηρίζει πλέον το U2F, οπότε το Ledger δεν θα λειτουργεί με το XDCPay στον Firefox. Δοκιμάστε αντ' αυτού το XDCPay στο Google Chrome.",
+    "description": "Description of a notification in the 'See What's New' popup. Describes that ledger will not longer be supported for firefox users and they should use XDCPay on chrome for ledger support instead."
   },
   "notificationsDropLedgerFirefoxTitle": {
     "message": "Διακοπή της υποστήριξης του Ledger για τον Firefox",
@@ -2621,16 +2621,16 @@
     "message": "Τα δεδομένα αυτά είναι συγκεντρωτικά και συνεπώς ανώνυμα για τους σκοπούς του Γενικού Κανονισμού για την Προστασία Δεδομένων (ΕΕ) 2016/679."
   },
   "onboardingMetametricsDescription": {
-    "message": "Το MetaMask θα ήθελε να συλλέγει δεδομένα χρήσης για να κατανοήσει καλύτερα τον τρόπο με τον οποίο οι χρήστες μας αλληλεπιδρούν με το MetaMask. Τα δεδομένα αυτά θα χρησιμοποιηθούν για την παροχή της υπηρεσίας, η οποία περιλαμβάνει τη βελτίωση της υπηρεσίας με βάση τη χρήση σας."
+    "message": "Το XDCPay θα ήθελε να συλλέγει δεδομένα χρήσης για να κατανοήσει καλύτερα τον τρόπο με τον οποίο οι χρήστες μας αλληλεπιδρούν με το XDCPay. Τα δεδομένα αυτά θα χρησιμοποιηθούν για την παροχή της υπηρεσίας, η οποία περιλαμβάνει τη βελτίωση της υπηρεσίας με βάση τη χρήση σας."
   },
   "onboardingMetametricsDescription2": {
-    "message": "Το MetaMask θα..."
+    "message": "Το XDCPay θα..."
   },
   "onboardingMetametricsDisagree": {
     "message": "Όχι, ευχαριστώ"
   },
   "onboardingMetametricsInfuraTerms": {
-    "message": "* Όταν χρησιμοποιείτε την Infura ως τον προεπιλεγμένο πάροχο RPC στο MetaMask, η Infura θα συλλέγει τη διεύθυνση IP σας και τη διεύθυνση του πορτοφολιού σας στο Ethereum όταν αποστέλλετε μια συναλλαγή. Δεν αποθηκεύουμε αυτές τις πληροφορίες με τρόπο που να επιτρέπει στα συστήματά μας να συσχετίζουν αυτά τα δύο δεδομένα. Για περισσότερες πληροφορίες σχετικά με τον τρόπο με τον οποίο αλληλεπιδρούν το MetaMask και η Infura από την πλευρά της συλλογής δεδομένων, δείτε την ενημέρωσή μας $1. Για περισσότερες πληροφορίες σχετικά με τις πρακτικές απορρήτου μας γενικά, δείτε την ενημέρωσή μας $2.",
+    "message": "* Όταν χρησιμοποιείτε την Infura ως τον προεπιλεγμένο πάροχο RPC στο XDCPay, η Infura θα συλλέγει τη διεύθυνση IP σας και τη διεύθυνση του πορτοφολιού σας στο Ethereum όταν αποστέλλετε μια συναλλαγή. Δεν αποθηκεύουμε αυτές τις πληροφορίες με τρόπο που να επιτρέπει στα συστήματά μας να συσχετίζουν αυτά τα δύο δεδομένα. Για περισσότερες πληροφορίες σχετικά με τον τρόπο με τον οποίο αλληλεπιδρούν το XDCPay και η Infura από την πλευρά της συλλογής δεδομένων, δείτε την ενημέρωσή μας $1. Για περισσότερες πληροφορίες σχετικά με τις πρακτικές απορρήτου μας γενικά, δείτε την ενημέρωσή μας $2.",
     "description": "$1 represents `onboardingMetametricsInfuraTermsPolicyLink`, $2 represents `onboardingMetametricsInfuraTermsPolicy`"
   },
   "onboardingMetametricsInfuraTermsPolicy": {
@@ -2661,7 +2661,7 @@
     "message": "Αποστολή ανώνυμων συμβάντων κλικ και προβολής ιστοσελίδων"
   },
   "onboardingMetametricsTitle": {
-    "message": "Βοηθήστε μας να βελτιώσουμε το MetaMask"
+    "message": "Βοηθήστε μας να βελτιώσουμε το XDCPay"
   },
   "onboardingPinExtensionBillboardAccess": {
     "message": "Πλήρης πρόσβαση"
@@ -2679,16 +2679,16 @@
     "message": "Κάντε κλικ στο εικονίδιο της επέκτασης του προγράμματος περιήγησης"
   },
   "onboardingPinExtensionDescription": {
-    "message": "Προσκολλήστε το MetaMask στο πρόγραμμα περιήγησής σας, ώστε να είναι προσβάσιμο και εύκολο να δείτε τις επιβεβαιώσεις συναλλαγών."
+    "message": "Προσκολλήστε το XDCPay στο πρόγραμμα περιήγησής σας, ώστε να είναι προσβάσιμο και εύκολο να δείτε τις επιβεβαιώσεις συναλλαγών."
   },
   "onboardingPinExtensionDescription2": {
-    "message": "Μπορείτε να ανοίξετε το MetaMask κάνοντας κλικ στην επέκταση και να αποκτήσετε πρόσβαση στο πορτοφόλι σας με 1 κλικ."
+    "message": "Μπορείτε να ανοίξετε το XDCPay κάνοντας κλικ στην επέκταση και να αποκτήσετε πρόσβαση στο πορτοφόλι σας με 1 κλικ."
   },
   "onboardingPinExtensionDescription3": {
     "message": "Κάντε κλικ στο εικονίδιο της επέκτασης του προγράμματος περιήγησης για άμεση πρόσβαση"
   },
   "onboardingPinExtensionLabel": {
-    "message": "Καρφίτσωμα του MetaMask"
+    "message": "Καρφίτσωμα του XDCPay"
   },
   "onboardingPinExtensionStep1": {
     "message": "1"
@@ -2697,7 +2697,7 @@
     "message": "2"
   },
   "onboardingPinExtensionTitle": {
-    "message": "Η εγκατάσταση του MetaMask ολοκληρώθηκε!"
+    "message": "Η εγκατάσταση του XDCPay ολοκληρώθηκε!"
   },
   "onboardingUsePhishingDetectionDescription": {
     "message": "Οι ειδοποιήσεις ανίχνευσης για phishing βασίζονται στην επικοινωνία με το $1. Το jsDeliver θα έχει πρόσβαση στη διεύθυνση IP σας. Δείτε $2.",
@@ -2711,7 +2711,7 @@
   },
   "openFullScreenForLedgerWebHid": {
     "message": "Μεταβείτε σε πλήρη οθόνη για να συνδέσετε το Ledger σας.",
-    "description": "Shown to the user on the confirm screen when they are viewing MetaMask in a popup window but need to connect their ledger via webhid."
+    "description": "Shown to the user on the confirm screen when they are viewing XDCPay in a popup window but need to connect their ledger via webhid."
   },
   "openInBlockExplorer": {
     "message": "Άνοιγμα στο Block Explorer"
@@ -2745,7 +2745,7 @@
     "description": "Used in the 'permission_rpc' message."
   },
   "outdatedBrowserNotification": {
-    "message": "Το πρόγραμμα περιήγησής σας δεν είναι ενημερωμένο. Εάν δεν ενημερώσετε το πρόγραμμα περιήγησής σας, δεν θα μπορείτε να λαμβάνετε διορθώσεις ασφαλείας και νέες λειτουργίες από το MetaMask."
+    "message": "Το πρόγραμμα περιήγησής σας δεν είναι ενημερωμένο. Εάν δεν ενημερώσετε το πρόγραμμα περιήγησής σας, δεν θα μπορείτε να λαμβάνετε διορθώσεις ασφαλείας και νέες λειτουργίες από το XDCPay."
   },
   "padlock": {
     "message": "Padlock"
@@ -2757,7 +2757,7 @@
     "message": "Συμμετάσχετε στο MetaMetrics"
   },
   "participateInMetaMetricsDescription": {
-    "message": "Συμμετέχετε στο MetaMetrics για να μας βοηθήσετε να κάνοιυμε το MetaMask καλύτερο"
+    "message": "Συμμετέχετε στο MetaMetrics για να μας βοηθήσετε να κάνοιυμε το XDCPay καλύτερο"
   },
   "password": {
     "message": "Κωδικός πρόσβασης"
@@ -2766,7 +2766,7 @@
     "message": "Ο κωδικός πρόσβασης δεν είναι αρκετά μεγάλος"
   },
   "passwordSetupDetails": {
-    "message": "Αυτός ο κωδικός πρόσβασης θα ξεκλειδώσει το πορτοφόλι σας στο MetaMask μόνο σε αυτή τη συσκευή. Το MetaMask δεν μπορεί να ανακτήσει αυτόν τον κωδικό πρόσβασης."
+    "message": "Αυτός ο κωδικός πρόσβασης θα ξεκλειδώσει το πορτοφόλι σας στο XDCPay μόνο σε αυτή τη συσκευή. Το XDCPay δεν μπορεί να ανακτήσει αυτόν τον κωδικό πρόσβασης."
   },
   "passwordStrength": {
     "message": "Ισχύς κωδικού πρόσβασης: $1",
@@ -2776,7 +2776,7 @@
     "message": "Ένας ισχυρός κωδικός πρόσβασης μπορεί να βελτιώσει την ασφάλεια του πορτοφολιού σας εάν η συσκευή σας κλαπεί ή παραβιαστεί."
   },
   "passwordTermsWarning": {
-    "message": "Κατανοώ ότι το MetaMask δεν μπορεί να ανακτήσει αυτόν τον κωδικό πρόσβασης για μένα. $1"
+    "message": "Κατανοώ ότι το XDCPay δεν μπορεί να ανακτήσει αυτόν τον κωδικό πρόσβασης για μένα. $1"
   },
   "passwordsDontMatch": {
     "message": "Οι κωδικοί πρόσβασης δεν ταιριάζουν"
@@ -2834,7 +2834,7 @@
     "description": "The description for the `snap_cronjob` permission"
   },
   "permission_dialog": {
-    "message": "Εμφάνιση παραθύρων διαλόγου στο MetaMask.",
+    "message": "Εμφάνιση παραθύρων διαλόγου στο XDCPay.",
     "description": "The description for the `snap_dialog` permission"
   },
   "permission_ethereumAccounts": {
@@ -3003,7 +3003,7 @@
     "message": "Ποτέ μην μοιράζεστε τη Μυστική σας Φράση Ανάκτησης με κανέναν"
   },
   "recoveryPhraseReminderItemTwo": {
-    "message": "Η ομάδα του MetaMask δεν θα ζητήσει ποτέ τη Μυστική σας Φράση Ανάκτησης"
+    "message": "Η ομάδα του XDCPay δεν θα ζητήσει ποτέ τη Μυστική σας Φράση Ανάκτησης"
   },
   "recoveryPhraseReminderSubText": {
     "message": "Η Μυστική σας Φράση Ανάκτησης ελέγχει όλους τους λογαριασμούς σας."
@@ -3103,7 +3103,7 @@
     "message": "Επαναφορά πορτοφολιού"
   },
   "resetWalletSubHeader": {
-    "message": "Το MetaMask δεν διατηρεί αντίγραφο του κωδικού πρόσβασής σας. Εάν αντιμετωπίζετε κάποιο πρόβλημα με το ξεκλείδωμα του λογαριασμού σας, θα χρειαστεί να πραγματοποιήσετε επαναφορά του πορτοφολιού σας. Μπορείτε να το κάνετε μέσω της Μυστικής Φράσης Ανάκτησης που χρησιμοποιήσατε όταν δημιουργήσατε το πορτοφόλι σας."
+    "message": "Το XDCPay δεν διατηρεί αντίγραφο του κωδικού πρόσβασής σας. Εάν αντιμετωπίζετε κάποιο πρόβλημα με το ξεκλείδωμα του λογαριασμού σας, θα χρειαστεί να πραγματοποιήσετε επαναφορά του πορτοφολιού σας. Μπορείτε να το κάνετε μέσω της Μυστικής Φράσης Ανάκτησης που χρησιμοποιήσατε όταν δημιουργήσατε το πορτοφόλι σας."
   },
   "resetWalletUsingSRP": {
     "message": "Αυτή η ενέργεια θα διαγράψει το τρέχον πορτοφόλι σας και την Μυστική Φράση Ανάκτησής από αυτή τη συσκευή, μαζί με τη λίστα των λογαριασμών που χειρίζεστε. Αφού κάνετε επαναφορά με την Μυστική Φράση Ανάκτησής σας, θα δείτε μια λίστα με λογαριασμούς με βάση τη Μυστική Φράση Ανάκτησης που χρησιμοποιήσατε για την επαναφορά. Αυτή η νέα λίστα θα περιλαμβάνει αυτόματα τους λογαριασμούς που έχουν κάποιο υπόλοιπο. Θα μπορείτε επίσης να $1 που δημιουργήθηκαν προηγουμένως. Οι προσαρμοσμένοι λογαριασμοί που έχετε εισαγάγει θα χρειαστεί να είναι $2 και κάθε προσαρμοσμένο token που προσθέσατε στον λογαριασμό θα πρέπει επίσης να $3."
@@ -3112,7 +3112,7 @@
     "message": "Βεβαιωθείτε ότι χρησιμοποιείτε τη σωστή Μυστική Φράση Ανάκτησης πριν συνεχίσετε. Αυτή η ενέργεια είναι μη αναστρέψιμη."
   },
   "restartMetamask": {
-    "message": "Επανεκκίνηση του MetaMask"
+    "message": "Επανεκκίνηση του XDCPay"
   },
   "restore": {
     "message": "Επαναφορά"
@@ -3155,7 +3155,7 @@
     "description": "This is a sentence consisting of link using 'revealSeedWordsSRPName' as $1 and bolded text using 'revealSeedWordsDescription3' as $2."
   },
   "revealSeedWordsDescription2": {
-    "message": "Το MetaMask είναι ένα $1. Αυτό σημαίνει ότι είστε ο κάτοχος της ΜΦΑ σας.",
+    "message": "Το XDCPay είναι ένα $1. Αυτό σημαίνει ότι είστε ο κάτοχος της ΜΦΑ σας.",
     "description": "$1 is text link with the message from 'revealSeedWordsNonCustodialWallet'"
   },
   "revealSeedWordsDescription3": {
@@ -3178,7 +3178,7 @@
     "description": "$1 is bolded text using the message from 'revealSeedWordsWarning2'"
   },
   "revealSeedWordsWarning2": {
-    "message": "Η Υποστήριξη του MetaMask δεν θα σας τη ζητήσει ποτέ.",
+    "message": "Η Υποστήριξη του XDCPay δεν θα σας τη ζητήσει ποτέ.",
     "description": "The bolded texted in the second part of 'revealSeedWordsWarning'"
   },
   "revealTheSeedPhrase": {
@@ -3287,7 +3287,7 @@
     "message": "Αν κάποιος σας ζητήσει τη φράση ανάκτησής σας, είναι πιθανό να προσπαθεί να σας εξαπατήσει και να κλέψει τα χρήματα του πορτοφολιού σας."
   },
   "seedPhraseIntroSidebarCopyTwo": {
-    "message": "Ποτέ, μα ποτέ μην μοιραστείτε τη Μυστική σας Φράση Ανάκτησης, ούτε καν με το MetaMask!"
+    "message": "Ποτέ, μα ποτέ μην μοιραστείτε τη Μυστική σας Φράση Ανάκτησης, ούτε καν με το XDCPay!"
   },
   "seedPhraseIntroSidebarTitleOne": {
     "message": "Τι είναι η Μυστική Φράση Ανάκτησης;"
@@ -3332,10 +3332,10 @@
     "message": "Επιλέξτε έναν λογαριασμό"
   },
   "selectAnAccountAlreadyConnected": {
-    "message": "Αυτός ο λογαριασμός έχει ήδη συνδεθεί με το MetaMask"
+    "message": "Αυτός ο λογαριασμός έχει ήδη συνδεθεί με το XDCPay"
   },
   "selectAnAccountHelp": {
-    "message": "Επιλέξτε τους λογαριασμούς θεματοφύλακα που θα χρησιμοποιηθούν στο MetaMask Institutional."
+    "message": "Επιλέξτε τους λογαριασμούς θεματοφύλακα που θα χρησιμοποιηθούν στο XDCPay Institutional."
   },
   "selectHdPath": {
     "message": "Επιλέξτε τη διαδρομή HD"
@@ -3386,7 +3386,7 @@
     "message": "Δίκτυο δοκιμών Sepolia"
   },
   "setAdvancedPrivacySettingsDetails": {
-    "message": "Το MetaMask χρησιμοποιεί αυτές τις αξιόπιστες υπηρεσίες τρίτων για να ενισχύσει τη χρηστικότητα και την ασφάλεια των προϊόντων."
+    "message": "Το XDCPay χρησιμοποιεί αυτές τις αξιόπιστες υπηρεσίες τρίτων για να ενισχύσει τη χρηστικότητα και την ασφάλεια των προϊόντων."
   },
   "setApprovalForAll": {
     "message": "Ρύθμιση έγκρισης για όλους"
@@ -3639,7 +3639,7 @@
     "message": "Για να σας αποκαλύψουμε τη Μυστική Φράση Ανάκτησης, πρέπει να απαντήσετε σωστά σε δύο ερωτήσεις"
   },
   "srpSecurityQuizQuestionOneQuestion": {
-    "message": "Αν χάσετε τη Μυστική Φράση Ανάκτησης, το MetaMask..."
+    "message": "Αν χάσετε τη Μυστική Φράση Ανάκτησης, το XDCPay..."
   },
   "srpSecurityQuizQuestionOneRightAnswer": {
     "message": "Δεν μπορεί να σας βοηθήσει"
@@ -3708,7 +3708,7 @@
     "message": "Σφάλμα κατά την ανάκτηση αρχείων καταγραφής κατάστασης."
   },
   "stateLogFileName": {
-    "message": "Αρχεία καταγραφής κατάστασης του MetaMask"
+    "message": "Αρχεία καταγραφής κατάστασης του XDCPay"
   },
   "stateLogs": {
     "message": "Αρχεία καταγραφής κατάστασης"
@@ -3729,7 +3729,7 @@
     "message": "Συνδέστε το Lattice1 σας"
   },
   "step1LatticeWalletMsg": {
-    "message": "Μπορείτε να συνδέσετε το MetaMask στη συσκευή Lattice1 μόλις αυτή ρυθμιστεί και συνδεθεί. Ξεκλειδώστε τη συσκευή σας και έχετε έτοιμο το αναγνωριστικό συσκευής σας.",
+    "message": "Μπορείτε να συνδέσετε το XDCPay στη συσκευή Lattice1 μόλις αυτή ρυθμιστεί και συνδεθεί. Ξεκλειδώστε τη συσκευή σας και έχετε έτοιμο το αναγνωριστικό συσκευής σας.",
     "description": "$1 represents the `hardwareWalletSupportLinkConversion` localization key"
   },
   "step1LedgerWallet": {
@@ -3773,7 +3773,7 @@
   },
   "stxFailureDescription": {
     "message": "Οι ξαφνικές αλλαγές στην αγορά μπορεί να προκαλέσουν αποτυχίες. Εάν το πρόβλημα επιμένει, παρακαλούμε επικοινωνήστε με το $1.",
-    "description": "This message is shown to a user if their swap fails. The $1 will be replaced by support.metamask.io"
+    "description": "This message is shown to a user if their swap fails. The $1 will be replaced by support.XDCPay.io"
   },
   "stxPendingPrivatelySubmittingSwap": {
     "message": "Ιδιωτική υποβολή της Ανταλλαγής σας..."
@@ -3884,7 +3884,7 @@
     "message": "Επεξεργασία ορίου"
   },
   "swapEnableDescription": {
-    "message": "Αυτό είναι απαραίτητο και δίνει στο MetaMask την άδεια να ανταλλάξει τα $1 σας.",
+    "message": "Αυτό είναι απαραίτητο και δίνει στο XDCPay την άδεια να ανταλλάξει τα $1 σας.",
     "description": "Gives the user info about the required approval transaction for swaps. $1 will be the symbol of a token being approved for swaps."
   },
   "swapEnableTokenForSwapping": {
@@ -3902,7 +3902,7 @@
   },
   "swapFailedErrorDescriptionWithSupportLink": {
     "message": "Συμβαίνουν αποτυχίες συναλλαγών και είμαστε εδώ για να βοηθήσουμε. Εάν αυτό το πρόβλημα επιμένει, μπορείτε να επικοινωνήσετε με την υποστήριξη πελατών μας στο $1 για περαιτέρω βοήθεια.",
-    "description": "This message is shown to a user if their swap fails. The $1 will be replaced by support.metamask.io"
+    "description": "This message is shown to a user if their swap fails. The $1 will be replaced by support.XDCPay.io"
   },
   "swapFailedErrorTitle": {
     "message": "Η ανταλλαγή απέτυχε"
@@ -3940,7 +3940,7 @@
     "message": "Τα τέλη συναλλαγών στην προηγούμενη οθόνη κατανέμονται μεταξύ αυτών των δύο συναλλαγών."
   },
   "swapGasFeesSummary": {
-    "message": "Τα τέλη συναλλαγών καταβάλλονται σε κρυπτονομίσματα στους αναλυτές που επεξεργάζονται συναλλαγές στο δίκτυο $1. Το MetaMask δεν επωφελείται από τα τέλη συναλλαγών.",
+    "message": "Τα τέλη συναλλαγών καταβάλλονται σε κρυπτονομίσματα στους αναλυτές που επεξεργάζονται συναλλαγές στο δίκτυο $1. Το XDCPay δεν επωφελείται από τα τέλη συναλλαγών.",
     "description": "$1 is the selected network, e.g. Ethereum or BSC"
   },
   "swapHighSlippage": {
@@ -3950,12 +3950,12 @@
     "message": "Το ποσό ολίσθησης είναι πολύ υψηλό."
   },
   "swapIncludesMMFee": {
-    "message": "Περιλαμβάνει μια χρέωση $1% στο MetaMask.",
-    "description": "Provides information about the fee that metamask takes for swaps. $1 is a decimal number."
+    "message": "Περιλαμβάνει μια χρέωση $1% στο XDCPay.",
+    "description": "Provides information about the fee that XDCPay takes for swaps. $1 is a decimal number."
   },
   "swapIncludesMetaMaskFeeViewAllQuotes": {
-    "message": "Περιλαμβάνει μια χρέωση $1% στο MetaMask - $2",
-    "description": "Provides information about the fee that metamask takes for swaps. $1 is a decimal number and $2 is a link to view all quotes."
+    "message": "Περιλαμβάνει μια χρέωση $1% στο XDCPay - $2",
+    "description": "Provides information about the fee that XDCPay takes for swaps. $1 is a decimal number and $2 is a link to view all quotes."
   },
   "swapLearnMore": {
     "message": "Μάθετε περισσότερα για τις Ανταλλαγές"
@@ -3970,11 +3970,11 @@
     "message": "Μέγιστη ολίσθηση"
   },
   "swapMetaMaskFee": {
-    "message": "Χρέωση του MetaMask"
+    "message": "Χρέωση του XDCPay"
   },
   "swapMetaMaskFeeDescription": {
-    "message": "Μια χρέωση $1% συνυπολογίζεται αυτόματα σε αυτή την προσφορά. Την καταβάλλετε ως αντάλλαγμα για την άδεια χρήσης του λογισμικού συγκέντρωσης πληροφοριών για τους παρόχους ρευστότητας του MetaMask.",
-    "description": "Provides information about the fee that metamask takes for swaps. $1 is a decimal number."
+    "message": "Μια χρέωση $1% συνυπολογίζεται αυτόματα σε αυτή την προσφορά. Την καταβάλλετε ως αντάλλαγμα για την άδεια χρήσης του λογισμικού συγκέντρωσης πληροφοριών για τους παρόχους ρευστότητας του XDCPay.",
+    "description": "Provides information about the fee that XDCPay takes for swaps. $1 is a decimal number."
   },
   "swapNQuotesWithDot": {
     "message": "$1 προσφορές.",
@@ -4227,7 +4227,7 @@
     "message": "Αλλαγή"
   },
   "switchEthereumChainConfirmationDescription": {
-    "message": "Αυτό θα αλλάξει το επιλεγμένο δίκτυο στο MetaMask σε ένα δίκτυο που έχει προστεθεί προηγουμένως:"
+    "message": "Αυτό θα αλλάξει το επιλεγμένο δίκτυο στο XDCPay σε ένα δίκτυο που έχει προστεθεί προηγουμένως:"
   },
   "switchEthereumChainConfirmationTitle": {
     "message": "Επιτρέπετε σε αυτόν τον ιστότοπο να αλλάξει το δίκτυο;"
@@ -4273,7 +4273,7 @@
     "message": "Όροι παροχής υπηρεσιών"
   },
   "termsOfUseAgreeText": {
-    "message": " Συμφωνώ με τους Όρους Χρήσης, οι οποίοι ισχύουν για τη χρήση του MetaMask και όλων των λειτουργιών του"
+    "message": " Συμφωνώ με τους Όρους Χρήσης, οι οποίοι ισχύουν για τη χρήση του XDCPay και όλων των λειτουργιών του"
   },
   "termsOfUseFooterText": {
     "message": "Μετακινηθείτε προς τα κάτω για να διαβάσετε όλα τα τμήματα"
@@ -4288,7 +4288,7 @@
     "message": "Θέμα"
   },
   "themeDescription": {
-    "message": "Επιλέξτε το προτιμώμενο θέμα σας για το MetaMask."
+    "message": "Επιλέξτε το προτιμώμενο θέμα σας για το XDCPay."
   },
   "thingsToKeep": {
     "message": "Πράγματα που πρέπει να έχετε υπόψη σας:"
@@ -4432,7 +4432,7 @@
     "message": "Προτεινόμενος ιστότοπος"
   },
   "transactionDetailDappGasTooltip": {
-    "message": "Επεξεργαστείτε για να χρησιμοποιήσετε το προτεινόμενο τέλος συναλλαγής του MetaMask με βάση το τελευταίο μπλοκ."
+    "message": "Επεξεργαστείτε για να χρησιμοποιήσετε το προτεινόμενο τέλος συναλλαγής του XDCPay με βάση το τελευταίο μπλοκ."
   },
   "transactionDetailGasHeading": {
     "message": "Εκτιμώμενο τέλος συναλλαγής"
@@ -4444,7 +4444,7 @@
     "message": "Τα τέλη συναλλαγών καθορίζονται από το δίκτυο και αυξομειώνονται ανάλογα με την κίνηση του δικτύου και την πολυπλοκότητα των συναλλαγών."
   },
   "transactionDetailGasTooltipIntro": {
-    "message": "Τα τέλη συναλλαγών καταβάλλονται σε κρυπτονομίσματα στους αναλυτές που επεξεργάζονται συναλλαγές στο δίκτυο $1. Το MetaMask δεν επωφελείται από τα τέλη συναλλαγών."
+    "message": "Τα τέλη συναλλαγών καταβάλλονται σε κρυπτονομίσματα στους αναλυτές που επεξεργάζονται συναλλαγές στο δίκτυο $1. Το XDCPay δεν επωφελείται από τα τέλη συναλλαγών."
   },
   "transactionDetailGasTotalSubtitle": {
     "message": "Ποσό + τέλος συναλλαγής"
@@ -4539,7 +4539,7 @@
     "description": "$1 is the wallet device name; $2 is a link to wallet connection guide"
   },
   "troubleStarting": {
-    "message": "Το MetaMask αντιμετώπισε πρόβλημα κατά την εκκίνηση. Αυτό το σφάλμα μπορεί να είναι τυχαίο, γι' αυτό προσπαθήστε να επανεκκινήσετε την επέκταση."
+    "message": "Το XDCPay αντιμετώπισε πρόβλημα κατά την εκκίνηση. Αυτό το σφάλμα μπορεί να είναι τυχαίο, γι' αυτό προσπαθήστε να επανεκκινήσετε την επέκταση."
   },
   "trustSiteApprovePermission": {
     "message": "Χορηγώντας άδεια, επιτρέπετε στο ακόλουθο $1 να έχει πρόσβαση στα χρήματά σας"
@@ -4561,7 +4561,7 @@
   },
   "u2f": {
     "message": "U2F",
-    "description": "A name on an API for the browser to interact with devices that support the U2F protocol. On some browsers we use it to connect MetaMask to Ledger devices."
+    "description": "A name on an API for the browser to interact with devices that support the U2F protocol. On some browsers we use it to connect XDCPay to Ledger devices."
   },
   "unapproved": {
     "message": "Μη εγκεκριμένο"
@@ -4620,7 +4620,7 @@
     "message": "Αποκωδικοποίηση έξυπνων συμβολαίων"
   },
   "use4ByteResolutionDescription": {
-    "message": "Για να βελτιώσουμε την εμπειρία του χρήστη, προσαρμόζουμε την καρτέλα δραστηριότητας με μηνύματα που βασίζονται στα έξυπνα συμβόλαια με τα οποία αλληλεπιδράτε. Το MetaMask χρησιμοποιεί μια υπηρεσία που ονομάζεται 4byte.directory για την αποκωδικοποίηση δεδομένων και την εμφάνιση μιας έκδοσης ενός έξυπνου συμβολαίου που είναι πιο ευανάγνωστο. Αυτό συμβάλλει στη μείωση των πιθανοτήτων σας να εγκρίνετε κακόβουλες ενέργειες έξυπνων συμβολαίων, αλλά μπορεί να έχει ως αποτέλεσμα την κοινοποίηση της διεύθυνσης IP σας."
+    "message": "Για να βελτιώσουμε την εμπειρία του χρήστη, προσαρμόζουμε την καρτέλα δραστηριότητας με μηνύματα που βασίζονται στα έξυπνα συμβόλαια με τα οποία αλληλεπιδράτε. Το XDCPay χρησιμοποιεί μια υπηρεσία που ονομάζεται 4byte.directory για την αποκωδικοποίηση δεδομένων και την εμφάνιση μιας έκδοσης ενός έξυπνου συμβολαίου που είναι πιο ευανάγνωστο. Αυτό συμβάλλει στη μείωση των πιθανοτήτων σας να εγκρίνετε κακόβουλες ενέργειες έξυπνων συμβολαίων, αλλά μπορεί να έχει ως αποτέλεσμα την κοινοποίηση της διεύθυνσης IP σας."
   },
   "useMultiAccountBalanceChecker": {
     "message": "Μαζικά αιτήματα υπολοίπου λογαριασμού"
@@ -4721,10 +4721,10 @@
     "message": "Προστατεύσατε με επιτυχία το πορτοφόλι σας. Διατηρήστε τη Μυστική Φράση Ανάκτησης ασφαλής και μυστική - είναι δική σας ευθύνη!"
   },
   "walletCreationSuccessReminder1": {
-    "message": "Το MetaMask δεν μπορεί να ανακτήσει τη Μυστική Φράση Ανάκτησής σας."
+    "message": "Το XDCPay δεν μπορεί να ανακτήσει τη Μυστική Φράση Ανάκτησής σας."
   },
   "walletCreationSuccessReminder2": {
-    "message": "Το MetaMask δεν θα σας ζητήσει ποτέ τη Μυστική Φράση Ανάκτησής σας."
+    "message": "Το XDCPay δεν θα σας ζητήσει ποτέ τη Μυστική Φράση Ανάκτησής σας."
   },
   "walletCreationSuccessReminder3": {
     "message": "$1 με οποιονδήποτε ή να διακινδυνεύστε τα χρήματά σας να κλαπούν",
@@ -4775,7 +4775,7 @@
     "message": "Εξερεύνηση αποκεντρωμένων εφαρμογών"
   },
   "welcomeLoginDescription": {
-    "message": "Χρησιμοποιήστε το MetaMask για να συνδεθείτε σε αποκεντρωμένες εφαρμογές - δεν απαιτείται εγγραφή."
+    "message": "Χρησιμοποιήστε το XDCPay για να συνδεθείτε σε αποκεντρωμένες εφαρμογές - δεν απαιτείται εγγραφή."
   },
   "welcomeLoginTitle": {
     "message": "Χαιρετίστε το πορτοφόλι σας"
@@ -4784,11 +4784,11 @@
     "message": "Ας ξεκινήσουμε"
   },
   "welcomeToMetaMaskIntro": {
-    "message": "Το MetaMask, το οποίο εμπιστεύονται εκατομμύρια χρήστες, είναι ένα ασφαλές πορτοφόλι που κάνει τον κόσμο του web3 προσβάσιμο σε όλους."
+    "message": "Το XDCPay, το οποίο εμπιστεύονται εκατομμύρια χρήστες, είναι ένα ασφαλές πορτοφόλι που κάνει τον κόσμο του web3 προσβάσιμο σε όλους."
   },
   "whatsNew": {
     "message": "Τι νέο υπάρχει",
-    "description": "This is the title of a popup that gives users notifications about new features and updates to MetaMask."
+    "description": "This is the title of a popup that gives users notifications about new features and updates to XDCPay."
   },
   "whatsThis": {
     "message": "Τι είναι αυτό;"

@@ -252,7 +252,7 @@ export default class InfoTab extends PureComponent {
           ///: BEGIN:ONLY_INCLUDE_IF(build-main,build-beta,build-flask)
           <div className="info-tab__logo-wrapper">
             <img
-              src="./images/logo/metamask-fox.svg"
+              src="./images/logo/XDCPay-full.svg"
               className="info-tab__logo"
               alt="MetaMask Logo"
             />

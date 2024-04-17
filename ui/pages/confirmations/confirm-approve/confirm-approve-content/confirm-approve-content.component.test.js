@@ -19,11 +19,11 @@ const renderComponent = (props) => {
 };
 
 const props = {
-  siteImage: 'https://metamask.github.io/test-dapp/metamask-fox.svg',
+  siteImage: 'https://metamask.github.io/test-dapp/XDCPay-full.svg',
   origin: 'https://metamask.github.io/test-dapp/',
   tokenSymbol: 'TestDappNFTs (#1)',
   assetStandard: TokenStandard.ERC721,
-  tokenImage: 'https://metamask.github.io/test-dapp/metamask-fox.svg',
+  tokenImage: 'https://metamask.github.io/test-dapp/XDCPay-full.svg',
   data: '0x095ea7b30000000000000000000000009bc5baf874d2da8d216ae9f137804184ee5afef40000000000000000000000000000000000000000000000000000000000011170',
   toAddress: '0x9bc5baf874d2da8d216ae9f137804184ee5afef4',
   currentCurrency: 'usd',
