@@ -9,14 +9,8 @@ import { getAccountNameErrorMessage } from '../../../helpers/utils/accounts';
 import {
   getMetaMaskAccountsOrdered,
   getInternalAccounts,
-  getTokenList,
-  getSelectedNetworkClientId,
 } from '../../../selectors';
-import {
-  addImportedTokens,
-  addNewAccount,
-  setAccountLabel,
-} from '../../../store/actions';
+import { addNewAccount, setAccountLabel } from '../../../store/actions';
 import { getMostRecentOverviewPage } from '../../../ducks/history/history';
 import {
   MetaMetricsEventAccountType,
@@ -25,7 +19,6 @@ import {
 } from '../../../../shared/constants/metametrics';
 import { MetaMetricsContext } from '../../../contexts/metametrics';
 import { Display } from '../../../helpers/constants/design-system';
-import { addXDCTokenList } from '../../../helpers/utils/token-util';
 
 export const CreateAccount = ({ onActionComplete }) => {
   const t = useI18nContext();
@@ -37,8 +30,6 @@ export const CreateAccount = ({ onActionComplete }) => {
   const accounts = useSelector(getMetaMaskAccountsOrdered);
   const internalAccounts = useSelector(getInternalAccounts);
   const mostRecentOverviewPage = useSelector(getMostRecentOverviewPage);
-  const tokenList = useSelector(getTokenList);
-  const networkClientId = useSelector(getSelectedNetworkClientId);
 
   const newAccountNumber = Object.keys(internalAccounts).length + 1;
   const defaultAccountName = t('newAccountNumberName', [newAccountNumber]);
@@ -55,15 +46,6 @@ export const CreateAccount = ({ onActionComplete }) => {
 
   const onCreateAccount = async (name) => {
     const newAccountAddress = await dispatch(addNewAccount());
-    const tokenDetails = await addXDCTokenList(newAccountAddress, tokenList);
-
-    dispatch(addImportedTokens(tokenDetails, networkClientId));
-    const tokenSymbols = [];
-    for (const key in tokenDetails) {
-      if (Object.prototype.hasOwnProperty.call(tokenDetails, key)) {
-        tokenSymbols.push(tokenDetails[key].symbol);
-      }
-    }
     if (name) {
       dispatch(setAccountLabel(newAccountAddress, name));
     }

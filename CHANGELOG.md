@@ -2121,7 +2121,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Changed
 
 - **[FLASK]** Update MetaMask Flask
-  - This is the first release of [MetaMask Flask](https://xinfin.org//flask) since the initial release on January 18. This release includes a significant number of fixes and DevX improvements. Flask will henceforth be released at a more frequent cadence, usually in close proximity to releases of the regular MetaMask Extension.
+  - This is the first release of [MetaMask Flask](https://metamask.io/flask) since the initial release on January 18. This release includes a significant number of fixes and DevX improvements. Flask will henceforth be released at a more frequent cadence, usually in close proximity to releases of the regular MetaMask Extension.
   - For reference, [#13462](https://github.com/MetaMask/metamask-extension/pull/13462) used the feature branch that produced the original Flask release after some additional changes were made.
 - **[FLASK]** Update Snaps packages to version `^0.10.6` ([#13901](https://github.com/MetaMask/metamask-extension/pull/13901), [#14041](https://github.com/MetaMask/metamask-extension/pull/14041), [#14070](https://github.com/MetaMask/metamask-extension/pull/14070))
   - Updates the following packages from `0.9.0` to `0.10.6`:

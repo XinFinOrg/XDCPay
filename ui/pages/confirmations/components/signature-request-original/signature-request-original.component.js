@@ -194,7 +194,7 @@ export default class SignatureRequestOriginal extends Component {
             description={t('openSeaToBlockaidDescription')}
             actionButtonLabel={t('openSeaToBlockaidBtnLabel')}
             actionButtonProps={{
-              href: 'https://medium.com/@xdcpay/discover-opensourcewallet-portfolio-today-a26adad7bc4btransaction-insights',
+              href: 'https://snaps.metamask.io/transaction-insights',
               externalLink: true,
             }}
             marginBottom={4}

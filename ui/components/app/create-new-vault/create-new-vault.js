@@ -86,7 +86,7 @@ export default function CreateNewVault({
     <a
       className="create-new-vault__terms-link"
       key="create-new-vault__link-text"
-      href="https://medium.com/@xdcpay/terms-of-use-for-open-source-wallet-software-b11a9122e0a9"
+      href="https://metamask.io/terms.html"
       target="_blank"
       rel="noopener noreferrer"
     >

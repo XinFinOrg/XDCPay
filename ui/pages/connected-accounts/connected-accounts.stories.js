@@ -8,15 +8,14 @@ export default {
 };
 
 const subjectMetadata = {
-  'https://medium.com/@xdcpay/discover-opensourcewallet-portfolio-today-a26adad7bc4b':
-    {
-      extensionId: null,
-      iconUrl: null,
-      name: 'Starknet',
-      origin: 'npm:@consensys/starknet-snap',
-      subjectType: 'snap',
-      svgIcon: '<svg>...</svg>',
-    },
+  'https://snaps.metamask.io/': {
+    extensionId: null,
+    iconUrl: null,
+    name: 'Starknet',
+    origin: 'npm:@consensys/starknet-snap',
+    subjectType: 'snap',
+    svgIcon: '<svg>...</svg>',
+  },
   'local:http://localhost:8080/': {
     extensionId: null,
     iconUrl: null,
@@ -114,7 +113,7 @@ export const DefaultStory = () => {
       connectedAccounts={accounts}
       removePermittedAccount={action('Account Removed')}
       setSelectedAddress={action('Selected Address Changed')}
-      originOfActiveTab="https://medium.com/@xdcpay/discover-opensourcewallet-portfolio-today-a26adad7bc4b"
+      originOfActiveTab="https://snaps.metamask.io/"
       subjectMetadata={subjectMetadata}
       permissionSubjects={permissionSubjects}
     />

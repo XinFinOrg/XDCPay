@@ -3,7 +3,7 @@
     "extension_pages": "script-src 'self'; object-src 'none'; frame-ancestors 'none';"
   },
   "externally_connectable": {
-    "matches": ["https://xinfin.org//*"],
+    "matches": ["https://metamask.io/*"],
     "ids": ["*"]
   },
   "minimum_chrome_version": "89"

@@ -16,12 +16,12 @@ const stake = `${process.env.MMI_E2E_MMI_DASHBOARD_URL}/stake`;
 const support = 'https://mmi-support.metamask.io/hc/en-us';
 const supportContactUs =
   'https://mmi-support.metamask.io/hc/en-us/requests/new';
-const mmiHomePage = 'https://xinfin.org//institutions/';
+const mmiHomePage = 'https://metamask.io/institutions/';
 const privacyAndPolicy = 'https://consensys.io/privacy-policy';
 const openSeaTermsOfUse = 'https://opensea.io/securityproviderterms';
-const metamaskAttributions = 'https://xinfin.org//attributions/';
+const metamaskAttributions = 'https://metamask.io/attributions/';
 const termsOfUse = 'https://consensys.io/terms-of-use';
-const learnMoreArticles = 'https://www.xdc.dev//hc/en-us/articles';
+const learnMoreArticles = 'https://support.metamask.io/hc/en-us/articles';
 
 test.describe('MMI Navigation', () => {
   test('MMI full navigation links', async ({ context }) => {

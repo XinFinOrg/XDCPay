@@ -81,7 +81,7 @@ export default function CreationSuccessful() {
         </li>
         <li>
           <Button
-            href="https://medium.com/@xdcpay/what-is-a-secret-recovery-phrase-and-how-to-keep-your-crypto-wallet-secure-f22f78ca5a6a"
+            href="https://community.metamask.io/t/what-is-a-secret-recovery-phrase-and-how-to-keep-your-crypto-wallet-secure/3440"
             target="_blank"
             type="link"
             rel="noopener noreferrer"

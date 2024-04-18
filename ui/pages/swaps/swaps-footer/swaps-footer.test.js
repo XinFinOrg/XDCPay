@@ -33,7 +33,7 @@ describe('SwapsFooter', () => {
     expect(getByText(props.submitText)).toBeInTheDocument();
     fireEvent.click(getByText('Terms of service'));
     expect(global.platform.openTab).toHaveBeenCalledWith({
-      url: 'https://medium.com/@xdcpay/terms-of-use-for-open-source-wallet-software-b11a9122e0a9',
+      url: 'https://metamask.io/terms.html',
     });
   });
 });

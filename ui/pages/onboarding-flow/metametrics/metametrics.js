@@ -189,7 +189,7 @@ export default function OnboardingMetametrics() {
       >
         {t('onboardingMetametricsInfuraTerms', [
           <a
-            href="https://medium.com/@xdcpay/privacy-policy-and-commitments-to-user-privacy-163c7d120c27"
+            href="https://consensys.io/blog/consensys-data-retention-update"
             target="_blank"
             rel="noopener noreferrer"
             key="retention-link"
@@ -197,7 +197,7 @@ export default function OnboardingMetametrics() {
             {t('onboardingMetametricsInfuraTermsPolicyLink')}
           </a>,
           <a
-            href="https://medium.com/@xdcpay/privacy-policy-37608719dce4"
+            href="https://metamask.io/privacy.html"
             target="_blank"
             rel="noopener noreferrer"
             key="privacy-link"

@@ -98,7 +98,10 @@ const EthSignModal = ({ hideModal }) => {
       </Text>
       <Text variant={TextVariant.bodyMd}>
         {t('toggleEthSignModalDescription')}
-        <ButtonLink href="https://www.xdc.dev/" externalLink>
+        <ButtonLink
+          href="https://support.metamask.io/hc/en-us/articles/14764161421467"
+          externalLink
+        >
           {t('learnMoreUpperCase')}
         </ButtonLink>
       </Text>

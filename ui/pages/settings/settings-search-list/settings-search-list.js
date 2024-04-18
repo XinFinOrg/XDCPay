@@ -85,7 +85,7 @@ export default function SettingsSearchList({ results, onClickSetting }) {
           {t('missingSetting')}
         </span>
         <a
-          href="https://www.xdc.dev/13"
+          href="https://community.metamask.io/c/feature-requests-ideas/13"
           target="_blank"
           rel="noopener noreferrer"
           key="need-help-link"

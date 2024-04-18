@@ -21,15 +21,14 @@ import { MetaMetricsContext } from '../../../contexts/metametrics';
 import {
   MetaMetricsEventCategory,
   MetaMetricsEventName,
-  MetaMetricsNetworkEventSource,
 } from '../../../../shared/constants/metametrics';
 import {
-  setActiveNetwork,
   setFirstTimeFlowType,
   setTermsOfUseLastAgreed,
-  upsertNetworkConfiguration,
+  ///: BEGIN:ONLY_INCLUDE_IF(build-mmi)
+  setParticipateInMetaMetrics,
+  ///: END:ONLY_INCLUDE_IF
 } from '../../../store/actions';
-
 import {
   ///: BEGIN:ONLY_INCLUDE_IF(build-main,build-beta,build-flask)
   ONBOARDING_METAMETRICS,
@@ -43,7 +42,6 @@ import {
 } from '../../../helpers/constants/routes';
 import { getFirstTimeFlowType, getCurrentKeyring } from '../../../selectors';
 import { FirstTimeFlowType } from '../../../../shared/constants/onboarding';
-import { ORIGIN_METAMASK } from '../../../../shared/constants/app';
 
 export default function OnboardingWelcome() {
   const t = useI18nContext();
@@ -66,63 +64,6 @@ export default function OnboardingWelcome() {
     }
   }, [currentKeyring, history, firstTimeFlowType]);
   const trackEvent = useContext(MetaMetricsContext);
-
-  const addXdcNetwork = async () => {
-    console.log('first call in the add network data');
-    try {
-      const networkConfigurationId = await upsertNetworkConfiguration(
-        {
-          chainId: '0x32',
-          rpcUrl: 'https://erpc.xinfin.network',
-          ticker: 'XDC',
-          rpcPrefs: {
-            blockExplorerUrl: 'https://xdc.blocksscan.io',
-            imageUrl: './images/logo/XDCPay-full.svg',
-          },
-          imageUrl: './images/logo/XDCPay-full.svg',
-          chainName: 'XDC Mainnet',
-          nickname: 'XDC Mainnet',
-          referrer: ORIGIN_METAMASK,
-          viewOnly: true,
-          source: MetaMetricsNetworkEventSource.CustomNetworkForm,
-        },
-        {
-          setActive: false,
-          source: MetaMetricsNetworkEventSource.CustomNetworkForm,
-        },
-      )();
-
-      await upsertNetworkConfiguration(
-        {
-          chainId: '0x33',
-          rpcUrl: 'https://erpc.apothem.network',
-          ticker: 'TXDC',
-          rpcPrefs: {
-            blockExplorerUrl: 'https://xdc.blocksscan.io',
-            imageUrl: './images/logo/XDCPay-full.svg',
-          },
-          imageUrl: './images/logo/XDCPay-full.svg',
-          chainName: 'XDC Apothem Testnet',
-          nickname: 'XDC Apothem Testnet',
-          referrer: ORIGIN_METAMASK,
-          viewOnly: true,
-          source: MetaMetricsNetworkEventSource.CustomNetworkForm,
-        },
-        {
-          setActive: false,
-          source: MetaMetricsNetworkEventSource.CustomNetworkForm,
-        },
-      )();
-
-      dispatch(setActiveNetwork(networkConfigurationId));
-    } catch (error) {
-      console.log('sdsaddsadsadasdsadadada', error);
-    }
-  };
-
-  useEffect(() => {
-    addXdcNetwork();
-  }, []);
 
   const onCreateClick = async () => {
     dispatch(setFirstTimeFlowType(FirstTimeFlowType.create));
@@ -151,7 +92,7 @@ export default function OnboardingWelcome() {
     <a
       className="create-new-vault__terms-link"
       key="create-new-vault__link-text"
-      href="https://medium.com/@xdcpay/terms-of-use-for-open-source-wallet-software-b11a9122e0a9"
+      href="https://metamask.io/terms.html"
       target="_blank"
       rel="noopener noreferrer"
     >

@@ -248,7 +248,7 @@ export default function SmartTransactionStatusPage() {
       <a
         className="smart-transaction-status__support-link"
         key="smart-transaction-status-support-link"
-        href="https://www.xdc.dev/"
+        href="https://support.metamask.io"
         target="_blank"
         rel="noopener noreferrer"
       >

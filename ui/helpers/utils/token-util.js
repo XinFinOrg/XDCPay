@@ -8,45 +8,9 @@ import { calcTokenAmount } from '../../../shared/lib/transactions-controller-uti
 import { Numeric } from '../../../shared/modules/Numeric';
 import * as util from './util';
 import { formatCurrency } from './confirm-tx.util';
-import { addHexPrefix } from '../../../app/scripts/lib/util';
 
 const DEFAULT_SYMBOL = '';
 
-export const addXDCTokenList = async (newAccountAddress, tokenList) => {
-  try {
-    // console.log(tokenAddressList);
-    const XDCTokenAddressList = [
-      '0x9f6fe0a7bf2813c2bb5979503eefb1eae543b2b6',
-      '0x9797c881ccb120027cb50eecf08545dd3637aa10',
-      '0x5d5f074837f5d4618b3916ba74de1bf9662a3fed',
-    ];
-
-    const tokenDetails = await Promise.all(
-      XDCTokenAddressList.map(async (e) => {
-        const standardAddress = addHexPrefix(e).toLowerCase();
-        const { standard } = await getTokenStandardAndDetails(
-          standardAddress,
-          newAccountAddress,
-          null,
-        );
-
-        const token = await getSymbolAndDecimalsAndName(e, tokenList);
-        return {
-          ...token,
-          address: e,
-          standard,
-          isCustom: true,
-          unlisted: true,
-        };
-      }),
-    );
-
-    return tokenDetails;
-  } catch (e) {
-    log.warn(`Error Adding XDC tokens to wallet Error:`, e);
-    return [];
-  }
-};
 async function getSymbolFromContract(tokenAddress) {
   const token = util.getContractAtAddress(tokenAddress);
   try {

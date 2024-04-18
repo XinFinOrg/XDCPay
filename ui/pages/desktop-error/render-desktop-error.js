@@ -105,7 +105,7 @@ export function renderDesktopError({
 
   const openSettingsOrDownloadMMD = () => {
     openCustomProtocol('metamask-desktop://pair').catch(() => {
-      window.open('https://xinfin.org//download.html', '_blank').focus();
+      window.open('https://metamask.io/download.html', '_blank').focus();
     });
   };
 

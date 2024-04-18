@@ -35,7 +35,7 @@ const meta: Meta<typeof ConfigureSnapPopup> = {
   },
   args: {
     type: ConfigureSnapPopupType.CONFIGURE,
-    link: 'https://xinfin.org/',
+    link: 'https://metamask.io',
   },
 };
 

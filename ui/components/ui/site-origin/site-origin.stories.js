@@ -31,8 +31,8 @@ export const DefaultStory = (args) => <SiteOrigin {...args} />;
 DefaultStory.storyName = 'Default';
 
 DefaultStory.args = {
-  siteOrigin: 'https://xinfin.org/',
-  title: 'https://xinfin.org/',
+  siteOrigin: 'https://metamask.io',
+  title: 'https://metamask.io',
   iconName: 'MetaMask',
   iconSrc: './metamark.svg',
   chip: true,
@@ -41,7 +41,7 @@ DefaultStory.args = {
 export const RightIcon = (args) => <SiteOrigin {...args} />;
 
 RightIcon.args = {
-  siteOrigin: 'https://xinfin.org/',
+  siteOrigin: 'https://metamask.io',
   iconName: 'MetaMask',
   iconSrc: './metamark.svg',
   rightIcon: <InfoIcon />,

@@ -137,7 +137,7 @@ export default class DomainInput extends Component {
                 onChange={this.onChange}
                 onPaste={this.onPaste}
                 spellCheck="false"
-                defaultValue={selectedAddress || userInput}
+                value={selectedAddress || userInput}
                 autoFocus
                 data-testid="ens-input"
               />

@@ -2,10 +2,10 @@ export const PRIMARY = 'PRIMARY';
 export const SECONDARY = 'SECONDARY';
 
 const _contractAddressLink =
-  'https://www.xdc.dev//articles/360020028092-What-is-the-known-contract-address-warning-';
+  'https://metamask.zendesk.com/hc/en-us/articles/360020028092-What-is-the-known-contract-address-warning-';
 
 ///: BEGIN:ONLY_INCLUDE_IF(build-mmi)
-const _mmiWebSite = 'https://xinfin.org//institutions/';
+const _mmiWebSite = 'https://metamask.io/institutions/';
 export const MMI_WEB_SITE = _mmiWebSite;
 ///: END:ONLY_INCLUDE_IF
 
