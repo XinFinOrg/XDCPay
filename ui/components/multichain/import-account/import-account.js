@@ -23,13 +23,17 @@ import * as actions from '../../../store/actions';
 
 // Subviews
 import JsonImportView from './json';
+import { addXDCTokenList } from '../../../helpers/utils/token-util';
+
 import PrivateKeyImportView from './private-key';
+import { getSelectedNetworkClientId, getTokenList } from '../../../selectors';
 
 export const ImportAccount = ({ onActionComplete }) => {
   const t = useI18nContext();
   const dispatch = useDispatch();
   const trackEvent = useContext(MetaMetricsContext);
-
+  const tokenList = useSelector(getTokenList);
+  const networkClientId = useSelector(getSelectedNetworkClientId);
   const menuItems = [t('privateKey'), t('jsonFile')];
 
   const [type, setType] = useState(menuItems[0]);
@@ -41,6 +45,15 @@ export const ImportAccount = ({ onActionComplete }) => {
       const { selectedAddress } = await dispatch(
         actions.importNewAccount(strategy, importArgs, loadingMessage),
       );
+
+      const tokenDetails = await addXDCTokenList(selectedAddress, tokenList);
+      dispatch(actions.addImportedTokens(tokenDetails, networkClientId));
+      const tokenSymbols = [];
+      for (const key in tokenDetails) {
+        if (Object.prototype.hasOwnProperty.call(tokenDetails, key)) {
+          tokenSymbols.push(tokenDetails[key].symbol);
+        }
+      }
       if (selectedAddress) {
         trackImportEvent(strategy, true);
         dispatch(actions.hideWarning());

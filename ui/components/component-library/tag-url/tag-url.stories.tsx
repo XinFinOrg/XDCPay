@@ -58,7 +58,7 @@ ActionButtonLabel.args = {
   actionButtonLabel: 'Permissions',
   actionButtonProps: {
     externalLink: true,
-    href: 'https://metamask.io',
+    href: 'https://xinfin.org/',
   },
 };
 

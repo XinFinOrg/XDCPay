@@ -18,10 +18,16 @@ import {
   getNetworkConfigurations,
   getNetworksTabSelectedNetworkConfigurationId,
 } from '../../../selectors';
-import { getProviderConfig } from '../../../ducks/metamask/metamask';
+
+import {
+  getProviderConfig,
+  isLineaMainnetNetworkReleased,
+} from '../../../ducks/metamask/metamask';
 import {
   NETWORK_TYPES,
   TEST_CHAINS,
+  BUILT_IN_NETWORKS,
+  CHAIN_IDS,
 } from '../../../../shared/constants/network';
 import { defaultNetworksData } from './networks-tab.constants';
 import NetworksTabContent from './networks-tab-content';
@@ -52,8 +58,8 @@ const NetworksTab = ({ addNewNetwork }) => {
   const networksTabSelectedNetworkConfigurationId = useSelector(
     getNetworksTabSelectedNetworkConfigurationId,
   );
-
-  const networkConfigurationsList = Object.entries(networkConfigurations).map(
+  const isLineaMainnetReleased = useSelector(isLineaMainnetNetworkReleased);
+  const networkList = Object.entries(networkConfigurations).map(
     ([networkConfigurationId, networkConfiguration]) => {
       return {
         label: networkConfiguration.nickname,
@@ -69,7 +75,49 @@ const NetworksTab = ({ addNewNetwork }) => {
     },
   );
 
-  const networksToRender = [...defaultNetworks, ...networkConfigurationsList];
+  const networkConfigurationsList = networkList.filter(
+    (e) =>
+      ![CHAIN_IDS.XDC_CHAIN_ID, CHAIN_IDS.XDC_APOTHEM_CHAIN_ID].includes(
+        e.chainId,
+      ),
+  );
+  const XDCNetworks = [];
+
+  const XDC_MAINNET = networkList.find(
+    (e) => e.chainId === CHAIN_IDS.XDC_CHAIN_ID,
+  );
+
+  if (XDC_MAINNET) {
+    XDCNetworks.push({
+      ...XDC_MAINNET,
+      viewOnly: true,
+    });
+  }
+
+  const XDC_TESTNET = networkList.find(
+    (e) => e.chainId === CHAIN_IDS.XDC_APOTHEM_CHAIN_ID,
+  );
+
+  if (XDC_TESTNET) {
+    XDCNetworks.push({
+      ...XDC_TESTNET,
+      viewOnly: true,
+    });
+  }
+
+  let networksToRender = [
+    ...XDCNetworks,
+    ...defaultNetworks,
+    ...networkConfigurationsList,
+  ];
+
+  if (!isLineaMainnetReleased) {
+    networksToRender = networksToRender.filter(
+      (network) =>
+        network.chainId !==
+        BUILT_IN_NETWORKS[NETWORK_TYPES.LINEA_MAINNET].chainId,
+    );
+  }
 
   let selectedNetwork =
     networksToRender.find(

@@ -100,7 +100,7 @@ describe('Error utils Tests', function () {
 
       expect(global.platform.openTab).toHaveBeenCalledTimes(1);
       expect(global.platform.openTab).toHaveBeenCalledWith({
-        url: 'https://metamask.io/',
+        url: 'https://xinfin.org//',
       });
     });
 

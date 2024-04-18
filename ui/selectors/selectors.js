@@ -638,8 +638,54 @@ export function getNeverShowSwitchedNetworkMessage(state) {
 export const getNonTestNetworks = createDeepEqualSelector(
   getNetworkConfigurations,
   (networkConfigurations = {}) => {
+    const networkList = Object.values(networkConfigurations);
+
+    const XDCNetwork = networkList.find(
+      (network) => network.chainId === CHAIN_IDS.XDC_CHAIN_ID,
+    );
+    const XDCTestNetwork = networkList.find(
+      (network) => network.chainId === CHAIN_IDS.XDC_APOTHEM_CHAIN_ID,
+    );
+    const XDCchainsToIgnore = [
+      CHAIN_IDS.XDC_CHAIN_ID,
+      CHAIN_IDS.XDC_APOTHEM_CHAIN_ID,
+    ];
+
+    const finalNetworkList = [];
+
+    if (XDCNetwork) {
+      finalNetworkList.push({
+        chainId: XDCNetwork.chainId,
+        nickname: XDCNetwork.nickname,
+        rpcUrl: XDCNetwork.rpcUrl,
+        rpcPrefs: {
+          imageUrl: XDCNetwork.rpcPrefs.imageUrl,
+        },
+
+        ticker: XDCNetwork.ticker,
+        id: XDCNetwork.id,
+        removable: false,
+      });
+    }
+
+    if (XDCTestNetwork) {
+      finalNetworkList.push({
+        chainId: XDCTestNetwork.chainId,
+        nickname: XDCTestNetwork.nickname,
+        rpcUrl: XDCTestNetwork.rpcUrl,
+        rpcPrefs: {
+          imageUrl: XDCTestNetwork.rpcPrefs.imageUrl,
+        },
+
+        ticker: XDCTestNetwork.ticker,
+        id: XDCTestNetwork.id,
+        removable: false,
+      });
+    }
+
     return [
       // Mainnet always first
+      ...finalNetworkList,
       {
         chainId: CHAIN_IDS.MAINNET,
         nickname: MAINNET_DISPLAY_NAME,
@@ -652,21 +698,13 @@ export const getNonTestNetworks = createDeepEqualSelector(
         id: NETWORK_TYPES.MAINNET,
         removable: false,
       },
-      {
-        chainId: CHAIN_IDS.LINEA_MAINNET,
-        nickname: LINEA_MAINNET_DISPLAY_NAME,
-        rpcUrl: CHAIN_ID_TO_RPC_URL_MAP[CHAIN_IDS.LINEA_MAINNET],
-        rpcPrefs: {
-          imageUrl: LINEA_MAINNET_TOKEN_IMAGE_URL,
-        },
-        providerType: NETWORK_TYPES.LINEA_MAINNET,
-        ticker: TEST_NETWORK_TICKER_MAP[NETWORK_TYPES.LINEA_MAINNET],
-        id: NETWORK_TYPES.LINEA_MAINNET,
-        removable: false,
-      },
       // Custom networks added by the user
       ...Object.values(networkConfigurations)
-        .filter(({ chainId }) => ![CHAIN_IDS.LOCALHOST].includes(chainId))
+        .filter(
+          ({ chainId }) =>
+            ![CHAIN_IDS.LOCALHOST].includes(chainId) &&
+            !XDCchainsToIgnore.includes(chainId),
+        )
         .map((network) => ({
           ...network,
           rpcPrefs: {

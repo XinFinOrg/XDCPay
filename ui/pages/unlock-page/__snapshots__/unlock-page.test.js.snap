@@ -80,17 +80,17 @@ exports[`Unlock Page should match snapshot 1`] = `
         class="unlock-page__support"
       >
         <span>
-           
-          Need help? Contact 
+
+          Need help? Contact
           <a
-            href="https://support.metamask.io"
+            href="https://www.xdc.dev/"
             rel="noopener noreferrer"
             target="_blank"
           >
             MetaMask support
           </a>
-          
-           
+
+
         </span>
       </div>
     </div>

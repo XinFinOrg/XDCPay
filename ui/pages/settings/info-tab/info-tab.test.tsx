@@ -15,7 +15,7 @@ describe('InfoTab', () => {
       const privacyPolicyLink = getByText('Privacy policy');
       expect(privacyPolicyLink).toHaveAttribute(
         'href',
-        'https://metamask.io/privacy.html',
+        'https://medium.com/@xdcpay/privacy-policy-37608719dce4',
       );
     });
 
@@ -23,7 +23,7 @@ describe('InfoTab', () => {
       const termsOfUseLink = getByText('Terms of use');
       expect(termsOfUseLink).toHaveAttribute(
         'href',
-        'https://metamask.io/terms.html',
+        'https://medium.com/@xdcpay/terms-of-use-for-open-source-wallet-software-b11a9122e0a9',
       );
     });
 
@@ -31,29 +31,23 @@ describe('InfoTab', () => {
       const attributionsLink = getByText('Attributions');
       expect(attributionsLink).toHaveAttribute(
         'href',
-        'https://metamask.io/attributions.html',
+        'https://xinfin.org//attributions.html',
       );
     });
 
     it('should have correct href for "Support" link', () => {
       const supportLink = getByText('Visit our support center');
-      expect(supportLink).toHaveAttribute(
-        'href',
-        'https://support.metamask.io',
-      );
+      expect(supportLink).toHaveAttribute('href', 'https://www.xdc.dev/');
     });
 
     it('should have correct href for "Visit our website" link', () => {
       const websiteLink = getByText('Visit our website');
-      expect(websiteLink).toHaveAttribute('href', 'https://metamask.io/');
+      expect(websiteLink).toHaveAttribute('href', 'https://xinfin.org//');
     });
 
     it('should have correct href for "Contact us" link', () => {
       const contactUsLink = getByText('Contact us');
-      expect(contactUsLink).toHaveAttribute(
-        'href',
-        'https://metamask.zendesk.com/hc/en-us',
-      );
+      expect(contactUsLink).toHaveAttribute('href', 'https://www.xdc.dev/');
     });
   });
 });

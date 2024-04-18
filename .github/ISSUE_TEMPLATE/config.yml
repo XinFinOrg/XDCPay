@@ -1,8 +1,8 @@
 blank_issues_enabled: false
 contact_links:
   - name: Request a new feature
-    url: https://community.metamask.io/c/feature-requests-ideas/
+    url: https://www.xdc.dev/
     about: Request new features and vote on the ones that are important to you
   - name: Get support or ask a question
-    url: https://metamask.zendesk.com/hc/en-us
+    url: https://www.xdc.dev/
     about: Use the MetaMask support system to get help and ask questions

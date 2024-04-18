@@ -88,7 +88,7 @@ export const Children: StoryFn<typeof BannerTip> = (args) => {
       Description shouldn&apos;t repeat title. 1-3 lines. Can contain a{' '}
       <ButtonLink
         size={ButtonLinkSize.Inherit}
-        href="https://metamask.io/"
+        href="https://xinfin.org//"
         externalLink
       >
         hyperlink.

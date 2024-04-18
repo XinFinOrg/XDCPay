@@ -163,7 +163,7 @@ export const ExternalLink: StoryFn<typeof ButtonBase> = (args) => (
 );
 
 ExternalLink.args = {
-  href: 'https://metamask.io',
+  href: 'https://xinfin.org/',
   externalLink: true,
 };
 

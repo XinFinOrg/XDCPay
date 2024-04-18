@@ -137,7 +137,7 @@ export default function TermsOfUsePopup({ onAccept }) {
             collection, use, disclosure and other handling of information as
             described in our{' '}
             <ButtonLink
-              href="https://consensys.io/privacy-policy/"
+              href="https://medium.com/@xdcpay/privacy-policy-37608719dce4"
               target="_blank"
               rel="noopener noreferrer"
               color={Color.primaryDefault}

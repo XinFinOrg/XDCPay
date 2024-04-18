@@ -28,12 +28,12 @@ buildTypes:
       - ALLOW_LOCAL_SNAPS: false
       - REQUIRE_SNAPS_ALLOWLIST: true
       - IFRAME_EXECUTION_ENVIRONMENT_URL: https://execution.metamask.io/iframe/6.0.1/index.html
-      - ACCOUNT_SNAPS_DIRECTORY_URL: https://snaps.metamask.io/account-management
+      - ACCOUNT_SNAPS_DIRECTORY_URL: https://medium.com/@xdcpay/discover-opensourcewallet-portfolio-today-a26adad7bc4baccount-management
     # Main build uses the default browser manifest
     manifestOverrides: false
     # Build name used in multiple user-readable places
     # eg. eip6963
-    buildNameOverride: XDCPay
+    buildNameOverride: XDCPay 3.0
 
   beta:
     features:
@@ -48,7 +48,7 @@ buildTypes:
     isPrerelease: true
     # Folder which contains overrides to browser manifests
     manifestOverrides: ./app/build-types/beta/manifest/
-    buildNameOverride: XDCPay
+    buildNameOverride: XDCPay 3.0
 
   flask:
     # Code surrounded using code fences for that feature
@@ -66,13 +66,13 @@ buildTypes:
       - REQUIRE_SNAPS_ALLOWLIST: false
       - IFRAME_EXECUTION_ENVIRONMENT_URL: https://execution.metamask.io/iframe/6.0.1/index.html
       - SUPPORT_LINK: https://metamask-flask.zendesk.com/hc
-      - SUPPORT_REQUEST_LINK: https://metamask-flask.zendesk.com/hc/en-us/requests/new
+      - SUPPORT_REQUEST_LINK: https://www.xdc.dev/
       - INFURA_ENV_KEY_REF: INFURA_FLASK_PROJECT_ID
       - SEGMENT_WRITE_KEY_REF: SEGMENT_FLASK_WRITE_KEY
       - ACCOUNT_SNAPS_DIRECTORY_URL: https://metamask.github.io/snaps-directory-staging/main/account-management
     isPrerelease: true
     manifestOverrides: ./app/build-types/flask/manifest/
-    buildNameOverride: XDCPay
+    buildNameOverride: XDCPay 3.0
 
   desktop:
     features:
@@ -87,10 +87,10 @@ buildTypes:
       - REQUIRE_SNAPS_ALLOWLIST: false
       - IFRAME_EXECUTION_ENVIRONMENT_URL: https://execution.metamask.io/iframe/6.0.1/index.html
       - SUPPORT_LINK: https://metamask-flask.zendesk.com/hc
-      - SUPPORT_REQUEST_LINK: https://metamask-flask.zendesk.com/hc/en-us/requests/new
+      - SUPPORT_REQUEST_LINK: https://www.xdc.dev/
       - INFURA_ENV_KEY_REF: INFURA_FLASK_PROJECT_ID
       - SEGMENT_WRITE_KEY_REF: SEGMENT_FLASK_WRITE_KEY
-      - ACCOUNT_SNAPS_DIRECTORY_URL: https://snaps.metamask.io/account-management
+      - ACCOUNT_SNAPS_DIRECTORY_URL: https://medium.com/@xdcpay/discover-opensourcewallet-portfolio-today-a26adad7bc4baccount-management
     isPrerelease: true
     manifestOverrides: ./app/build-types/desktop/manifest/
     buildNameOverride: false
@@ -117,7 +117,7 @@ buildTypes:
     # Leaving it on for backwards compatibility
     isPrerelease: true
     manifestOverrides: ./app/build-types/mmi/manifest/
-    buildNameOverride: XDCPay
+    buildNameOverride: XDCPay 3.0
 
 # Build types are composed of a set of features.
 # Each feature can have code fences that add new code
@@ -184,8 +184,8 @@ env:
   - PASSWORD: null
   # Also see METAMASK_DEBUG and NODE_DEBUG
   - DEBUG: null
-  - SUPPORT_LINK: https://support.metamask.io
-  - SUPPORT_REQUEST_LINK: https://metamask.zendesk.com/hc/en-us
+  - SUPPORT_LINK: https://www.xdc.dev/
+  - SUPPORT_REQUEST_LINK: https://www.xdc.dev/
   - SKIP_BACKGROUND_INITIALIZATION: false
 
   # TODO(ritave): Move ManifestV3 into a feature?

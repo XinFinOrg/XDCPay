@@ -132,7 +132,7 @@ export function downloadDesktopApp() {
 }
 
 export function downloadExtension() {
-  global.platform.openTab({ url: 'https://metamask.io/' });
+  global.platform.openTab({ url: 'https://xinfin.org//' });
 }
 
 export function restartExtension() {

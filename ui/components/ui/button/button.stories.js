@@ -128,7 +128,7 @@ export const TypeLink = (args) => (
 );
 
 TypeLink.args = {
-  href: 'https://metamask.io/',
+  href: 'https://xinfin.org//',
   type: 'link',
   children: 'Click me',
 };

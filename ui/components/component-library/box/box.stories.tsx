@@ -691,11 +691,11 @@ export const As: StoryFn<typeof Box> = (args) => {
         Box as 'button' tag and disabled
       </Box>
       <br />
-      <Box as="a" href="https://metamask.io">
+      <Box as="a" href="https://xinfin.org/">
         Box as 'a' tag with href
       </Box>
       <br />
-      <Box as="p" href="https://metamask.io" data-testid="hello">
+      <Box as="p" href="https://xinfin.org/" data-testid="hello">
         Box as 'p' tag with href and data-testid
       </Box>
       <br />

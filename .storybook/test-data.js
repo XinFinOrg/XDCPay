@@ -1403,7 +1403,7 @@ const state = {
         id: 522690215,
         method: 'eth_accounts',
         methodType: 'restricted',
-        origin: 'https://metamask.io',
+        origin: 'https://xinfin.org/',
         requestTime: 1602643170686,
         responseTime: 1602643170688,
         success: true,

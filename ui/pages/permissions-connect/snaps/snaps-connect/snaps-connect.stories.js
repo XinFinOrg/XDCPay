@@ -37,7 +37,7 @@ DefaultStory.args = {
     },
   },
   targetSubjectMetadata: {
-    origin: 'https://metamask.io',
+    origin: 'https://xinfin.org/',
   },
 };
 
@@ -65,7 +65,7 @@ MultiStory.args = {
     },
   },
   targetSubjectMetadata: {
-    origin: 'https://metamask.io',
+    origin: 'https://xinfin.org/',
   },
 };
 
@@ -97,6 +97,6 @@ ScrollingStory.args = {
     },
   },
   targetSubjectMetadata: {
-    origin: 'https://metamask.io',
+    origin: 'https://xinfin.org/',
   },
 };

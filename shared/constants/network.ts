@@ -98,6 +98,8 @@ export const NETWORK_TYPES = {
   LINEA_GOERLI: 'linea-goerli',
   LINEA_SEPOLIA: 'linea-sepolia',
   LINEA_MAINNET: 'linea-mainnet',
+  XDC: 'xdc',
+  XDC_APOTHEM: 'apothem',
 } as const;
 
 /**
@@ -114,6 +116,8 @@ export const NETWORK_NAMES = {
  * those that we have added custom code to support our feature set.
  */
 export const CHAIN_IDS = {
+  XDC_CHAIN_ID: '0x32',
+  XDC_APOTHEM_CHAIN_ID: '0x33',
   MAINNET: '0x1',
   GOERLI: '0x5',
   LOCALHOST: '0x539',
@@ -224,7 +228,8 @@ export const DEPRECATED_NETWORKS = [
  * Explanation: https://gist.github.com/rekmarks/a47bd5f2525936c4b8eee31a16345553
  */
 export const MAX_SAFE_CHAIN_ID = 4503599627370476;
-
+export const XDC_MAINNET = 'XDC Mainnet';
+export const XDC_TESTNET = 'XDC Apothem Testnet';
 export const MAINNET_DISPLAY_NAME = 'Ethereum Mainnet';
 export const GOERLI_DISPLAY_NAME = 'Goerli';
 export const SEPOLIA_DISPLAY_NAME = 'Sepolia';
@@ -272,6 +277,9 @@ export const LINEA_MAINNET_RPC_URL = getRpcUrl({
   network: NETWORK_TYPES.LINEA_MAINNET,
 });
 export const LOCALHOST_RPC_URL = 'http://localhost:8545';
+
+export const XDC_RPC_URL = 'https://erpc.xinfin.network';
+export const XDC_APOTHEM_RPC_URL = 'https://erpc.apothem.network';
 
 /**
  * An object containing the token symbols for various tokens that are either
@@ -360,6 +368,8 @@ const CHAINLIST_CURRENCY_SYMBOLS_MAP = {
   ACALA_NETWORK: 'ACA',
 } as const;
 
+export const XDC_TOKEN_IMAGE_URL = './images/logo/XDCPay-full.svg';
+
 export const ETH_TOKEN_IMAGE_URL = './images/eth_logo.svg';
 export const LINEA_GOERLI_TOKEN_IMAGE_URL = './images/linea-logo-testnet.png';
 export const LINEA_SEPOLIA_TOKEN_IMAGE_URL = './images/linea-logo-testnet.png';
@@ -429,7 +439,10 @@ export const INFURA_PROVIDER_TYPES = [
   NETWORK_TYPES.LINEA_SEPOLIA,
   NETWORK_TYPES.LINEA_MAINNET,
 ] as const;
-
+export const RPC_PROVIDER_TYPES = [
+  NETWORK_TYPES.XDC,
+  NETWORK_TYPES.XDC_APOTHEM,
+] as const;
 export const TEST_CHAINS = [
   CHAIN_IDS.SEPOLIA,
   CHAIN_IDS.LINEA_SEPOLIA,
@@ -510,7 +523,9 @@ export const NETWORK_TO_NAME_MAP = {
   [NETWORK_TYPES.LINEA_MAINNET]: LINEA_MAINNET_DISPLAY_NAME,
   [NETWORK_TYPES.LOCALHOST]: LOCALHOST_DISPLAY_NAME,
   [NETWORK_TYPES.SEPOLIA]: SEPOLIA_DISPLAY_NAME,
+  [NETWORK_TYPES.XDC]: XDC_MAINNET,
 
+  [CHAIN_IDS.XDC_CHAIN_ID]: XDC_MAINNET,
   [CHAIN_IDS.ARBITRUM]: ARBITRUM_DISPLAY_NAME,
   [CHAIN_IDS.AVALANCHE]: AVALANCHE_DISPLAY_NAME,
   [CHAIN_IDS.BSC]: BSC_DISPLAY_NAME,
@@ -651,6 +666,8 @@ export const CHAIN_ID_TO_TYPE_MAP = {
 } as const;
 
 export const CHAIN_ID_TO_RPC_URL_MAP = {
+  [CHAIN_IDS.XDC_CHAIN_ID]: XDC_RPC_URL,
+  [CHAIN_IDS.XDC_APOTHEM_CHAIN_ID]: XDC_APOTHEM_RPC_URL,
   [CHAIN_IDS.GOERLI]: GOERLI_RPC_URL,
   [CHAIN_IDS.SEPOLIA]: SEPOLIA_RPC_URL,
   [CHAIN_IDS.LINEA_GOERLI]: LINEA_GOERLI_RPC_URL,
@@ -732,6 +749,8 @@ export const CHAIN_ID_TO_ETHERS_NETWORK_NAME_MAP = {
   [CHAIN_IDS.LINEA_SEPOLIA]: NETWORK_TYPES.LINEA_SEPOLIA,
   [CHAIN_IDS.MAINNET]: NETWORK_NAMES.HOMESTEAD,
   [CHAIN_IDS.LINEA_MAINNET]: NETWORK_TYPES.LINEA_MAINNET,
+  [CHAIN_IDS.XDC_CHAIN_ID]: NETWORK_TYPES.XDC,
+  [CHAIN_IDS.XDC_APOTHEM_CHAIN_ID]: NETWORK_TYPES.XDC_APOTHEM,
 } as const;
 
 export const CHAIN_ID_TOKEN_IMAGE_MAP = {
@@ -745,6 +764,8 @@ export const CHAIN_ID_TOKEN_IMAGE_MAP = {
   [CHAIN_IDS.GNOSIS]: GNOSIS_TOKEN_IMAGE_URL,
   [CHAIN_IDS.FANTOM]: FTM_TOKEN_IMAGE_URL,
   [CHAIN_IDS.FILECOIN]: FILECOIN_MAINNET_IMAGE_URL,
+  [CHAIN_IDS.XDC_CHAIN_ID]: XDC_TOKEN_IMAGE_URL,
+  [CHAIN_IDS.XDC_APOTHEM_CHAIN_ID]: XDC_TOKEN_IMAGE_URL,
 } as const;
 
 export const INFURA_BLOCKED_KEY = 'countryBlocked';
@@ -886,6 +907,8 @@ export const BUYABLE_CHAINS_MAP: {
     | typeof CHAIN_IDS.ARBITRUM_GOERLI
     | typeof CHAIN_IDS.BLAST
     | typeof CHAIN_IDS.FILECOIN
+    | typeof CHAIN_IDS.XDC_CHAIN_ID
+    | typeof CHAIN_IDS.XDC_APOTHEM_CHAIN_ID
   >]: BuyableChainSettings;
 } = {
   [CHAIN_IDS.MAINNET]: {

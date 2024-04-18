@@ -115,7 +115,7 @@ Children.args = {
       {`Description shouldn't repeat title. 1-3 lines. Can contain a `}
       <ButtonLink
         size={ButtonLinkSize.Auto}
-        href="https://metamask.io/"
+        href="https://xinfin.org//"
         externalLink
       >
         hyperlink.

@@ -26,7 +26,7 @@ describe('isBlockedUrl', () => {
 
   it.each([
     ['http://metamask.io', false],
-    ['https://metamask.io', false],
+    ['https://xinfin.org/', false],
     ['https://metamask.test', true],
     ['sftp://metamask.io', true],
     ['', true],

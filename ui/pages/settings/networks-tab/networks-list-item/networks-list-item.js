@@ -59,7 +59,10 @@ const NetworksListItem = ({
     listItemNetworkIsSelected || listItemNetworkIsCurrentProvider;
   const isCurrentRpcTarget =
     listItemUrlIsProviderUrl || listItemTypeIsProviderNonRpcType;
-
+  const IsXDCNetwork = [
+    CHAIN_IDS.XDC_CHAIN_ID,
+    CHAIN_IDS.XDC_APOTHEM_CHAIN_ID,
+  ].includes(network.chainId);
   const settingsRefs = useRef();
 
   useEffect(() => {
@@ -118,12 +121,13 @@ const NetworksListItem = ({
           'networks-tab__networks-list-name--selected':
             displayNetworkListItemAsSelected,
           'networks-tab__networks-list-name--disabled':
-            currentProviderType !== NETWORK_TYPES.RPC &&
+            (currentProviderType !== NETWORK_TYPES.RPC || IsXDCNetwork) &&
             !displayNetworkListItemAsSelected,
         })}
       >
         {label || t(getNetworkLabelKey(labelKey))}
-        {currentProviderType !== NETWORK_TYPES.RPC && (
+
+        {(currentProviderType !== NETWORK_TYPES.RPC || IsXDCNetwork) && (
           <Icon
             name={IconName.Lock}
             color={IconColor.iconMuted}
