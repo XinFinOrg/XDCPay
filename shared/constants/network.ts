@@ -478,11 +478,11 @@ export const BUILT_IN_NETWORKS = {
     ticker: TEST_NETWORK_TICKER_MAP[NETWORK_TYPES.SEPOLIA],
     blockExplorerUrl: `https://${NETWORK_TYPES.SEPOLIA}.etherscan.io`,
   },
-  // [NETWORK_TYPES.LINEA_SEPOLIA]: {
-  //   chainId: CHAIN_IDS.LINEA_SEPOLIA,
-  //   ticker: TEST_NETWORK_TICKER_MAP[NETWORK_TYPES.LINEA_SEPOLIA],
-  //   blockExplorerUrl: 'https://sepolia.lineascan.build',
-  // },
+  [NETWORK_TYPES.LINEA_SEPOLIA]: {
+    chainId: CHAIN_IDS.LINEA_SEPOLIA,
+    ticker: TEST_NETWORK_TICKER_MAP[NETWORK_TYPES.LINEA_SEPOLIA],
+    blockExplorerUrl: 'https://sepolia.lineascan.build',
+  },
   [NETWORK_TYPES.MAINNET]: {
     chainId: CHAIN_IDS.MAINNET,
     blockExplorerUrl: `https://etherscan.io`,

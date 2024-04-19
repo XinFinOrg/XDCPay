@@ -113,8 +113,6 @@ export const NetworkListMenu = ({ onClose }) => {
       return orderedIndexMap[keyA] - orderedIndexMap[keyB];
     });
 
-    console.log('this is not shorted DATa', sortedNonTestNetworks);
-
     const XDC_MAINNET = nonTestNetworks.findIndex(
       (e) => e.chainId === CHAIN_IDS.XDC_CHAIN_ID,
     );
@@ -122,7 +120,6 @@ export const NetworkListMenu = ({ onClose }) => {
     if (XDC_MAINNET) {
       const itemToMove = nonTestNetworks.splice(XDC_MAINNET, 1)[0]; // Remove the item from its current position
       nonTestNetworks.splice(0, 0, itemToMove); // Insert the item into the new position
-      console.log('dasddaddadadadasdadadasdasd', nonTestNetworks); // Update the state with the modified array
     }
 
     return nonTestNetworks;
