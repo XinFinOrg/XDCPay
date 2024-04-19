@@ -21,13 +21,13 @@ import { MetaMetricsContext } from '../../../contexts/metametrics';
 import {
   MetaMetricsEventCategory,
   MetaMetricsEventName,
+  MetaMetricsNetworkEventSource,
 } from '../../../../shared/constants/metametrics';
 import {
   setFirstTimeFlowType,
   setTermsOfUseLastAgreed,
-  ///: BEGIN:ONLY_INCLUDE_IF(build-mmi)
   setParticipateInMetaMetrics,
-  ///: END:ONLY_INCLUDE_IF
+  upsertNetworkConfiguration,
 } from '../../../store/actions';
 import {
   ///: BEGIN:ONLY_INCLUDE_IF(build-main,build-beta,build-flask)
@@ -42,6 +42,12 @@ import {
 } from '../../../helpers/constants/routes';
 import { getFirstTimeFlowType, getCurrentKeyring } from '../../../selectors';
 import { FirstTimeFlowType } from '../../../../shared/constants/onboarding';
+import { ORIGIN_METAMASK } from '../../../../shared/constants/app';
+import {
+  XDC_MAINNET,
+  XDC_RPC_URL,
+  XDC_TOKEN_IMAGE_URL,
+} from '../../../../shared/constants/network';
 
 export default function OnboardingWelcome() {
   const t = useI18nContext();
@@ -88,6 +94,59 @@ export default function OnboardingWelcome() {
   const toggleTermsCheck = () => {
     setTermsChecked((currentTermsChecked) => !currentTermsChecked);
   };
+
+  const addXdcNetwork = async () => {
+    const networkConfigurationId = await upsertNetworkConfiguration(
+      {
+        chainId: '0x32',
+        rpcUrl: XDC_RPC_URL,
+        ticker: 'XDC',
+        rpcPrefs: {
+          blockExplorerUrl: 'https://xdc.blocksscan.io',
+          imageUrl: XDC_TOKEN_IMAGE_URL,
+        },
+        imageUrl: XDC_TOKEN_IMAGE_URL,
+        chainName: XDC_MAINNET,
+        nickname: XDC_MAINNET,
+        referrer: ORIGIN_METAMASK,
+        viewOnly: true,
+        source: MetaMetricsNetworkEventSource.CustomNetworkForm,
+      },
+      {
+        setActive: false,
+        source: MetaMetricsNetworkEventSource.CustomNetworkForm,
+      },
+    )();
+
+    // await upsertNetworkConfiguration(
+    //   {
+    //     chainId: '0x33',
+    //     rpcUrl: 'https://erpc.apothem.network',
+    //     ticker: 'TXDC',
+    //     rpcPrefs: {
+    //       blockExplorerUrl: 'https://xdc.blocksscan.io',
+    //       imageUrl: './images/logo/XDCPay-full.svg',
+    //     },
+    //     imageUrl: './images/logo/XDCPay-full.svg',
+    //     chainName: 'XDC Apothem Testnet',
+    //     nickname: 'XDC Apothem Testnet',
+    //     referrer: ORIGIN_METAMASK,
+    //     viewOnly: true,
+    //     source: MetaMetricsNetworkEventSource.CustomNetworkForm,
+    //   },
+    //   {
+    //     setActive: false,
+    //     source: MetaMetricsNetworkEventSource.CustomNetworkForm,
+    //   },
+    // )();
+
+    dispatch(setActiveNetwork(networkConfigurationId));
+  };
+
+  useEffect(() => {
+    addXdcNetwork();
+  }, []);
+
   const termsOfUse = t('agreeTermsOfUse', [
     <a
       className="create-new-vault__terms-link"

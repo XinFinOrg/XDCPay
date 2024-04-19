@@ -114,6 +114,8 @@ export const NETWORK_NAMES = {
  * those that we have added custom code to support our feature set.
  */
 export const CHAIN_IDS = {
+  XDC_CHAIN_ID: '0x32',
+  XDC_APOTHEM_CHAIN_ID: '0x33',
   MAINNET: '0x1',
   GOERLI: '0x5',
   LOCALHOST: '0x539',
@@ -246,6 +248,8 @@ export const GNOSIS_DISPLAY_NAME = 'Gnosis';
 export const ZK_SYNC_ERA_DISPLAY_NAME = 'zkSync Era Mainnet';
 export const BASE_DISPLAY_NAME = 'Base Mainnet';
 export const AURORA_ETH_DISPLAY_NAME = 'Aurora';
+export const XDC_MAINNET = 'XDC Mainnet';
+export const XDC_TESTNET = 'XDC Apothem Testnet';
 
 export const infuraProjectId = process.env.INFURA_PROJECT_ID;
 export const getRpcUrl = ({
@@ -272,6 +276,9 @@ export const LINEA_MAINNET_RPC_URL = getRpcUrl({
   network: NETWORK_TYPES.LINEA_MAINNET,
 });
 export const LOCALHOST_RPC_URL = 'http://localhost:8545';
+
+export const XDC_RPC_URL = 'https://erpc.xinfin.network';
+export const XDC_APOTHEM_RPC_URL = 'https://erpc.apothem.network';
 
 /**
  * An object containing the token symbols for various tokens that are either
@@ -300,6 +307,7 @@ export const CURRENCY_SYMBOLS = {
   GLIMMER: 'GLMR',
   MOONRIVER: 'MOVR',
   ONE: 'ONE',
+  XDC: 'XDC',
 } as const;
 
 const CHAINLIST_CURRENCY_SYMBOLS_MAP = {
@@ -360,6 +368,7 @@ const CHAINLIST_CURRENCY_SYMBOLS_MAP = {
   ACALA_NETWORK: 'ACA',
 } as const;
 
+export const XDC_TOKEN_IMAGE_URL = './images/logo/XDCPay-full.svg';
 export const ETH_TOKEN_IMAGE_URL = './images/eth_logo.svg';
 export const LINEA_GOERLI_TOKEN_IMAGE_URL = './images/linea-logo-testnet.png';
 export const LINEA_SEPOLIA_TOKEN_IMAGE_URL = './images/linea-logo-testnet.png';
@@ -469,11 +478,11 @@ export const BUILT_IN_NETWORKS = {
     ticker: TEST_NETWORK_TICKER_MAP[NETWORK_TYPES.SEPOLIA],
     blockExplorerUrl: `https://${NETWORK_TYPES.SEPOLIA}.etherscan.io`,
   },
-  [NETWORK_TYPES.LINEA_SEPOLIA]: {
-    chainId: CHAIN_IDS.LINEA_SEPOLIA,
-    ticker: TEST_NETWORK_TICKER_MAP[NETWORK_TYPES.LINEA_SEPOLIA],
-    blockExplorerUrl: 'https://sepolia.lineascan.build',
-  },
+  // [NETWORK_TYPES.LINEA_SEPOLIA]: {
+  //   chainId: CHAIN_IDS.LINEA_SEPOLIA,
+  //   ticker: TEST_NETWORK_TICKER_MAP[NETWORK_TYPES.LINEA_SEPOLIA],
+  //   blockExplorerUrl: 'https://sepolia.lineascan.build',
+  // },
   [NETWORK_TYPES.MAINNET]: {
     chainId: CHAIN_IDS.MAINNET,
     blockExplorerUrl: `https://etherscan.io`,
@@ -1023,6 +1032,16 @@ export const FEATURED_RPCS: RPCDefinition[] = [
     rpcPrefs: {
       blockExplorerUrl: 'https://basescan.org',
       imageUrl: BASE_TOKEN_IMAGE_URL,
+    },
+  },
+  {
+    chainId: CHAIN_IDS.XDC_CHAIN_ID,
+    nickname: XDC_MAINNET,
+    rpcUrl: 'https://erpc.xinfin.network',
+    ticker: CURRENCY_SYMBOLS.XDC,
+    rpcPrefs: {
+      blockExplorerUrl: 'https://xdc.blocksscan.io',
+      imageUrl: './images/logo/XDCPay-full.svg',
     },
   },
 ];
