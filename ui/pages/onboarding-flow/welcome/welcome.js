@@ -44,8 +44,10 @@ import { getFirstTimeFlowType, getCurrentKeyring } from '../../../selectors';
 import { FirstTimeFlowType } from '../../../../shared/constants/onboarding';
 import { ORIGIN_METAMASK } from '../../../../shared/constants/app';
 import {
+  XDC_APOTHEM_RPC_URL,
   XDC_MAINNET,
   XDC_RPC_URL,
+  XDC_TESTNET,
   XDC_TOKEN_IMAGE_URL,
 } from '../../../../shared/constants/network';
 
@@ -117,6 +119,30 @@ export default function OnboardingWelcome() {
         source: MetaMetricsNetworkEventSource.CustomNetworkForm,
       },
     )();
+
+    await upsertNetworkConfiguration(
+      {
+        chainId: '0x33',
+        rpcUrl: XDC_APOTHEM_RPC_URL,
+        ticker: 'TXDC',
+        rpcPrefs: {
+          blockExplorerUrl: 'https://xdc.blocksscan.io',
+          imageUrl: XDC_TOKEN_IMAGE_URL,
+        },
+        imageUrl: XDC_TOKEN_IMAGE_URL,
+        chainName: XDC_TESTNET,
+        nickname: XDC_TESTNET,
+        referrer: ORIGIN_METAMASK,
+        viewOnly: true,
+        source: MetaMetricsNetworkEventSource.CustomNetworkForm,
+      },
+      {
+        setActive: false,
+        source: MetaMetricsNetworkEventSource.CustomNetworkForm,
+      },
+    )();
+
+    dispatch(setActiveNetwork(networkConfigurationId));
 
     // await upsertNetworkConfiguration(
     //   {

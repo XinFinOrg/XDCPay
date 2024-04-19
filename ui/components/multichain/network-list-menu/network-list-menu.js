@@ -116,10 +116,17 @@ export const NetworkListMenu = ({ onClose }) => {
     const XDC_MAINNET = nonTestNetworks.findIndex(
       (e) => e.chainId === CHAIN_IDS.XDC_CHAIN_ID,
     );
+    const XDC_MAINNET_TEST = nonTestNetworks.findIndex(
+      (e) => e.chainId === CHAIN_IDS.XDC_APOTHEM_CHAIN_ID,
+    );
 
     if (XDC_MAINNET) {
       const itemToMove = nonTestNetworks.splice(XDC_MAINNET, 1)[0]; // Remove the item from its current position
       nonTestNetworks.splice(0, 0, itemToMove); // Insert the item into the new position
+    }
+    if (XDC_MAINNET_TEST) {
+      const itemToMove = nonTestNetworks.splice(XDC_MAINNET_TEST, 1)[0]; // Remove the item from its current position
+      nonTestNetworks.splice(1, 0, itemToMove); // Insert the item into the new position
     }
 
     return nonTestNetworks;
