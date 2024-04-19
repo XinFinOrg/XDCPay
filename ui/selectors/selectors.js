@@ -32,7 +32,6 @@ import {
   CURRENCY_SYMBOLS,
   TEST_NETWORK_TICKER_MAP,
   LINEA_MAINNET_DISPLAY_NAME,
-  LINEA_MAINNET_TOKEN_IMAGE_URL,
   CHAIN_ID_TO_NETWORK_IMAGE_URL_MAP,
   ARBITRUM_DISPLAY_NAME,
   OPTIMISM_DISPLAY_NAME,
@@ -663,6 +662,21 @@ export const getNonTestNetworks = createDeepEqualSelector(
 
         ticker: XDCNetwork.ticker,
         id: XDCNetwork.id,
+        removable: false,
+      });
+    }
+
+    if (XDCTestNetwork) {
+      finalNetworkList.push({
+        chainId: XDCTestNetwork.chainId,
+        nickname: XDCTestNetwork.nickname,
+        rpcUrl: XDCTestNetwork.rpcUrl,
+        rpcPrefs: {
+          imageUrl: XDCTestNetwork.rpcPrefs.imageUrl,
+        },
+
+        ticker: XDCTestNetwork.ticker,
+        id: XDCTestNetwork.id,
         removable: false,
       });
     }
