@@ -105,6 +105,11 @@ const AssetList = ({ onClickAsset }) => {
     // token.string is the balance displayed in the TokenList UI
     token.string = roundToDecimalPlacesRemovingExtraZeroes(token.string, 5);
   });
+
+  const tokensWithValidBalances = tokensWithBalances.filter(
+    (e) => Number(e.balance) > 0,
+  );
+
   const balanceIsZero = Number(totalFiatBalance) === 0;
   ///: BEGIN:ONLY_INCLUDE_IF(build-main,build-beta,build-flask)
   const isBuyableChain = useSelector(getIsBuyableChain);
@@ -165,7 +170,7 @@ const AssetList = ({ onClickAsset }) => {
         isStakeable={isStakeable}
       />
       <TokenList
-        tokens={tokensWithBalances}
+        tokens={tokensWithValidBalances}
         loading={loading}
         onTokenClick={(tokenAddress) => {
           onClickAsset(tokenAddress);

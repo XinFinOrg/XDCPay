@@ -895,6 +895,8 @@ export const BUYABLE_CHAINS_MAP: {
     | typeof CHAIN_IDS.ARBITRUM_GOERLI
     | typeof CHAIN_IDS.BLAST
     | typeof CHAIN_IDS.FILECOIN
+    | typeof CHAIN_IDS.XDC_APOTHEM_CHAIN_ID
+    | typeof CHAIN_IDS.XDC_CHAIN_ID
   >]: BuyableChainSettings;
 } = {
   [CHAIN_IDS.MAINNET]: {

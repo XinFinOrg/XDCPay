@@ -2,9 +2,7 @@ import EventEmitter from 'events';
 import React, { useState, useEffect, useContext } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { useHistory } from 'react-router-dom';
-///: BEGIN:ONLY_INCLUDE_IF(build-main,build-beta,build-flask)
-import { Carousel } from 'react-responsive-carousel';
-///: END:ONLY_INCLUDE_IF
+
 import Mascot from '../../../components/ui/mascot';
 import Button from '../../../components/ui/button';
 import { Text } from '../../../components/component-library';
@@ -28,6 +26,7 @@ import {
   setTermsOfUseLastAgreed,
   setParticipateInMetaMetrics,
   upsertNetworkConfiguration,
+  setActiveNetwork,
 } from '../../../store/actions';
 import {
   ///: BEGIN:ONLY_INCLUDE_IF(build-main,build-beta,build-flask)
