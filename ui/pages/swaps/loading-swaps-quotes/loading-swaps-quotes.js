@@ -144,11 +144,17 @@ export default function LoadingSwapsQuotes({
             className="loading-swaps-quotes__mascot-container"
             ref={mascotContainer}
           >
-            <Mascot
+            {/* <Mascot
               animationEventEmitter={animationEventEmitter.current}
               width="90"
               height="90"
-              lookAtTarget={midPointTarget}
+              lookAtT
+              arget={midPointTarget}
+            /> */}
+            <img
+              src="./images/logo/XDCPay-full.svg"
+              className="info-tab__logo"
+              alt="MetaMask Logo"
             />
           </div>
         </div>

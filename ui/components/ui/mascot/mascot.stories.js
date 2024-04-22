@@ -49,13 +49,19 @@ export const DefaultStory = () => {
         }
       }}
     >
-      <Mascot
+      {/* <Mascot
         animationEventEmitter={animationEventEmitter}
         width="120"
         height="120"
         followMouse={followMouseMode}
         lookAtTarget={clickedTarget}
         lookAtDirection={lookAtDirection}
+      /> */}
+
+      <img
+        src="./images/logo/XDCPay-full.svg"
+        className="info-tab__logo"
+        alt="MetaMask Logo"
       />
       <div style={buttonStyle}>
         <ButtonGroup

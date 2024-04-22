@@ -295,10 +295,15 @@ export default function OnboardingWelcome() {
             {t('installExtensionDescription')}
           </Text>
           <div className="onboarding-welcome__mascot">
-            <Mascot
+            {/* <Mascot
               animationEventEmitter={eventEmitter}
               width="250"
               height="250"
+            /> */}
+            <img
+              src="./images/logo/XDCPay-full.svg"
+              className="info-tab__logo"
+              alt="MetaMask Logo"
             />
           </div>
         </div>

@@ -274,10 +274,15 @@ export default function AwaitingSwap({
     <div className="awaiting-swap">
       <div className="awaiting-swap__content">
         {!(swapComplete || errorKey) && (
-          <Mascot
-            animationEventEmitter={animationEventEmitter.current}
-            width="90"
-            height="90"
+          // <Mascot
+          //   animationEventEmitter={animationEventEmitter.current}
+          //   width="90"
+          //   height="90"
+          // />
+          <img
+            src="./images/logo/XDCPay-full.svg"
+            className="info-tab__logo"
+            alt="MetaMask Logo"
           />
         )}
         <div className="awaiting-swap__status-image">{statusImage}</div>

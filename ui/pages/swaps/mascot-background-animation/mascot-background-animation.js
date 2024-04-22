@@ -217,11 +217,17 @@ export default function MascotBackgroundAnimation() {
         className="mascot-background-animation__mascot-container"
         data-testid="mascot-background-animation-mascot-container"
       >
-        <Mascot
+        {/* <Mascot
           animationEventEmitter={animationEventEmitter.current}
           width="42"
           height="42"
           followMouse={false}
+        /> */}
+
+        <img
+          src="./images/logo/XDCPay-full.svg"
+          className="info-tab__logo"
+          alt="MetaMask Logo"
         />
       </div>
     </div>
