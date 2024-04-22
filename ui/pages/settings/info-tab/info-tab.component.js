@@ -65,8 +65,8 @@ export default class InfoTab extends PureComponent {
     ///: END:ONLY_INCLUDE_IF
 
     ///: BEGIN:ONLY_INCLUDE_IF(build-main,build-beta,build-flask)
-    privacyUrl = 'https://metamask.io/privacy.html';
-    siteUrl = 'https://metamask.io/';
+    privacyUrl = 'https://medium.com/@xdcpay/privacy-policy-37608719dce4';
+    siteUrl = 'https://xinfin.org/';
     ///: END:ONLY_INCLUDE_IF
 
     return (
@@ -88,7 +88,7 @@ export default class InfoTab extends PureComponent {
         <div ref={this.settingsRefs[3]} className="info-tab__link-item">
           <Button
             type="link"
-            href="https://metamask.io/terms.html"
+            href="https://medium.com/@xdcpay/terms-of-use-for-open-source-wallet-software-b11a9122e0a9"
             target="_blank"
             rel="noopener noreferrer"
             className="info-tab__link-text"
@@ -100,7 +100,7 @@ export default class InfoTab extends PureComponent {
           <div ref={this.settingsRefs[8]} className="info-tab__link-item">
             <Button
               type="link"
-              href="https://metamask.io/beta-terms.html"
+              href="https://medium.com/@xdcpay/terms-of-use-for-open-source-wallet-software-b11a9122e0a9"
               target="_blank"
               rel="noopener noreferrer"
               className="info-tab__link-text"

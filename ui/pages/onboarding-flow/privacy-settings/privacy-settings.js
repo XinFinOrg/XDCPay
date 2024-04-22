@@ -211,7 +211,7 @@ export default function PrivacySettings() {
               <>
                 {t('onboardingAdvancedPrivacyNetworkDescription', [
                   <a
-                    href="https://consensys.io/privacy-policy/"
+                    href="https://medium.com/@xdcpay/privacy-policy-37608719dce4"
                     key="link"
                     target="_blank"
                     rel="noopener noreferrer"

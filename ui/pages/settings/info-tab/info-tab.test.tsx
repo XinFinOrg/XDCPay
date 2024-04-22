@@ -15,7 +15,7 @@ describe('InfoTab', () => {
       const privacyPolicyLink = getByText('Privacy policy');
       expect(privacyPolicyLink).toHaveAttribute(
         'href',
-        'https://metamask.io/privacy.html',
+        'https://medium.com/@xdcpay/privacy-policy-37608719dce4',
       );
     });
 
@@ -23,7 +23,7 @@ describe('InfoTab', () => {
       const termsOfUseLink = getByText('Terms of use');
       expect(termsOfUseLink).toHaveAttribute(
         'href',
-        'https://metamask.io/terms.html',
+        'https://medium.com/@xdcpay/terms-of-use-for-open-source-wallet-software-b11a9122e0a9',
       );
     });
 

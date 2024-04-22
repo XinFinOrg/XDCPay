@@ -45,15 +45,15 @@ exports[`Onboarding Metametrics Component should match snapshot 1`] = `
             style="mask-image: url('./images/icons/close.svg');"
           />
           <span>
-             
-            
+
+
             <span
               class="box box--margin-bottom-1 box--flex-direction-row typography typography--span typography--weight-bold typography--style-normal typography--color-text-default"
             >
               Never
             </span>
              collect information we don’t need to provide the service (such as keys, addresses, transaction hashes, or balances)
-             
+
           </span>
         </div>
       </li>
@@ -66,15 +66,15 @@ exports[`Onboarding Metametrics Component should match snapshot 1`] = `
             style="mask-image: url('./images/icons/close.svg');"
           />
           <span>
-             
-            
+
+
             <span
               class="box box--margin-top-1 box--margin-bottom-1 box--flex-direction-row typography typography--span typography--weight-bold typography--style-normal typography--color-text-default"
             >
               Never
             </span>
              collect your full IP address*
-             
+
           </span>
         </div>
       </li>
@@ -87,18 +87,18 @@ exports[`Onboarding Metametrics Component should match snapshot 1`] = `
             style="mask-image: url('./images/icons/close.svg');"
           />
           <span>
-             
-            
+
+
             <span
               class="box box--margin-top-1 box--margin-bottom-1 box--flex-direction-row typography typography--span typography--weight-bold typography--style-normal typography--color-text-default"
             >
               Never
             </span>
              sell data.  Ever!
-             
+
           </span>
         </div>
-         
+
       </li>
     </ul>
     <h6
@@ -110,25 +110,25 @@ exports[`Onboarding Metametrics Component should match snapshot 1`] = `
       class="box box--margin-top-1 box--margin-bottom-1 box--flex-direction-row typography onboarding-metametrics__terms typography--h6 typography--weight-normal typography--style-normal typography--align-center typography--color-text-alternative"
     >
       <span>
-         
-        * When you use Infura as your default RPC provider in MetaMask, Infura will collect your IP address and your Ethereum wallet address when you send a transaction. We don’t store this information in a way that allows our systems to associate those two pieces of data. For more information on how MetaMask and Infura interact from a data collection perspective, see our update 
+
+        * When you use Infura as your default RPC provider in MetaMask, Infura will collect your IP address and your Ethereum wallet address when you send a transaction. We don’t store this information in a way that allows our systems to associate those two pieces of data. For more information on how MetaMask and Infura interact from a data collection perspective, see our update
         <a
-          href="https://consensys.io/blog/consensys-data-retention-update"
+          href="https://medium.com/@xdcpay/privacy-policy-and-commitments-to-user-privacy-163c7d120c27"
           rel="noopener noreferrer"
           target="_blank"
         >
           here
         </a>
-        . For more information on our privacy practices in general, see our 
+        . For more information on our privacy practices in general, see our
         <a
-          href="https://metamask.io/privacy.html"
+          href="https://medium.com/@xdcpay/privacy-policy-37608719dce4"
           rel="noopener noreferrer"
           target="_blank"
         >
           Privacy Policy here
         </a>
         .
-         
+
       </span>
     </h6>
     <div

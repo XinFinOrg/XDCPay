@@ -176,7 +176,7 @@ export default function OnboardingWelcome() {
     <a
       className="create-new-vault__terms-link"
       key="create-new-vault__link-text"
-      href="https://metamask.io/terms.html"
+      href="https://medium.com/@xdcpay/terms-of-use-for-open-source-wallet-software-b11a9122e0a9"
       target="_blank"
       rel="noopener noreferrer"
     >

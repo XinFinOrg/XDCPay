@@ -49,7 +49,9 @@ export default function SwapsFooter({
         <div
           className="swaps-footer__bottom-text"
           onClick={() =>
-            global.platform.openTab({ url: 'https://metamask.io/terms.html' })
+            global.platform.openTab({
+              url: 'https://medium.com/@xdcpay/terms-of-use-for-open-source-wallet-software-b11a9122e0a9',
+            })
           }
         >
           {t('termsOfService')}

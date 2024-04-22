@@ -153,7 +153,7 @@ const SnapList = () => {
                   >
                     <ButtonLink
                       size={Size.auto}
-                      href="https://snaps.metamask.io/"
+                      href="https://medium.com/@xdcpay/discover-opensourcewallet-portfolio-today-a26adad7bc4b"
                       target="_blank"
                       endIconName={IconName.Export}
                     >
