@@ -359,6 +359,7 @@ export function resetAccount(): ThunkAction<
   unknown,
   AnyAction
 > {
+  console.log('44444444444444444444444');
   return (dispatch: MetaMaskReduxDispatch) => {
     dispatch(showLoadingIndication());
 
@@ -384,6 +385,7 @@ export function resetAccount(): ThunkAction<
 export function removeAccount(
   address: string,
 ): ThunkAction<void, MetaMaskReduxState, unknown, AnyAction> {
+  console.log('111111111111111111111');
   return async (dispatch: MetaMaskReduxDispatch) => {
     dispatch(showLoadingIndication());
 
@@ -422,6 +424,7 @@ export function importNewAccount(
   unknown,
   AnyAction
 > {
+  console.log('2222222222222222222222222');
   return async (dispatch: MetaMaskReduxDispatch) => {
     let newState;
 
@@ -452,6 +455,7 @@ export function addNewAccount(): ThunkAction<
   unknown,
   AnyAction
 > {
+  console.log('33333333333333333333333333');
   log.debug(`background.addNewAccount`);
   return async (dispatch, getState) => {
     const oldAccounts = getInternalAccounts(getState());

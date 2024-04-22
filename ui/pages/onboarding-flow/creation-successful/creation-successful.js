@@ -1,7 +1,6 @@
-import React, { useContext } from 'react';
+import React, { useContext, useEffect } from 'react';
 import { useHistory } from 'react-router-dom';
-import { useSelector } from 'react-redux';
-
+import { useDispatch, useSelector } from 'react-redux';
 import Box from '../../../components/ui/box';
 import Typography from '../../../components/ui/typography';
 import Button from '../../../components/ui/button';
@@ -17,18 +16,53 @@ import {
   ONBOARDING_PRIVACY_SETTINGS_ROUTE,
 } from '../../../helpers/constants/routes';
 import { isBeta } from '../../../helpers/utils/build-types';
-import { getFirstTimeFlowType } from '../../../selectors';
+import {
+  getCurrentChainId,
+  getFirstTimeFlowType,
+  getSelectedInternalAccount,
+  getSelectedNetworkClientId,
+  getTokenList,
+} from '../../../selectors';
 import {
   MetaMetricsEventCategory,
   MetaMetricsEventName,
 } from '../../../../shared/constants/metametrics';
 import { MetaMetricsContext } from '../../../contexts/metametrics';
+import { addXDCTokenList } from '../../../helpers/utils/token-util';
+import { addImportedTokens } from '../../../store/actions';
 
 export default function CreationSuccessful() {
+  const dispatch = useDispatch();
   const history = useHistory();
   const t = useI18nContext();
   const trackEvent = useContext(MetaMetricsContext);
   const firstTimeFlowType = useSelector(getFirstTimeFlowType);
+  const tokenList = useSelector(getTokenList);
+  const currentChainId = useSelector(getCurrentChainId);
+  const selectedAccount = useSelector(getSelectedInternalAccount);
+  const networkClientId = useSelector(getSelectedNetworkClientId);
+
+  const AddTokenToXDC = async () => {
+    const tokenDetails = await addXDCTokenList(
+      selectedAccount.address,
+      tokenList,
+    );
+
+    dispatch(addImportedTokens(tokenDetails, networkClientId));
+    const tokenSymbols = [];
+    for (const key in tokenDetails) {
+      if (Object.prototype.hasOwnProperty.call(tokenDetails, key)) {
+        tokenSymbols.push(tokenDetails[key].symbol);
+      }
+    }
+  };
+
+  useEffect(() => {
+    if (currentChainId === '0x32') {
+      console.log('add default token in the account ');
+      AddTokenToXDC();
+    }
+  }, [currentChainId]);
 
   return (
     <div className="creation-successful" data-testid="creation-successful">
@@ -81,7 +115,7 @@ export default function CreationSuccessful() {
         </li>
         <li>
           <Button
-            href="https://community.metamask.io/t/what-is-a-secret-recovery-phrase-and-how-to-keep-your-crypto-wallet-secure/3440"
+            href="https://medium.com/@xdcpay/what-is-a-secret-recovery-phrase-and-how-to-keep-your-crypto-wallet-secure-f22f78ca5a6a"
             target="_blank"
             type="link"
             rel="noopener noreferrer"
