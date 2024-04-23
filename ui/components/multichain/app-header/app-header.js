@@ -89,12 +89,15 @@ export const AppHeader = ({ location }) => {
   const isUnlocked = useSelector(getIsUnlocked);
   const t = useI18nContext();
   const chainId = useSelector(getCurrentChainId);
-
+  const isXDCNetwork = chainId === '0x32' || chainId === '0x33';
   // Used for account picker
   const internalAccount = useSelector(getSelectedInternalAccount);
+  const xdcAddress = (internalAccount?.address || '').replace('0x', 'xdc');
   const shortenedAddress =
     internalAccount &&
-    shortenAddress(toChecksumHexAddress(internalAccount.address));
+    shortenAddress(
+      isXDCNetwork ? xdcAddress : toChecksumHexAddress(internalAccount.address),
+    );
   const dispatch = useDispatch();
   const completedOnboarding = useSelector(getCompletedOnboarding);
   const onboardedInThisUISession = useSelector(getOnboardedInThisUISession);
@@ -112,7 +115,9 @@ export const AppHeader = ({ location }) => {
 
   // During onboarding there is no selected internal account
   const currentAddress = internalAccount?.address;
-  const checksummedCurrentAddress = toChecksumHexAddress(currentAddress);
+  const checksummedCurrentAddress = isXDCNetwork
+    ? xdcAddress
+    : toChecksumHexAddress(currentAddress);
   const [copied, handleCopy] = useCopyToClipboard(MINUTE);
 
   const popupStatus = getEnvironmentType() === ENVIRONMENT_TYPE_POPUP;
@@ -311,7 +316,9 @@ export const AppHeader = ({ location }) => {
                   ellipsis
                 >
                   <AccountPicker
-                    address={internalAccount.address}
+                    address={
+                      isXDCNetwork ? xdcAddress : internalAccount.address
+                    }
                     name={internalAccount.metadata.name}
                     onClick={() => {
                       dispatch(toggleAccountMenu());

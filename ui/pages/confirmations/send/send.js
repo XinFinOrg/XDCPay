@@ -15,7 +15,7 @@ import {
   updateRecipient,
   updateRecipientUserInput,
 } from '../../../ducks/send';
-import { isCustomPriceExcessive } from '../../../selectors';
+import { getCurrentChainId, isCustomPriceExcessive } from '../../../selectors';
 import { getSendHexDataFeatureFlagState } from '../../../ducks/metamask/metamask';
 import { showQrScanner } from '../../../store/actions';
 import { MetaMetricsContext } from '../../../contexts/metametrics';
@@ -31,6 +31,8 @@ const sendSliceIsCustomPriceExcessive = (state) =>
   isCustomPriceExcessive(state, true);
 
 export default function SendTransactionScreen() {
+  const chainId = useSelector(getCurrentChainId);
+  const isXDCNetwork = chainId === '0x32' || chainId === '0x33';
   const history = useHistory();
   const startedNewDraftTransaction = useRef(false);
   const stage = useSelector(getSendStage);
@@ -113,7 +115,7 @@ export default function SendTransactionScreen() {
     <div className="page-container">
       <SendHeader history={history} />
       <DomainInput
-        userInput={userInput}
+        userInput={isXDCNetwork ? userInput.replace('0x', 'xdc') : userInput}
         className="send__to-row"
         onChange={(address) => dispatch(updateRecipientUserInput(address))}
         onValidAddressTyped={async (address) => {
@@ -123,8 +125,13 @@ export default function SendTransactionScreen() {
           await dispatch(updateRecipientUserInput(address));
           dispatch(updateRecipient({ address, nickname: '' }));
         }}
+        isXDCNetwork={isXDCNetwork}
         internalSearch={isUsingMyAccountsForRecipientSearch}
-        selectedAddress={recipient.address}
+        selectedAddress={
+          isXDCNetwork
+            ? recipient.address.replace('0x', 'xdc')
+            : recipient.address
+        }
         selectedName={recipient.nickname}
         onPaste={(text) => {
           dispatch(

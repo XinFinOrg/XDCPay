@@ -1,9 +1,12 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import classnames from 'classnames';
-///: BEGIN:ONLY_INCLUDE_IF(build-mmi)
 import { useSelector } from 'react-redux';
-import { getSelectedInternalAccount } from '../../../selectors';
+import {
+  getCurrentChainId,
+  getSelectedInternalAccount,
+} from '../../../selectors';
+///: BEGIN:ONLY_INCLUDE_IF(build-mmi)
 import {
   getIsCustodianSupportedChain,
   getCustodianIconForAddress,
@@ -33,7 +36,13 @@ export const AddressCopyButton = ({
   wrap = false,
   onClick,
 }) => {
-  const checksummedAddress = toChecksumHexAddress(address);
+  const chainId = useSelector(getCurrentChainId);
+  const isXDCNetwork = chainId === '0x32' || chainId === '0x33';
+  const xdcAddress = (address || '').replace('0x', 'xdc');
+
+  const checksummedAddress = isXDCNetwork
+    ? xdcAddress
+    : toChecksumHexAddress(address);
   const displayAddress = shorten
     ? shortenAddress(checksummedAddress)
     : checksummedAddress;

@@ -52,6 +52,7 @@ import {
   getNativeCurrencyImage,
   getShowFiatInTestnets,
   getUseBlockie,
+  getCurrentChainId,
 } from '../../../selectors';
 import { useAccountTotalFiatBalance } from '../../../hooks/useAccountTotalFiatBalance';
 import { TEST_NETWORKS } from '../../../../shared/constants/network';
@@ -90,6 +91,10 @@ export const AccountListItem = ({
   const setAccountListItemMenuRef = (ref) => {
     setAccountListItemMenuElement(ref);
   };
+  const chainId = useSelector(getCurrentChainId);
+  const isXDCNetwork = chainId === '0x32' || chainId === '0x33';
+  const xdcAddress = (identity?.address || '').replace('0x', 'xdc');
+
   const showFiatInTestnets = useSelector(getShowFiatInTestnets);
   const showFiat =
     TEST_NETWORKS.includes(currentNetwork?.nickname) && !showFiatInTestnets;
@@ -340,7 +345,11 @@ export const AccountListItem = ({
         >
           <Box display={Display.Flex} alignItems={AlignItems.center}>
             <Text variant={TextVariant.bodySm} color={Color.textAlternative}>
-              {shortenAddress(toChecksumHexAddress(identity.address))}
+              {shortenAddress(
+                isXDCNetwork
+                  ? xdcAddress
+                  : toChecksumHexAddress(identity.address),
+              )}
             </Text>
           </Box>
           {mappedOrderedTokenList.length > 1 ? (

@@ -24,6 +24,7 @@ export default class DomainInput extends Component {
 
   static propTypes = {
     className: PropTypes.string,
+    isXDCNetwork: PropTypes.bool,
     selectedAddress: PropTypes.string,
     selectedName: PropTypes.string,
     scanQrCode: PropTypes.func,
@@ -44,9 +45,12 @@ export default class DomainInput extends Component {
 
   onPaste = (event) => {
     if (event.clipboardData.items?.length) {
+      const { isXDCNetwork } = this.props;
       const clipboardItem = event.clipboardData.items[0];
       clipboardItem?.getAsString((text) => {
-        const input = text.trim();
+        const input = isXDCNetwork
+          ? text.replace('xdc', '0x').trim()
+          : text.trim();
         if (
           !isBurnAddress(input) &&
           isValidHexAddress(input, { mixedCaseUseChecksum: true })
@@ -62,10 +66,13 @@ export default class DomainInput extends Component {
       onValidAddressTyped,
       internalSearch,
       onChange,
+      isXDCNetwork,
       lookupDomainName,
       resetDomainResolution,
     } = this.props;
-    const input = value.trim();
+    const input = isXDCNetwork
+      ? value.replace('xdc', '0x').trim()
+      : value.trim();
 
     onChange(input);
     if (internalSearch) {
