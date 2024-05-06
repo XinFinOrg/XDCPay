@@ -31,10 +31,10 @@ function print_build_version ()
   local build_type="${1}"; shift
 
   local filename
-  filename="$(find "./builds-${build_type}" -type f -name "metamask-${build_type}-chrome-*.zip" -exec basename {} .zip \;)"
+  filename="$(find "./builds-${build_type}" -type f -name "xdc-pay-${build_type}-chrome-*.zip" -exec basename {} .zip \;)"
 
   local build_filename_prefix
-  build_filename_prefix="metamask-${build_type}-chrome-"
+  build_filename_prefix="xdc-pay-${build_type}-chrome-"
   local build_filename_prefix_size
   build_filename_prefix_size="${#build_filename_prefix}"
 
@@ -68,12 +68,12 @@ then
     printf '%s\n' 'Creating GitHub Release'
     release_body="$(awk -v version="${tag##v}" -f .circleci/scripts/show-changelog.awk CHANGELOG.md)"
     hub release create \
-        --attach builds/metamask-chrome-*.zip \
-        --attach builds/metamask-firefox-*.zip \
-        --attach builds-flask/metamask-flask-chrome-*.zip \
-        --attach builds-flask/metamask-flask-firefox-*.zip \
-        --attach builds-mmi/metamask-mmi-chrome-*.zip \
-        --attach builds-mmi/metamask-mmi-firefox-*.zip \
+        --attach builds/xdc-pay-chrome-*.zip \
+        --attach builds/xdc-pay-firefox-*.zip \
+        --attach builds-flask/xdc-pay-flask-chrome-*.zip \
+        --attach builds-flask/xdc-pay-flask-firefox-*.zip \
+        --attach builds-mmi/xdc-pay-mmi-chrome-*.zip \
+        --attach builds-mmi/xdc-pay-mmi-firefox-*.zip \
         --message "Version ${tag##v}" \
         --message "$release_body" \
         --commitish "$CIRCLE_SHA1" \

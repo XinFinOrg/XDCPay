@@ -4,17 +4,12 @@ import { ThemeType } from '../../../../shared/constants/preferences';
 
 const LOGO_WIDTH = 162;
 const LOGO_HEIGHT = 30;
-const TEXT_COLOR = 'var(--color-text-default)';
-const FLASK_PILL_BACKGROUND = 'var(--color-overlay-alternative)';
-const FLASK_PILL_TEXT = 'var(--color-overlay-inverse)';
-const BETA_PILL_BACKGROUND = 'var(--color-primary-default)';
-const BETA_PIL_TEXT = 'var(--color-primary-inverse)';
 
 export default function MetaFoxHorizontalLogo({
   theme: themeProps,
   className,
 }) {
-  const [theme, setTheme] = useState(() =>
+  const [_, setTheme] = useState(() =>
     themeProps === undefined
       ? document.documentElement.getAttribute('data-theme')
       : themeProps,
@@ -25,8 +20,6 @@ export default function MetaFoxHorizontalLogo({
       setTheme(themeProps);
     }
   }, [themeProps]);
-
-  const fill = theme === 'dark' ? 'rgb(255,255,255)' : 'rgb(22,22,22)';
 
   switch (process.env.METAMASK_BUILD_TYPE) {
     case 'beta':

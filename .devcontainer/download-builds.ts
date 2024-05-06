@@ -65,7 +65,7 @@ async function getBuilds(branch: string, jobNames: string[]) {
 
 function getVersionNumber(builds: any[]) {
   for (const build of builds) {
-    const versionRegex = /metamask-chrome-(?<version>\d+\.\d+\.\d+).zip/;
+    const versionRegex = /xdc-pay-chrome-(?<version>\d+\.\d+\.\d+).zip/;
 
     const versionNumber = build.path.match(versionRegex)?.groups?.version;
 
@@ -119,11 +119,11 @@ function unzipBuilds(folder: 'builds' | 'builds-test', versionNumber: string) {
   for (const browser of ['chrome', 'firefox']) {
     if (process.platform === 'win32') {
       execSync(
-        `tar -xf ${folder}/metamask-${browser}-${versionNumber}.zip -C dist/${browser}`,
+        `tar -xf ${folder}/xdc-pay-${browser}-${versionNumber}.zip -C dist/${browser}`,
       );
     } else {
       execSync(
-        `unzip ${folder}/metamask-${browser}-${versionNumber}.zip -d dist/${browser}`,
+        `unzip ${folder}/xdc-pay-${browser}-${versionNumber}.zip -d dist/${browser}`,
       );
     }
   }

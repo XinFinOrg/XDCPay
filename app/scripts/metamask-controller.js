@@ -254,10 +254,7 @@ import { AccountIdentitiesPetnamesBridge } from './lib/AccountIdentitiesPetnames
 import { createPPOMMiddleware } from './lib/ppom/ppom-middleware';
 import * as PPOMModule from './lib/ppom/ppom';
 ///: END:ONLY_INCLUDE_IF
-import {
-  onMessageReceived,
-  checkForMultipleVersionsRunning,
-} from './detect-multiple-instances';
+import { onMessageReceived } from './detect-multiple-instances';
 ///: BEGIN:ONLY_INCLUDE_IF(build-mmi)
 import MMIController from './controllers/mmi-controller';
 import { mmiKeyringBuilderFactory } from './mmi-keyring-builder-factory';
@@ -2228,7 +2225,6 @@ export default class MetamaskController extends EventEmitter {
     // Multiple MetaMask instances launched warning
     this.extension.runtime.onMessageExternal.addListener(onMessageReceived);
     // Fire a ping message to check if other extensions are running
-    checkForMultipleVersionsRunning();
 
     if (this.onboardingController.store.getState().completedOnboarding) {
       this.postOnboardingInitialization();

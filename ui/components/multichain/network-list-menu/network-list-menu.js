@@ -106,13 +106,6 @@ export const NetworkListMenu = ({ onClose }) => {
       orderedIndexMap[`${network.networkId}_${network.networkRpcUrl}`] = index;
     });
 
-    // Sort nonTestNetworks based on the order in orderedNetworksList
-    const sortedNonTestNetworks = nonTestNetworks.sort((a, b) => {
-      const keyA = `${a.chainId}_${a.rpcUrl}`;
-      const keyB = `${b.chainId}_${b.rpcUrl}`;
-      return orderedIndexMap[keyA] - orderedIndexMap[keyB];
-    });
-
     const XDC_MAINNET = nonTestNetworks.findIndex(
       (e) => e.chainId === CHAIN_IDS.XDC_CHAIN_ID,
     );

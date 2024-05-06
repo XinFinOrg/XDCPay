@@ -1,4 +1,4 @@
-import React, { useContext, useState } from 'react';
+import React, { useContext, useState, useSelector } from 'react';
 import PropTypes from 'prop-types';
 import { useDispatch } from 'react-redux';
 import {
@@ -22,10 +22,10 @@ import { useI18nContext } from '../../../hooks/useI18nContext';
 import * as actions from '../../../store/actions';
 
 // Subviews
-import JsonImportView from './json';
-import PrivateKeyImportView from './private-key';
 import { getSelectedNetworkClientId, getTokenList } from '../../../selectors';
 import { addXDCTokenList } from '../../../helpers/utils/token-util';
+import JsonImportView from './json';
+import PrivateKeyImportView from './private-key';
 
 export const ImportAccount = ({ onActionComplete }) => {
   const t = useI18nContext();

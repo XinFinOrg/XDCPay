@@ -4,7 +4,9 @@ import classnames from 'classnames';
 import { useSelector } from 'react-redux';
 import {
   getCurrentChainId,
+  ///: BEGIN:ONLY_INCLUDE_IF(build-mmi)
   getSelectedInternalAccount,
+  ///: END:ONLY_INCLUDE_IF
 } from '../../../selectors';
 ///: BEGIN:ONLY_INCLUDE_IF(build-mmi)
 import {

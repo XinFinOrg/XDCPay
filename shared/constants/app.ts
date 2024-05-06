@@ -103,21 +103,6 @@ export const POLLING_TOKEN_ENVIRONMENT_TYPES = {
 
 export const ORIGIN_METAMASK = 'metamask';
 
-export const METAMASK_BETA_CHROME_ID = 'pbbkamfgmaedccnfkmjcofcecjhfgldn';
-export const METAMASK_PROD_CHROME_ID = 'nkbihfbeogaeaoehlefnkodbefgpgknn';
-export const METAMASK_FLASK_CHROME_ID = 'ljfoeinjpaedjfecbmggjgodbgkmjkjk';
-
-export const METAMASK_MMI_BETA_CHROME_ID = 'kmbhbcbadohhhgdgihejcicbgcehoaeg';
-export const METAMASK_MMI_PROD_CHROME_ID = 'ikkihjamdhfiojpdbnfllpjigpneipbc';
-
-export const CHROME_BUILD_IDS = [
-  METAMASK_BETA_CHROME_ID,
-  METAMASK_PROD_CHROME_ID,
-  METAMASK_FLASK_CHROME_ID,
-  METAMASK_MMI_BETA_CHROME_ID,
-  METAMASK_MMI_PROD_CHROME_ID,
-] as const;
-
 const METAMASK_BETA_FIREFOX_ID = 'webextension-beta@metamask.io';
 const METAMASK_PROD_FIREFOX_ID = 'webextension@metamask.io';
 const METAMASK_FLASK_FIREFOX_ID = 'webextension-flask@metamask.io';

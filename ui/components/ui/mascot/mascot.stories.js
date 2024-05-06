@@ -2,9 +2,6 @@ import EventEmitter from 'events';
 import React, { useState } from 'react';
 import Button from '../button';
 import ButtonGroup from '../button-group';
-import Mascot from './mascot.component';
-
-const animationEventEmitter = new EventEmitter();
 
 const containerStyle = {
   height: '600px',
@@ -25,16 +22,7 @@ export default {
 };
 
 export const DefaultStory = () => {
-  const [lookAtDirection, setLookAtDirection] = useState(null);
-  const [followMouseMode, setFollowMouseMode] = useState(false);
   const [clickToLookMode, setClickToLookMode] = useState(false);
-  const [clickedTarget, setClickedTarget] = useState(null);
-
-  const createDirectionOnClick = (direction) => () => {
-    setFollowMouseMode(false);
-    setClickToLookMode(false);
-    setLookAtDirection(direction);
-  };
 
   return (
     <div
@@ -44,8 +32,6 @@ export const DefaultStory = () => {
           'button-group__button',
         );
         if (clickToLookMode && !isButtonClick) {
-          setLookAtDirection(null);
-          setClickedTarget({ x: event.clientX, y: event.clientY });
         }
       }}
     >
@@ -68,14 +54,8 @@ export const DefaultStory = () => {
           style={{ width: '300px', flexFlow: 'column' }}
           defaultActiveButtonIndex={4}
         >
-          <Button onClick={createDirectionOnClick('up')}>Up</Button>
-          <Button onClick={createDirectionOnClick('down')}>Down</Button>
-          <Button onClick={createDirectionOnClick('left')}>Left</Button>
-          <Button onClick={createDirectionOnClick('right')}>Right</Button>
-          <Button onClick={createDirectionOnClick('middle')}>Middle</Button>
           <Button
             onClick={() => {
-              setFollowMouseMode(true);
               setClickToLookMode(false);
             }}
           >
@@ -83,7 +63,6 @@ export const DefaultStory = () => {
           </Button>
           <Button
             onClick={() => {
-              setFollowMouseMode(false);
               setClickToLookMode(true);
             }}
           >

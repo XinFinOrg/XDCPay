@@ -68,32 +68,32 @@ async function start() {
   const platforms = ['chrome', 'firefox'];
   const buildLinks = platforms
     .map((platform) => {
-      const url = `${BUILD_LINK_BASE}/builds/metamask-${platform}-${VERSION}.zip`;
+      const url = `${BUILD_LINK_BASE}/builds/xdc-pay-${platform}-${VERSION}.zip`;
       return `<a href="${url}">${platform}</a>`;
     })
     .join(', ');
-  const betaBuildLinks = `<a href="${BUILD_LINK_BASE}/builds-beta/metamask-beta-chrome-${VERSION}.zip">chrome</a>`;
+  const betaBuildLinks = `<a href="${BUILD_LINK_BASE}/builds-beta/xdc-pay-beta-chrome-${VERSION}.zip">chrome</a>`;
   const flaskBuildLinks = platforms
     .map((platform) => {
-      const url = `${BUILD_LINK_BASE}/builds-flask/metamask-flask-${platform}-${VERSION}-flask.0.zip`;
+      const url = `${BUILD_LINK_BASE}/builds-flask/xdc-pay-flask-${platform}-${VERSION}-flask.0.zip`;
       return `<a href="${url}">${platform}</a>`;
     })
     .join(', ');
   const mmiBuildLinks = platforms
     .map((platform) => {
-      const url = `${BUILD_LINK_BASE}/builds-mmi/metamask-mmi-${platform}-${VERSION}-mmi.0.zip`;
+      const url = `${BUILD_LINK_BASE}/builds-mmi/xdc-pay-mmi-${platform}-${VERSION}-mmi.0.zip`;
       return `<a href="${url}">${platform}</a>`;
     })
     .join(', ');
   const testBuildLinks = platforms
     .map((platform) => {
-      const url = `${BUILD_LINK_BASE}/builds-test/metamask-${platform}-${VERSION}.zip`;
+      const url = `${BUILD_LINK_BASE}/builds-test/xdc-pay-${platform}-${VERSION}.zip`;
       return `<a href="${url}">${platform}</a>`;
     })
     .join(', ');
   const testFlaskBuildLinks = platforms
     .map((platform) => {
-      const url = `${BUILD_LINK_BASE}/builds-test-flask/metamask-flask-${platform}-${VERSION}-flask.0.zip`;
+      const url = `${BUILD_LINK_BASE}/builds-test-flask/xdc-pay-flask-${platform}-${VERSION}-flask.0.zip`;
       return `<a href="${url}">${platform}</a>`;
     })
     .join(', ');

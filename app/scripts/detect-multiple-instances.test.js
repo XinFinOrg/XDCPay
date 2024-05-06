@@ -10,10 +10,7 @@ import {
   METAMASK_MMI_PROD_CHROME_ID,
   METAMASK_MMI_BETA_CHROME_ID,
 } from '../../shared/constants/app';
-import {
-  checkForMultipleVersionsRunning,
-  onMessageReceived,
-} from './detect-multiple-instances';
+import { onMessageReceived } from './detect-multiple-instances';
 import * as util from './lib/util';
 
 describe('multiple instances running detector', function () {
@@ -34,62 +31,6 @@ describe('multiple instances running detector', function () {
 
   afterEach(function () {
     sinon.restore();
-  });
-
-  describe('checkForMultipleVersionsRunning', function () {
-    it('should send ping message to multiple instances', async function () {
-      await checkForMultipleVersionsRunning();
-
-      assert(sendMessageStub.callCount === 4);
-      assert(
-        sendMessageStub
-          .getCall(0)
-          .calledWithExactly(METAMASK_PROD_CHROME_ID, PING_MESSAGE),
-      );
-      assert(
-        sendMessageStub
-          .getCall(1)
-          .calledWithExactly(METAMASK_FLASK_CHROME_ID, PING_MESSAGE),
-      );
-      assert(
-        sendMessageStub
-          .getCall(2)
-          .calledWithExactly(METAMASK_MMI_BETA_CHROME_ID, PING_MESSAGE),
-      );
-      assert(
-        sendMessageStub
-          .getCall(3)
-          .calledWithExactly(METAMASK_MMI_PROD_CHROME_ID, PING_MESSAGE),
-      );
-    });
-
-    it('should not send ping message if platform is not Chrome or Firefox', async function () {
-      util.getPlatform.restore();
-      sendMessageStub = sinon.stub();
-
-      sinon.stub(util, 'getPlatform').callsFake((_) => {
-        return PLATFORM_EDGE;
-      });
-
-      await checkForMultipleVersionsRunning();
-
-      assert(sendMessageStub.notCalled);
-    });
-
-    it('should not expose an error outside if sendMessage throws', async function () {
-      sinon.restore();
-
-      sinon.replace(browser, 'runtime', {
-        sendMessage: sinon.stub().throws(),
-        id: METAMASK_BETA_CHROME_ID,
-      });
-
-      const spy = sinon.spy(checkForMultipleVersionsRunning);
-
-      await checkForMultipleVersionsRunning();
-
-      assert(!spy.threw());
-    });
   });
 
   describe('onMessageReceived', function () {

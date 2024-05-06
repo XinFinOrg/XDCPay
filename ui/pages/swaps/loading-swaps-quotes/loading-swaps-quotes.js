@@ -1,4 +1,3 @@
-import EventEmitter from 'events';
 import React, { useState, useEffect, useRef, useContext } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import PropTypes from 'prop-types';
@@ -21,7 +20,6 @@ import {
 } from '../../../../shared/modules/selectors';
 import { I18nContext } from '../../../contexts/i18n';
 import { MetaMetricsContext } from '../../../contexts/metametrics';
-import Mascot from '../../../components/ui/mascot';
 import { MetaMetricsEventCategory } from '../../../../shared/constants/metametrics';
 import SwapsFooter from '../swaps-footer';
 import BackgroundAnimation from './background-animation';
@@ -35,7 +33,6 @@ export default function LoadingSwapsQuotes({
   const trackEvent = useContext(MetaMetricsContext);
   const dispatch = useDispatch();
   const history = useHistory();
-  const animationEventEmitter = useRef(new EventEmitter());
 
   const fetchParams = useSelector(getFetchParams, isEqual);
   const quotesFetchStartTime = useSelector(getQuotesFetchStartTime);
@@ -75,7 +72,6 @@ export default function LoadingSwapsQuotes({
   const currentMascotContainer = mascotContainer.current;
 
   const [quoteCount, updateQuoteCount] = useState(0);
-  const [midPointTarget, setMidpointTarget] = useState(null);
 
   useEffect(() => {
     let timeoutLength;
@@ -110,7 +106,6 @@ export default function LoadingSwapsQuotes({
       const { top, left, width, height } =
         currentMascotContainer.getBoundingClientRect();
       const center = { x: left + width / 2, y: top + height / 2 };
-      setMidpointTarget(center);
     }
   }, [currentMascotContainer]);
 

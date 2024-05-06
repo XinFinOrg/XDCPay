@@ -6,10 +6,10 @@ import { TokenStandard } from '../../../shared/constants/transaction';
 import { getTokenValueParam } from '../../../shared/lib/metamask-controller-utils';
 import { calcTokenAmount } from '../../../shared/lib/transactions-controller-utils';
 import { Numeric } from '../../../shared/modules/Numeric';
-import * as util from './util';
-import { formatCurrency } from './confirm-tx.util';
 import { addHexPrefix } from '../../../app/scripts/lib/util';
 import { getTokenStandardAndDetails } from '../../store/actions';
+import * as util from './util';
+import { formatCurrency } from './confirm-tx.util';
 
 const DEFAULT_SYMBOL = '';
 

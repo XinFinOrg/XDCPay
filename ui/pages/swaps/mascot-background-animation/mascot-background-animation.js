@@ -1,11 +1,6 @@
-import EventEmitter from 'events';
-import React, { useRef } from 'react';
-
-import Mascot from '../../../components/ui/mascot';
+import React from 'react';
 
 export default function MascotBackgroundAnimation() {
-  const animationEventEmitter = useRef(new EventEmitter());
-
   return (
     <div className="mascot-background-animation__animation">
       <div

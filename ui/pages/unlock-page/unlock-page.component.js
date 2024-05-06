@@ -3,7 +3,6 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import Button from '../../components/ui/button';
 import TextField from '../../components/ui/text-field';
-import Mascot from '../../components/ui/mascot';
 import { DEFAULT_ROUTE } from '../../helpers/constants/routes';
 import {
   MetaMetricsContextProp,

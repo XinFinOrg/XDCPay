@@ -1,9 +1,7 @@
-import EventEmitter from 'events';
 import React, { useState, useEffect, useContext } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { useHistory } from 'react-router-dom';
 
-import Mascot from '../../../components/ui/mascot';
 import Button from '../../../components/ui/button';
 import { Text } from '../../../components/component-library';
 import CheckBox from '../../../components/ui/check-box';
@@ -11,8 +9,10 @@ import Box from '../../../components/ui/box';
 import {
   TextVariant,
   AlignItems,
+  ///: BEGIN:ONLY_INCLUDE_IF(build-mmi)
   TextAlign,
   FontWeight,
+  ///: END:ONLY_INCLUDE_IF
 } from '../../../helpers/constants/design-system';
 import { useI18nContext } from '../../../hooks/useI18nContext';
 import { MetaMetricsContext } from '../../../contexts/metametrics';
@@ -24,7 +24,9 @@ import {
 import {
   setFirstTimeFlowType,
   setTermsOfUseLastAgreed,
+  ///: BEGIN:ONLY_INCLUDE_IF(build-mmi)
   setParticipateInMetaMetrics,
+  ///: END:ONLY_INCLUDE_IF
   upsertNetworkConfiguration,
   setActiveNetwork,
 } from '../../../store/actions';
@@ -54,7 +56,6 @@ export default function OnboardingWelcome() {
   const t = useI18nContext();
   const dispatch = useDispatch();
   const history = useHistory();
-  const [eventEmitter] = useState(new EventEmitter());
   const currentKeyring = useSelector(getCurrentKeyring);
   const firstTimeFlowType = useSelector(getFirstTimeFlowType);
   const [termsChecked, setTermsChecked] = useState(false);
