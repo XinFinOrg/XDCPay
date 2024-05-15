@@ -242,13 +242,13 @@ function getBuildName({
 
   let name =
     config.buildTypes[buildType].buildNameOverride ||
-    `MetaMask ${capitalize(buildType)}`;
+    `XDCPay ${capitalize(buildType)}`;
 
   if (environment !== ENVIRONMENT.PRODUCTION) {
-    const mv3Str = shouldIncludeMV3 ? ' MV3' : '';
-    const lavamoatStr = applyLavaMoat ? ' lavamoat' : '';
-    const snowStr = shouldIncludeSnow ? ' snow' : '';
-    name += `${mv3Str}${lavamoatStr}${snowStr}`;
+    // const mv3Str = shouldIncludeMV3 ? ' MV3' : '';
+    // const lavamoatStr = applyLavaMoat ? ' lavamoat' : '';
+    // const snowStr = shouldIncludeSnow ? ' snow' : '';
+    // name += `${mv3Str}${lavamoatStr}${snowStr}`;
   }
   return name;
 }
