@@ -139,7 +139,7 @@ function createManifestTasks({
       shouldIncludeMV3: process.env.ENABLE_MV3,
     });
 
-    manifest.description = `XDCPay is a browser extension that enables interaction with the XDC Network. It provides a secure wallet for managing XDC accounts, sending and receiving XDC tokens, and connecting to XDC-based dApps. XDCPay ensures a user-friendly experience while prioritizing security and compatibility with the XDC ecosystem.`;
+    manifest.description = `XDCPay is a browser extension that enables interaction with the XDC Network. It provides a secure wallet for managing XDC accounts.`;
   }
 
   // helper for merging obj value

@@ -104,7 +104,7 @@ export default function OnboardingWelcome() {
         rpcUrl: XDC_RPC_URL,
         ticker: 'XDC',
         rpcPrefs: {
-          blockExplorerUrl: 'https://xdc.blocksscan.io',
+          blockExplorerUrl: 'https://xdcscan.com',
           imageUrl: XDC_TOKEN_IMAGE_URL,
         },
         imageUrl: XDC_TOKEN_IMAGE_URL,
@@ -126,7 +126,7 @@ export default function OnboardingWelcome() {
         rpcUrl: XDC_APOTHEM_RPC_URL,
         ticker: 'TXDC',
         rpcPrefs: {
-          blockExplorerUrl: 'https://xdc.blocksscan.io',
+          blockExplorerUrl: 'https://explorer.apothem.network',
           imageUrl: XDC_TOKEN_IMAGE_URL,
         },
         imageUrl: XDC_TOKEN_IMAGE_URL,
@@ -150,7 +150,7 @@ export default function OnboardingWelcome() {
     //     rpcUrl: 'https://erpc.apothem.network',
     //     ticker: 'TXDC',
     //     rpcPrefs: {
-    //       blockExplorerUrl: 'https://xdc.blocksscan.io',
+    //       blockExplorerUrl: 'https://explorer.apothem.network',
     //       imageUrl: './images/logo/XDCPay-full.svg',
     //     },
     //     imageUrl: './images/logo/XDCPay-full.svg',

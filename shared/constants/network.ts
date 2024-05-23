@@ -1042,7 +1042,7 @@ export const FEATURED_RPCS: RPCDefinition[] = [
     rpcUrl: 'https://erpc.xinfin.network',
     ticker: CURRENCY_SYMBOLS.XDC,
     rpcPrefs: {
-      blockExplorerUrl: 'https://xdc.blocksscan.io',
+      blockExplorerUrl: 'https://xdcscan.com',
       imageUrl: './images/logo/XDCPay-full.svg',
     },
   },

@@ -111,7 +111,7 @@ buildTypes:
       - IFRAME_EXECUTION_ENVIRONMENT_URL: https://execution.metamask.io/iframe/6.0.1/index.html
       - MMI_CONFIGURATION_SERVICE_URL: https://configuration.metamask-institutional.io/v2/configuration/default
       - SUPPORT_LINK: https://mmi-support.metamask.io/hc/en-us
-      - SUPPORT_REQUEST_LINK: https://mmi-support.metamask.io/hc/en-us/requests/new
+      - SUPPORT_REQUEST_LINK: https://www.xdc.dev/
       - SENTRY_DSN: SENTRY_MMI_DSN
     # For some reason, MMI uses this type of versioning
     # Leaving it on for backwards compatibility
@@ -185,7 +185,7 @@ env:
   # Also see METAMASK_DEBUG and NODE_DEBUG
   - DEBUG: null
   - SUPPORT_LINK: https://support.metamask.io
-  - SUPPORT_REQUEST_LINK: https://metamask.zendesk.com/hc/en-us
+  - SUPPORT_REQUEST_LINK: https://www.xdc.dev/
   - SKIP_BACKGROUND_INITIALIZATION: false
 
   # TODO(ritave): Move ManifestV3 into a feature?

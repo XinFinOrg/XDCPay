@@ -1,6 +1,6 @@
-import React, { useContext, useState, useSelector } from 'react';
+import React, { useContext, useState } from 'react';
 import PropTypes from 'prop-types';
-import { useDispatch } from 'react-redux';
+import { useDispatch, useSelector } from 'react-redux';
 import {
   MetaMetricsEventAccountImportType,
   MetaMetricsEventAccountType,
