@@ -146,7 +146,7 @@ const registerInPageContentScript = async () => {
       {
         id: 'inpage',
         matches: ['file://*/*', 'http://*/*', 'https://*/*'],
-        js: ['inpage.js'],
+        js: ['scripts/inpage.js'],
         runAt: 'document_start',
         world: 'MAIN',
       },
