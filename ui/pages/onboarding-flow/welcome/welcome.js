@@ -126,7 +126,7 @@ export default function OnboardingWelcome() {
         rpcUrl: XDC_APOTHEM_RPC_URL,
         ticker: 'TXDC',
         rpcPrefs: {
-          blockExplorerUrl: 'https://explorer.apothem.network',
+          blockExplorerUrl: 'https://apothem.blocksscan.io/',
           imageUrl: XDC_TOKEN_IMAGE_URL,
         },
         imageUrl: XDC_TOKEN_IMAGE_URL,

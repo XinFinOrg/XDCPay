@@ -17,9 +17,9 @@ import { useNftsCollections } from '../../../hooks/useNftsCollections';
 import {
   getCurrentNetwork,
   ///: BEGIN:ONLY_INCLUDE_IF(build-main,build-beta,build-flask)
-  getIsBuyableChain,
-  getShouldHideZeroBalanceTokens,
-  getSelectedAccount,
+  // getIsBuyableChain,
+  // getShouldHideZeroBalanceTokens,
+  // getSelectedAccount,
   ///: END:ONLY_INCLUDE_IF
   getIsMainnet,
   getUseNftDetection,
@@ -43,11 +43,11 @@ import {
 } from '../../../../shared/constants/metametrics';
 import { getCurrentLocale } from '../../../ducks/locale/locale';
 ///: BEGIN:ONLY_INCLUDE_IF(build-main,build-beta,build-flask)
-import {
-  RAMPS_CARD_VARIANT_TYPES,
-  RampsCard,
-} from '../../multichain/ramps-card/ramps-card';
-import { useAccountTotalFiatBalance } from '../../../hooks/useAccountTotalFiatBalance';
+// import {
+//   RAMPS_CARD_VARIANT_TYPES,
+//   RampsCard,
+// } from '../../multichain/ramps-card/ramps-card';
+// import { useAccountTotalFiatBalance } from '../../../hooks/useAccountTotalFiatBalance';
 ///: END:ONLY_INCLUDE_IF
 
 export default function NftsTab() {
@@ -59,17 +59,17 @@ export default function NftsTab() {
   const trackEvent = useContext(MetaMetricsContext);
 
   ///: BEGIN:ONLY_INCLUDE_IF(build-main,build-beta,build-flask)
-  const { address: selectedAddress } = useSelector(getSelectedAccount);
-  const shouldHideZeroBalanceTokens = useSelector(
-    getShouldHideZeroBalanceTokens,
-  );
-  const { totalFiatBalance } = useAccountTotalFiatBalance(
-    selectedAddress,
-    shouldHideZeroBalanceTokens,
-  );
-  const balanceIsZero = Number(totalFiatBalance) === 0;
-  const isBuyableChain = useSelector(getIsBuyableChain);
-  const showRampsCard = isBuyableChain && balanceIsZero;
+  // const { address: selectedAddress } = useSelector(getSelectedAccount);
+  // const shouldHideZeroBalanceTokens = useSelector(
+  //   getShouldHideZeroBalanceTokens,
+  // );
+  // const { totalFiatBalance } = useAccountTotalFiatBalance(
+  //   selectedAddress,
+  //   shouldHideZeroBalanceTokens,
+  // );
+  // const balanceIsZero = Number(totalFiatBalance) === 0;
+  // const isBuyableChain = useSelector(getIsBuyableChain);
+  // const showRampsCard = isBuyableChain && balanceIsZero;
   ///: END:ONLY_INCLUDE_IF
 
   const { nftsLoading, collections, previouslyOwnedCollection } =
@@ -115,9 +115,9 @@ export default function NftsTab() {
     <>
       {
         ///: BEGIN:ONLY_INCLUDE_IF(build-main,build-beta,build-flask)
-        showRampsCard ? (
-          <RampsCard variant={RAMPS_CARD_VARIANT_TYPES.NFT} />
-        ) : null
+        // showRampsCard ? (
+        //   <RampsCard variant={RAMPS_CARD_VARIANT_TYPES.NFT} />
+        // ) : null
         ///: END:ONLY_INCLUDE_IF
       }
       <Box className="nfts-tab">

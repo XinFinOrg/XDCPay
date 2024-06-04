@@ -12,12 +12,12 @@ import {
   getIstokenDetectionInactiveOnNonMainnetSupportedNetwork,
   getShouldHideZeroBalanceTokens,
   ///: BEGIN:ONLY_INCLUDE_IF(build-main,build-beta,build-flask)
-  getIsBuyableChain,
+  // getIsBuyableChain,
   ///: END:ONLY_INCLUDE_IF
   getCurrentNetwork,
   getSelectedAccount,
   getPreferences,
-  getIsMainnet,
+  // getIsMainnet,
 } from '../../../selectors';
 import {
   getNativeCurrency,
@@ -44,10 +44,10 @@ import {
 } from '../../../../shared/modules/currency-display.utils';
 import { roundToDecimalPlacesRemovingExtraZeroes } from '../../../helpers/utils/util';
 ///: BEGIN:ONLY_INCLUDE_IF(build-main,build-beta,build-flask)
-import {
-  RAMPS_CARD_VARIANT_TYPES,
-  RampsCard,
-} from '../../multichain/ramps-card/ramps-card';
+// import {
+//   RAMPS_CARD_VARIANT_TYPES,
+//   RampsCard,
+// } from '../../multichain/ramps-card/ramps-card';
 ///: END:ONLY_INCLUDE_IF
 
 const AssetList = ({ onClickAsset }) => {
@@ -56,7 +56,7 @@ const AssetList = ({ onClickAsset }) => {
   const nativeCurrency = useSelector(getNativeCurrency);
   const showFiat = useSelector(getShouldShowFiat);
   const { chainId } = useSelector(getCurrentNetwork);
-  const isMainnet = useSelector(getIsMainnet);
+  // const isMainnet = useSelector(getIsMainnet);
   const { useNativeCurrencyAsPrimaryCurrency } = useSelector(getPreferences);
   const { ticker, type } = useSelector(getProviderConfig);
   const isOriginalNativeSymbol = useIsOriginalNativeTokenSymbol(
@@ -106,19 +106,19 @@ const AssetList = ({ onClickAsset }) => {
     token.string = roundToDecimalPlacesRemovingExtraZeroes(token.string, 5);
   });
 
-  const tokensWithValidBalances = tokensWithBalances.filter(
-    (e) => Number(e.balance) > 0,
-  );
+  console.log(tokensWithBalances);
+
+  const tokensWithValidBalances = tokensWithBalances;
 
   const balanceIsZero = Number(totalFiatBalance) === 0;
   ///: BEGIN:ONLY_INCLUDE_IF(build-main,build-beta,build-flask)
-  const isBuyableChain = useSelector(getIsBuyableChain);
-  const shouldShowBuy = isBuyableChain && balanceIsZero;
+  // const isBuyableChain = useSelector(getIsBuyableChain);
+  // const shouldShowBuy = isBuyableChain && balanceIsZero;
   ///: END:ONLY_INCLUDE_IF
 
-  let isStakeable = isMainnet;
+  // let isStakeable = isMainnet;
   ///: BEGIN:ONLY_INCLUDE_IF(build-mmi)
-  isStakeable = false;
+  // isStakeable = false;
   ///: END:ONLY_INCLUDE_IF
 
   return (
@@ -132,9 +132,9 @@ const AssetList = ({ onClickAsset }) => {
         )}
       {
         ///: BEGIN:ONLY_INCLUDE_IF(build-main,build-beta,build-flask)
-        shouldShowBuy ? (
-          <RampsCard variant={RAMPS_CARD_VARIANT_TYPES.TOKEN} />
-        ) : null
+        // shouldShowBuy ? (
+        //   <RampsCard variant={RAMPS_CARD_VARIANT_TYPES.TOKEN} />
+        // ) : null
         ///: END:ONLY_INCLUDE_IF
       }
       <TokenListItem
@@ -167,7 +167,7 @@ const AssetList = ({ onClickAsset }) => {
         tokenImage={balanceIsLoading ? null : primaryTokenImage}
         isOriginalTokenSymbol={isOriginalNativeSymbol}
         isNativeCurrency
-        isStakeable={isStakeable}
+        isStakeable={false}
       />
       <TokenList
         tokens={tokensWithValidBalances}

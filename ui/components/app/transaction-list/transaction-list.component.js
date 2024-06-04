@@ -10,8 +10,8 @@ import {
   getCurrentChainId,
   getSelectedAccount,
   ///: BEGIN:ONLY_INCLUDE_IF(build-main,build-beta,build-flask)
-  getIsBuyableChain,
-  getShouldHideZeroBalanceTokens,
+  // getIsBuyableChain,
+  // getShouldHideZeroBalanceTokens,
   ///: END:ONLY_INCLUDE_IF
 } from '../../../selectors';
 import { useI18nContext } from '../../../hooks/useI18nContext';
@@ -28,11 +28,11 @@ import {
 } from '../../../helpers/constants/design-system';
 import { formatDateWithYearContext } from '../../../helpers/utils/util';
 ///: BEGIN:ONLY_INCLUDE_IF(build-main,build-beta,build-flask)
-import { useAccountTotalFiatBalance } from '../../../hooks/useAccountTotalFiatBalance';
-import {
-  RAMPS_CARD_VARIANT_TYPES,
-  RampsCard,
-} from '../../multichain/ramps-card/ramps-card';
+// import { useAccountTotalFiatBalance } from '../../../hooks/useAccountTotalFiatBalance';
+// import {
+//   RAMPS_CARD_VARIANT_TYPES,
+//   RampsCard,
+// } from '../../multichain/ramps-card/ramps-card';
 ///: END:ONLY_INCLUDE_IF
 
 const PAGE_INCREMENT = 10;
@@ -130,17 +130,17 @@ export default function TransactionList({
   const { address: selectedAddress } = useSelector(getSelectedAccount);
 
   ///: BEGIN:ONLY_INCLUDE_IF(build-main,build-beta,build-flask)
-  const shouldHideZeroBalanceTokens = useSelector(
-    getShouldHideZeroBalanceTokens,
-  );
-  const { totalFiatBalance } = useAccountTotalFiatBalance(
-    selectedAddress,
-    shouldHideZeroBalanceTokens,
-  );
-  const balanceIsZero = Number(totalFiatBalance) === 0;
-  const isBuyableChain = useSelector(getIsBuyableChain);
+  // const shouldHideZeroBalanceTokens = useSelector(
+  //   getShouldHideZeroBalanceTokens,
+  // );
+  // const { totalFiatBalance } = useAccountTotalFiatBalance(
+  //   selectedAddress,
+  //   shouldHideZeroBalanceTokens,
+  // );
+  // const balanceIsZero = Number(totalFiatBalance) === 0;
+  // const isBuyableChain = useSelector(getIsBuyableChain);
 
-  const showRampsCard = isBuyableChain && balanceIsZero;
+  // const showRampsCard = isBuyableChain && balanceIsZero;
   ///: END:ONLY_INCLUDE_IF
 
   const renderDateStamp = (index, dateGroup) => {
@@ -237,9 +237,9 @@ export default function TransactionList({
     <>
       {
         ///: BEGIN:ONLY_INCLUDE_IF(build-main,build-beta,build-flask)
-        showRampsCard ? (
-          <RampsCard variant={RAMPS_CARD_VARIANT_TYPES.ACTIVITY} />
-        ) : null
+        // showRampsCard ? (
+        //   <RampsCard variant={RAMPS_CARD_VARIANT_TYPES.ACTIVITY} />
+        // ) : null
         ///: END:ONLY_INCLUDE_IF
       }
       <Box className="transaction-list" paddingTop={4}>
