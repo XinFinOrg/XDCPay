@@ -1,6 +1,6 @@
 {
   "name": "metamask-crx",
-  "version": "11.16.1",
+  "version": "11.16.2",
   "private": true,
   "repository": {
     "type": "git",
@@ -13,7 +13,7 @@
     "start:mmi": "yarn start --build-type mmi",
     "start:lavamoat": "yarn build:dev dev --apply-lavamoat=true",
     "dist": "yarn build dist",
-    "dist:mv3": "ENABLE_MV3=true yarn build dist",
+    "dist:mv3": "ENABLE_MV3=true yarn build dist --apply-lavamoat=false",
     "dist:mmi": "yarn dist --build-type mmi",
     "dist:mmi:debug": "yarn dist --build-type mmi --apply-lavamoat=false",
     "build": "yarn lavamoat:build",
