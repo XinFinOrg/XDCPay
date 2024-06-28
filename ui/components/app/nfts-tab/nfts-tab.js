@@ -89,6 +89,8 @@ export default function NftsTab() {
   const hasAnyNfts = Object.keys(collections).length > 0;
   const showNftBanner = hasAnyNfts === false;
   const { chainId, nickname } = useSelector(getCurrentNetwork);
+  console.log('chainId', chainId);
+  console.log('nickname', nickname);
   const currentLocale = useSelector(getCurrentLocale);
 
   useEffect(() => {

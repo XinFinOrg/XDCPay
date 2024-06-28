@@ -69,6 +69,8 @@ export const RampsCard = ({ variant }) => {
   const trackEvent = useContext(MetaMetricsContext);
   const currentLocale = useSelector(getCurrentLocale);
   const { chainId, nickname } = useSelector(getCurrentNetwork);
+  console.log('chainId', chainId);
+  console.log('nickname', nickname);
   const { symbol = 'ETH' } = useSelector(getSwapsDefaultToken);
 
   useEffect(() => {
