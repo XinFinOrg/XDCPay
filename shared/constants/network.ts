@@ -277,7 +277,7 @@ export const LINEA_MAINNET_RPC_URL = getRpcUrl({
 });
 export const LOCALHOST_RPC_URL = 'http://localhost:8545';
 
-export const XDC_RPC_URL = 'https://rpc.xdcrpc.com';
+export const XDC_RPC_URL = 'https://erpc.xinfin.network';
 export const XDC_APOTHEM_RPC_URL = 'https://erpc.apothem.network';
 
 /**
@@ -308,6 +308,7 @@ export const CURRENCY_SYMBOLS = {
   MOONRIVER: 'MOVR',
   ONE: 'ONE',
   XDC: 'XDC',
+  TXDC: 'TXDC',
 } as const;
 
 const CHAINLIST_CURRENCY_SYMBOLS_MAP = {

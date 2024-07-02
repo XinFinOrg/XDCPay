@@ -40,6 +40,8 @@ import {
   CHAIN_ID_TOKEN_IMAGE_MAP,
   LINEA_SEPOLIA_TOKEN_IMAGE_URL,
   LINEA_SEPOLIA_DISPLAY_NAME,
+  XDC_MAINNET,
+  XDC_TESTNET,
 } from '../../shared/constants/network';
 import {
   WebHIDConnectedStatuses,
@@ -645,10 +647,7 @@ export const getNonTestNetworks = createDeepEqualSelector(
     const XDCTestNetwork = networkList.find(
       (network) => network.chainId === CHAIN_IDS.XDC_APOTHEM_CHAIN_ID,
     );
-    const XDCchainsToIgnore = [
-      CHAIN_IDS.XDC_CHAIN_ID,
-      CHAIN_IDS.XDC_APOTHEM_CHAIN_ID,
-    ];
+    const XDCchainsToIgnore = [XDC_MAINNET, XDC_TESTNET];
 
     const finalNetworkList = [];
     if (XDCNetwork) {
@@ -696,24 +695,11 @@ export const getNonTestNetworks = createDeepEqualSelector(
         id: NETWORK_TYPES.MAINNET,
         removable: false,
       },
-      // {
-      //   chainId: CHAIN_IDS.LINEA_MAINNET,
-      //   nickname: LINEA_MAINNET_DISPLAY_NAME,
-      //   rpcUrl: CHAIN_ID_TO_RPC_URL_MAP[CHAIN_IDS.LINEA_MAINNET],
-      //   rpcPrefs: {
-      //     imageUrl: LINEA_MAINNET_TOKEN_IMAGE_URL,
-      //   },
-      //   providerType: NETWORK_TYPES.LINEA_MAINNET,
-      //   ticker: TEST_NETWORK_TICKER_MAP[NETWORK_TYPES.LINEA_MAINNET],
-      //   id: NETWORK_TYPES.LINEA_MAINNET,
-      //   removable: false,
-      // },
-      // Custom networks added by the user
       ...Object.values(networkConfigurations)
         .filter(
-          ({ chainId }) =>
+          ({ chainId, nickname }) =>
             ![CHAIN_IDS.LOCALHOST].includes(chainId) &&
-            !XDCchainsToIgnore.includes(chainId),
+            !XDCchainsToIgnore.includes(nickname),
         )
         .map((network) => ({
           ...network,
@@ -1846,6 +1832,8 @@ export const getCurrentNetwork = createDeepEqualSelector(
       providerConfig.type === 'rpc'
         ? (network) => network.id === providerConfig.id
         : (network) => network.id === providerConfig.type;
+    console.log('all networks', allNetworks);
+    console.log('providerConfig', providerConfig);
     return allNetworks.find(filter);
   },
 );
