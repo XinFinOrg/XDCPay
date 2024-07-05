@@ -59,8 +59,6 @@ async function getDecimalsFromContract(tokenAddress) {
 export const addXDCTokenList = async (newAccountAddress, tokenList) => {
   // console.log(tokenAddressList);
   const XDCTokenAddressList = [
-    '0x9f6fe0a7bf2813c2bb5979503eefb1eae543b2b6',
-    '0x9797c881ccb120027cb50eecf08545dd3637aa10',
     '0x5d5f074837f5d4618b3916ba74de1bf9662a3fed',
     '0xff7412ea7c8445c46a8254dfb557ac1e48094391',
     '0x49d3f7543335cf38fa10889ccff10207e22110b5',
@@ -75,6 +73,8 @@ export const addXDCTokenList = async (newAccountAddress, tokenList) => {
     '0xd4b5f10d61916bd6e0860144a91ac658de8a1437',
     '0x54051d9dbe99687867090d95fe15c3d3e35512ba',
     '0x3279dbefabf3c6ac29d7ff24a6c46645f3f4403c',
+    '0x8b20C72f1B138A41D2193dd056E117dce915ba8b',
+    '0xFa4dDcFa8E3d0475f544d0de469277CF6e0A6Fd1',
   ];
 
   const tokenDetails = await Promise.all(
