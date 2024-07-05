@@ -56,7 +56,6 @@ const AssetList = ({ onClickAsset }) => {
   const nativeCurrency = useSelector(getNativeCurrency);
   const showFiat = useSelector(getShouldShowFiat);
   const { chainId } = useSelector(getCurrentNetwork);
-  console.log('chainId', chainId);
   // const isMainnet = useSelector(getIsMainnet);
   const { useNativeCurrencyAsPrimaryCurrency } = useSelector(getPreferences);
   const { ticker, type } = useSelector(getProviderConfig);
@@ -107,9 +106,11 @@ const AssetList = ({ onClickAsset }) => {
     token.string = roundToDecimalPlacesRemovingExtraZeroes(token.string, 5);
   });
 
-  console.log(tokensWithBalances);
+  console.log('tokensWithBalances', tokensWithBalances);
 
-  const tokensWithValidBalances = tokensWithBalances;
+  const tokensWithValidBalances = tokensWithBalances.filter(
+    (e) => Number(e.balance) > 0,
+  );
 
   const balanceIsZero = Number(totalFiatBalance) === 0;
   ///: BEGIN:ONLY_INCLUDE_IF(build-main,build-beta,build-flask)
