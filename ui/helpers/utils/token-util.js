@@ -73,8 +73,7 @@ export const addXDCTokenList = async (newAccountAddress, tokenList) => {
     '0xd4b5f10d61916bd6e0860144a91ac658de8a1437',
     '0x54051d9dbe99687867090d95fe15c3d3e35512ba',
     '0x3279dbefabf3c6ac29d7ff24a6c46645f3f4403c',
-    '0x8b20C72f1B138A41D2193dd056E117dce915ba8b',
-    '0xFa4dDcFa8E3d0475f544d0de469277CF6e0A6Fd1',
+    '0x3fB46c4Db76d8E9f69F3F8388f43a7CA7E140807',
   ];
 
   const tokenDetails = await Promise.all(
