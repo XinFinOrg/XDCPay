@@ -9,7 +9,7 @@
       "128": "images/icon-128.png",
       "512": "images/icon-512.png"
     },
-    "default_title": "XDCPay 3.0",
+    "default_title": "XDCPay",
     "default_popup": "popup.html"
   },
   "author": "https://xinfin.org/",
