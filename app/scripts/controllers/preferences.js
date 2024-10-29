@@ -1,22 +1,32 @@
-const ObservableStore = require('obs-store')
-const normalizeAddress = require('eth-sig-util').normalize
-const { isValidAddress, sha3, bufferToHex } = require('ethereumjs-util')
-const extend = require('xtend')
+import { ObservableStore } from '@metamask/obs-store';
+import { normalize as normalizeAddress } from '@metamask/eth-sig-util';
+import {
+  CHAIN_IDS,
+  IPFS_DEFAULT_GATEWAY_URL,
+} from '../../../shared/constants/network';
+import { LedgerTransportTypes } from '../../../shared/constants/hardware-wallets';
+import { ThemeType } from '../../../shared/constants/preferences';
 
+const mainNetworks = {
+  [CHAIN_IDS.MAINNET]: true,
+  [CHAIN_IDS.LINEA_MAINNET]: true,
+};
 
-class PreferencesController {
+const testNetworks = {
+  [CHAIN_IDS.GOERLI]: true,
+  [CHAIN_IDS.SEPOLIA]: true,
+  [CHAIN_IDS.LINEA_SEPOLIA]: true,
+};
 
+export default class PreferencesController {
   /**
    *
-   * @typedef {Object} PreferencesController
-   * @param {object} opts Overrides the defaults for the initial state of this.store
+   * @typedef {object} PreferencesController
+   * @param {object} opts - Overrides the defaults for the initial state of this.store
+   * @property {object} messenger - The controller messenger
    * @property {object} store The stored object containing a users preferences, stored in local storage
-	 * @property {array} store.frequentRpcList A list of custom rpcs to provide the user
-   * @property {string} store.currentAccountTab Indicates the selected tab in the ui
-   * @property {array} store.tokens The tokens the user wants display in their token lists
-   * @property {object} store.accountTokens The tokens stored per account and then per network type
-   * @property {object} store.assetImages Contains assets objects related to assets added
    * @property {boolean} store.useBlockie The users preference for blockie identicons within the UI
+   * @property {boolean} store.useNonceField The users preference for nonce field within the UI
    * @property {object} store.featureFlags A key-boolean map, where keys refer to features and booleans to whether the
    * user wishes to see that feature.
    *
@@ -24,690 +34,652 @@ class PreferencesController {
    * @property {object} store.knownMethodData Contains all data methods known by the user
    * @property {string} store.currentLocale The preferred language locale key
    * @property {string} store.selectedAddress A hex string that matches the currently selected address in the app
-   *
    */
-  constructor (opts = {}) {
-    const initState = extend({
-      frequentRpcListDetail: [],
-      currentAccountTab: 'history',
-      accountTokens: {},
-      assetImages: {},
-      tokens: [],
-      suggestedTokens: {},
+  constructor(opts = {}) {
+    const addedNonMainNetwork = Object.values(
+      opts.networkConfigurations,
+    ).reduce((acc, element) => {
+      acc[element.chainId] = true;
+      return acc;
+    }, {});
+
+    const initState = {
       useBlockie: false,
+      useNonceField: false,
+      usePhishDetect: true,
+      dismissSeedBackUpReminder: false,
+      disabledRpcMethodPreferences: {
+        eth_sign: false,
+      },
+      useMultiAccountBalanceChecker: true,
+      hasDismissedOpenSeaToBlockaidBanner: false,
+      useSafeChainsListValidation: true,
+      // set to true means the dynamic list from the API is being used
+      // set to false will be using the static list from contract-metadata
+      useTokenDetection: false,
+      useNftDetection: false,
+      use4ByteResolution: true,
+      useCurrencyRateCheck: true,
+      useRequestQueue: false,
+      openSeaEnabled: false,
+      ///: BEGIN:ONLY_INCLUDE_IF(blockaid)
+      securityAlertsEnabled: true,
+      ///: END:ONLY_INCLUDE_IF
+      ///: BEGIN:ONLY_INCLUDE_IF(keyring-snaps)
+      addSnapAccountEnabled: false,
+      ///: END:ONLY_INCLUDE_IF
+      advancedGasFee: {},
 
       // WARNING: Do not use feature flags for security-sensitive things.
       // Feature flag toggling is available in the global namespace
       // for convenient testing of pre-release features, and should never
       // perform sensitive operations.
-      featureFlags: {
-        privacyMode: true,
+      featureFlags: {},
+      incomingTransactionsPreferences: {
+        ...mainNetworks,
+        ...addedNonMainNetwork,
+        ...testNetworks,
       },
       knownMethodData: {},
-      participateInMetaMetrics: null,
-      firstTimeFlowType: null,
       currentLocale: opts.initLangCode,
       identities: {},
       lostIdentities: {},
-      seedWords: null,
       forgottenPassword: false,
       preferences: {
+        autoLockTimeLimit: undefined,
+        showExtensionInFullSizeView: false,
+        showFiatInTestnets: false,
+        showTestNetworks: false,
+        smartTransactionsOptInStatus: null, // null means we will show the Smart Transactions opt-in modal to a user if they are eligible
         useNativeCurrencyAsPrimaryCurrency: true,
+        hideZeroBalanceTokens: false,
+        petnamesEnabled: true,
+        featureNotificationsEnabled: false,
       },
-      completedOnboarding: false,
-      metaMetricsId: null,
-      metaMetricsSendCount: 0,
-    }, opts.initState)
+      // ENS decentralized website resolution
+      ipfsGateway: IPFS_DEFAULT_GATEWAY_URL,
+      isIpfsGatewayEnabled: true,
+      useAddressBarEnsResolution: true,
+      // Ledger transport type is deprecated. We currently only support webhid
+      // on chrome, and u2f on firefox.
+      ledgerTransportType: window.navigator.hid
+        ? LedgerTransportTypes.webhid
+        : LedgerTransportTypes.u2f,
+      snapRegistryList: {},
+      theme: ThemeType.os,
+      ///: BEGIN:ONLY_INCLUDE_IF(keyring-snaps)
+      snapsAddSnapAccountModalDismissed: false,
+      ///: END:ONLY_INCLUDE_IF
+      useExternalNameSources: true,
+      useTransactionSimulations: true,
+      ...opts.initState,
+    };
 
-    this.diagnostics = opts.diagnostics
-    this.network = opts.network
-    this.store = new ObservableStore(initState)
-    this.openPopup = opts.openPopup
-    this._subscribeProviderType()
+    this.network = opts.network;
+
+    this.store = new ObservableStore(initState);
+    this.store.setMaxListeners(13);
+
+    opts.onKeyringStateChange((state) => {
+      const accounts = new Set();
+      for (const keyring of state.keyrings) {
+        for (const address of keyring.accounts) {
+          accounts.add(address);
+        }
+      }
+      if (accounts.size > 0) {
+        this.syncAddresses(Array.from(accounts));
+      }
+    });
+
+    this.messagingSystem = opts.messenger;
+    this.messagingSystem?.registerActionHandler(
+      `PreferencesController:getState`,
+      () => this.store.getState(),
+    );
+    this.messagingSystem?.registerInitialEventPayload({
+      eventType: `PreferencesController:stateChange`,
+      getPayload: () => [this.store.getState(), []],
+    });
 
     global.setPreference = (key, value) => {
-      return this.setFeatureFlag(key, value)
-    }
+      return this.setFeatureFlag(key, value);
+    };
   }
-// PUBLIC METHODS
+  // PUBLIC METHODS
 
   /**
    * Sets the {@code forgottenPassword} state property
-   * @param {boolean} forgottenPassword whether or not the user has forgotten their password
+   *
+   * @param {boolean} forgottenPassword - whether or not the user has forgotten their password
    */
-  setPasswordForgotten (forgottenPassword) {
-    this.store.updateState({ forgottenPassword })
-  }
-
-  /**
-   * Sets the {@code seedWords} seed words
-   * @param {string|null} seedWords the seed words
-   */
-  setSeedWords (seedWords) {
-    this.store.updateState({ seedWords })
+  setPasswordForgotten(forgottenPassword) {
+    this.store.updateState({ forgottenPassword });
   }
 
   /**
    * Setter for the `useBlockie` property
    *
-   * @param {boolean} val Whether or not the user prefers blockie indicators
-   *
+   * @param {boolean} val - Whether or not the user prefers blockie indicators
    */
-  setUseBlockie (val) {
-    this.store.updateState({ useBlockie: val })
+  setUseBlockie(val) {
+    this.store.updateState({ useBlockie: val });
   }
 
   /**
-   * Setter for the `participateInMetaMetrics` property
+   * Setter for the `useNonceField` property
    *
-   * @param {boolean} bool Whether or not the user wants to participate in MetaMetrics
-   * @returns {string|null} the string of the new metametrics id, or null if not set
-   *
+   * @param {boolean} val - Whether or not the user prefers to set nonce
    */
-  setParticipateInMetaMetrics (bool) {
-    this.store.updateState({ participateInMetaMetrics: bool })
-    let metaMetricsId = null
-    if (bool && !this.store.getState().metaMetricsId) {
-      metaMetricsId = bufferToHex(sha3(String(Date.now()) + String(Math.round(Math.random() * Number.MAX_SAFE_INTEGER))))
-      this.store.updateState({ metaMetricsId })
-    } else if (bool === false) {
-      this.store.updateState({ metaMetricsId })
-    }
-    return metaMetricsId
-  }
-
-  getMetaMetricsId () {
-    return this.store.getState().metaMetricsId
-  }
-
-  getParticipateInMetaMetrics () {
-    return this.store.getState().participateInMetaMetrics
-  }
-
-  setMetaMetricsSendCount (val) {
-    this.store.updateState({ metaMetricsSendCount: val })
-  }
-
-  getMetaMetricsSendCount () {
-    return this.store.getState().metaMetricsSendCount
+  setUseNonceField(val) {
+    this.store.updateState({ useNonceField: val });
   }
 
   /**
-   * Setter for the `firstTimeFlowType` property
+   * Setter for the `usePhishDetect` property
    *
-   * @param {String} type Indicates the type of first time flow - create or import - the user wishes to follow
+   * @param {boolean} val - Whether or not the user prefers phishing domain protection
+   */
+  setUsePhishDetect(val) {
+    this.store.updateState({ usePhishDetect: val });
+  }
+
+  /**
+   * Setter for the `useMultiAccountBalanceChecker` property
+   *
+   * @param {boolean} val - Whether or not the user prefers to turn off/on all security settings
+   */
+  setUseMultiAccountBalanceChecker(val) {
+    this.store.updateState({ useMultiAccountBalanceChecker: val });
+  }
+
+  /**
+   * Setter for the `dismissOpenSeaToBlockaidBanner` property
    *
    */
-   setFirstTimeFlowType (type) {
-     this.store.updateState({ firstTimeFlowType: type })
-   }
-
-
-  getSuggestedTokens () {
-    return this.store.getState().suggestedTokens
+  dismissOpenSeaToBlockaidBanner() {
+    this.store.updateState({ hasDismissedOpenSeaToBlockaidBanner: true });
   }
 
-  getAssetImages () {
-    return this.store.getState().assetImages
+  /**
+   * Setter for the `useSafeChainsListValidation` property
+   *
+   * @param {boolean} val - Whether or not the user prefers to turn off/on validation for manually adding networks
+   */
+  setUseSafeChainsListValidation(val) {
+    this.store.updateState({ useSafeChainsListValidation: val });
   }
 
-  addSuggestedERC20Asset (tokenOpts) {
-    this._validateERC20AssetParams(tokenOpts)
-    const suggested = this.getSuggestedTokens()
-    const { rawAddress, symbol, decimals, image } = tokenOpts
-    const address = normalizeAddress(rawAddress)
-    const newEntry = { address, symbol, decimals, image }
-    suggested[address] = newEntry
-    this.store.updateState({ suggestedTokens: suggested })
+  /**
+   * Setter for the `useTokenDetection` property
+   *
+   * @param {boolean} val - Whether or not the user prefers to use the static token list or dynamic token list from the API
+   */
+  setUseTokenDetection(val) {
+    this.store.updateState({ useTokenDetection: val });
+  }
+
+  /**
+   * Setter for the `useNftDetection` property
+   *
+   * @param {boolean} useNftDetection - Whether or not the user prefers to autodetect NFTs.
+   */
+  setUseNftDetection(useNftDetection) {
+    this.store.updateState({ useNftDetection });
+  }
+
+  /**
+   * Setter for the `use4ByteResolution` property
+   *
+   * @param {boolean} use4ByteResolution - (Privacy) Whether or not the user prefers to have smart contract name details resolved with 4byte.directory
+   */
+  setUse4ByteResolution(use4ByteResolution) {
+    this.store.updateState({ use4ByteResolution });
+  }
+
+  /**
+   * Setter for the `useCurrencyRateCheck` property
+   *
+   * @param {boolean} val - Whether or not the user prefers to use currency rate check for ETH and tokens.
+   */
+  setUseCurrencyRateCheck(val) {
+    this.store.updateState({ useCurrencyRateCheck: val });
+  }
+
+  /**
+   * Setter for the `useRequestQueue` property
+   *
+   * @param {boolean} val - Whether or not the user wants to have requests queued if network change is required.
+   */
+  setUseRequestQueue(val) {
+    this.store.updateState({ useRequestQueue: val });
+  }
+
+  /**
+   * Setter for the `openSeaEnabled` property
+   *
+   * @param {boolean} openSeaEnabled - Whether or not the user prefers to use the OpenSea API for NFTs data.
+   */
+  setOpenSeaEnabled(openSeaEnabled) {
+    this.store.updateState({
+      openSeaEnabled,
+    });
+  }
+
+  ///: BEGIN:ONLY_INCLUDE_IF(blockaid)
+  /**
+   * Setter for the `securityAlertsEnabled` property
+   *
+   * @param {boolean} securityAlertsEnabled - Whether or not the user prefers to use the security alerts.
+   */
+  setSecurityAlertsEnabled(securityAlertsEnabled) {
+    this.store.updateState({
+      securityAlertsEnabled,
+    });
+  }
+  ///: END:ONLY_INCLUDE_IF
+
+  ///: BEGIN:ONLY_INCLUDE_IF(keyring-snaps)
+  /**
+   * Setter for the `addSnapAccountEnabled` property.
+   *
+   * @param {boolean} addSnapAccountEnabled - Whether or not the user wants to
+   * enable the "Add Snap accounts" button.
+   */
+  setAddSnapAccountEnabled(addSnapAccountEnabled) {
+    this.store.updateState({
+      addSnapAccountEnabled,
+    });
+  }
+  ///: END:ONLY_INCLUDE_IF
+
+  /**
+   * Setter for the `useExternalNameSources` property
+   *
+   * @param {boolean} useExternalNameSources - Whether or not to use external name providers in the name controller.
+   */
+  setUseExternalNameSources(useExternalNameSources) {
+    this.store.updateState({
+      useExternalNameSources,
+    });
+  }
+
+  /**
+   * Setter for the `useTransactionSimulations` property
+   *
+   * @param {boolean} useTransactionSimulations - Whether or not to use simulations in the transaction confirmations.
+   */
+  setUseTransactionSimulations(useTransactionSimulations) {
+    this.store.updateState({
+      useTransactionSimulations,
+    });
+  }
+
+  /**
+   * Setter for the `advancedGasFee` property
+   *
+   * @param {object} options
+   * @param {string} options.chainId - The chainId the advancedGasFees should be set on
+   * @param {object} options.gasFeePreferences - The advancedGasFee options to set
+   */
+  setAdvancedGasFee({ chainId, gasFeePreferences }) {
+    const { advancedGasFee } = this.store.getState();
+    this.store.updateState({
+      advancedGasFee: {
+        ...advancedGasFee,
+        [chainId]: gasFeePreferences,
+      },
+    });
+  }
+
+  /**
+   * Setter for the `theme` property
+   *
+   * @param {string} val - 'default' or 'dark' value based on the mode selected by user.
+   */
+  setTheme(val) {
+    this.store.updateState({ theme: val });
   }
 
   /**
    * Add new methodData to state, to avoid requesting this information again through Infura
    *
-   * @param {string} fourBytePrefix Four-byte method signature
-   * @param {string} methodData Corresponding data method
+   * @param {string} fourBytePrefix - Four-byte method signature
+   * @param {string} methodData - Corresponding data method
    */
-  addKnownMethodData (fourBytePrefix, methodData) {
-    const knownMethodData = this.store.getState().knownMethodData
-    knownMethodData[fourBytePrefix] = methodData
-    this.store.updateState({ knownMethodData })
-  }
-
-  /**
-   * RPC engine middleware for requesting new asset added
-   *
-   * @param req
-   * @param res
-   * @param {Function} - next
-   * @param {Function} - end
-   */
-  async requestWatchAsset (req, res, next, end) {
-    if (req.method === 'metamask_watchAsset' || req.method === 'wallet_watchAsset') {
-      const { type, options } = req.params
-      switch (type) {
-        case 'ERC20':
-          const result = await this._handleWatchAssetERC20(options)
-          if (result instanceof Error) {
-            end(result)
-          } else {
-            res.result = result
-            end()
-          }
-          break
-        default:
-          end(new Error(`Asset of type ${type} not supported`))
-      }
-    } else {
-      next()
-    }
-  }
-
-  /**
-   * Getter for the `useBlockie` property
-   *
-   * @returns {boolean} this.store.useBlockie
-   *
-   */
-  getUseBlockie () {
-    return this.store.getState().useBlockie
+  addKnownMethodData(fourBytePrefix, methodData) {
+    const { knownMethodData } = this.store.getState();
+    knownMethodData[fourBytePrefix] = methodData;
+    this.store.updateState({ knownMethodData });
   }
 
   /**
    * Setter for the `currentLocale` property
    *
-   * @param {string} key he preferred language locale key
-   *
+   * @param {string} key - he preferred language locale key
    */
-  setCurrentLocale (key) {
-    this.store.updateState({ currentLocale: key })
+  setCurrentLocale(key) {
+    const textDirection = ['ar', 'dv', 'fa', 'he', 'ku'].includes(key)
+      ? 'rtl'
+      : 'auto';
+    this.store.updateState({
+      currentLocale: key,
+      textDirection,
+    });
+    return textDirection;
   }
 
   /**
    * Updates identities to only include specified addresses. Removes identities
    * not included in addresses array
    *
-   * @param {string[]} addresses An array of hex addresses
-   *
+   * @param {string[]} addresses - An array of hex addresses
    */
-  setAddresses (addresses) {
-    const oldIdentities = this.store.getState().identities
-    const oldAccountTokens = this.store.getState().accountTokens
+  setAddresses(addresses) {
+    const oldIdentities = this.store.getState().identities;
 
     const identities = addresses.reduce((ids, address, index) => {
-      const oldId = oldIdentities[address] || {}
-      ids[address] = {name: `Account ${index + 1}`, address, ...oldId}
-      return ids
-    }, {})
-    const accountTokens = addresses.reduce((tokens, address) => {
-      const oldTokens = oldAccountTokens[address] || {}
-      tokens[address] = oldTokens
-      return tokens
-    }, {})
-    this.store.updateState({ identities, accountTokens })
+      const oldId = oldIdentities[address] || {};
+      ids[address] = { name: `Account ${index + 1}`, address, ...oldId };
+      return ids;
+    }, {});
+
+    this.store.updateState({ identities });
   }
 
   /**
    * Removes an address from state
    *
-   * @param {string} address A hex address
+   * @param {string} address - A hex address
    * @returns {string} the address that was removed
    */
-  removeAddress (address) {
-    const identities = this.store.getState().identities
-    const accountTokens = this.store.getState().accountTokens
+  removeAddress(address) {
+    const { identities } = this.store.getState();
+
     if (!identities[address]) {
-      throw new Error(`${address} can't be deleted cause it was not found`)
+      throw new Error(`${address} can't be deleted cause it was not found`);
     }
-    delete identities[address]
-    delete accountTokens[address]
-    this.store.updateState({ identities, accountTokens })
+    delete identities[address];
+    this.store.updateState({ identities });
 
     // If the selected account is no longer valid,
     // select an arbitrary other account:
     if (address === this.getSelectedAddress()) {
-      const selected = Object.keys(identities)[0]
-      this.setSelectedAddress(selected)
+      const [selected] = Object.keys(identities);
+      this.setSelectedAddress(selected);
     }
-    return address
-  }
 
+    return address;
+  }
 
   /**
    * Adds addresses to the identities object without removing identities
    *
-   * @param {string[]} addresses An array of hex addresses
-   *
+   * @param {string[]} addresses - An array of hex addresses
    */
-  addAddresses (addresses) {
-    const identities = this.store.getState().identities
-    const accountTokens = this.store.getState().accountTokens
+  addAddresses(addresses) {
+    const { identities } = this.store.getState();
     addresses.forEach((address) => {
       // skip if already exists
-      if (identities[address]) return
+      if (identities[address]) {
+        return;
+      }
       // add missing identity
-      const identityCount = Object.keys(identities).length
+      const identityCount = Object.keys(identities).length;
 
-      accountTokens[address] = {}
-      identities[address] = { name: `Account ${identityCount + 1}`, address }
-    })
-    this.store.updateState({ identities, accountTokens })
+      identities[address] = { name: `Account ${identityCount + 1}`, address };
+    });
+    this.store.updateState({ identities });
   }
 
-  /*
+  /**
    * Synchronizes identity entries with known accounts.
    * Removes any unknown identities, and returns the resulting selected address.
    *
-   * @param {Array<string>} addresses known to the vault.
-   * @returns {Promise<string>} selectedAddress the selected address.
+   * @param {Array<string>} addresses - known to the vault.
+   * @returns {string} selectedAddress the selected address.
    */
-  syncAddresses (addresses) {
-    const { identities, lostIdentities } = this.store.getState()
+  syncAddresses(addresses) {
+    if (!Array.isArray(addresses) || addresses.length === 0) {
+      throw new Error('Expected non-empty array of addresses. Error #11201');
+    }
 
-    const newlyLost = {}
+    const { identities, lostIdentities } = this.store.getState();
+
+    const newlyLost = {};
     Object.keys(identities).forEach((identity) => {
       if (!addresses.includes(identity)) {
-        newlyLost[identity] = identities[identity]
-        delete identities[identity]
+        newlyLost[identity] = identities[identity];
+        delete identities[identity];
       }
-    })
+    });
 
     // Identities are no longer present.
     if (Object.keys(newlyLost).length > 0) {
-
-      // Notify our servers:
-      if (this.diagnostics) this.diagnostics.reportOrphans(newlyLost)
-
       // store lost accounts
-      for (const key in newlyLost) {
-        lostIdentities[key] = newlyLost[key]
-      }
+      Object.keys(newlyLost).forEach((key) => {
+        lostIdentities[key] = newlyLost[key];
+      });
     }
 
-    this.store.updateState({ identities, lostIdentities })
-    this.addAddresses(addresses)
+    this.store.updateState({ identities, lostIdentities });
+    this.addAddresses(addresses);
 
     // If the selected account is no longer valid,
     // select an arbitrary other account:
-    let selected = this.getSelectedAddress()
+    let selected = this.getSelectedAddress();
     if (!addresses.includes(selected)) {
-      selected = addresses[0]
-      this.setSelectedAddress(selected)
+      [selected] = addresses;
+      this.setSelectedAddress(selected);
     }
 
-    return selected
-  }
-
-  removeSuggestedTokens () {
-    return new Promise((resolve) => {
-      this.store.updateState({ suggestedTokens: {} })
-      resolve({})
-    })
+    return selected;
   }
 
   /**
    * Setter for the `selectedAddress` property
    *
-   * @param {string} _address A new hex address for an account
-   * @returns {Promise<void>} Promise resolves with tokens
-   *
+   * @param {string} _address - A new hex address for an account
    */
-  setSelectedAddress (_address) {
-    const address = normalizeAddress(_address)
-    this._updateTokens(address)
-    this.store.updateState({ selectedAddress: address })
-    const tokens = this.store.getState().tokens
-    return Promise.resolve(tokens)
+  setSelectedAddress(_address) {
+    const address = normalizeAddress(_address);
+
+    const { identities } = this.store.getState();
+    const selectedIdentity = identities[address];
+    if (!selectedIdentity) {
+      throw new Error(`Identity for '${address} not found`);
+    }
+
+    selectedIdentity.lastSelected = Date.now();
+    this.store.updateState({ identities, selectedAddress: address });
   }
 
   /**
    * Getter for the `selectedAddress` property
    *
    * @returns {string} The hex address for the currently selected account
-   *
    */
-  getSelectedAddress () {
-    return this.store.getState().selectedAddress
+  getSelectedAddress() {
+    return this.store.getState().selectedAddress;
   }
 
   /**
-   * Contains data about tokens users add to their account.
-   * @typedef {Object} AddedToken
-   * @property {string} address - The hex address for the token contract. Will be all lower cased and hex-prefixed.
-   * @property {string} symbol - The symbol of the token, usually 3 or 4 capitalized letters
-   *  {@link https://github.com/ethereum/EIPs/blob/master/EIPS/eip-20.md#symbol}
-   * @property {boolean} decimals - The number of decimals the token uses.
-   *  {@link https://github.com/ethereum/EIPs/blob/master/EIPS/eip-20.md#decimals}
+   * Getter for the `useRequestQueue` property
+   *
+   * @returns {boolean} whether this option is on or off.
    */
-
-  /**
-   * Adds a new token to the token array, or updates the token if passed an address that already exists.
-   * Modifies the existing tokens array from the store. All objects in the tokens array array AddedToken objects.
-   * @see AddedToken {@link AddedToken}
-   *
-   * @param {string} rawAddress Hex address of the token contract. May or may not be a checksum address.
-   * @param {string} symbol The symbol of the token
-   * @param {number} decimals  The number of decimals the token uses.
-   * @returns {Promise<array>} Promises the new array of AddedToken objects.
-   *
-   */
-  async addToken (rawAddress, symbol, decimals, image) {
-    const address = normalizeAddress(rawAddress)
-    const newEntry = { address, symbol, decimals }
-    const tokens = this.store.getState().tokens
-    const assetImages = this.getAssetImages()
-    const previousEntry = tokens.find((token) => {
-      return token.address === address
-    })
-    const previousIndex = tokens.indexOf(previousEntry)
-
-    if (previousEntry) {
-      tokens[previousIndex] = newEntry
-    } else {
-      tokens.push(newEntry)
-    }
-    assetImages[address] = image
-    this._updateAccountTokens(tokens, assetImages)
-    return Promise.resolve(tokens)
-  }
-
-  /**
-   * Removes a specified token from the tokens array.
-   *
-   * @param {string} rawAddress Hex address of the token contract to remove.
-   * @returns {Promise<array>} The new array of AddedToken objects
-   *
-   */
-  removeToken (rawAddress) {
-    const tokens = this.store.getState().tokens
-    const assetImages = this.getAssetImages()
-    const updatedTokens = tokens.filter(token => token.address !== rawAddress)
-    delete assetImages[rawAddress]
-    this._updateAccountTokens(updatedTokens, assetImages)
-    return Promise.resolve(updatedTokens)
-  }
-
-  /**
-   * A getter for the `tokens` property
-   *
-   * @returns {array} The current array of AddedToken objects
-   *
-   */
-  getTokens () {
-    return this.store.getState().tokens
+  getUseRequestQueue() {
+    return this.store.getState().useRequestQueue;
   }
 
   /**
    * Sets a custom label for an account
-   * @param {string} account the account to set a label for
-   * @param {string} label the custom label for the account
-   * @return {Promise<string>}
+   *
+   * @param {string} account - the account to set a label for
+   * @param {string} label - the custom label for the account
+   * @returns {Promise<string>}
    */
-  setAccountLabel (account, label) {
-    if (!account) throw new Error('setAccountLabel requires a valid address, got ' + String(account))
-    const address = normalizeAddress(account)
-    const {identities} = this.store.getState()
-    identities[address] = identities[address] || {}
-    identities[address].name = label
-    this.store.updateState({ identities })
-    return Promise.resolve(label)
-  }
-
-  /**
-   * Setter for the `currentAccountTab` property
-   *
-   * @param {string} currentAccountTab Specifies the new tab to be marked as current
-   * @returns {Promise<void>} Promise resolves with undefined
-   *
-   */
-  setCurrentAccountTab (currentAccountTab) {
-    return new Promise((resolve) => {
-      this.store.updateState({ currentAccountTab })
-      resolve()
-    })
-  }
-
-  /**
-   * updates custom RPC details
-   *
-   * @param {string} url The RPC url to add to frequentRpcList.
-   * @param {number} chainId Optional chainId of the selected network.
-   * @param {string} ticker   Optional ticker symbol of the selected network.
-   * @param {string} nickname Optional nickname of the selected network.
-   * @returns {Promise<array>} Promise resolving to updated frequentRpcList.
-   *
-   */
-
-
-  updateRpc (newRpcDetails) {
-    const rpcList = this.getFrequentRpcListDetail()
-    const index = rpcList.findIndex((element) => { return element.rpcUrl === newRpcDetails.rpcUrl })
-    if (index > -1) {
-      const rpcDetail = rpcList[index]
-      const updatedRpc = extend(rpcDetail, newRpcDetails)
-      rpcList[index] = updatedRpc
-      this.store.updateState({ frequentRpcListDetail: rpcList })
-    } else {
-      const { rpcUrl, chainId, ticker, nickname, rpcPrefs = {} } = newRpcDetails
-      return this.addToFrequentRpcList(rpcUrl, chainId, ticker, nickname, rpcPrefs)
+  async setAccountLabel(account, label) {
+    if (!account) {
+      throw new Error(
+        `setAccountLabel requires a valid address, got ${String(account)}`,
+      );
     }
-    return Promise.resolve(rpcList)
-  }
-  /**
-   * Adds custom RPC url to state.
-   *
-   * @param {string} url The RPC url to add to frequentRpcList.
-   * @param {number} chainId Optional chainId of the selected network.
-   * @param {string} ticker   Optional ticker symbol of the selected network.
-   * @param {string} nickname Optional nickname of the selected network.
-   * @returns {Promise<array>} Promise resolving to updated frequentRpcList.
-   *
-   */
-    addToFrequentRpcList (url, chainId, ticker = 'ETH', nickname = '', rpcPrefs = {}) {
-      const rpcList = this.getFrequentRpcListDetail()
-      const index = rpcList.findIndex((element) => { return element.rpcUrl === url })
-      if (index !== -1) {
-        rpcList.splice(index, 1)
-      }
-      if (url !== 'http://localhost:8545') {
-        let checkedChainId
-        if (!!chainId && !Number.isNaN(parseInt(chainId))) {
-          checkedChainId = chainId
-        }
-        rpcList.push({ rpcUrl: url, chainId: checkedChainId, ticker, nickname, rpcPrefs })
-      }
-      this.store.updateState({ frequentRpcListDetail: rpcList })
-      return Promise.resolve(rpcList)
-    }
-
-  /**
-   * Removes custom RPC url from state.
-   *
-   * @param {string} url The RPC url to remove from frequentRpcList.
-   * @returns {Promise<array>} Promise resolving to updated frequentRpcList.
-   *
-   */
-  removeFromFrequentRpcList (url) {
-    const rpcList = this.getFrequentRpcListDetail()
-    const index = rpcList.findIndex((element) => { return element.rpcUrl === url })
-    if (index !== -1) {
-      rpcList.splice(index, 1)
-    }
-    this.store.updateState({ frequentRpcListDetail: rpcList })
-    return Promise.resolve(rpcList)
-  }
-
-  /**
-   * Getter for the `frequentRpcListDetail` property.
-   *
-   * @returns {array<array>} An array of rpc urls.
-   *
-   */
-  getFrequentRpcListDetail () {
-    return this.store.getState().frequentRpcListDetail
+    const address = normalizeAddress(account);
+    const { identities } = this.store.getState();
+    identities[address] = identities[address] || {};
+    identities[address].name = label;
+    this.store.updateState({ identities });
+    return label;
   }
 
   /**
    * Updates the `featureFlags` property, which is an object. One property within that object will be set to a boolean.
    *
-   * @param {string} feature A key that corresponds to a UI feature.
-   * @param {boolean} activated Indicates whether or not the UI feature should be displayed
+   * @param {string} feature - A key that corresponds to a UI feature.
+   * @param {boolean} activated - Indicates whether or not the UI feature should be displayed
    * @returns {Promise<object>} Promises a new object; the updated featureFlags object.
-   *
    */
-  setFeatureFlag (feature, activated) {
-    const currentFeatureFlags = this.store.getState().featureFlags
+  async setFeatureFlag(feature, activated) {
+    const currentFeatureFlags = this.store.getState().featureFlags;
     const updatedFeatureFlags = {
       ...currentFeatureFlags,
       [feature]: activated,
-    }
+    };
 
-    this.store.updateState({ featureFlags: updatedFeatureFlags })
+    this.store.updateState({ featureFlags: updatedFeatureFlags });
 
-    return Promise.resolve(updatedFeatureFlags)
-  }
-
-  /**
-   * A getter for the `featureFlags` property
-   *
-   * @returns {object} A key-boolean map, where keys refer to features and booleans to whether the
-   * user wishes to see that feature
-   *
-   */
-  getFeatureFlags () {
-    return this.store.getState().featureFlags
+    return updatedFeatureFlags;
   }
 
   /**
    * Updates the `preferences` property, which is an object. These are user-controlled features
    * found in the settings page.
-   * @param {string} preference The preference to enable or disable.
-   * @param {boolean} value Indicates whether or not the preference should be enabled or disabled.
+   *
+   * @param {string} preference - The preference to enable or disable.
+   * @param {boolean |object} value - Indicates whether or not the preference should be enabled or disabled.
    * @returns {Promise<object>} Promises a new object; the updated preferences object.
    */
-  setPreference (preference, value) {
-    const currentPreferences = this.getPreferences()
+  async setPreference(preference, value) {
+    const currentPreferences = this.getPreferences();
     const updatedPreferences = {
       ...currentPreferences,
       [preference]: value,
-    }
+    };
 
-    this.store.updateState({ preferences: updatedPreferences })
-    return Promise.resolve(updatedPreferences)
+    this.store.updateState({ preferences: updatedPreferences });
+    return updatedPreferences;
   }
 
   /**
    * A getter for the `preferences` property
+   *
    * @returns {object} A key-boolean map of user-selected preferences.
    */
-  getPreferences () {
-    return this.store.getState().preferences
+  getPreferences() {
+    return this.store.getState().preferences;
   }
 
   /**
-   * Sets the completedOnboarding state to true, indicating that the user has completed the
-   * onboarding process.
-   */
-  completeOnboarding () {
-    this.store.updateState({ completedOnboarding: true })
-    return Promise.resolve(true)
-  }
-
-  //
-  // PRIVATE METHODS
-  //
-
-  /**
-   * Subscription to network provider type.
+   * A getter for the `ipfsGateway` property
    *
-   *
+   * @returns {string} The current IPFS gateway domain
    */
-  _subscribeProviderType () {
-    this.network.providerStore.subscribe(() => {
-      const { tokens } = this._getTokenRelatedStates()
-      this.store.updateState({ tokens })
-    })
+  getIpfsGateway() {
+    return this.store.getState().ipfsGateway;
   }
 
   /**
-   * Updates `accountTokens` and `tokens` of current account and network according to it.
+   * A setter for the `ipfsGateway` property
    *
-   * @param {array} tokens Array of tokens to be updated.
-   *
+   * @param {string} domain - The new IPFS gateway domain
+   * @returns {Promise<string>} A promise of the update IPFS gateway domain
    */
-  _updateAccountTokens (tokens, assetImages) {
-    const { accountTokens, providerType, selectedAddress } = this._getTokenRelatedStates()
-    accountTokens[selectedAddress][providerType] = tokens
-    this.store.updateState({ accountTokens, tokens, assetImages })
+  async setIpfsGateway(domain) {
+    this.store.updateState({ ipfsGateway: domain });
+    return domain;
   }
 
   /**
-   * Updates `tokens` of current account and network.
+   * A setter for the `isIpfsGatewayEnabled` property
    *
-   * @param {string} selectedAddress Account address to be updated with.
-   *
+   * @param {boolean} enabled - Whether or not IPFS is enabled
    */
-  _updateTokens (selectedAddress) {
-    const { tokens } = this._getTokenRelatedStates(selectedAddress)
-    this.store.updateState({ tokens })
+  async setIsIpfsGatewayEnabled(enabled) {
+    this.store.updateState({ isIpfsGatewayEnabled: enabled });
   }
 
   /**
-   * A getter for `tokens` and `accountTokens` related states.
+   * A setter for the `useAddressBarEnsResolution` property
    *
-   * @param {string} selectedAddress A new hex address for an account
-   * @returns {Object.<array, object, string, string>} States to interact with tokens in `accountTokens`
-   *
+   * @param {boolean} useAddressBarEnsResolution - Whether or not user prefers IPFS resolution for domains
    */
-  _getTokenRelatedStates (selectedAddress) {
-    const accountTokens = this.store.getState().accountTokens
-    if (!selectedAddress) selectedAddress = this.store.getState().selectedAddress
-    const providerType = this.network.providerStore.getState().type
-    if (!(selectedAddress in accountTokens)) accountTokens[selectedAddress] = {}
-    if (!(providerType in accountTokens[selectedAddress])) accountTokens[selectedAddress][providerType] = []
-    const tokens = accountTokens[selectedAddress][providerType]
-    return { tokens, accountTokens, providerType, selectedAddress }
+  async setUseAddressBarEnsResolution(useAddressBarEnsResolution) {
+    this.store.updateState({ useAddressBarEnsResolution });
   }
 
   /**
-   * Handle the suggestion of an ERC20 asset through `watchAsset`
-   * *
-   * @param {Promise} promise Promise according to addition of ERC20 token
+   * A setter for the `ledgerTransportType` property.
    *
+   * @deprecated We no longer support specifying a ledger transport type other
+   * than webhid, therefore managing a preference is no longer necessary.
+   * @param {LedgerTransportTypes.webhid} ledgerTransportType - 'webhid'
+   * @returns {string} The transport type that was set.
    */
-  async _handleWatchAssetERC20 (options) {
-    const { address, symbol, decimals, image } = options
-    const rawAddress = address
-    try {
-      this._validateERC20AssetParams({ rawAddress, symbol, decimals })
-    } catch (err) {
-      return err
-    }
-    const tokenOpts = { rawAddress, decimals, symbol, image }
-    this.addSuggestedERC20Asset(tokenOpts)
-    return this.openPopup().then(() => {
-      const tokenAddresses = this.getTokens().filter(token => token.address === normalizeAddress(rawAddress))
-      return tokenAddresses.length > 0
-    })
+  setLedgerTransportPreference(ledgerTransportType) {
+    this.store.updateState({ ledgerTransportType });
+    return ledgerTransportType;
   }
 
   /**
-   * Validates that the passed options for suggested token have all required properties.
+   * A setter for the user preference to dismiss the seed phrase backup reminder
    *
-   * @param {Object} opts The options object to validate
-   * @throws {string} Throw a custom error indicating that address, symbol and/or decimals
-   * doesn't fulfill requirements
-   *
+   * @param {bool} dismissSeedBackUpReminder - User preference for dismissing the back up reminder.
    */
-  _validateERC20AssetParams (opts) {
-    const { rawAddress, symbol, decimals } = opts
-    if (!rawAddress || !symbol || typeof decimals === 'undefined') throw new Error(`Cannot suggest token without address, symbol, and decimals`)
-    if (!(symbol.length < 7)) throw new Error(`Invalid symbol ${symbol} more than six characters`)
-    const numDecimals = parseInt(decimals, 10)
-    if (isNaN(numDecimals) || numDecimals > 36 || numDecimals < 0) {
-      throw new Error(`Invalid decimals ${decimals} must be at least 0, and not over 36`)
-    }
-    if (!isValidAddress(rawAddress)) throw new Error(`Invalid address ${rawAddress}`)
+  async setDismissSeedBackUpReminder(dismissSeedBackUpReminder) {
+    await this.store.updateState({
+      dismissSeedBackUpReminder,
+    });
   }
+
+  /**
+   * A setter for the user preference to enable/disable rpc methods
+   *
+   * @param {string} methodName - The RPC method name to change the setting of
+   * @param {bool} isEnabled - true to enable the rpc method
+   */
+  async setDisabledRpcMethodPreference(methodName, isEnabled) {
+    const currentRpcMethodPreferences =
+      this.store.getState().disabledRpcMethodPreferences;
+    const updatedRpcMethodPreferences = {
+      ...currentRpcMethodPreferences,
+      [methodName]: isEnabled,
+    };
+
+    this.store.updateState({
+      disabledRpcMethodPreferences: updatedRpcMethodPreferences,
+    });
+  }
+
+  /**
+   * A setter for the incomingTransactions in preference to be updated
+   *
+   * @param {string} chainId - chainId of the network
+   * @param {bool} value - preference of certain network, true to be enabled
+   */
+  setIncomingTransactionsPreferences(chainId, value) {
+    const previousValue = this.store.getState().incomingTransactionsPreferences;
+    const updatedValue = { ...previousValue, [chainId]: value };
+    this.store.updateState({ incomingTransactionsPreferences: updatedValue });
+  }
+
+  getRpcMethodPreferences() {
+    return this.store.getState().disabledRpcMethodPreferences;
+  }
+
+  ///: BEGIN:ONLY_INCLUDE_IF(keyring-snaps)
+  setSnapsAddSnapAccountModalDismissed(value) {
+    this.store.updateState({ snapsAddSnapAccountModalDismissed: value });
+  }
+  ///: END:ONLY_INCLUDE_IF
 }
-
-module.exports = PreferencesController

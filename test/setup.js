@@ -1,7 +1,7 @@
-require('babel-register')({
-  ignore: name => name.includes('node_modules') && !name.includes('obs-store'),
-})
+require('@babel/register');
+require('ts-node').register({ transpileOnly: true });
 
-require('./helper')
+require('./helpers/setup-helper');
 
-window.SVGPathElement = window.SVGPathElement || { prototype: {} }
+window.SVGPathElement = window.SVGPathElement || { prototype: {} };
+global.indexedDB = {};

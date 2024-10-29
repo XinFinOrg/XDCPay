@@ -1,13 +1,34 @@
-<!doctype html>
-<html>
+<!DOCTYPE html>
+<html dir="ltr">
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1 user-scalable=no">
-    <title>MetaMask</title>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1 user-scalable=no"
+    />
+    <% if (it.isMMI && !it.isTest) { %>
+    <title>XDCPay</title>
+    <% } else { %>
+    <title>XDCPay</title>
+    <% } %>
+    <link rel="stylesheet" href="./index.css" />
   </head>
   <body>
-    <div id="app-content"></div>
-    <script src="./libs.js" type="text/javascript" charset="utf-8"></script>
-    <script src="./ui.js" type="text/javascript" charset="utf-8"></script>
+    <div id="app-content">
+      <img
+        class="loading-logo"
+        src="./images/logo/XDCPay-full.svg"
+        alt=""
+        loading="lazy"
+      />
+      <img
+        class="loading-spinner"
+        src="./images/spinner.gif"
+        alt=""
+        loading="lazy"
+      />
+    </div>
+    <div id="popover-content"></div>
+    <script src="./load-app.js" async></script>
   </body>
 </html>

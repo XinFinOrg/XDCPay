@@ -1,50 +1,26 @@
-const Through = require('through2')
-const ObjectMultiplex = require('obj-multiplex')
-const pump = require('pump')
+import ObjectMultiplex from 'obj-multiplex';
+import pump from 'pump';
 
-module.exports = {
-  jsonParseStream: jsonParseStream,
-  jsonStringifyStream: jsonStringifyStream,
-  setupMultiplex: setupMultiplex,
-}
-
-/**
- * Returns a stream transform that parses JSON strings passing through
- * @return {stream.Transform}
- */
-function jsonParseStream () {
-  return Through.obj(function (serialized, _, cb) {
-    this.push(JSON.parse(serialized))
-    cb()
-  })
-}
-
-/**
- * Returns a stream transform that calls {@code JSON.stringify}
- * on objects passing through
- * @return {stream.Transform} the stream transform
- */
-function jsonStringifyStream () {
-  return Through.obj(function (obj, _, cb) {
-    this.push(JSON.stringify(obj))
-    cb()
-  })
-}
+import { EXTENSION_MESSAGES } from '../../../shared/constants/app';
 
 /**
  * Sets up stream multiplexing for the given stream
+ *
  * @param {any} connectionStream - the stream to mux
- * @return {stream.Stream} the multiplexed stream
+ * @returns {stream.Stream} the multiplexed stream
  */
-function setupMultiplex (connectionStream) {
-  const mux = new ObjectMultiplex()
-  pump(
-    connectionStream,
-    mux,
-    connectionStream,
-    (err) => {
-      if (err) console.error(err)
+export function setupMultiplex(connectionStream) {
+  const mux = new ObjectMultiplex();
+  /**
+   * We are using this streams to send keep alive message between backend/ui without setting up a multiplexer
+   * We need to tell the multiplexer to ignore them, else we get the " orphaned data for stream " warnings
+   * https://github.com/MetaMask/object-multiplex/blob/280385401de84f57ef57054d92cfeb8361ef2680/src/ObjectMultiplex.ts#L63
+   */
+  mux.ignoreStream(EXTENSION_MESSAGES.CONNECTION_READY);
+  pump(connectionStream, mux, connectionStream, (err) => {
+    if (err) {
+      console.error(err);
     }
-  )
-  return mux
+  });
+  return mux;
 }

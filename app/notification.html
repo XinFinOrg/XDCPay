@@ -1,14 +1,18 @@
-<!doctype html>
-<html style="height:600px;">
+<!DOCTYPE html>
+<html dir="ltr">
   <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta charset="utf-8">
-    <title>MetaMask Notification</title>
-    <style>
-      body {
-        overflow: hidden;
-      }
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" />
 
+    <% if (it.isTest) { %>
+    <title>XDCPay Dialog</title>
+    <% } else if (it.isMMI) { %>
+    <title>XDCPay Institutional</title>
+    <% } else { %>
+    <title>XDCPay</title>
+    <% } %>
+
+    <style>
       #app-content {
         display: flex;
         flex-flow: column;
@@ -28,13 +32,24 @@
         margin-top: 1rem;
       }
     </style>
+    <link rel="stylesheet" href="./index.css" />
   </head>
-  <body class="notification" style="height:600px;">
+  <body class="notification">
     <div id="app-content">
-      <img id="loading__logo" src="./images/logo/metamask-fox.svg" />
-      <img id="loading__spinner" src="./images/spinner.gif" />
+      <img
+        id="loading__logo"
+        src="./images/logo/XDCPay-full.svg"
+        alt=""
+        loading="lazy"
+      />
+      <img
+        id="loading__spinner"
+        src="./images/spinner.gif"
+        alt=""
+        loading="lazy"
+      />
     </div>
-    <script src="./libs.js" type="text/javascript" charset="utf-8"></script>
-    <script src="./ui.js" type="text/javascript" charset="utf-8"></script>
+    <div id="popover-content"></div>
+    <script src="./load-app.js" async></script>
   </body>
 </html>

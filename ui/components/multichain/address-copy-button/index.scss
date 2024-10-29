@@ -1,0 +1,13 @@
+.multichain-address-copy-button {
+  &__address--wrap {
+    word-break: break-word;
+    min-height: 32px;
+    height: auto;
+  }
+}
+
+.custody-logo {
+  height: 20px;
+  background-color: var(--color-background-default);
+  padding: 1px;
+}
